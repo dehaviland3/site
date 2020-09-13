@@ -1,0 +1,127 @@
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body {
+  background: #ffeece;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.609);
+  width: 50vw;
+  margin: 50px auto;
+  padding: 1.2em;
+  color: black;
+  border-radius: 5px;
+}
+
+.form-wrapper .oath {
+  padding: 1.8em;
+}
+
+.form-wrapper label {
+  margin: 0;
+}
+
+.form-wrapper .radio {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+}
+
+.form-wrapper .agree {
+  text-align: left;
+  margin-right: 0.4em;
+}
+
+.form-wrapper .agreement-info {
+  background: #ffd13b;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin: 1em 0;
+}
+
+.form-wrapper .hidden-wrapper {
+  margin: 1em 0;
+  padding: 0.8em;
+  background: #e7e7e7;
+}
+
+.form-wrapper .hidden-wrapper > div {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.form-wrapper .post input {
+  width: 25%;
+}
+
+.form-wrapper .add input {
+  width: 100%;
+}
+
+.form-wrapper table {
+  width: 100%;
+  word-wrap: break-word;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-all;
+}
+
+.form-wrapper table td:nth-child(1) {
+  text-align: right;
+}
+
+.form-wrapper table input {
+  width: 100%;
+}
+
+.form-wrapper .form-grounp .form-title {
+  width: 40%;
+}
+
+.form-grounp .form2 {
+  width: 25%;
+}
+
+.name-form {
+  padding: 0.8em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.notice {
+  display: none;
+  color: red;
+}
+
+.asterisk {
+  text-align: left;
+  margin: 0.2em;
+}
+
+#submit {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .form-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-wrapper {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=style-agreement.css.map */

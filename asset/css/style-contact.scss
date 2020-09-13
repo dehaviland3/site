@@ -1,0 +1,64 @@
+hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body {
+    background: {
+        image: url("../img/bg01.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.609);
+    width: 500px;
+    margin: 50px auto;
+    padding: 1.2em;
+    color: black;
+    border-radius: 5px;
+    .form-wrapper td {
+        width: 100%;
+        margin: 0 auto;
+    }
+    label {
+        margin: 0;
+    }
+    .agree {
+        margin-right: 0.4em;
+    }
+    .private-info {
+        background: rgba(255, 255, 255, 0.726);
+        border-radius: 5px;
+        padding: 0.8em;
+    }
+    .notice {
+        display: none;
+        color: red;
+    }
+    .asterisk {
+        text-align: left;
+        margin: 0.2em;
+    }
+}
+
+#submit {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .form-wrapper {
+        width: 95%;
+    }
+}

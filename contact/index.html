@@ -22,43 +22,58 @@
 </head>
 
 <body>
+
+    <header>
+        <h1>お問い合わせ</h1>
+    </header>
     <div class="form-wrapper">
+
+
         <form class="form1" name="Form1" method="post" action="#" onsubmit="return formCheck()">
 
             <div class="form-group">
-                <p class="notice" id="notice-input-text-1"> 【お名前を入力して下さい】</p>
-                <input type="text" class="validate required form-control" name="name" placeholder="お名前 *" value="" />
+
+                <input id="name" type="text" class="validate required form-control" name="name" placeholder="お名前 *" value="" />
+                <p class="notice" id="notice-input-text-1"> お名前を入力して下さい</p>
             </div>
             <div class="form-group">
-                <p class="notice" id="notice-input-text-2"> 【ふりがなを入力して下さい】</p>
-                <input type="text" class="validate required kana form-control" name="furigana" placeholder="ふりがな *" value="" />
+
+                <input id="furigana" type="text" class="validate required kana form-control" name="furigana" placeholder="ふりがな *" value="" />
+                <p class="notice" id="notice-input-text-2"> ふりがなを入力して下さい</p>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="company" placeholder="会社名" value="" />
+                <input id="company" type="text" class="form-control" name="company" placeholder="会社名" value="" />
             </div>
             <div class="form-group">
-                <p class="notice" id="notice-input-text-3"> 【メールアドレスを入力して下さい】</p>
-                <input type="text" class="validate required mail form-control" name="email" placeholder="メールアドレス *" value="" />
+
+                <input id="mail" type="text" class="validate required mail form-control" name="email" placeholder="メールアドレス *" value="" />
+                <p class="notice" id="notice-input-text-3"> メールアドレスを入力して下さい</p>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="tel" placeholder="電話番号" value="" />
+                <input id="tel" type="text" class="form-control" name="tel" placeholder="電話番号" value="" />
             </div>
             <div class="form-group">
-                <p class="notice" id="notice-input-text-4"> 【お問い合わせ内容を入力して下さい】</p>
-                <textarea class="validate required form-control" name="message" rows="5" placeholder="お問い合わせ内容 *"></textarea>
+
+                <textarea id="message" class="validate required form-control" name="message" rows="5" placeholder="お問い合わせ内容 *"></textarea>
+                <p class="notice" id="notice-input-text-4"> お問い合わせ内容を入力して下さい</p>
                 <p class="asterisk">* : 必須項目</p>
             </div>
             <div class="private-info">
-                <a href="">個人情報の取扱規定を読む（PDFファイル）</a>
+                <a href="">個人情報の取扱規定（PDFファイル）</a>
 
 
-                <div class="d-flex align-items-center justify-content-center">
-                    <label class="agree" for="agree">確認し、同意したらチェック</label>
-                    <input type="checkbox" name="agree_privacy" id="agree" value="" autocomplete="off" required="required" />
+                <div class="pdf-label">
+
+
+                    <label class="agree " for="agree">
+                        <input class="agree-btn" type="checkbox" name="agree_privacy" id="agree" value="" autocomplete="off" required="required" />
+                        確認し、同意したらチェック
+                    </label>
                 </div>
             </div>
-            <button name="confirm" type="submit" id="submit" value="submit" class="disabled-btn btn btn-primary btn-block" readonly="readonly">送信する</button>
-
+            <span class="buttonBox">
+            <button name="confirm" type="submit" id="submit" value="submit" class="disabled-btn btn btn-primary btn-block" readonly="readonly" disabled>送信する</button>
+</span>
 
 
 
@@ -88,6 +103,7 @@
             });
         });
 
+
         //必須項目が空欄の場合にfalseを返す
         function formCheck() {
             var flag = 0;
@@ -95,30 +111,37 @@
             if (document.Form1.name.value == "") {
                 flag = 1;
                 document.getElementById('notice-input-text-1').style.display = "block";
+                document.getElementById('name').style.border = "solid 1px red";
             } else {
                 document.getElementById('notice-input-text-1').style.display = "none";
+                document.getElementById('name').style.border = "none";
             }
             if (document.Form1.furigana.value == "") {
                 flag = 1;
                 document.getElementById('notice-input-text-2').style.display = "block";
+                document.getElementById('furigana').style.border = "solid 1px red";
             } else {
                 document.getElementById('notice-input-text-2').style.display = "none";
+                document.getElementById('furigana').style.border = "none";
             }
             if (document.Form1.email.value == "") {
                 flag = 1;
                 document.getElementById('notice-input-text-3').style.display = "block";
+                document.getElementById('mail').style.border = "solid 1px red";
             } else {
                 document.getElementById('notice-input-text-3').style.display = "none";
+                document.getElementById('mail').style.border = "none";
             }
             if (document.Form1.message.value == "") {
                 flag = 1;
                 document.getElementById('notice-input-text-4').style.display = "block";
+                document.getElementById('message').style.border = "solid 1px red";
             } else {
                 document.getElementById('notice-input-text-4').style.display = "none";
+                document.getElementById('message').style.border = "none";
             }
 
             if (flag) {
-                window.alert('必須項目は全て入力して下さい。');
                 return false;
             } else {
                 return true;

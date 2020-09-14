@@ -89,10 +89,6 @@ body {
   width: 40%;
 }
 
-.form-grounp .form2 {
-  width: 25%;
-}
-
 .name-form {
   padding: 0.8em;
   width: 95%;
@@ -111,6 +107,13 @@ body {
 
 #submit {
   margin-top: 25px;
+  height: 50px;
+}
+
+.btn.btn-warning:disabled {
+  color: white;
+  background-color: gray;
+  border-color: gray;
 }
 
 @media screen and (max-width: 1000px) {
@@ -122,6 +125,13 @@ body {
 @media screen and (max-width: 650px) {
   .form-wrapper {
     width: 95%;
+    padding: 0.4em;
+  }
+  .form-wrapper .oath {
+    padding: 0;
+  }
+  .form-wrapper .hidden-wrapper {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style-agreement.css.map */

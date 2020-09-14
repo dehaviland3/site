@@ -364,11 +364,6 @@ footer .footer .footer-subtitle p {
   line-height: 50px;
 }
 
-footer .footer .footer-title h1,
-footer .footer .footer-title p {
-  font-size: 18px;
-}
-
 footer .footer .footer-info {
   margin-left: auto;
 }
@@ -408,18 +403,27 @@ footer .footer .footer-list a {
   font-weight: bold;
 }
 
+.footer-title h1,
+.footer-title p {
+  font-size: 22px;
+}
+
 .header-title h1,
 .header-title p {
   font-size: 30px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .header-title h1,
   .header-title p {
     font-size: 24px;
   }
   .footer {
     width: 100%;
+  }
+  .footer-title h1,
+  .footer-title p {
+    font-size: 18px;
   }
 }
 
@@ -428,6 +432,9 @@ footer .footer .footer-list a {
   .header-title p {
     font-size: 20px;
   }
+  .footer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -435,11 +442,8 @@ footer .footer .footer-list a {
   .header-title p {
     font-size: 18px;
   }
-  .footer {
-    display: block;
-  }
-  .footer-title p,
-  .footer-title h1 {
+  footer .footer .footer-title p,
+  footer .footer .footer-title h1 {
     font-size: 24px;
   }
 }

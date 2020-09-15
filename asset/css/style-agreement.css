@@ -82,7 +82,6 @@ body {
   table-layout: fixed;
   word-break: break-all;
   word-wrap: break-all;
-  white-space: nowrap;
 }
 
 .form-wrapper table td:nth-child(1) {
@@ -100,6 +99,10 @@ body {
 #zip21 {
   width: 90%;
   margin-right: auto;
+}
+
+.hyphen {
+  white-space: nowrap;
 }
 
 .name-form {

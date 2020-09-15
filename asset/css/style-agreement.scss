@@ -76,7 +76,6 @@ body {
         table-layout: fixed;
         word-break: break-all;
         word-wrap: break-all;
-        white-space: nowrap;
         td:nth-child(1) {
             text-align: right;
         }
@@ -94,6 +93,10 @@ body {
 #zip21 {
     width: 90%;
     margin-right: auto;
+}
+
+.hyphen {
+    white-space: nowrap;
 }
 
 .name-form {

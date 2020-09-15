@@ -25,7 +25,7 @@ body {
     color: black;
     border-radius: 5px;
     .oath {
-        padding: 1.8em;
+        padding: 0.8em 1.8em 0 1.8em;
     }
     label {
         margin: 0;
@@ -137,7 +137,7 @@ body {
             padding: 0;
         }
         .hidden-wrapper {
-            padding: 0;
+            padding: 0 0 0.5em 0;
         }
     }
 }

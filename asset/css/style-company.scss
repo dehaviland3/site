@@ -17,8 +17,9 @@ body {
     background: {
         image: url("../img/bg01.jpg");
         repeat: no-repeat;
+        attachment: fixed;
         size: cover;
-        position: center;
+        position: center center;
     }
     width: 100%;
     height: 130vh;
@@ -30,7 +31,7 @@ header {
         text-align: center;
         color: white;
         font-weight: bold;
-        padding-top: 1em;
+        padding-top: 0.5em;
     }
 }
 
@@ -52,7 +53,7 @@ img {
 
 table.company {
     width: 500px;
-    margin: 0 auto;
+    margin: 0.5em auto 0 auto;
     border-collapse: separate;
     border-spacing: 0px 10px;
     font-size: 13px;

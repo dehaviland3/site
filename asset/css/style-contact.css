@@ -21,14 +21,14 @@ header h1 {
   text-align: center;
   color: white;
   font-weight: bold;
-  padding-top: 1em;
+  padding: 0.5em 0;
 }
 
 .form-wrapper {
   text-align: center;
   background: rgba(255, 255, 255, 0.609);
   width: 500px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 1.2em;
   color: black;
   border-radius: 5px;
@@ -70,7 +70,7 @@ header h1 {
   margin: 2px 0 0 12px;
   text-align: left;
   display: none;
-  color: red;
+  color: #cc0000;
 }
 
 .form-wrapper .asterisk {
@@ -84,12 +84,6 @@ header h1 {
 }
 
 @media screen and (max-width: 500px) {
-  .form-wrapper {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 360px) {
   .form-wrapper {
     width: 95%;
   }

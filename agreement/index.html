@@ -29,12 +29,17 @@
                 <p>以下の内容に合意して署名します</p>
                 <a href="">詳細内容を確認（PDFファイル）</a>
             </div>
-            <div class="agreement-info">
-                <div class="d-flex align-items-center justify-content-center">
-                    <input class="radio" type="checkbox" name="agree_privacy" id="agree" value="" autocomplete="off" required="required" />
-                    <label class="agree" for="agree">私は反社会的勢力等ではなく、<br>反社会的行為はしません</label>
-                </div>
-            </div>
+
+
+
+
+            <label class="agreement-info agree" for="agree"> <input class="radio" type="checkbox" name="agree_privacy" id="agree" value="" autocomplete="off" required="required" />
+                私は反社会的勢力等ではなく、<br>反社会的行為はしません</label>
+
+
+
+
+
             <p> ＜署名者＞ </p>
             <div class="oath">
                 <table>
@@ -69,8 +74,9 @@
                         </tr>
                         <tr>
                             <td>郵便番号：</td>
-                            <td><input class="required" type="text" id="zip21" name="zip21" maxlength="3" placeholder="000"></td>
-                            <td><input class="required" type="text" id="zip22" name="zip22" maxlength="4" placeholder="0000" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
+                            <td class="hyphen"><input class="required" type="text" id="zip21" name="zip21" maxlength="3" placeholder="000"><span>－</span>
+                            </td>
+                            <td> <input class="required" type="text" id="zip22" name="zip22" maxlength="4" placeholder="0000" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
                             </td>
                         </tr>
                         <tr>

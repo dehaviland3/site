@@ -44,10 +44,18 @@ body {
 }
 
 .form-wrapper .agreement-info {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
   background: #ffd13b;
   border-radius: 5px;
-  padding: 0.8em;
-  margin: 1em 0;
+  padding: 0.8em 0.8em 1.2em 0.8em;
+  margin: 1em 0 2em 0;
+}
+
+.form-wrapper .agreement-info input {
+  position: relative;
+  top: 22px;
 }
 
 .form-wrapper .hidden-wrapper {
@@ -71,10 +79,10 @@ body {
 
 .form-wrapper table {
   width: 100%;
-  word-wrap: break-word;
   table-layout: fixed;
   word-break: break-all;
   word-wrap: break-all;
+  white-space: nowrap;
 }
 
 .form-wrapper table td:nth-child(1) {
@@ -87,6 +95,11 @@ body {
 
 .form-wrapper .form-grounp .form-title {
   width: 40%;
+}
+
+#zip21 {
+  width: 90%;
+  margin-right: auto;
 }
 
 .name-form {

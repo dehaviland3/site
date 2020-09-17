@@ -1,0 +1,372 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: url("../img/top_bg01.png");
+  background-size: cover;
+}
+
+header {
+  width: 95%;
+  margin-top: 15px;
+}
+
+header .header-title {
+  margin: 5px 30px 0 15px;
+}
+
+header .header-title h1,
+header .header-title p {
+  white-space: nowrap;
+}
+
+header img {
+  height: 100px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+header .header-subtitle {
+  margin: auto 30px 10px 0;
+  border-bottom: solid 1px black;
+}
+
+header .header-list {
+  margin-top: 10px;
+}
+
+header .header-list ul {
+  padding: 0;
+}
+
+header .header-list li {
+  text-align: center;
+  margin-right: auto;
+  list-style: none;
+  white-space: nowrap;
+}
+
+header .header-list li:last-child {
+  margin: 0;
+}
+
+header .header-list p {
+  font-size: 10px;
+}
+
+header .header-list a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.online-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: #fa9cac;
+  font-weight: bold;
+}
+
+.online-btn p {
+  color: white;
+  text-align: center;
+  line-height: 38px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.online-btn p:last-child {
+  font-size: 6px;
+  line-height: 1px;
+}
+
+.online-btn a:hover {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-container .clinic-intro-wrapper {
+  width: 100%;
+}
+
+.main-container .clinic-intro-wrapper .main-title {
+  width: 100%;
+  height: 7em;
+  background: #fa9cac;
+  color: white;
+}
+
+.main-container .clinic-intro-wrapper .main-title h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 3.5em;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg {
+  width: 100%;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents {
+  width: 90%;
+  margin: 0 auto;
+  background: #fbdfe3;
+  padding-top: 2em;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic {
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic p:first-child {
+  font-size: 46px;
+  font-weight: bold;
+  color: #fa9cac;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic p.small {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img {
+  width: 30vw;
+  height: 24vw;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: white;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic p:last-child {
+  margin-top: 1em;
+  font-size: 22px;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment {
+  width: 29em;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:first-child {
+  font-size: 46px;
+  font-weight: bold;
+  color: #fa9cac;
+  white-space: nowrap;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:last-child {
+  margin-top: 1em;
+  font-size: 22px;
+  text-align: left;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p.small {
+  font-size: 34px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p.small01 {
+  font-size: 34px;
+  white-space: nowrap;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .equipment-img {
+  height: 20em;
+  width: 28em;
+  text-align: center;
+  margin: 0 auto;
+  background: white;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .one-f {
+  font-size: 32px;
+}
+
+footer .footer {
+  width: 85%;
+  margin: 4em auto;
+}
+
+footer .footer .footer-subtitle {
+  border-bottom: solid 1px black;
+  margin-right: 20px;
+}
+
+footer .footer .footer-subtitle p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 50px;
+}
+
+footer .footer .footer-info {
+  margin-left: auto;
+}
+
+footer .footer .footer-info p {
+  font-size: 12px;
+  margin: 0 auto 0 0;
+}
+
+footer .footer .footer-info span {
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+footer .footer .footer-list ul {
+  padding: 0;
+}
+
+footer .footer .footer-list li {
+  text-align: center;
+  margin-right: auto;
+  list-style: none;
+  white-space: nowrap;
+}
+
+footer .footer .footer-list li:last-child {
+  margin: 0;
+}
+
+footer .footer .footer-list p {
+  font-size: 10px;
+}
+
+footer .footer .footer-list a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-title h1,
+.footer-title p {
+  font-size: 22px;
+}
+
+.header-title h1,
+.header-title p {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+  .header-title h1,
+  .header-title p {
+    font-size: 24px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer-title h1,
+  .footer-title p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-title h1,
+  .header-title p {
+    font-size: 20px;
+  }
+  .footer {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header-title h1,
+  .header-title p {
+    font-size: 18px;
+  }
+  footer .footer .footer-title p,
+  footer .footer .footer-title h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .header-responsive-wrapper {
+    margin-left: 2em;
+  }
+  .header-title h1,
+  .header-title p {
+    font-size: 30px;
+  }
+  .header {
+    display: block;
+  }
+  .medical-wrapper > div > div {
+    display: block;
+  }
+  .doctor-message-wrapper {
+    display: block;
+  }
+  .doctor-message-wrapper .doctor-img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  .doctor-message-wrapper .doctor-title,
+  .doctor-message-wrapper .doctor-subtitle,
+  .doctor-message-wrapper .doctor-txt {
+    text-align: center;
+  }
+  .news-inner-wrapper {
+    width: 90% !important;
+  }
+  .main-info-wrapper > div {
+    display: block;
+  }
+  .main-info-wrapper .info {
+    width: 100%;
+  }
+  .main-info-wrapper .map {
+    margin: 1em 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-title h1,
+  .header-title p {
+    font-size: 4vw;
+  }
+  .footer-list ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-info p {
+    word-wrap: break-all;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .header-responsive-wrapper > div {
+    display: block;
+  }
+  .header-list li a,
+  .header-subtitle p {
+    font-size: 3vw;
+  }
+  .header-subtitle.online-btn {
+    margin-right: auto;
+  }
+  .header-list ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style-clinic.css.map */

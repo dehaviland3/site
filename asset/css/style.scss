@@ -64,6 +64,11 @@ header {
         width: 40px;
         margin-right: 20px;
     }
+    .smile {
+        width: 5vw;
+        height: 3vw;
+        margin-left: 2em;
+    }
     .header-subtitle {
         margin: auto 30px 10px 0;
         border-bottom: solid 1px black;
@@ -356,6 +361,287 @@ table tr td:nth-of-type(8) {
     }
 }
 
+.medical-container {
+    width: 100%;
+    text-align: center;
+    .medical-title-pink {
+        width: 100%;
+        height: 7em;
+        background: rgb(250, 156, 172);
+        color: white;
+        p {
+            font-size: 32px;
+            line-height: 3.5em;
+        }
+    }
+    .medical-main-contents-bg {
+        width: 70%;
+        margin: 0 auto;
+        >div {
+            width: 100%;
+        }
+        .medical-main-contents {
+            p {
+                font-size: 20px;
+            }
+            p.title {
+                font-size: 30px;
+                margin-top: 2em;
+                color: green;
+                border-bottom: solid 1px;
+            }
+            .medical-card-wrapper {
+                width: 90%;
+                margin: 0 auto;
+                p.card-title {
+                    margin-top: 2em;
+                    text-align: left;
+                    color: green;
+                }
+                img {
+                    height: 25%;
+                    width: 25%;
+                    margin: 0.5em;
+                }
+            }
+            .medical-title-green {
+                margin-top: 3em;
+                height: 5em;
+                background: rgba(0, 128, 0, 0.678);
+                p {
+                    line-height: 2.5em;
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+            .medical-school-doctor {
+                margin-top: 12em;
+                .title {
+                    color: green;
+                    border-bottom: solid 1px;
+                    font-size: 34px;
+                }
+                table {
+                    width: 100%;
+                    td {
+                        padding: 1em;
+                        text-align: left;
+                        border: solid 1px silver;
+                        font-size: 24px;
+                    }
+                    td:nth-child(1) {
+                        width: 40%;
+                        text-align: center;
+                        background-color: rgba(0, 128, 0, 0.698);
+                        color: white;
+                        font-size: 34px;
+                    }
+                }
+            }
+            .medical-txt-wrapper {
+                p:first-child {
+                    margin-top: 1em;
+                    text-align: left;
+                }
+                .hospitals {
+                    border: solid 1px gray;
+                    padding: 4em 6em;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.access {
+    width: 100%;
+    &-title-pink {
+        width: 100%;
+        height: 7em;
+        background: rgb(250, 156, 172);
+        color: white;
+        p {
+            font-size: 32px;
+            line-height: 3.5em;
+            text-align: center;
+        }
+    }
+    &-main-contents-bg {
+        width: 90%;
+        margin: 0 auto;
+        background: white;
+    }
+    &-main-contents {
+        width: 90%;
+        margin: 0 auto;
+        .access-subtitle-pink {
+            background: rgb(250, 156, 172);
+            border-radius: 5px;
+            margin-top: 3em;
+            height: p {
+                font-size: 32px;
+                color: white;
+            }
+            .subtitle {
+                color: white;
+                font-size: 28px;
+                margin-left: 1em;
+            }
+        }
+        .access-map-container {
+            .access-googlemap {
+                width: 70%;
+                margin: 0.5em;
+            }
+            .clinic-outside {
+                width: 30%;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: 0.5em;
+                }
+            }
+        }
+        .access-info-container {
+            p.title {
+                font-size: 30px;
+            }
+            p.address {
+                font-size: 22px;
+            }
+            p.medical {
+                font-size: 22px;
+            }
+            p.tel {
+                color: green;
+                text-align: right;
+                font-size: 26px;
+            }
+            .lily {
+                margin: 2em 2em 0 auto;
+                img {
+                    height: 100%;
+                    width: 6em;
+                }
+            }
+            .reservation {
+                background: rgb(250, 156, 172);
+                border-radius: 10px;
+                color: white;
+                height: 8em;
+                width: 15em;
+                text-align: center;
+                p {
+                    line-height: 4em;
+                    font-size: 30px;
+                }
+            }
+        }
+        .parking-info-container {
+            .parking-map {
+                margin: 1em;
+                width: 50%;
+            }
+            .parking-txt {
+                margin: 1em;
+                width: 50%;
+                .title {
+                    text-align: center;
+                    font-size: 26px;
+                    color: red;
+                    font-weight: bold;
+                }
+                .one,
+                .three {
+                    color: red;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                .two {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+                .five {
+                    color: red;
+                }
+                .six {
+                    color: black;
+                }
+                .seven {
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+        }
+        .access-table-container {
+            width: 95%;
+            margin: 0 auto;
+            .access-table {
+                margin: 1em 0 6em 0;
+                width: 100%;
+                text-align: center;
+                color: #008000;
+                tr:first-child {
+                    background: #73c38e;
+                    color: white;
+                    margin: 0;
+                }
+                th {
+                    font-weight: normal;
+                }
+                td {
+                    background: white;
+                    padding: 0;
+                }
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                }
+                tr {
+                    height: 5em;
+                }
+                .attention {
+                    color: rgb(250, 156, 172);
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .info-attention {
+                    color: #008000;
+                }
+                .big-green {
+                    font-size: 30px;
+                }
+            }
+        }
+        .overtime-container {
+            border: solid 14px rgba(0, 128, 0, 0.63);
+            border-radius: 10px;
+            >div {
+                width: 90%;
+                margin: 0 auto;
+            }
+            p {
+                line-height: 12px;
+            }
+            .title {
+                text-align: center;
+                line-height: 56px;
+                font-size: 28px;
+                font-weight: bold;
+                border-bottom: solid 2px;
+            }
+            .heading {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
 footer {
     width: 100%;
     background: {
@@ -364,7 +650,18 @@ footer {
     }
     .footer {
         width: 85%;
+        padding-top: 2em;
         margin: 4em auto 0 auto;
+        .footer-title {
+            .lily {
+                width: 2em;
+                height: auto;
+            }
+            .smile {
+                width: 4em;
+                height: auto;
+            }
+        }
         .footer-subtitle {
             border-bottom: solid 1px black;
             margin-right: 20px;

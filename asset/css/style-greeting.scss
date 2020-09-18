@@ -281,6 +281,10 @@ footer {
     h1,
     p {
         font-size: 30px;
+        color: black;
+    }
+     :hover {
+        text-decoration-color: black;
     }
 }
 

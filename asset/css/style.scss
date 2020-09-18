@@ -298,12 +298,20 @@ table tr td:nth-of-type(8) {
 
 .letter-img-wrapper {
     width: 90%;
+    height: 100%;
     margin: 0 auto;
     >div {
         width: 95%;
         margin: 4em auto 2em auto;
-        background: white;
         height: 20em;
+    }
+    .letter-img {
+        border: solid 1px white;
+        width: 100vw;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 

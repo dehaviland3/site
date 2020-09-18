@@ -148,6 +148,13 @@ header .header-list a {
   background: white;
 }
 
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img img {
+  width: 30vw;
+  height: 24vw;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic p:last-child {
   margin-top: 1em;
   font-size: 22px;
@@ -183,10 +190,14 @@ header .header-list a {
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .equipment-img {
   height: 20em;
-  width: 28em;
+  width: 28vw;
   text-align: center;
   margin: 0 auto;
-  background: white;
+}
+
+.main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .equipment-img img {
+  width: 28vw;
+  height: 20vw;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .one-f {

@@ -121,6 +121,12 @@ header {
                         margin: 0 auto;
                         border-radius: 50%;
                         background: white;
+                        img {
+                            width: 30vw;
+                            height: 24vw;
+                            margin: 0 auto;
+                            border-radius: 50%;
+                        }
                     }
                     p:last-child {
                         margin-top: 1em;
@@ -151,10 +157,13 @@ header {
                     }
                     .equipment-img {
                         height: 20em;
-                        width: 28em;
+                        width: 28vw;
                         text-align: center;
                         margin: 0 auto;
-                        background: white;
+                        img {
+                            width: 28vw;
+                            height: 20vw;
+                        }
                     }
                     .one-f {
                         font-size: 32px;

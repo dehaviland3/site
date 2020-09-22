@@ -884,6 +884,14 @@ footer {
             }
         }
     }
+    .doctor-message-wrapper {
+        display: block;
+        .doctor-img {
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+        }
+    }
     .header-title {
         h1,
         p {
@@ -1041,12 +1049,6 @@ footer {
             display: block;
         }
     }
-    .doctor-message-wrapper {
-        display: block;
-        .doctor-img {
-            margin: 0 auto;
-        }
-    }
     .bg02 {
         .main-news-wrapper {
             .news-inner-wrapper {
@@ -1086,5 +1088,11 @@ footer {
     }
     .banner {
         margin: 1em;
+    }
+    .doctor-message-wrapper {
+        .doctor-img {
+            width: 95%;
+            height: 95%;
+        }
     }
 }

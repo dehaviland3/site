@@ -988,6 +988,14 @@ footer .footer .footer-list a {
   .access .access-main-contents-bg .access-main-contents .overtime-container p {
     line-height: 28px;
   }
+  .doctor-message-wrapper {
+    display: block;
+  }
+  .doctor-message-wrapper .doctor-img {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
   .header-title h1,
   .header-title p {
     font-size: 24px;
@@ -1099,12 +1107,6 @@ footer .footer .footer-list a {
   .letter-img-wrapper > div {
     display: block;
   }
-  .doctor-message-wrapper {
-    display: block;
-  }
-  .doctor-message-wrapper .doctor-img {
-    margin: 0 auto;
-  }
   .bg02 .main-news-wrapper .news-inner-wrapper {
     width: 95%;
   }
@@ -1140,6 +1142,10 @@ footer .footer .footer-list a {
   }
   .banner {
     margin: 1em;
+  }
+  .doctor-message-wrapper .doctor-img {
+    width: 95%;
+    height: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */

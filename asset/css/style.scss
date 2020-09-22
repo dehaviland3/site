@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+a {
+     :hover {
+        cursor: pointer;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 16px;
+}
+
 .flex {
     display: flex;
 }
@@ -38,7 +52,6 @@ img {
 .header-subtitle p {
     font-size: 14px;
     margin: 0;
-    white-space: nowrap;
     vertical-align: bottom;
 }
 
@@ -53,11 +66,7 @@ header {
         width: 95%;
     }
     .header-title {
-        margin: 5px 30px 0 15px;
-        h1,
-        p {
-            white-space: nowrap;
-        }
+        margin: 5px 30px 0 5px;
     }
     img {
         height: 100px;
@@ -65,8 +74,8 @@ header {
         margin-right: 20px;
     }
     .smile {
-        width: 5vw;
-        height: 3vw;
+        width: 4em;
+        height: 2em;
         margin-left: 2em;
     }
     .header-subtitle {
@@ -144,6 +153,7 @@ header {
     }
     .info-table-wrapper {
         width: 100%;
+        margin: 2em;
         .info-table {
             width: 100%;
             text-align: center;
@@ -171,9 +181,6 @@ header {
                 font-size: 12px;
                 font-weight: bold;
             }
-            .info-attention {
-                color: #008000;
-            }
             .thirsday {
                 p {
                     margin: 0;
@@ -186,6 +193,10 @@ header {
 
 .banner {
     margin: 4em;
+}
+
+.info-attention {
+    color: #008000;
 }
 
 table tr td:nth-of-type(1) {
@@ -304,20 +315,16 @@ table tr td:nth-of-type(8) {
 
 .letter-img-wrapper {
     width: 90%;
-    height: 100%;
     margin: 0 auto;
     >div {
         width: 95%;
         margin: 4em auto 2em auto;
-        height: 20em;
     }
     .letter-img {
-        border: solid 1px white;
-        width: 100vw;
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        border: solid 2px white;
+    }
+    img {
+        width: 100%;
     }
 }
 
@@ -335,7 +342,7 @@ table tr td:nth-of-type(8) {
             h2 {
                 font-weight: bold;
                 font-size: 32px;
-                line-height: 3.5em;
+                line-height: 2.2em;
             }
         }
         .main-contents-bg {
@@ -346,7 +353,7 @@ table tr td:nth-of-type(8) {
                 background: rgb(251, 223, 227);
                 padding-top: 2em;
                 .card-clinic {
-                    width: 30vw;
+                    width: 40vw;
                     margin-top: 2em;
                     p:first-child {
                         font-size: 46px;
@@ -358,14 +365,14 @@ table tr td:nth-of-type(8) {
                         white-space: nowrap;
                     }
                     .clinic-img {
-                        width: 30vw;
-                        height: 24vw;
+                        width: 95%;
+                        height: auto;
                         margin: 0 auto;
                         border-radius: 50%;
                         background: white;
                         img {
-                            width: 30vw;
-                            height: 24vw;
+                            width: 100%;
+                            height: auto;
                             margin: 0 auto;
                             border-radius: 50%;
                         }
@@ -376,12 +383,11 @@ table tr td:nth-of-type(8) {
                     }
                 }
                 .card-equipment {
-                    width: 29em;
+                    width: 40vw;
                     p:first-child {
                         font-size: 46px;
                         font-weight: bold;
                         color: rgb(250, 156, 172);
-                        white-space: nowrap;
                     }
                     p:last-child {
                         margin-top: 1em;
@@ -390,21 +396,19 @@ table tr td:nth-of-type(8) {
                     }
                     p.small {
                         font-size: 34px;
-                        white-space: nowrap;
                         text-align: left;
                     }
                     p.small01 {
                         font-size: 34px;
-                        white-space: nowrap;
                     }
                     .equipment-img {
-                        height: 20em;
-                        width: 28vw;
+                        width: 95%;
+                        height: auto;
                         text-align: center;
                         margin: 0 auto;
                         img {
-                            width: 28vw;
-                            height: 20vw;
+                            width: 95%;
+                            height: auto;
                         }
                     }
                     .one-f {
@@ -475,12 +479,11 @@ table tr td:nth-of-type(8) {
     text-align: center;
     .medical-title-pink {
         width: 100%;
-        height: 7em;
         background: rgb(250, 156, 172);
         color: white;
         p {
             font-size: 32px;
-            line-height: 3.5em;
+            line-height: 2.2em;
         }
     }
     .medical-main-contents-bg {
@@ -508,17 +511,16 @@ table tr td:nth-of-type(8) {
                     color: green;
                 }
                 img {
-                    height: 25%;
-                    width: 25%;
-                    margin: 0.5em;
+                    width: 50%;
+                    height: auto;
+                    padding: 0.1em;
                 }
             }
             .medical-title-green {
                 margin-top: 3em;
-                height: 5em;
                 background: rgba(0, 128, 0, 0.678);
                 p {
-                    line-height: 2.5em;
+                    line-height: 1.7em;
                     font-size: 30px;
                     color: white;
                 }
@@ -573,7 +575,7 @@ table tr td:nth-of-type(8) {
         color: white;
         p {
             font-size: 32px;
-            line-height: 3.5em;
+            line-height: 2.2em;
             text-align: center;
         }
     }
@@ -632,18 +634,20 @@ table tr td:nth-of-type(8) {
                 margin: 2em 2em 0 auto;
                 img {
                     height: 100%;
-                    width: 6em;
+                    width: 3em;
+                    height: 6em;
                 }
             }
             .reservation {
                 background: rgb(250, 156, 172);
                 border-radius: 10px;
                 color: white;
-                height: 8em;
-                width: 15em;
+                height: 100px;
+                width: 200px;
                 text-align: center;
+                border-bottom: solid 5px rgb(97, 50, 58);
                 p {
-                    line-height: 4em;
+                    line-height: 3.2em;
                     font-size: 30px;
                 }
             }
@@ -652,6 +656,10 @@ table tr td:nth-of-type(8) {
             .parking-map {
                 margin: 1em;
                 width: 50%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
             }
             .parking-txt {
                 margin: 1em;
@@ -764,11 +772,11 @@ footer {
         .footer-title {
             .lily {
                 width: 2em;
-                height: auto;
+                height: 5em;
             }
             .smile {
                 width: 4em;
-                height: auto;
+                height: 2em;
             }
         }
         .footer-subtitle {
@@ -838,6 +846,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    footer {
+        .footer {
+            width: 95%;
+        }
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .header-title {
         h1,
@@ -856,115 +872,219 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+    .access {
+        .access-main-contents-bg {
+            .access-main-contents {
+                .overtime-container {
+                    p {
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
     .header-title {
         h1,
         p {
-            font-size: 20px;
+            font-size: 24px;
         }
     }
     .footer {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .header-title {
-        h1,
-        p {
-            font-size: 18px;
-        }
+        width: 100%;
     }
     footer {
         .footer {
-            .footer-title {
-                p,
-                h1 {
-                    font-size: 24px;
+            display: block;
+            .footer-list {
+                width: 95%;
+            }
+        }
+        .footer-title {
+            h1,
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .header {
+        display: block;
+    }
+    .header-responsive-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main-wrapper {
+        .main-info-wrapper {
+            >div {
+                display: block;
+            }
+        }
+        .info {
+            width: 100%;
+            .map {
+                margin: 1em 0;
+            }
+        }
+        .info-table-wrapper {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .access {
+        .access-main-contents-bg {
+            .access-main-contents {
+                .access-map-container {
+                    display: block;
+                    .access-googlemap {
+                        width: 100%;
+                    }
+                    .clinic-outside {
+                        display: flex;
+                        width: 100%;
+                        img {
+                            width: 50%;
+                        }
+                    }
+                }
+                .access-info-container {
+                    >div {
+                        display: block;
+                    }
+                }
+                .parking-info-container {
+                    display: block;
+                    .parking-map {
+                        width: 100%;
+                    }
+                    .parking-txt {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .main-container {
+        .main-contents {
+            display: block;
+        }
+        .clinic-intro-wrapper {
+            .main-contents-bg {
+                .main-contents {
+                    .card-equipment {
+                        width: 100%;
+                    }
+                    .card-clinic {
+                        width: 100%;
+                        .clinic-img {
+                            width: 95%;
+                            height: 95%;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 910px) {
-    .header-responsive-wrapper {
-        margin-left: 2em;
-    }
-    .header-title {
-        h1,
-        p {
-            font-size: 30px;
+@media screen and (max-width: 600px) {
+    .medical-container {
+        .medical-main-contents-bg {
+            width: 95%;
+            .medical-main-contents {
+                .medical-card-wrapper {
+                    >div {
+                        display: block;
+                    }
+                }
+                .medical-school-doctor {
+                    table {
+                        td {
+                            padding: 0.2em;
+                        }
+                        td:nth-child(1) {
+                            width: 30%;
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .medical-txt-wrapper {
+                    .hospitals {
+                        padding: 2em;
+                    }
+                }
+            }
         }
     }
-    .header {
-        display: block;
+    footer {
+        .footer {
+            .footer-info {
+                display: block;
+            }
+        }
     }
-    .medical-wrapper>div>div {
-        display: block;
+    .medical-wrapper {
+        .medical-inner-wrapper {
+            >div {
+                display: block;
+            }
+        }
+    }
+    .letter-img-wrapper {
+        >div {
+            display: block;
+        }
     }
     .doctor-message-wrapper {
         display: block;
         .doctor-img {
-            width: 50%;
-            height: 50%;
             margin: 0 auto;
         }
-        .doctor-title,
-        .doctor-subtitle,
-        .doctor-txt {
-            text-align: center;
+    }
+    .bg02 {
+        .main-news-wrapper {
+            .news-inner-wrapper {
+                width: 95%;
+                .news-contents-wrapper {
+                    .date {
+                        margin-right: 5px;
+                    }
+                }
+            }
         }
     }
-    .news-inner-wrapper {
-        width: 90% !important;
-    }
-    .main-info-wrapper {
+    .header-responsive-wrapper {
+        width: 95%;
         >div {
             display: block;
+            text-align: center;
         }
-        .info {
-            width: 100%;
-        }
-        .map {
-            margin: 1em 0;
+        .online-btn {
+            margin-right: auto;
         }
     }
-}
-
-@media screen and (max-width: 570px) {
-    .header-title {
-        h1,
-        p {
-            font-size: 4vw;
+    .header-list ul {
+        flex-wrap: wrap;
+        li {
+            white-space: nowrap;
         }
     }
     .footer-list ul {
         flex-wrap: wrap;
-    }
-    .footer-info {
-        flex-wrap: wrap;
-        p {
-            word-wrap: break-all;
+        li {
+            white-space: nowrap;
         }
     }
-}
-
-@media screen and (max-width: 510px) {
-    .header-responsive-wrapper {
-        >div {
-            display: block;
-        }
+    .smile {
+        display: none;
     }
-    .header-list li a,
-    .header-subtitle p {
-        font-size: 3vw;
-    }
-    .header-subtitle.online-btn {
-        margin-right: auto;
-    }
-    .header-list ul {
-        flex-wrap: wrap;
-        text-align: left;
+    .banner {
+        margin: 1em;
     }
 }

@@ -33,11 +33,6 @@ header .header-title {
   margin: 5px 30px 0 15px;
 }
 
-header .header-title h1,
-header .header-title p {
-  white-space: nowrap;
-}
-
 header img {
   height: 100px;
   width: 40px;
@@ -189,17 +184,17 @@ header .header-list a {
   line-height: 50px;
 }
 
-.main-container .main-wrapper .main-contents-bg .main-contents table {
+.main-container .main-wrapper .main-contents-bg .main-contents .career table {
   width: 100%;
 }
 
-.main-container .main-wrapper .main-contents-bg .main-contents table td {
+.main-container .main-wrapper .main-contents-bg .main-contents .career table td {
   border: solid 1px silver;
   padding: 0.8em 0 0.8em 0.8em;
 }
 
-.main-container .main-wrapper .main-contents-bg .main-contents table td:nth-child(1) {
-  width: 12em;
+.main-container .main-wrapper .main-contents-bg .main-contents .career table td:nth-child(1) {
+  width: 8em;
   background: rgba(103, 158, 103, 0.822);
   color: white;
 }
@@ -248,6 +243,11 @@ footer .footer {
   width: 85%;
   padding-top: 2em;
   margin: 0 auto 0 auto;
+}
+
+footer .footer .footer-title h1,
+footer .footer .footer-title p {
+  color: black;
 }
 
 footer .footer .footer-title .lily {
@@ -330,6 +330,12 @@ footer .footer .footer-list a {
           text-decoration-color: black;
 }
 
+@media screen and (max-width: 1200px) {
+  footer .footer {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .header-title h1,
   .header-title p {
@@ -344,101 +350,134 @@ footer .footer .footer-list a {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .header-title h1,
-  .header-title p {
-    font-size: 20px;
-  }
-  .footer {
+@media screen and (max-width: 1050px) {
+  .main-container .main-contents-bg .main-contents .vice {
     display: block;
   }
-}
-
-@media screen and (max-width: 960px) {
+  .main-container .main-contents-bg .main-contents .vice .img-vice-president,
+  .main-container .main-contents-bg .main-contents .vice .text-vice-president {
+    width: 100%;
+  }
+  .main-container .main-contents-bg .main-contents .vice td:nth-child(1) {
+    width: 30%;
+  }
+  .main-container .main-contents-bg .main-contents .career td:nth-child(1) {
+    width: 30%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div {
+    display: block;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table {
+    width: 100%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table td:nth-child(1) {
+    width: 30%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-img {
+    margin-top: 1em;
+    width: 100%;
+  }
   .header-title h1,
   .header-title p {
-    font-size: 18px;
-  }
-  footer .footer .footer-title p,
-  footer .footer .footer-title h1 {
     font-size: 24px;
   }
-}
-
-@media screen and (max-width: 910px) {
-  .header-responsive-wrapper {
-    margin-left: 2em;
+  .footer {
+    width: 100%;
   }
-  .header-title h1,
-  .header-title p {
-    font-size: 30px;
+  footer .footer {
+    display: block;
+  }
+  footer .footer .footer-list {
+    width: 95%;
+  }
+  footer .footer-title h1,
+  footer .footer-title p {
+    font-size: 18px;
   }
   .header {
     display: block;
   }
-  .medical-wrapper > div > div {
+  .header-responsive-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-wrapper .main-info-wrapper > div {
+    display: block;
+  }
+  .main-wrapper .info {
+    width: 100%;
+  }
+  .main-wrapper .info .map {
+    margin: 1em 0;
+  }
+  .main-wrapper .info-table-wrapper {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container .main-wrapper table td nth-child(1) {
+    width: 30%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table {
+    width: 100%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table td:nth-child(1) {
+    width: 30%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-img {
+    width: 100%;
+  }
+  footer .footer .footer-info {
+    display: block;
+  }
+  .medical-wrapper .medical-inner-wrapper > div {
+    display: block;
+  }
+  .letter-img-wrapper > div {
     display: block;
   }
   .doctor-message-wrapper {
     display: block;
   }
   .doctor-message-wrapper .doctor-img {
-    width: 50%;
-    height: 50%;
     margin: 0 auto;
   }
-  .doctor-message-wrapper .doctor-title,
-  .doctor-message-wrapper .doctor-subtitle,
-  .doctor-message-wrapper .doctor-txt {
-    text-align: center;
+  .bg02 .main-news-wrapper .news-inner-wrapper {
+    width: 95%;
   }
-  .news-inner-wrapper {
-    width: 90% !important;
+  .bg02 .main-news-wrapper .news-inner-wrapper .news-contents-wrapper .date {
+    margin-right: 5px;
   }
-  .main-info-wrapper > div {
-    display: block;
+  .header-responsive-wrapper {
+    width: 95%;
   }
-  .main-info-wrapper .info {
-    width: 100%;
-  }
-  .main-info-wrapper .map {
-    margin: 1em 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header-title h1,
-  .header-title p {
-    font-size: 4vw;
-  }
-  .footer-list ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-info p {
-    word-wrap: break-all;
-  }
-}
-
-@media screen and (max-width: 510px) {
   .header-responsive-wrapper > div {
     display: block;
+    text-align: center;
   }
-  .header-list li a,
-  .header-subtitle p {
-    font-size: 3vw;
-  }
-  .header-subtitle.online-btn {
+  .header-responsive-wrapper .online-btn {
     margin-right: auto;
   }
   .header-list ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    text-align: left;
+  }
+  .header-list ul li {
+    white-space: nowrap;
+  }
+  .footer-list ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-list ul li {
+    white-space: nowrap;
+  }
+  .smile {
+    display: none;
+  }
+  .banner {
+    margin: 1em;
   }
 }
 /*# sourceMappingURL=style-greeting.css.map */

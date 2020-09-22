@@ -30,10 +30,6 @@ header {
     }
     .header-title {
         margin: 5px 30px 0 15px;
-        h1,
-        p {
-            white-space: nowrap;
-        }
     }
     img {
         height: 100px;
@@ -156,17 +152,17 @@ header {
                         border-bottom: solid 1px green;
                         line-height: 50px;
                     }
-                }
-                table {
-                    width: 100%;
-                    td {
-                        border: solid 1px silver;
-                        padding: 0.8em 0 0.8em 0.8em;
-                    }
-                    td:nth-child(1) {
-                        width: 12em;
-                        background: rgba(103, 158, 103, 0.822);
-                        color: white;
+                    table {
+                        width: 100%;
+                        td {
+                            border: solid 1px silver;
+                            padding: 0.8em 0 0.8em 0.8em;
+                        }
+                        td:nth-child(1) {
+                            width: 8em;
+                            background: rgba(103, 158, 103, 0.822);
+                            color: white;
+                        }
                     }
                 }
                 .part-time-title {
@@ -212,6 +208,10 @@ footer {
         padding-top: 2em;
         margin: 0 auto 0 auto;
         .footer-title {
+            h1,
+            p {
+                color: black;
+            }
             .lily {
                 width: 2em;
                 height: auto;
@@ -288,6 +288,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    footer {
+        .footer {
+            width: 95%;
+        }
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .header-title {
         h1,
@@ -306,115 +314,187 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .header-title {
-        h1,
-        p {
-            font-size: 20px;
-        }
-    }
-    .footer {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .header-title {
-        h1,
-        p {
-            font-size: 18px;
-        }
-    }
-    footer {
-        .footer {
-            .footer-title {
-                p,
-                h1 {
-                    font-size: 24px;
+@media screen and (max-width: 1050px) {
+    .main-container {
+        .main-contents-bg {
+            .main-contents {
+                .vice {
+                    display: block;
+                    .img-vice-president,
+                    .text-vice-president {
+                        width: 100%;
+                    }
+                    td:nth-child(1) {
+                        width: 30%;
+                    }
+                }
+                .career {
+                    td:nth-child(1) {
+                        width: 30%;
+                    }
                 }
             }
         }
     }
-}
-
-@media screen and (max-width: 910px) {
-    .header-responsive-wrapper {
-        margin-left: 2em;
+    .main-container {
+        .main-wrapper {
+            .main-contents {
+                .part-time-doctor {
+                    >div {
+                        display: block;
+                        .part-time-doctor-table {
+                            td:nth-child(1) {
+                                width: 30%;
+                            }
+                            width: 100%;
+                        }
+                        .part-time-doctor-img {
+                            margin-top: 1em;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
     .header-title {
         h1,
         p {
-            font-size: 30px;
+            font-size: 24px;
+        }
+    }
+    .footer {
+        width: 100%;
+    }
+    footer {
+        .footer {
+            display: block;
+            .footer-list {
+                width: 95%;
+            }
+        }
+        .footer-title {
+            h1,
+            p {
+                font-size: 18px;
+            }
         }
     }
     .header {
         display: block;
     }
-    .medical-wrapper>div>div {
-        display: block;
+    .header-responsive-wrapper {
+        width: 90%;
+        margin: 0 auto;
     }
-    .doctor-message-wrapper {
-        display: block;
-        .doctor-img {
-            width: 50%;
-            height: 50%;
-            margin: 0 auto;
-        }
-        .doctor-title,
-        .doctor-subtitle,
-        .doctor-txt {
-            text-align: center;
-        }
-    }
-    .news-inner-wrapper {
-        width: 90% !important;
-    }
-    .main-info-wrapper {
-        >div {
-            display: block;
+    .main-wrapper {
+        .main-info-wrapper {
+            >div {
+                display: block;
+            }
         }
         .info {
             width: 100%;
+            .map {
+                margin: 1em 0;
+            }
         }
-        .map {
-            margin: 1em 0;
+        .info-table-wrapper {
+            margin: 0;
         }
     }
 }
 
 @media screen and (max-width: 600px) {
-    .header-title {
-        h1,
-        p {
-            font-size: 4vw;
+    .main-container {
+        .main-wrapper {
+            table {
+                td {
+                    nth-child(1) {
+                        width: 30%;
+                    }
+                }
+            }
+            .main-contents {
+                .part-time-doctor {
+                    >div {
+                        .part-time-doctor-table {
+                            width: 100%;
+                            td:nth-child(1) {
+                                width: 30%;
+                            }
+                        }
+                        .part-time-doctor-img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
-    .footer-list ul {
-        flex-wrap: wrap;
-    }
-    .footer-info {
-        flex-wrap: wrap;
-        p {
-            word-wrap: break-all;
+    footer {
+        .footer {
+            .footer-info {
+                display: block;
+            }
         }
     }
-}
-
-@media screen and (max-width: 510px) {
-    .header-responsive-wrapper {
+    .medical-wrapper {
+        .medical-inner-wrapper {
+            >div {
+                display: block;
+            }
+        }
+    }
+    .letter-img-wrapper {
         >div {
             display: block;
         }
     }
-    .header-list li a,
-    .header-subtitle p {
-        font-size: 3vw;
+    .doctor-message-wrapper {
+        display: block;
+        .doctor-img {
+            margin: 0 auto;
+        }
     }
-    .header-subtitle.online-btn {
-        margin-right: auto;
+    .bg02 {
+        .main-news-wrapper {
+            .news-inner-wrapper {
+                width: 95%;
+                .news-contents-wrapper {
+                    .date {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .header-responsive-wrapper {
+        width: 95%;
+        >div {
+            display: block;
+            text-align: center;
+        }
+        .online-btn {
+            margin-right: auto;
+        }
     }
     .header-list ul {
         flex-wrap: wrap;
-        text-align: left;
+        li {
+            white-space: nowrap;
+        }
+    }
+    .footer-list ul {
+        flex-wrap: wrap;
+        li {
+            white-space: nowrap;
+        }
+    }
+    .smile {
+        display: none;
+    }
+    .banner {
+        margin: 1em;
     }
 }

@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+a :hover {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 16px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +48,6 @@ img {
 .header-subtitle p {
   font-size: 14px;
   margin: 0;
-  white-space: nowrap;
   vertical-align: bottom;
 }
 
@@ -52,12 +63,7 @@ header .header {
 }
 
 header .header-title {
-  margin: 5px 30px 0 15px;
-}
-
-header .header-title h1,
-header .header-title p {
-  white-space: nowrap;
+  margin: 5px 30px 0 5px;
 }
 
 header img {
@@ -67,8 +73,8 @@ header img {
 }
 
 header .smile {
-  width: 5vw;
-  height: 3vw;
+  width: 4em;
+  height: 2em;
   margin-left: 2em;
 }
 
@@ -162,6 +168,7 @@ header .header-list a {
 
 .main-info-wrapper .info-table-wrapper {
   width: 100%;
+  margin: 2em;
 }
 
 .main-info-wrapper .info-table-wrapper .info-table {
@@ -199,10 +206,6 @@ header .header-list a {
   font-weight: bold;
 }
 
-.main-info-wrapper .info-table-wrapper .info-table .info-attention {
-  color: #008000;
-}
-
 .main-info-wrapper .info-table-wrapper .info-table .thirsday p {
   margin: 0;
   padding: 0;
@@ -210,6 +213,10 @@ header .header-list a {
 
 .banner {
   margin: 4em;
+}
+
+.info-attention {
+  color: #008000;
 }
 
 table tr td:nth-of-type(1) {
@@ -340,24 +347,20 @@ table tr td:nth-of-type(8) {
 
 .letter-img-wrapper {
   width: 90%;
-  height: 100%;
   margin: 0 auto;
 }
 
 .letter-img-wrapper > div {
   width: 95%;
   margin: 4em auto 2em auto;
-  height: 20em;
 }
 
 .letter-img-wrapper .letter-img {
-  border: solid 1px white;
-  width: 100vw;
+  border: solid 2px white;
 }
 
-.letter-img-wrapper .letter-img img {
+.letter-img-wrapper img {
   width: 100%;
-  height: 100%;
 }
 
 .main-container {
@@ -380,7 +383,7 @@ table tr td:nth-of-type(8) {
 .main-container .clinic-intro-wrapper .main-title h2 {
   font-weight: bold;
   font-size: 32px;
-  line-height: 3.5em;
+  line-height: 2.2em;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg {
@@ -395,7 +398,7 @@ table tr td:nth-of-type(8) {
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic {
-  width: 30vw;
+  width: 40vw;
   margin-top: 2em;
 }
 
@@ -411,16 +414,16 @@ table tr td:nth-of-type(8) {
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img {
-  width: 30vw;
-  height: 24vw;
+  width: 95%;
+  height: auto;
   margin: 0 auto;
   border-radius: 50%;
   background: white;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img img {
-  width: 30vw;
-  height: 24vw;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   border-radius: 50%;
 }
@@ -431,14 +434,13 @@ table tr td:nth-of-type(8) {
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment {
-  width: 29em;
+  width: 40vw;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:first-child {
   font-size: 46px;
   font-weight: bold;
   color: #fa9cac;
-  white-space: nowrap;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:last-child {
@@ -449,25 +451,23 @@ table tr td:nth-of-type(8) {
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p.small {
   font-size: 34px;
-  white-space: nowrap;
   text-align: left;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p.small01 {
   font-size: 34px;
-  white-space: nowrap;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .equipment-img {
-  height: 20em;
-  width: 28vw;
+  width: 95%;
+  height: auto;
   text-align: center;
   margin: 0 auto;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .equipment-img img {
-  width: 28vw;
-  height: 20vw;
+  width: 95%;
+  height: auto;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment .one-f {
@@ -543,14 +543,13 @@ table tr td:nth-of-type(8) {
 
 .medical-container .medical-title-pink {
   width: 100%;
-  height: 7em;
   background: #fa9cac;
   color: white;
 }
 
 .medical-container .medical-title-pink p {
   font-size: 32px;
-  line-height: 3.5em;
+  line-height: 2.2em;
 }
 
 .medical-container .medical-main-contents-bg {
@@ -585,19 +584,18 @@ table tr td:nth-of-type(8) {
 }
 
 .medical-container .medical-main-contents-bg .medical-main-contents .medical-card-wrapper img {
-  height: 25%;
-  width: 25%;
-  margin: 0.5em;
+  width: 50%;
+  height: auto;
+  padding: 0.1em;
 }
 
 .medical-container .medical-main-contents-bg .medical-main-contents .medical-title-green {
   margin-top: 3em;
-  height: 5em;
   background: rgba(0, 128, 0, 0.678);
 }
 
 .medical-container .medical-main-contents-bg .medical-main-contents .medical-title-green p {
-  line-height: 2.5em;
+  line-height: 1.7em;
   font-size: 30px;
   color: white;
 }
@@ -658,7 +656,7 @@ table tr td:nth-of-type(8) {
 
 .access-title-pink p {
   font-size: 32px;
-  line-height: 3.5em;
+  line-height: 2.2em;
   text-align: center;
 }
 
@@ -727,26 +725,33 @@ table tr td:nth-of-type(8) {
 
 .access-main-contents .access-info-container .lily img {
   height: 100%;
-  width: 6em;
+  width: 3em;
+  height: 6em;
 }
 
 .access-main-contents .access-info-container .reservation {
   background: #fa9cac;
   border-radius: 10px;
   color: white;
-  height: 8em;
-  width: 15em;
+  height: 100px;
+  width: 200px;
   text-align: center;
+  border-bottom: solid 5px #61323a;
 }
 
 .access-main-contents .access-info-container .reservation p {
-  line-height: 4em;
+  line-height: 3.2em;
   font-size: 30px;
 }
 
 .access-main-contents .parking-info-container .parking-map {
   margin: 1em;
   width: 50%;
+}
+
+.access-main-contents .parking-info-container .parking-map img {
+  width: 100%;
+  height: auto;
 }
 
 .access-main-contents .parking-info-container .parking-txt {
@@ -879,12 +884,12 @@ footer .footer {
 
 footer .footer .footer-title .lily {
   width: 2em;
-  height: auto;
+  height: 5em;
 }
 
 footer .footer .footer-title .smile {
   width: 4em;
-  height: auto;
+  height: 2em;
 }
 
 footer .footer .footer-subtitle {
@@ -959,6 +964,12 @@ footer .footer .footer-list a {
           text-decoration-color: black;
 }
 
+@media screen and (max-width: 1200px) {
+  footer .footer {
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .header-title h1,
   .header-title p {
@@ -973,101 +984,162 @@ footer .footer .footer-list a {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+  .access .access-main-contents-bg .access-main-contents .overtime-container p {
+    line-height: 28px;
+  }
   .header-title h1,
   .header-title p {
-    font-size: 20px;
-  }
-  .footer {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .header-title h1,
-  .header-title p {
-    font-size: 18px;
-  }
-  footer .footer .footer-title p,
-  footer .footer .footer-title h1 {
     font-size: 24px;
   }
-}
-
-@media screen and (max-width: 910px) {
-  .header-responsive-wrapper {
-    margin-left: 2em;
+  .footer {
+    width: 100%;
   }
-  .header-title h1,
-  .header-title p {
-    font-size: 30px;
+  footer .footer {
+    display: block;
+  }
+  footer .footer .footer-list {
+    width: 95%;
+  }
+  footer .footer-title h1,
+  footer .footer-title p {
+    font-size: 18px;
   }
   .header {
     display: block;
   }
-  .medical-wrapper > div > div {
+  .header-responsive-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-wrapper .main-info-wrapper > div {
+    display: block;
+  }
+  .main-wrapper .info {
+    width: 100%;
+  }
+  .main-wrapper .info .map {
+    margin: 1em 0;
+  }
+  .main-wrapper .info-table-wrapper {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .access .access-main-contents-bg .access-main-contents .access-map-container {
+    display: block;
+  }
+  .access .access-main-contents-bg .access-main-contents .access-map-container .access-googlemap {
+    width: 100%;
+  }
+  .access .access-main-contents-bg .access-main-contents .access-map-container .clinic-outside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .access .access-main-contents-bg .access-main-contents .access-map-container .clinic-outside img {
+    width: 50%;
+  }
+  .access .access-main-contents-bg .access-main-contents .access-info-container > div {
+    display: block;
+  }
+  .access .access-main-contents-bg .access-main-contents .parking-info-container {
+    display: block;
+  }
+  .access .access-main-contents-bg .access-main-contents .parking-info-container .parking-map {
+    width: 100%;
+  }
+  .access .access-main-contents-bg .access-main-contents .parking-info-container .parking-txt {
+    width: 100%;
+  }
+  .main-container .main-contents {
+    display: block;
+  }
+  .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment {
+    width: 100%;
+  }
+  .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic {
+    width: 100%;
+  }
+  .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img {
+    width: 95%;
+    height: 95%;
+  }
+  .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-clinic .clinic-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .medical-container .medical-main-contents-bg {
+    width: 95%;
+  }
+  .medical-container .medical-main-contents-bg .medical-main-contents .medical-card-wrapper > div {
+    display: block;
+  }
+  .medical-container .medical-main-contents-bg .medical-main-contents .medical-school-doctor table td {
+    padding: 0.2em;
+  }
+  .medical-container .medical-main-contents-bg .medical-main-contents .medical-school-doctor table td:nth-child(1) {
+    width: 30%;
+    font-size: 24px;
+  }
+  .medical-container .medical-main-contents-bg .medical-main-contents .medical-txt-wrapper .hospitals {
+    padding: 2em;
+  }
+  footer .footer .footer-info {
+    display: block;
+  }
+  .medical-wrapper .medical-inner-wrapper > div {
+    display: block;
+  }
+  .letter-img-wrapper > div {
     display: block;
   }
   .doctor-message-wrapper {
     display: block;
   }
   .doctor-message-wrapper .doctor-img {
-    width: 50%;
-    height: 50%;
     margin: 0 auto;
   }
-  .doctor-message-wrapper .doctor-title,
-  .doctor-message-wrapper .doctor-subtitle,
-  .doctor-message-wrapper .doctor-txt {
-    text-align: center;
+  .bg02 .main-news-wrapper .news-inner-wrapper {
+    width: 95%;
   }
-  .news-inner-wrapper {
-    width: 90% !important;
+  .bg02 .main-news-wrapper .news-inner-wrapper .news-contents-wrapper .date {
+    margin-right: 5px;
   }
-  .main-info-wrapper > div {
-    display: block;
+  .header-responsive-wrapper {
+    width: 95%;
   }
-  .main-info-wrapper .info {
-    width: 100%;
-  }
-  .main-info-wrapper .map {
-    margin: 1em 0;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .header-title h1,
-  .header-title p {
-    font-size: 4vw;
-  }
-  .footer-list ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-info p {
-    word-wrap: break-all;
-  }
-}
-
-@media screen and (max-width: 510px) {
   .header-responsive-wrapper > div {
     display: block;
+    text-align: center;
   }
-  .header-list li a,
-  .header-subtitle p {
-    font-size: 3vw;
-  }
-  .header-subtitle.online-btn {
+  .header-responsive-wrapper .online-btn {
     margin-right: auto;
   }
   .header-list ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    text-align: left;
+  }
+  .header-list ul li {
+    white-space: nowrap;
+  }
+  .footer-list ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-list ul li {
+    white-space: nowrap;
+  }
+  .smile {
+    display: none;
+  }
+  .banner {
+    margin: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

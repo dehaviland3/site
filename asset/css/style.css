@@ -1081,7 +1081,13 @@ footer .footer .footer-list a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
+  header > div {
+    margin: 0 auto;
+  }
+  .main-wrapper .main-info-wrapper .info-table-wrapper .info-table p {
+    font-size: 12px;
+  }
   .medical-container .medical-main-contents-bg {
     width: 95%;
   }
@@ -1123,12 +1129,10 @@ footer .footer .footer-list a {
   .header-responsive-wrapper .online-btn {
     margin-right: auto;
   }
-  .header-list ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .header-list ul li {
     white-space: nowrap;
+    background: rgba(128, 128, 128, 0.068);
+    padding: 0.5em;
   }
   .footer-list ul {
     -ms-flex-wrap: wrap;

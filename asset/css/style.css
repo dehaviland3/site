@@ -292,6 +292,11 @@ table tr td:nth-of-type(8) {
   padding: 50px 0;
   margin: 50px auto;
   width: 90%;
+  font-size: 16px;
+}
+
+.main-news-wrapper .news-inner-wrapper .news-contents-wrapper a {
+  color: green;
 }
 
 .main-news-wrapper .news-inner-wrapper .news-contents-wrapper .date {
@@ -438,12 +443,16 @@ table tr td:nth-of-type(8) {
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:first-child {
+  width: 90%;
+  margin: 0 auto;
   font-size: 46px;
   font-weight: bold;
   color: #fa9cac;
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents .card-equipment p:last-child {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 1em;
   font-size: 22px;
   text-align: left;
@@ -537,6 +546,7 @@ table tr td:nth-of-type(8) {
 }
 
 .medical-container {
+  padding-bottom: 4em;
   width: 100%;
   text-align: center;
 }
@@ -647,6 +657,10 @@ table tr td:nth-of-type(8) {
   width: 100%;
 }
 
+.access span {
+  font-size: 16px;
+}
+
 .access-title-pink {
   width: 100%;
   height: 7em;
@@ -699,6 +713,10 @@ table tr td:nth-of-type(8) {
   width: 100%;
   height: auto;
   margin: 0.5em;
+}
+
+.access-main-contents .access-info-container {
+  margin-top: 1em;
 }
 
 .access-main-contents .access-info-container p.title {
@@ -870,6 +888,205 @@ table tr td:nth-of-type(8) {
   margin-top: 1em;
 }
 
+.news {
+  width: 100%;
+}
+
+.news .title-pink {
+  height: 7em;
+  width: 100%;
+  background: #fa9cac;
+  color: white;
+}
+
+.news .title-pink p {
+  font-size: 32px;
+  color: white;
+  line-height: 2.2em;
+  text-align: center;
+}
+
+.news .main-contents-bg {
+  background-color: #fae0e4;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.news .main-contents-bg .main-contents {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  font-size: 18px;
+}
+
+.news .main-contents-bg .main-contents .news-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0 10em 0;
+  text-align: left;
+}
+
+.news .main-contents-bg .main-contents .news-wrapper .title-color-pink {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fa92a4;
+}
+
+.news .main-contents-bg .main-contents .news-wrapper .border-pink {
+  width: 18em;
+  height: 0.8em;
+  background: pink;
+  margin: 2em auto;
+}
+
+.news .main-contents-bg .main-contents .news-wrapper .futoji {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.news .main-contents-bg .main-contents .news-wrapper p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 576px) {
+  .news .main-contents-bg .main-contents .news-wrapper .border-pink {
+    width: 95%;
+  }
+}
+
+.outpatient {
+  width: 100%;
+}
+
+.outpatient p {
+  font-size: 18px;
+}
+
+.outpatient .title-pink {
+  height: 7em;
+  width: 100%;
+  background: #fa9cac;
+  color: white;
+}
+
+.outpatient .title-pink p {
+  font-size: 32px;
+  color: white;
+  line-height: 2.2em;
+  text-align: center;
+}
+
+.outpatient .main-contents-bg {
+  background-color: #fae0e4;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.outpatient .main-contents-bg .main-contents {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  font-size: 18px;
+}
+
+.outpatient .main-contents-bg .main-contents .advice-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.outpatient .main-contents-bg .main-contents .advice-wrapper .title {
+  margin-bottom: 2em;
+  padding: 1em 0 0.8em 0;
+  font-weight: bold;
+  font-size: 28px;
+  color: green;
+  border-bottom: solid 1px green;
+}
+
+.outpatient .main-contents-bg .main-contents .advice-wrapper .advice-img {
+  padding-top: 2em;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.outpatient .main-contents-bg .main-contents .advice-wrapper .advice-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .title {
+  margin: 1em 0 1em 0;
+  padding-bottom: 1em;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(0, 128, 0, 0.562);
+  border-bottom: solid 1px rgba(0, 128, 0, 0.555);
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .subtitle {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features {
+  padding-bottom: 5em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .title-green {
+  margin-top: 2em;
+  background: rgba(0, 128, 0, 0.486);
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .title-green p {
+  line-height: 1.7em;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features p {
+  margin-top: 2em;
+  font-size: 22px;
+  text-align: left;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features p:first-child {
+  margin-top: 0;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .green-ball {
+  color: rgba(0, 128, 0, 0.541);
+  font-size: 50px;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .nightmare {
+  font-weight: bold;
+  font-size: 28px;
+  vertical-align: center;
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .sincerely {
+  width: 100%;
+  text-align: center;
+  border: dotted 3px rgba(0, 128, 0, 0.562);
+}
+
+.outpatient .main-contents-bg .main-contents .medical-info-wrapper .features .sincerely .text {
+  width: 80%;
+  text-align: center;
+  margin: 1em auto;
+}
+
 footer {
   width: 100%;
   background-color: white;
@@ -879,7 +1096,7 @@ footer {
 footer .footer {
   width: 85%;
   padding-top: 2em;
-  margin: 4em auto 0 auto;
+  margin: 0 auto;
 }
 
 footer .footer .footer-title .lily {

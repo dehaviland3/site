@@ -52,6 +52,7 @@ header {
     .header-list {
         margin-top: 10px;
         ul {
+            margin: 0;
             padding: 0;
         }
         li {
@@ -110,6 +111,7 @@ header {
                 font-size: 32px;
                 line-height: 2.2em;
                 font-weight: bold;
+                margin: 0;
             }
         }
         .main-contents-bg {

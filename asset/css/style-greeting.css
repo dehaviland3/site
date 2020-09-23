@@ -59,6 +59,7 @@ header .header-list {
 }
 
 header .header-list ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -128,6 +129,7 @@ header .header-list a {
   font-size: 32px;
   line-height: 2.2em;
   font-weight: bold;
+  margin: 0;
 }
 
 .main-container .main-wrapper .main-contents-bg {

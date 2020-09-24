@@ -551,6 +551,7 @@ table tr td:nth-of-type(8) {
 }
 
 .medical-container {
+  background: white;
   padding-bottom: 4em;
   width: 100%;
   text-align: center;
@@ -680,7 +681,8 @@ table tr td:nth-of-type(8) {
 }
 
 .access-main-contents-bg {
-  width: 90%;
+  width: 100%;
+  padding-top: 3em;
   margin: 0 auto;
   background: white;
 }
@@ -693,7 +695,6 @@ table tr td:nth-of-type(8) {
 .access-main-contents .access-subtitle-pink {
   background: #fa9cac;
   border-radius: 5px;
-  margin-top: 3em;
   height: p;
   height-font-size: 32px;
   height-color: white;
@@ -989,7 +990,7 @@ table tr td:nth-of-type(8) {
 }
 
 .outpatient .main-contents-bg .main-contents {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background: white;

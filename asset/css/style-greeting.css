@@ -141,7 +141,7 @@ header .header-list a {
 }
 
 .main-container .main-wrapper .main-contents-bg .main-contents {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
   background: white;
@@ -225,13 +225,12 @@ header .header-list a {
 }
 
 .main-container .main-wrapper .main-contents-bg .main-contents .part-time-doctor {
-  width: 90%;
   margin: 0 auto;
   padding-bottom: 7em;
 }
 
 .main-container .main-wrapper .main-contents-bg .main-contents .part-time-doctor-img {
-  width: 45%;
+  width: 40%;
 }
 
 .main-container .main-wrapper .main-contents-bg .main-contents .part-time-doctor-img img {
@@ -239,8 +238,8 @@ header .header-list a {
   height: auto;
 }
 
-.main-container .main-wrapper .main-contents-bg .main-contents .part-time-doctor-table {
-  width: 46%;
+.main-container .main-wrapper .main-contents-bg .main-contents .part-time-doctor .part-time-doctor-table {
+  width: 50%;
 }
 
 footer {
@@ -374,16 +373,21 @@ footer .footer .footer-list a {
   .main-container .main-contents-bg .main-contents .career td:nth-child(1) {
     width: 30%;
   }
-  .main-container .main-wrapper .main-contents .part-time-doctor > div {
-    display: block;
-  }
-  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table {
+  .main-container .main-wrapper .main-contents .part-time-doctor {
     width: 100%;
   }
-  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-table td:nth-child(1) {
+  .main-container .main-wrapper .main-contents .part-time-doctor s > div {
+    width: 100% !important;
+    display: block;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor s > div .part-time-doctor-table {
+    width: 100% !important;
+    width: 100%;
+  }
+  .main-container .main-wrapper .main-contents .part-time-doctor s > div .part-time-doctor-table td:nth-child(1) {
     width: 30%;
   }
-  .main-container .main-wrapper .main-contents .part-time-doctor > div .part-time-doctor-img {
+  .main-container .main-wrapper .main-contents .part-time-doctor s > div .part-time-doctor-img {
     margin-top: 1em;
     width: 100%;
   }

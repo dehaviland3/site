@@ -121,7 +121,7 @@ header {
         .main-contents-bg {
             width: 100%;
             .main-contents {
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
                 text-align: left;
                 background: rgb(255, 255, 255);
@@ -188,18 +188,17 @@ header {
                     }
                 }
                 .part-time-doctor {
-                    width: 90%;
                     margin: 0 auto;
                     padding-bottom: 7em;
                     &-img {
-                        width: 45%;
+                        width: 40%;
                         img {
                             width: 100%;
                             height: auto;
                         }
                     }
-                    &-table {
-                        width: 46%;
+                    .part-time-doctor-table {
+                        width: 50%;
                     }
                 }
             }
@@ -350,9 +349,12 @@ footer {
         .main-wrapper {
             .main-contents {
                 .part-time-doctor {
-                    >div {
+                    width: 100%;
+                    s>div {
+                        width: 100% !important;
                         display: block;
                         .part-time-doctor-table {
+                            width: 100% !important;
                             td:nth-child(1) {
                                 width: 30%;
                             }

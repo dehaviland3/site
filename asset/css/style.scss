@@ -26,6 +26,13 @@ p {
 body {
     max-width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 2px solid white;
+    background: {
+        image: url("../img/top_bg01.png");
+        size: cover;
+    }
 }
 
 .bg02 {
@@ -352,7 +359,7 @@ table tr td:nth-of-type(8) {
         .main-contents-bg {
             width: 100%;
             .main-contents {
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
                 background: rgb(251, 223, 227);
                 padding-top: 2em;

@@ -26,6 +26,11 @@ p {
 body {
   max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 2px solid white;
+  background-image: url("../img/top_bg01.png");
+  background-size: cover;
 }
 
 .bg02 {
@@ -396,7 +401,7 @@ table tr td:nth-of-type(8) {
 }
 
 .main-container .clinic-intro-wrapper .main-contents-bg .main-contents {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background: #fbdfe3;
   padding-top: 2em;

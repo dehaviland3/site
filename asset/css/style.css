@@ -32,6 +32,11 @@ ul {
   list-style: none;
 }
 
+.-foreground {
+  position: relative;
+  z-index: 10;
+}
+
 .header-holder {
   background: #8989fc;
 }

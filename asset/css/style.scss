@@ -35,6 +35,11 @@ ul {
 $blue01:blue;
 $blue02:rgb(137, 137, 252);
 $green01: green;
+.-foreground {
+    position: relative;
+    z-index: 10;
+}
+
 .header-holder {
     background: $blue02;
 }

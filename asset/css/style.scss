@@ -1,4 +1,3 @@
-body,
 div,
 dl,
 dt,
@@ -32,16 +31,74 @@ ul {
     list-style: none;
 }
 
-$blue01:blue;
-$blue02:rgb(137, 137, 252);
-$green01: green;
+.fontG {
+    font-family: "Meiryo", "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+.fontT {
+    font-family: "MS Gothic", "Osaka-Mono", monospace;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bop-to-the-top {
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+}
+
+@mixin bop {
+    position: relative;
+    z-index: 10;
+}
+
+$blue01: #001b69;
+$blue02: #e3eff5;
+$green01: #00b04f;
+body {
+    background-color: white;
+}
+
 .-foreground {
     position: relative;
     z-index: 10;
 }
 
+.position-name {
+    >.position {
+        color: black;
+        font-size: 12px;
+    }
+    >.name {
+        color: black;
+    }
+}
+
+.green-title {
+    font-size: 30px;
+    color: $green01;
+}
+
+.green-subtitle {
+    color: $green01;
+}
+
+.black-subtitle {
+    font-size: 26px;
+}
+
 .header-holder {
     background: $blue02;
+}
+
+.green-line {
+    border-bottom: solid 1.5px $green01;
+    margin-top: 0.8em;
 }
 
 .professor-message {}
@@ -56,6 +113,15 @@ $green01: green;
 .-foreground {
     position: relative;
     z-index: 10;
+}
+
+.main-carousel {
+    background: $blue01;
+}
+
+.swiper-wrapper {
+    background: $blue01;
+    color: white;
 }
 
 .button-square {
@@ -73,6 +139,310 @@ $green01: green;
 
 .news-title {
     text-align: center;
+}
+
+.span-position {
+    font-size: 14px;
+}
+
+.span-name {
+    font-size: 22px;
+}
+
+.subtitle-blue {
+    font-size: 26px;
+    font-weight: bold;
+    color: $blue01;
+}
+
+.header-blue {
+    font-size: 22px;
+    color: $blue01;
+    font-weight: 600;
+}
+
+.recruit-professor-message {}
+
+.recruit-professor-img {
+    >img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+table.company {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    th,
+    td {
+        padding: 10px;
+    }
+    th {
+        background: $blue01;
+        vertical-align: middle;
+        text-align: center;
+        overflow: visible;
+        position: relative;
+        color: #fff;
+        font-weight: normal;
+    }
+    td {
+        background: #e3eff5;
+        width: 75%;
+        padding-left: 20px;
+    }
+}
+
+.online-lesson-container {
+    margin: 5em 0;
+    padding: 5em 0;
+    background-color: $blue02;
+}
+
+#page_top {
+    position: fixed;
+    z-index: 100000;
+    bottom: 30px;
+    right: 20px;
+    a {
+        background-color: $green01;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 16px;
+        padding: 18px 20px;
+    }
+     :hover {
+        background-color: rgba(0, 128, 0, 0.87);
+        text-decoration: none;
+    }
+}
+
+.btn-wrapper {
+    margin: {
+        top: 50px;
+        bottom: 50px;
+    }
+    text-align: center;
+}
+
+.report-section {
+    @include bop();
+    >.date {
+        display: inline-block;
+        padding: 0.2em 1.5em;
+        background: $blue01;
+        color: white;
+        font-size: 16px;
+    }
+    >.title {
+        margin: 0.6em 0 0 0;
+        font-size: 22px;
+        color: $blue01;
+    }
+    .date02 {
+        margin: 0.2em 0 0 0;
+        font-size: 18px;
+        color: $blue01;
+    }
+    .reporter {
+        font-size: 14px;
+        vertical-align: text-bottom;
+        align-self: flex-end;
+    }
+    >.image {
+        margin: auto;
+        width: 80%;
+        img {
+            width: 100%;
+            height: auto;
+            margin: 3em 0;
+        }
+    }
+}
+
+.slant-img {
+    position: relative;
+    z-index: -10;
+}
+
+.slant-headerTitle01 {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    &::before,
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+    &::before {
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100vw 10vh 0;
+        border-color: transparent rgb(255, 255, 255) transparent transparent;
+    }
+    &::after {
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10vh 0 0 100vw;
+        border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+    }
+    &:first-child::before {
+        display: none;
+    }
+}
+
+
+/*https://ri-mode.com/rainbow/2014/06/11/simple_css_dropdown_menu/*/
+
+header {
+    .recruit-background-image {
+        position: relative;
+        z-index: -100;
+        background-image: url("../img/recruit_header_bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        .container-fluid {}
+        .header-title {
+            .image {
+                position: relative;
+                z-index: 1;
+                width: 30vw;
+                height: auto;
+            }
+        }
+    }
+}
+
+.header-navigation {
+    width: 100%;
+    white-space: nowrap;
+    ul {}
+}
+
+.header-navigation ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    position: relative;
+    width: 100vw;
+    /*親メニューの幅*/
+    height: 14.285%;
+    /*親メニューの高さ*/
+    line-height: 40px;
+    background: $blue01;
+    /*親メニューの背景色*/
+    color: #ffffff;
+    /*親メニューの文字色*/
+    text-align: center;
+}
+
+.header-navigation ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.header-navigation ul li:hover,
+.header-navigation ul li a:hover {
+    background: $green01;
+    /*ホバー時の親メニューの背景色*/
+    color: black;
+    /*ホバー時の親メニューの文字色*/
+}
+
+.header-navigation ul li ul {
+    position: absolute;
+    color: $green01;
+    top: 40px;
+    /*親メニューの高さと同じにする*/
+    width: 14.285%;
+    z-index: 100;
+}
+
+.header-navigation ul li ul li {
+    visibility: hidden;
+    overflow: hidden;
+    width: 150px;
+    /*サブメニューの幅*/
+    height: 0;
+    background: #ffffff;
+    /*サブメニューの背景色*/
+}
+
+.header-navigation ul li ul li:hover,
+.header-navigation ul li ul li a:hover {
+    background: white;
+    /*ホバー時のサブメニューの背景色*/
+}
+
+.header-navigation ul li:hover ul li,
+.header-navigation ul li a:hover ul li {
+    visibility: visible;
+    background: white;
+    overflow: visible;
+    height: 14.285%;
+    /*サブメニューの高さ*/
+    z-index: 10;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.report-category {
+    font-size: 14px;
+    >li {
+        padding: 0.6em 0;
+    }
+    >.title {
+        text-align: center;
+        color: $green01;
+        border: solid 1px $green01;
+    }
+    .category {
+        border-bottom: 1px solid $green01;
+    }
+    .category.active {
+        background: $green01;
+        color: white;
+    }
+}
+
+.report-archive {
+    margin-top: 2.5em;
+    @include bop;
+    >.title {
+        padding: 0.6em 0;
+        border: solid 1px $green01;
+        color: $green01;
+    }
+    >.list {
+        list-style-type: disc;
+        >li {
+            padding: 0.6em 0 0 0;
+        }
+    }
+}
+
+.body-text {
+    margin-top: 0.8em;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .news-list {
@@ -95,29 +465,82 @@ $green01: green;
     }
 }
 
+.research-section {
+    >.title-blue01 {
+        color: $blue01;
+        font-weight: bold;
+    }
+}
+
 footer {
     position: relative;
-    z-index: 0;
+    z-index: 2;
     background: $blue01;
     color: white;
     .footer-title {
-        padding-top: 200px;
+        padding-top: 50px;
         text-align: center;
+        >.title01 {
+            font-size: 18px;
+        }
         >.title02 {
-            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+    .address-area {
+        margin: 13px 0 0 0;
+        .button {
+            border: solid 1px white;
+            padding: 0.2em 1em;
+        }
+    }
+    .footer-banners {
+        img {
+            margin: 30px 20px 50px 0;
+        }
+        img:last-child {
+            margin-right: 0;
         }
     }
 }
 
-footer::after {
-    content: '';
-    display: block;
+.balloon2 {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #fff;
+    border: solid 3px #555;
+    box-sizing: border-box;
+}
+
+.balloon2:before {
+    content: "";
     position: absolute;
-    top: -20%;
-    right: 0%;
-    bottom: 80%;
-    left: 0;
-    background-color: white;
-    transform: skewY(-5deg);
-    z-index: -1;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    z-index: 2;
+}
+
+.balloon2:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #555;
+    z-index: 1;
+}
+
+.balloon2 p {
+    margin: 0;
+    padding: 0;
 }

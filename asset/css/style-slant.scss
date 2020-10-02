@@ -1,0 +1,179 @@
+$blue01: #001b69;
+$blue02: rgb(137, 137, 252);
+$green01: #00b04f;
+.slant-toggle01 {
+    position: relative;
+    z-index: 0;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle01::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -200%;
+    right: 0%;
+    bottom: 90%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: skewY(-7deg);
+    z-index: -10;
+}
+
+.slant-toggle02 {
+    position: relative;
+    z-index: -1;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle02::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 200%;
+    right: 0%;
+    bottom: -300%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.452);
+    transform: skewY(7deg);
+    z-index: -10;
+}
+
+.slant-toggle03 {
+    position: relative;
+    z-index: 0;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+}
+
+.slant-toggle03::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -300%;
+    right: 0%;
+    bottom: 200%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.438);
+    transform: skewY(7deg);
+    z-index: -20;
+}
+
+.slant-toggle04 {
+    position: relative;
+    z-index: -1;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle04::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    bottom: -200%;
+    left: 0;
+    background-color: #001a69ea;
+    transform: skewY(-7deg);
+    z-index: -9;
+}
+
+.slant-toggle05 {
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle05::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -200%;
+    right: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: skewY(-3deg);
+    z-index: -11;
+    pointer-events: none;
+}
+
+.slant-toggle06 {
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle06::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: skewY(-3deg);
+    z-index: -11;
+    pointer-events: none;
+}
+
+.slant-toggle07 {
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle07::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: -50%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: skewY(-3deg);
+    z-index: -11;
+    pointer-events: none;
+}

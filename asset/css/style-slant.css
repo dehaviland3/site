@@ -15,9 +15,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: -200%;
+  top: -300%;
   right: 0%;
-  bottom: 90%;
+  bottom: 110%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-7deg);
@@ -177,7 +177,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 0%;
+  top: 20%;
   right: 0%;
   bottom: -50%;
   left: 0;
@@ -185,6 +185,180 @@
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -11;
+  pointer-events: none;
+}
+
+.slant-toggle11 {
+  position: relative;
+  z-index: 10;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle11 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle11::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100%;
+  right: 0%;
+  bottom: -200%;
+  left: 0;
+  background-color: white;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -11;
+  pointer-events: none;
+}
+
+.slant-toggle12 {
+  position: relative;
+  z-index: 10;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle12 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle12::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -200%;
+  right: 0%;
+  bottom: -200%;
+  left: 0;
+  background-color: white;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -11;
+  pointer-events: none;
+}
+
+.slant-toggle13 {
+  position: relative;
+  z-index: 9;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle13 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle13::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -300%;
+  right: 0%;
+  bottom: 200%;
+  left: 0;
+  background-color: #001b69;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  z-index: -200;
+  pointer-events: none;
+}
+
+.slant-toggle14 {
+  position: relative;
+  z-index: 9;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle14 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle14::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -420%;
+  right: 0%;
+  bottom: 100%;
+  left: 0;
+  background-color: #ffffff49;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+  z-index: -200;
+  pointer-events: none;
+}
+
+.slant-toggle15 {
+  position: relative;
+  z-index: 3;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle15 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle15::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -800%;
+  right: 0%;
+  bottom: -600%;
+  left: 0;
+  background-color: #e3eff5;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -200;
+  pointer-events: none;
+}
+
+.slant-toggle16 {
+  position: relative;
+  z-index: 3;
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+.slant-toggle16 img {
+  position: relative;
+  z-index: 20;
+}
+
+.slant-toggle16::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -500%;
+  right: 0%;
+  bottom: -600%;
+  left: 0;
+  background-color: white;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -200;
   pointer-events: none;
 }
 /*# sourceMappingURL=style-slant.css.map */

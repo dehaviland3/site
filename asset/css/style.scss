@@ -31,6 +31,11 @@ ul {
     list-style: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .fontG {
     font-family: "Meiryo", "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
 }
@@ -44,6 +49,10 @@ ul {
 *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .bop-to-the-top {
@@ -119,6 +128,12 @@ body {
     background: $blue01;
 }
 
+.main {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+}
+
 .swiper-wrapper {
     background: $blue01;
     color: white;
@@ -164,7 +179,7 @@ body {
 .recruit-professor-message {}
 
 .recruit-professor-img {
-    >img {
+    img {
         width: 100%;
         height: auto;
     }
@@ -196,8 +211,6 @@ table.company {
 }
 
 .online-lesson-container {
-    margin: 5em 0;
-    padding: 5em 0;
     background-color: $blue02;
 }
 
@@ -304,32 +317,42 @@ table.company {
 
 /*https://ri-mode.com/rainbow/2014/06/11/simple_css_dropdown_menu/*/
 
+@mixin header-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 header {
-    .recruit-background-image {
-        position: relative;
-        z-index: -100;
-        background-image: url("../img/recruit_header_bg.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 500px;
-        .container-fluid {}
-        .header-title {
-            .image {
-                position: relative;
-                z-index: 1;
-                width: 30vw;
-                height: auto;
-            }
+    position: relative;
+    z-index: -100;
+    width: 100%;
+    height: 500px;
+    .container-fluid {}
+    .header-title {
+        margin: 2em;
+        .image {
+            position: relative;
+            z-index: 1;
+            width: 30vw;
+            height: auto;
         }
+    }
+    .achievement-background-image {
+        background-image: url("../img/achievement_header_bg.jpg");
+        @include header-background;
+    }
+    .recruit-background-image {
+        background-image: url("../img/recruit_header_bg.jpg");
+        @include header-background;
     }
 }
 
 .header-navigation {
+    position: relative;
+    z-index: 100000;
     width: 100%;
-    white-space: nowrap;
-    ul {}
+    white-space: wrap;
 }
 
 .header-navigation ul li {
@@ -338,11 +361,11 @@ header {
     padding: 0;
     font-size: 18px;
     position: relative;
-    width: 100vw;
+    width: 14.285vw;
     /*親メニューの幅*/
-    height: 14.285%;
+    height: 75px;
     /*親メニューの高さ*/
-    line-height: 40px;
+    line-height: 75px;
     background: $blue01;
     /*親メニューの背景色*/
     color: #ffffff;
@@ -360,43 +383,50 @@ header {
 .header-navigation ul li a:hover {
     background: $green01;
     /*ホバー時の親メニューの背景色*/
-    color: black;
+    color: white;
     /*ホバー時の親メニューの文字色*/
 }
 
 .header-navigation ul li ul {
     position: absolute;
     color: $green01;
-    top: 40px;
+    top: 75px;
     /*親メニューの高さと同じにする*/
     width: 14.285%;
     z-index: 100;
+    a {
+        color: $green01;
+    }
 }
 
 .header-navigation ul li ul li {
     visibility: hidden;
     overflow: hidden;
-    width: 150px;
+    width: 14.285vw;
     /*サブメニューの幅*/
     height: 0;
-    background: #ffffff;
+    background: #770909;
     /*サブメニューの背景色*/
 }
 
 .header-navigation ul li ul li:hover,
 .header-navigation ul li ul li a:hover {
-    background: white;
+    background: rgb(255, 255, 255);
     /*ホバー時のサブメニューの背景色*/
 }
 
 .header-navigation ul li:hover ul li,
 .header-navigation ul li a:hover ul li {
     visibility: visible;
-    background: white;
+    background: rgb(255, 255, 255);
     overflow: visible;
-    height: 14.285%;
+    height: 75px;
+    border: solid 1px $green01;
     /*サブメニューの高さ*/
     z-index: 10;
+    a {
+        color: $green01;
+    }
 }
 
 .menu ul {
@@ -472,13 +502,73 @@ header {
     }
 }
 
+.staff-container {
+    table {
+        td:first-child {
+            font-size: 14px;
+            width: 150px;
+            text-align: center;
+        }
+    }
+    .blue-background {
+        text-align: center;
+        width: 160px;
+        height: 30px;
+        line-height: 30px;
+        background-color: $blue01;
+        color: white;
+    }
+    .w-100 {
+        margin-bottom: 1em;
+    }
+    .green-title.-mincho {
+        font-style: italic;
+    }
+}
+
+.achievement-card {
+    margin: 60px 0 0 0;
+    height: 70px;
+    width: 160px;
+    border: solid 1px $green01;
+    color: black;
+    font-size: 20px;
+    p {
+        color: black;
+        line-height: 70px;
+    }
+    a {
+        margin: auto 0 auto 0;
+        line-height: 70px;
+    }
+    img {
+        width: 1.3em;
+        height: 1.6em;
+        margin: auto 0 auto 0;
+    }
+}
+
+.about-thought {
+    position: relative;
+    z-index: 20;
+    margin: 10em 0 2em 0;
+    background-color: $blue02;
+    .green-title {
+        margin-top: 5em;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 footer {
     position: relative;
     z-index: 2;
     background: $blue01;
     color: white;
     .footer-title {
-        padding-top: 50px;
+        padding-top: 70px;
         text-align: center;
         >.title01 {
             font-size: 18px;
@@ -488,16 +578,13 @@ footer {
         }
     }
     .address-area {
-        margin: 13px 0 0 0;
         .button {
             border: solid 1px white;
             padding: 0.2em 1em;
         }
+        p {}
     }
     .footer-banners {
-        img {
-            margin: 30px 20px 50px 0;
-        }
         img:last-child {
             margin-right: 0;
         }

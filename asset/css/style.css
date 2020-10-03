@@ -531,6 +531,10 @@ header .recruit-background-image {
   margin-bottom: 1em;
 }
 
+.staff-container .green-title.-mincho {
+  font-style: italic;
+}
+
 .achievement-card {
   margin: 60px 0 0 0;
   height: 70px;

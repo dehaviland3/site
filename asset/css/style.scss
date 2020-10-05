@@ -428,6 +428,27 @@ header {
     }
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        .header-banner {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 210px;
+            height: auto;
+        }
+        .header-banner.-topPage {
+            top: 450px;
+            left: 50%px;
+            img {
+                width: 300px;
+                height: 100px;
+            }
+        }
+    }
+}
+
 .header-navigation {
     position: relative;
     z-index: 100000;
@@ -647,11 +668,7 @@ header {
 }
 
 .about-thought {
-    position: relative;
-    z-index: 20000;
-    margin: 5em 0 0 0;
     background-color: $blue02;
-    height: 700px;
     .green-title {
         margin-top: 5em;
     }
@@ -663,7 +680,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .about-thought {
-        height: 850px;
+        height: 450px;
     }
 }
 
@@ -689,6 +706,7 @@ header {
                 margin-right: 160px;
             }
         }
+        .thought {}
         &.-sp {
             margin: 0 auto;
         }
@@ -700,18 +718,21 @@ header {
         margin-right: 160px;
     }
     .thought-img {
+        margin-left: auto;
         position: relative;
-        z-index: 100;
+        z-index: 1000;
         background-color: $blue02;
         img {
-            margin-left: 1em;
-            margin-top: -10px;
             height: 350px;
-            width: auto;
+            width: 100%;
             object-fit: cover;
             object-position: 50% 30%;
         }
     }
+}
+
+.color-blue02 {
+    background-color: $blue02;
 }
 
 footer {

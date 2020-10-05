@@ -417,9 +417,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: -500%;
+  top: -900%;
   right: 0%;
-  bottom: -300%;
+  bottom: -400%;
   left: 0;
   background-color: #e3eff5;
   -webkit-transform: skewY(-3deg);
@@ -446,9 +446,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: 500%;
+  top: 100%;
   right: 0%;
-  bottom: -1120%;
+  bottom: -850%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);

@@ -4,7 +4,7 @@ $green01: #00b04f;
 .slant-toggle01 {
     position: relative;
     z-index: 0;
-    height: 100px;
+    height: 5px;
     width: 100%;
     background: transparent;
     img {
@@ -17,9 +17,9 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: -300%;
+    top: -6000%;
     right: 0%;
-    bottom: 110%;
+    bottom: -50%;
     left: 0;
     background-color: rgb(255, 255, 255);
     transform: skewY(-7deg);
@@ -28,8 +28,9 @@ $green01: #00b04f;
 
 .slant-toggle02 {
     position: relative;
-    z-index: -1;
-    height: 100px;
+    z-index: 0;
+    margin-top: -5px;
+    height: 5px;
     width: 100%;
     background: transparent;
     img {
@@ -42,11 +43,11 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: 200%;
+    top: -5000%;
     right: 0%;
-    bottom: -300%;
+    bottom: 200%;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.452);
+    background-color: rgba(255, 255, 255, 0.319);
     transform: skewY(7deg);
     z-index: -10;
 }
@@ -54,7 +55,8 @@ $green01: #00b04f;
 .slant-toggle03 {
     position: relative;
     z-index: 0;
-    height: 100px;
+    margin-top: -10px;
+    height: 10px;
     width: 100%;
     background: transparent;
 }
@@ -63,9 +65,9 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: -300%;
+    top: -700%;
     right: 0%;
-    bottom: 200%;
+    bottom: -2000%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.438);
     transform: skewY(7deg);
@@ -75,7 +77,8 @@ $green01: #00b04f;
 .slant-toggle04 {
     position: relative;
     z-index: -1;
-    height: 100px;
+    margin-top: -10px;
+    height: 10px;
     width: 100%;
     background: transparent;
     img {
@@ -88,9 +91,9 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: 100%;
+    top: -700%;
     right: 0%;
-    bottom: -200%;
+    bottom: -2000%;
     left: 0;
     background-color: #001a69ea;
     transform: skewY(-7deg);
@@ -180,8 +183,9 @@ $green01: #00b04f;
 
 .slant-toggle11 {
     position: relative;
-    z-index: 10;
+    z-index: 0;
     height: 10px;
+    margin-top: -10px;
     width: 100%;
     background: transparent;
     pointer-events: none;
@@ -195,7 +199,7 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: -100%;
+    top: -500%;
     right: 0%;
     bottom: -200%;
     left: 0;
@@ -209,6 +213,7 @@ $green01: #00b04f;
     position: relative;
     z-index: 10;
     height: 10px;
+    margin-top: -10px;
     width: 100%;
     background: transparent;
     pointer-events: none;
@@ -224,9 +229,9 @@ $green01: #00b04f;
     position: absolute;
     top: -200%;
     right: 0%;
-    bottom: -200%;
+    bottom: -100%;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transform: skewY(-3deg);
     z-index: -11;
     pointer-events: none;
@@ -234,7 +239,7 @@ $green01: #00b04f;
 
 .slant-toggle13 {
     position: relative;
-    z-index: 9;
+    z-index: 0;
     height: 10px;
     width: 100%;
     background: transparent;
@@ -249,9 +254,9 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: -300%;
+    top: -440%;
     right: 0%;
-    bottom: 200%;
+    bottom: -1200%;
     left: 0;
     background-color: $blue01;
     transform: skewY(-7deg);
@@ -263,6 +268,7 @@ $green01: #00b04f;
     position: relative;
     z-index: 9;
     height: 10px;
+    margin-top: -10px;
     width: 100%;
     background: transparent;
     pointer-events: none;
@@ -276,12 +282,12 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
-    top: -420%;
+    top: -180%;
     right: 0%;
-    bottom: 100%;
+    bottom: -500%;
     left: 0;
     background-color: #ffffff49;
-    transform: skewY(3deg);
+    transform: skewY(9deg);
     z-index: -200;
     pointer-events: none;
 }
@@ -290,6 +296,7 @@ $green01: #00b04f;
     position: relative;
     z-index: 3;
     height: 10px;
+    margin-top: -10px;
     width: 100%;
     background: transparent;
     pointer-events: none;
@@ -313,6 +320,34 @@ $green01: #00b04f;
     pointer-events: none;
 }
 
+.slant-toggle15 {
+    position: relative;
+    z-index: 3;
+    height: 10px;
+    margin-top: -10px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle15::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -180%;
+    right: 0%;
+    bottom: -2000%;
+    left: 0;
+    background-color: white;
+    transform: skewY(0deg);
+    z-index: -200;
+    pointer-events: none;
+}
+
 .slant-toggle16 {
     position: relative;
     z-index: 3;
@@ -330,9 +365,63 @@ $green01: #00b04f;
     content: "";
     display: block;
     position: absolute;
+    top: -900%;
+    right: 0%;
+    bottom: -100%;
+    left: 0;
+    background-color: $blue02;
+    transform: skewY(-3deg);
+    z-index: -200;
+    pointer-events: none;
+}
+
+.slant-toggle16 {
+    position: relative;
+    z-index: 100;
+    height: 10px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle16::after {
+    content: "";
+    display: block;
+    position: absolute;
     top: -500%;
     right: 0%;
-    bottom: -600%;
+    bottom: -300%;
+    left: 0;
+    background-color: $blue02;
+    transform: skewY(-3deg);
+    z-index: -200;
+    pointer-events: none;
+}
+
+.slant-toggle17 {
+    position: relative;
+    z-index: 100000;
+    height: 10px;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.slant-toggle17::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 500%;
+    right: 0%;
+    bottom: -1120%;
     left: 0;
     background-color: white;
     transform: skewY(-3deg);

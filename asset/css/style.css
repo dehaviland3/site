@@ -56,6 +56,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.img {
+  height: 100%;
+  width: auto;
+}
+
 .bop-to-the-top {
   position: relative;
   z-index: 1000;
@@ -102,11 +107,11 @@ body {
   margin-top: 0.8em;
 }
 
-.message-wrapper {
+.left-side-fixed .message-wrapper {
   z-index: 2;
 }
 
-.message-wrapper > .name01 {
+.left-side-fixed .message-wrapper > .name01 {
   color: #00b04f;
 }
 
@@ -131,6 +136,7 @@ body {
 }
 
 .button-square {
+  width: 200px;
   border: solid 1px #00b04f;
   text-align: center;
 }
@@ -168,9 +174,17 @@ body {
   font-weight: 600;
 }
 
-.recruit-professor-img img {
+.right-end-img {
+  margin-left: 1em;
+}
+
+.right-end-img img {
   width: 100%;
-  height: auto;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
 }
 
 table.company {
@@ -203,6 +217,24 @@ table.company td {
 
 .online-lesson-container {
   background-color: #e3eff5;
+}
+
+.body-text {
+  margin-top: 0.8em;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.hospital-container ul li {
+  padding-left: 16px;
+  line-height: 32px;
+}
+
+.hospital-container ul.asterisk li:before {
+  content: "※";
+  /* ←ここにリストマーカーにしたい文字列を設定 */
+  margin-left: -16px;
+  /* 1文字分、左に寄せる */
 }
 
 #page_top {
@@ -331,21 +363,88 @@ header .header-title {
 header .header-title .image {
   position: relative;
   z-index: 1;
-  width: 30vw;
+  width: 450px;
   height: auto;
+}
+
+header .header-banner {
+  position: absolute;
+  top: 230px;
+  left: 260px;
+  width: 210px;
+  height: auto;
+}
+
+header .header-banner.-topPage {
+  top: 450px;
+  left: 230px;
+}
+
+header .header-banner.-topPage img {
+  width: 300px;
+  height: 100px;
+}
+
+header .nav {
+  position: relative;
+  z-index: 10;
+  margin-top: 120px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+header .nav td {
+  vertical-align: baseline;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  background: #001b69;
+  color: white;
+}
+
+header .header-news {
+  margin-top: 200px;
+}
+
+header .header-news .title {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #00b04f;
+}
+
+header .header-news .title p {
+  font-size: 22px;
+  color: white;
+}
+
+header .header-news .text {
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(255, 255, 255, 0.707);
+}
+
+header .top-background-image {
+  background: url("../img/top_header.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
 }
 
 header .achievement-background-image {
   background-image: url("../img/achievement_header_bg.jpg");
+  height: 500px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 30%;
   background-size: cover;
 }
 
-header .recruit-background-image {
-  background-image: url("../img/recruit_header_bg.jpg");
+header .about-background-image {
+  background-image: url("../img/about_header_background.jpg");
+  height: 500px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 30%;
   background-size: cover;
 }
 
@@ -354,6 +453,14 @@ header .recruit-background-image {
   z-index: 100000;
   width: 100%;
   white-space: wrap;
+}
+
+.header-navigation ul li:first-child {
+  padding-left: 2em;
+}
+
+.header-navigation ul li:last-child {
+  padding-right: 2em;
 }
 
 .header-navigation ul li {
@@ -481,10 +588,13 @@ header .recruit-background-image {
   padding: 0.6em 0 0 0;
 }
 
-.body-text {
-  margin-top: 0.8em;
-  font-size: 16px;
-  line-height: 32px;
+.banner-img.-message {
+  width: 200px;
+}
+
+.banner-img.-thought {
+  width: 120px;
+  height: auto;
 }
 
 .news-list > .list {
@@ -512,6 +622,10 @@ header .recruit-background-image {
   font-weight: bold;
 }
 
+.staff-container {
+  margin-bottom: 2em;
+}
+
 .staff-container table td:first-child {
   font-size: 14px;
   width: 150px;
@@ -531,8 +645,13 @@ header .recruit-background-image {
   margin-bottom: 1em;
 }
 
-.staff-container .green-title.-mincho {
+.staff-container .green-title.-italic {
   font-style: italic;
+  margin-top: -15px;
+}
+
+.treatment-container .header-blue.-mini {
+  font-size: 22px;
 }
 
 .achievement-card {
@@ -562,9 +681,10 @@ header .recruit-background-image {
 
 .about-thought {
   position: relative;
-  z-index: 20;
-  margin: 10em 0 2em 0;
+  z-index: 20000;
+  margin: 5em 0 0 0;
   background-color: #e3eff5;
+  height: 700px;
 }
 
 .about-thought .green-title {
@@ -576,15 +696,73 @@ header .recruit-background-image {
   height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .about-thought {
+    height: 850px;
+  }
+}
+
+.about-container .banner-img {
+  padding-top: 5em;
+}
+
+.about-container .right-end-img {
+  position: relative;
+  z-index: 20;
+  max-width: 400px;
+}
+
+.about-container .right-end-img .yoshimura01 {
+  margin-left: 1em;
+  height: auto;
+  max-width: 400px;
+}
+
+.about-container .right-end-img .yoshimura02 img {
+  position: relative;
+  z-index: 10;
+  width: 250px;
+  height: auto;
+  margin-right: 160px;
+}
+
+.about-container .right-end-img.-sp {
+  margin: 0 auto;
+}
+
+.about-container .span-name {
+  position: relative;
+  z-index: 10;
+  text-align: right;
+  margin-right: 160px;
+}
+
+.about-container .thought-img {
+  position: relative;
+  z-index: 100;
+  background-color: #e3eff5;
+}
+
+.about-container .thought-img img {
+  margin-left: 1em;
+  margin-top: -10px;
+  height: 350px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
+}
+
 footer {
   position: relative;
-  z-index: 2;
+  z-index: 10000;
   background: #001b69;
   color: white;
 }
 
 footer .footer-title {
-  padding-top: 70px;
+  padding-top: 80px;
   text-align: center;
 }
 

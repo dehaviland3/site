@@ -174,6 +174,7 @@ body {
     font-size: 26px;
     font-weight: bold;
     color: $blue01;
+    letter-spacing: 0.15em;
 }
 
 .header-blue {
@@ -183,12 +184,14 @@ body {
 }
 
 .right-end-img {
-    margin-left: 1em;
     img {
         width: 100%;
-        height: 550px;
+        width: 350px;
         object-fit: cover;
         object-position: 50% 30%;
+    }
+    .thought {
+        width: 350px;
     }
 }
 
@@ -355,7 +358,6 @@ header {
     z-index: -100;
     width: 100%;
     height: 500px;
-    .container-fluid {}
     .header-title {
         margin: 2em;
         .image {
@@ -363,6 +365,29 @@ header {
             z-index: 1;
             width: 450px;
             height: auto;
+        }
+    }
+    .header-pageTitle {
+        color: $blue01;
+        position: absolute;
+        z-index: 1000000;
+        top: 230px;
+        left: 260px;
+        height: auto;
+        .title01 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .title02 {
+            line-height: 24px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .title01,
+        .title02 {
+            letter-spacing: 0.15em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px $blue02, -2px -2px 10px $blue02;
         }
     }
     .header-banner {
@@ -430,7 +455,12 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        .header-banner {
+        .header-title {
+            .image {
+                width: 280px;
+            }
+        }
+        .header-pageTitle {
             position: absolute;
             left: 0;
             right: 0;
@@ -454,12 +484,8 @@ header {
     z-index: 100000;
     width: 100%;
     white-space: wrap;
-    ul li:first-child {
-        padding-left: 2em;
-    }
-    ul li:last-child {
-        padding-right: 2em;
-    }
+    padding: 0 3em;
+    background-color: $blue01;
 }
 
 .header-navigation ul li {
@@ -509,7 +535,7 @@ header {
 .header-navigation ul li ul li {
     visibility: hidden;
     overflow: hidden;
-    width: 14.285vw;
+    width: 13vw;
     /*サブメニューの幅*/
     height: 0;
     background: #770909;
@@ -578,7 +604,7 @@ header {
 
 .banner-img {
     &.-message {
-        width: 200px;
+        width: 110px;
     }
     &.-thought {
         width: 120px;
@@ -678,12 +704,6 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .about-thought {
-        height: 450px;
-    }
-}
-
 .about-container {
     .banner-img {
         padding-top: 5em;
@@ -691,11 +711,11 @@ header {
     .right-end-img {
         position: relative;
         z-index: 20;
-        max-width: 400px;
+        width: 350px;
         .yoshimura01 {
-            margin-left: 1em;
             height: auto;
-            max-width: 400px;
+            width: 350px;
+            object-fit: contail;
         }
         .yoshimura02 {
             img {
@@ -703,7 +723,6 @@ header {
                 z-index: 10;
                 width: 250px;
                 height: auto;
-                margin-right: 160px;
             }
         }
         .thought {}
@@ -715,19 +734,17 @@ header {
         position: relative;
         z-index: 10;
         text-align: right;
-        margin-right: 160px;
     }
     .thought-img {
+        background-color: $blue02;
         margin-left: auto;
         position: relative;
         z-index: 1000;
-        background-color: $blue02;
-        img {
-            height: 350px;
-            width: 100%;
-            object-fit: cover;
-            object-position: 50% 30%;
-        }
+    }
+    img {
+        width: auto;
+        object-fit: fit;
+        object-position: 50% 30%;
     }
 }
 
@@ -737,11 +754,11 @@ header {
 
 footer {
     position: relative;
-    z-index: 10000;
+    z-index: -2;
     background: $blue01;
     color: white;
     .footer-title {
-        padding-top: 80px;
+        padding-top: 100px;
         text-align: center;
         >.title01 {
             font-size: 18px;
@@ -803,4 +820,117 @@ footer {
 .balloon2 p {
     margin: 0;
     padding: 0;
+}
+
+
+/*sp-modal*/
+
+.modal-wrapper {
+    z-index: 100;
+    position: fixed;
+    top: -30px;
+    right: -20px;
+    left: 0px;
+    .modal-content {
+        width: 100vw;
+        padding-top: 180px;
+        padding-bottom: 5em;
+        font-size: 28px;
+        ul {
+            width: 80%;
+            margin: 0 auto;
+        }
+        >ul>li {
+            margin: 0.5em 0em 0 0;
+            padding: 0 0 0.2em 0em;
+            color: white;
+            border-bottom: solid 1px white;
+        }
+    }
+}
+
+.modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+    vertical-align: middle;
+    content: "";
+}
+
+.modal-wrapper .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #001a69bb;
+}
+
+.modal-wrapper .modal-window .modal-content {
+    background-color: #001a69bb;
+    overflow-y: auto;
+}
+
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-wrapper .modal-close {
+    z-index: 100000;
+    position: absolute;
+    top: 50px;
+    right: 55px;
+    width: 40px;
+    height: 35px;
+    color: #95979c !important;
+    font-size: 32px;
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+.modal-wrapper .modal-close:hover {
+    color: #2b2e38 !important;
+}
+
+.modal-wrapper {
+    position: absolute;
+    z-index: 100000;
+}
+
+.sp-modal {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    z-index: 100;
+    i {
+        color: black;
+    }
+}
+
+.fade {
+    display: none;
 }

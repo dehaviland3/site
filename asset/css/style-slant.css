@@ -17,7 +17,7 @@
   position: absolute;
   top: -6000%;
   right: 0%;
-  bottom: -50%;
+  bottom: 500%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-7deg);
@@ -66,7 +66,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: -700%;
+  top: -800%;
   right: 0%;
   bottom: -2000%;
   left: 0;
@@ -446,14 +446,20 @@
   content: "";
   display: block;
   position: absolute;
-  top: 100%;
+  top: -300%;
   right: 0%;
-  bottom: -850%;
+  bottom: -450%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
+}
+
+.bop {
+  background-color: white;
+  position: relative;
+  z-index: 10000000000000;
 }
 /*# sourceMappingURL=style-slant.css.map */

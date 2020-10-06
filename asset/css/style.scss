@@ -271,6 +271,10 @@ table.company {
 }
 
 .report-section {
+    margin-top: 4em;
+    &:first-child {
+        margin-top: 0;
+    }
     @include bop();
     >.date {
         display: inline-block;
@@ -385,6 +389,7 @@ header {
         }
         .title01,
         .title02 {
+            white-space: nowrap;
             letter-spacing: 0.15em;
             font-weight: bold;
             text-shadow: 2px 2px 10px $blue02, -2px -2px 10px $blue02;
@@ -451,6 +456,18 @@ header {
         background-image: url("../img/about_header_background.jpg");
         @include header-background;
     }
+    .report-background-image {
+        background-image: url("../img/report_header_background.jpg");
+        @include header-background;
+    }
+    .treatment-background-image {
+        background-image: url("../img/treatment_header_background.jpg");
+        @include header-background;
+    }
+    .hospital-background-image {
+        background-image: url("../img/hospital_header_background.jpg");
+        @include header-background;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -494,7 +511,7 @@ header {
     padding: 0;
     font-size: 18px;
     position: relative;
-    width: 14.285vw;
+    width: 12vw;
     /*親メニューの幅*/
     height: 75px;
     /*親メニューの高さ*/
@@ -522,30 +539,25 @@ header {
 
 .header-navigation ul li ul {
     position: absolute;
-    color: $green01;
+    color: white;
     top: 75px;
     /*親メニューの高さと同じにする*/
-    width: 14.285%;
+    width: 19%;
     z-index: 100;
     a {
-        color: $green01;
+        color: $blue01;
     }
 }
 
 .header-navigation ul li ul li {
     visibility: hidden;
     overflow: hidden;
-    width: 13vw;
+    width: 12vw;
+    color: red;
     /*サブメニューの幅*/
     height: 0;
     background: #770909;
     /*サブメニューの背景色*/
-}
-
-.header-navigation ul li ul li:hover,
-.header-navigation ul li ul li a:hover {
-    background: rgb(255, 255, 255);
-    /*ホバー時のサブメニューの背景色*/
 }
 
 .header-navigation ul li:hover ul li,
@@ -554,12 +566,21 @@ header {
     background: rgb(255, 255, 255);
     overflow: visible;
     height: 75px;
-    border: solid 1px $green01;
+    border: solid 1px $blue01;
     /*サブメニューの高さ*/
     z-index: 10;
     a {
-        color: $green01;
+        color: $blue01;
     }
+}
+
+.header-navigation ul li ul li:hover,
+.header-navigation ul li ul li a:hover {
+    background: white;
+    color: $green01;
+    border: solid 1px $green01;
+    font-weight: bold;
+    /*ホバー時のサブメニューの背景色*/
 }
 
 .menu ul {
@@ -568,6 +589,8 @@ header {
 }
 
 .report-category {
+    margin: 0 auto;
+    width: 240px;
     font-size: 14px;
     >li {
         padding: 0.6em 0;
@@ -599,16 +622,6 @@ header {
         >li {
             padding: 0.6em 0 0 0;
         }
-    }
-}
-
-.banner-img {
-    &.-message {
-        width: 110px;
-    }
-    &.-thought {
-        width: 120px;
-        height: auto;
     }
 }
 
@@ -671,6 +684,15 @@ header {
     }
 }
 
+.img-wrapper {
+    height: 340px;
+    width: 410px;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
 .achievement-card {
     margin: 60px 0 0 0;
     height: 70px;
@@ -714,8 +736,8 @@ header {
         width: 350px;
         .yoshimura01 {
             height: auto;
-            width: 350px;
-            object-fit: contail;
+            width: 400px;
+            object-fit: contain;
         }
         .yoshimura02 {
             img {
@@ -744,7 +766,7 @@ header {
     img {
         width: auto;
         object-fit: fit;
-        object-position: 50% 30%;
+        object-position: 50% 0%;
     }
 }
 
@@ -754,11 +776,11 @@ header {
 
 footer {
     position: relative;
-    z-index: -2;
+    z-index: 1;
     background: $blue01;
     color: white;
     .footer-title {
-        padding-top: 100px;
+        padding-top: 120px;
         text-align: center;
         >.title01 {
             font-size: 18px;
@@ -831,21 +853,39 @@ footer {
     top: -30px;
     right: -20px;
     left: 0px;
-    .modal-content {
-        width: 100vw;
-        padding-top: 180px;
-        padding-bottom: 5em;
-        font-size: 28px;
-        ul {
-            width: 80%;
-            margin: 0 auto;
-        }
-        >ul>li {
-            margin: 0.5em 0em 0 0;
-            padding: 0 0 0.2em 0em;
-            color: white;
-            border-bottom: solid 1px white;
-        }
+    .active {
+        background-image: url("../img/sp_border_bottom.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+.modal-content {
+    width: 100vw;
+    padding-top: 180px;
+    padding-bottom: 5em;
+    font-size: 28px;
+    .parent {
+        display: inline-block;
+        border-bottom: solid 1px white;
+        width: 100%;
+        position: relative;
+        z-index: 100000;
+        margin: 0.5em 0em 0 0;
+        padding: 0 0 0.2em 0em;
+        color: white;
+        text-decoration: none;
+    }
+    .child {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin: 0 0 0 -1em;
+        padding: 0.3em 0;
+    }
+    ul {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -877,20 +917,20 @@ footer {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    background-color: #001a69bb;
+    background-color: #001a6900;
 }
 
 .modal-wrapper .modal-window .modal-content {
-    background-color: #001a69bb;
+    background-color: #001a69c1;
     overflow-y: auto;
 }
 
 .modal-overlay {
-    z-index: 10;
+    z-index: 10000000;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 100;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
 }
@@ -898,8 +938,8 @@ footer {
 .modal-wrapper .modal-close {
     z-index: 100000;
     position: absolute;
-    top: 50px;
-    right: 55px;
+    top: 52px;
+    right: 38px;
     width: 40px;
     height: 35px;
     color: #95979c !important;
@@ -912,6 +952,12 @@ footer {
     text-indent: 0;
 }
 
+.modal-close {
+    .fa-times {
+        font-size: 40px;
+    }
+}
+
 .modal-wrapper .modal-close:hover {
     color: #2b2e38 !important;
 }
@@ -919,9 +965,13 @@ footer {
 .modal-wrapper {
     position: absolute;
     z-index: 100000;
+    width: 100%;
 }
 
 .sp-modal {
+    .fa-bars {
+        font-size: 30px;
+    }
     position: absolute;
     top: 30px;
     right: 45px;
@@ -933,4 +983,18 @@ footer {
 
 .fade {
     display: none;
+}
+
+.banner-img {
+    &.-message {
+        width: 110px;
+    }
+    &.-thought {
+        width: 120px;
+        height: auto;
+    }
+    &.-report {
+        width: 100px;
+        height: auto;
+    }
 }

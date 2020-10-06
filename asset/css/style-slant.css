@@ -242,7 +242,7 @@
   position: absolute;
   top: -200%;
   right: 0%;
-  bottom: -100%;
+  bottom: -500%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);
@@ -271,7 +271,7 @@
   position: absolute;
   top: -440%;
   right: 0%;
-  bottom: -1200%;
+  bottom: -100%;
   left: 0;
   background-color: #001b69;
   -webkit-transform: skewY(-7deg);
@@ -301,7 +301,7 @@
   position: absolute;
   top: -180%;
   right: 0%;
-  bottom: -500%;
+  bottom: -300%;
   left: 0;
   background-color: #ffffff49;
   -webkit-transform: skewY(9deg);
@@ -359,13 +359,13 @@
   content: "";
   display: block;
   position: absolute;
-  top: -180%;
+  top: -580%;
   right: 0%;
-  bottom: -2000%;
+  bottom: -550%;
   left: 0;
   background-color: white;
-  -webkit-transform: skewY(0deg);
-          transform: skewY(0deg);
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
 }
@@ -426,40 +426,5 @@
           transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
-}
-
-.slant-toggle17 {
-  position: relative;
-  z-index: 100000;
-  height: 10px;
-  width: 100%;
-  background: transparent;
-  pointer-events: none;
-}
-
-.slant-toggle17 img {
-  position: relative;
-  z-index: 20;
-}
-
-.slant-toggle17::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -300%;
-  right: 0%;
-  bottom: -450%;
-  left: 0;
-  background-color: white;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
-  z-index: -200;
-  pointer-events: none;
-}
-
-.bop {
-  background-color: white;
-  position: relative;
-  z-index: 10000000000000;
 }
 /*# sourceMappingURL=style-slant.css.map */

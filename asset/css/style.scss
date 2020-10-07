@@ -996,5 +996,17 @@ footer {
     &.-report {
         width: 100px;
         height: auto;
+        margin: 0 auto;
+    }
+    &.-specialized {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+    &.-general_psychiatric_outpatient {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 5em;
     }
 }

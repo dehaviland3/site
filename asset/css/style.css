@@ -1055,5 +1055,19 @@ footer .footer-banners img:last-child {
 .banner-img.-report {
   width: 100px;
   height: auto;
+  margin: 0 auto;
+}
+
+.banner-img.-specialized {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.banner-img.-general_psychiatric_outpatient {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 5em;
 }
 /*# sourceMappingURL=style.css.map */

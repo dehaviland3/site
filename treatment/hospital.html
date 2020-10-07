@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, " />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -19,65 +19,120 @@
 
     <link rel="stylesheet" href="../asset/css/style.css" />
     <link rel="stylesheet" href="../asset/css/style-slant.css" />
+
+
+
+
 </head>
 
 <body>
+
     <header>
         <div class="hospital-background-image bop-to-the-top">
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
-                    <div class="col-12"></div>
+                    <div class="col-12">
+                    </div>
                     <div class="col">
-                        <div class="header-title">
-                            <img class="image" src="../asset/img/header_title_03.gif" alt="" />
+                        <div class="d-flex">
+                            <div class="header-title">
+                                <img class="image" src="../asset/img/header_title_02.png" alt="" />
+                                <div class="header-pageTitle">
+                                    <p class="title01">診療案内</p>
+                                    <p class="title02">病棟について</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slant-toggle01"></div>
-
-                    <div class="slant-toggle03"></div>
-                    <div class="w-100"></div>
-
-                    <div class="slant-toggle02"></div>
-                    <div class="slant-toggle04"></div>
                 </div>
+                <div class="slant-toggle01"></div>
+                <div class="w-100"></div>
+                <div class="slant-toggle02"></div>
             </div>
         </div>
-        </div>
     </header>
+    <div class="slant-toggle03"></div>
+    <div class="slant-toggle04"></div>
     <div id="top">
-        <div class="header-navigation">
-            <ul class="d-flex">
+        <div class="header-navigation d-none d-md-block justify-content-around">
+            <ul class="d-flex justify-content-between">
                 <li>
                     <a href="#">トップ</a>
-                    <ul>
-                        <li><a href="#">Sub menu 01</a></li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#">教室案内</a>
                     <ul>
-                        <li><a href="#">Sub menu 01</a></li>
-                        <li><a href="#">Sub menu 02</a></li>
+                        <li><a href="#">教授あいさつ</a></li>
+                        <li><a href="#">スタッフ紹介</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">診療案内</a>
                     <ul>
-                        <li><a href="#">Sub menu 01</a></li>
-                        <li><a href="#">Sub menu 02</a></li>
+                        <li><a href="#">病棟について</a></li>
                     </ul>
                 </li>
                 <li><a href="#">研究紹介</a></li>
                 <li><a href="#">業績</a></li>
                 <li><a href="#">学会・研究会報告</a></li>
-                <li><a href="#">入局希望の方へ</a></li>
+                <li>
+                    <a href="#">入局希望の方へ</a>
+                    <ul>
+                        <li><a href="#">専門医研修</a></li>
+                        <li><a href="#">プログラム</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
+    <a class="sp-modal d-md-none" href="#modal-01">
+        <i class="fas fa-bars"></i>
+        </button>
+    </a>
+
+    <div class="modal-wrapper d-md-none" id="modal-01">
+        <div class="modal-window">
+            <div class="modal-content-wrapper">
+                <div class="modal-overlay modal-close"></div>
+                <div class="modal-content">
+
+
+                    <ul>
+                        <li><a class="parent" href="#">トップ</a></li>
+                        <li><a class="parent" href="#">教室案内</a>
+                            <ul>
+                                <li><a class="child" href="#">・教授あいさつ</a></li>
+                                <li><a class="child" href="#">・スタッフ紹介</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="parent" href="#">診療案内</a>
+                            <ul>
+                                <li><a class="active child" href="#">・病棟について</a> </li>
+                            </ul>
+                        </li>
+                        <li><a class="parent" href="#">研究紹介</a></li>
+                        <li><a class="parent" href="#">業績</a></li>
+                        <li><a class="parent" href="#">学会・研究会報告</a></li>
+                        <li><a class="parent" href="#">入国希望の方へ</a>
+                            <ul>
+                                <li><a class="child" href="#">・専門医研修プログラム</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a href="#!" class="modal-close"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+    </div>
+
 
     <main class="hospital-container bop-to-the-top">
-        <div class="green-title text-center pt-5">Ward</div>
-        <div class="subtitle-blue text-center mb-5">
+        <div class="banner-img -ward">
+            <img src="../asset/img/banner_ward.png" alt="">
+        </div>
+        <div class="subtitle-blue mt-2 text-center mb-5">
             病棟案内
         </div>
         <div class="container-fluid p-0">
@@ -113,8 +168,10 @@
 
                 <div class="w-100"></div>
                 <div class="col-12">
-                    <p class="green-title text-center">Hospitalization</p>
-                    <p class="subtitle-blue text-center">入院される患者さんへ</p>
+                    <div class="banner-img mx-auto -hospitalization">
+                        <img src="../asset/img/banner_hospitalization.png" alt="">
+                    </div>
+                    <p class="subtitle-blue mt-2 text-center mb-3">入院される患者さんへ</p>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-12 col-md-6 px-3 p-md-0" ">
@@ -122,6 +179,7 @@
                     <p class="body-text ">
                         当科では、週1回、医師、看護師、薬剤部、ソーシャルワーカーも含めて多職種でカンファレンスを行っており、心理士も含めて多面的に一人ひとりの患者を捉え、個別化した最善の治療や退院調整が行えるような体制をとっております。
                         <br>原則として、外来主治医が入院予約をいれ、ベッドコントロール後に入院となります。ベッドコントロールの観点から緊急入院が難しいことがありますので、予めご了承ください。また、当科は精神科医療の中でも特に急性期医療、身体合併症管理を主体とした入院治療を行っております。病状によっては近隣の病院への転院等をお勧めしておりますのでご理解のほどよろしくお願いします。
+
                         <br>新たな病院の指針で、入院前に新型コロナウイルスのPCR検査が陰性であることと、胸部レントゲン検査で異常がないことが必要となっております。新型コロナウイルスの影響を受け、入院後も院内外出を10日間は控えていただき、試験外泊や試験外出は忌引きなどやむを得ない事情がある場合以外は原則禁止で、家族との面会も原則禁止となっております。ご不憫をおかけして誠に申し訳ございません。
 
                     </p>
@@ -151,10 +209,11 @@
 
     </main>
 
+
     <footer>
-        <div class="slant-toggle05 "></div>
+        <div class="slant-toggle15 "></div>
         <!--   <div class="slant-toggle05 "></div>-->
-        <div class="footer-title text-center mt-5 ">
+        <div class="footer-title text-center ">
             <span class="title01 ">産業医科大学医学部</span>
             <span class="title02 ">精神医学教室 </span>
         </div>
@@ -182,24 +241,33 @@
                 <div class="col "></div>
             </div>
         </div>
-        <div class="university-of-copyright ">
-            <div class="container-fluid p-0 ">
-                <div class="row no-gutters ">
-                    <div class="col-12 text-center pb-3 ">
 
-                        <div class="d-flex flex-column flex-md-row justify-content-center ">
-                            <p>© University of Occupational</p>
-                            <p>and Environmental Health, Japan.</p>
-                            <p>All Rights Reserved.</p>
-                        </div>
+        <div class="university-of-copyright container-fluid mt-4 p-0 ">
+            <div class="row no-gutters ">
+                <div class="col-12 text-center pb-3 ">
+                    <div class="d-flex flex-column flex-md-row justify-content-center ">
+                        <p>© University of Occupational</p>
+                        <p>and Environmental Health, Japan.</p>
+                        <p>All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
     </footer>
-    <nav id="page_top "><a href="# "><i class="fas fa-chevron-up " aria-hidden="true "></i></a></nav>
 
 
-
+    <script>
+        $(".sp-modal ").on("click ", function() {
+            $(".sp-modal ").addClass("fade ");
+        });
+        $(".modal-close ").on("click ", function() {
+            $(".sp-modal ").removeClass("fade ");
+        });
+    </script>
+    <div class="pagetop "><a href="# "><i class="fas fa-chevron-up " aria-hidden="true "></i></a></div>
 </body>
+
+
 
 </html>

@@ -62,7 +62,7 @@ html {
 
 .bop-to-the-top {
     position: relative;
-    z-index: 1000;
+    z-index: 10000;
     background-color: white;
 }
 
@@ -243,11 +243,32 @@ table.company {
     }
 }
 
+.pagetop {
+    z-index: 1000000000;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 55px;
+    height: 55px;
+    background-color: $green01;
+    text-align: center;
+    color: white;
+}
+
+.pagetop a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 55px;
+}
+
+.pagetop:hover {}
+
 #page_top {
     position: fixed;
-    z-index: 100000;
-    bottom: 30px;
-    right: 20px;
+    z-index: 100000000;
+    bottom: 20px;
+    right: 5px;
     a {
         background-color: $green01;
         color: white;
@@ -257,7 +278,6 @@ table.company {
         padding: 18px 20px;
     }
      :hover {
-        background-color: rgba(0, 128, 0, 0.87);
         text-decoration: none;
     }
 }
@@ -287,6 +307,7 @@ table.company {
         margin: 0.6em 0 0 0;
         font-size: 22px;
         color: $blue01;
+        font-weight: bold;
     }
     .date02 {
         margin: 0.2em 0 0 0;
@@ -380,19 +401,17 @@ header {
         height: auto;
         .title01 {
             font-size: 26px;
-            font-weight: bold;
         }
         .title02 {
             line-height: 24px;
             font-size: 30px;
-            font-weight: bold;
         }
         .title01,
         .title02 {
             white-space: nowrap;
+            font-weight: 600;
             letter-spacing: 0.15em;
-            font-weight: bold;
-            text-shadow: 2px 2px 10px $blue02, -2px -2px 10px $blue02;
+            text-shadow: 2px 2px 5px white, -2px -1px 5px white;
         }
     }
     .header-banner {
@@ -456,6 +475,10 @@ header {
         background-image: url("../img/about_header_background.jpg");
         @include header-background;
     }
+    .research-background-image {
+        background-image: url("../img/research_header_background.jpg");
+        @include header-background;
+    }
     .report-background-image {
         background-image: url("../img/report_header_background.jpg");
         @include header-background;
@@ -465,7 +488,7 @@ header {
         @include header-background;
     }
     .hospital-background-image {
-        background-image: url("../img/hospital_header_background.jpg");
+        background-image: url("../img/treatment_header_background.jpg");
         @include header-background;
     }
 }
@@ -497,6 +520,14 @@ header {
 }
 
 .header-navigation {
+    word-break: break-all;
+    ul {
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+    }
+    display: inline-block;
     position: relative;
     z-index: 100000;
     width: 100%;
@@ -511,7 +542,7 @@ header {
     padding: 0;
     font-size: 18px;
     position: relative;
-    width: 12vw;
+    width: 13vw;
     /*親メニューの幅*/
     height: 75px;
     /*親メニューの高さ*/
@@ -525,7 +556,8 @@ header {
 
 .header-navigation ul li a {
     color: white;
-    display: block;
+    display: inline-block;
+    width: 13vw;
     text-decoration: none;
 }
 
@@ -552,7 +584,7 @@ header {
 .header-navigation ul li ul li {
     visibility: hidden;
     overflow: hidden;
-    width: 12vw;
+    width: 13vw;
     color: red;
     /*サブメニューの幅*/
     height: 0;
@@ -577,9 +609,10 @@ header {
 .header-navigation ul li ul li:hover,
 .header-navigation ul li ul li a:hover {
     background: white;
+    display: inline-block;
+    zoom: 1;
     color: $green01;
     border: solid 1px $green01;
-    font-weight: bold;
     /*ホバー時のサブメニューの背景色*/
 }
 
@@ -591,11 +624,12 @@ header {
 .report-category {
     margin: 0 auto;
     width: 240px;
-    font-size: 14px;
+    font-size: 16px;
     >li {
         padding: 0.6em 0;
     }
     >.title {
+        font-weight: bold;
         text-align: center;
         color: $green01;
         border: solid 1px $green01;
@@ -613,6 +647,7 @@ header {
     margin-top: 2.5em;
     @include bop;
     >.title {
+        font-weight: bold;
         padding: 0.6em 0;
         border: solid 1px $green01;
         color: $green01;
@@ -694,35 +729,77 @@ header {
 }
 
 .achievement-card {
+    display: inline-block;
     margin: 60px 0 0 0;
-    height: 70px;
-    width: 160px;
     border: solid 1px $green01;
     color: black;
     font-size: 20px;
+    width: 280px;
+    height: 70px;
     p {
         color: black;
+        margin: 0 auto;
         line-height: 70px;
     }
     a {
-        margin: auto 0 auto 0;
+        margin: 0 auto;
         line-height: 70px;
     }
     img {
-        width: 1.3em;
-        height: 1.6em;
-        margin: auto 0 auto 0;
+        width: 28px;
+        height: 36px;
+        margin: 17px 0 17px 20px;
+    }
+    &.-research {
+        display: inline-block;
+        width: 280px;
+        height: 70px;
+        a {
+            color: $green01;
+        }
     }
 }
 
 .about-thought {
     background-color: $blue02;
     .green-title {
-        margin-top: 5em;
+        margin-top: 4em;
     }
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+.yoshimura00 {
+    width: 100%;
+    .yoshimura02 {
+        margin: 0 auto;
+    }
+}
+
+.yoshimura01 {
+    max-width: 500px;
+    img {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+.about-thought {
+    margin-top: 5em;
+}
+
+.research-container {
+    .span-name {
+        line-height: 30px;
+        padding-left: 0.2em;
+    }
+    .green-line {
+        margin-bottom: 1em;
+    }
+    .margin {
+        margin-top: 140px;
     }
 }
 
@@ -731,14 +808,13 @@ header {
         padding-top: 5em;
     }
     .right-end-img {
+        img {
+            width: 450px;
+        }
         position: relative;
         z-index: 20;
         width: 350px;
-        .yoshimura01 {
-            height: auto;
-            width: 400px;
-            object-fit: contain;
-        }
+        margin: 0 auto;
         .yoshimura02 {
             img {
                 position: relative;
@@ -761,7 +837,7 @@ header {
         background-color: $blue02;
         margin-left: auto;
         position: relative;
-        z-index: 1000;
+        z-index: 0;
     }
     img {
         width: auto;
@@ -776,11 +852,14 @@ header {
 
 footer {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background: $blue01;
     color: white;
     .footer-title {
         padding-top: 120px;
+        &.-hospital {
+            padding-top: 20px;
+        }
         text-align: center;
         >.title01 {
             font-size: 18px;
@@ -925,16 +1004,6 @@ footer {
     overflow-y: auto;
 }
 
-.modal-overlay {
-    z-index: 10000000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 100;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-}
-
 .modal-wrapper .modal-close {
     z-index: 100000;
     position: absolute;
@@ -989,12 +1058,27 @@ footer {
     &.-message {
         width: 110px;
     }
+    &.-hospitalization {
+        margin: 5em 0 0.8em 0;
+        width: 210px;
+        height: auto;
+    }
     &.-thought {
         width: 120px;
         height: auto;
     }
     &.-report {
         width: 100px;
+        height: auto;
+        margin: 0 auto;
+    }
+    &.-research {
+        width: 115px;
+        margin: 0 auto;
+    }
+    &.-ward {
+        padding: 5em 0 0.8em 0;
+        width: 80px;
         height: auto;
         margin: 0 auto;
     }

@@ -681,7 +681,8 @@ header .hospital-background-image {
   border-bottom: 1px solid #00b04f;
 }
 
-.report-category .category.active {
+.report-category .category {
+  width: 100%;
   background: #00b04f;
   color: white;
 }
@@ -774,13 +775,17 @@ header .hospital-background-image {
   width: auto;
 }
 
+.achievement-container .container {
+  text-align: center;
+}
+
 .achievement-card {
   display: inline-block;
   margin: 60px 0 0 0;
   border: solid 1px #00b04f;
   color: black;
   font-size: 20px;
-  width: 280px;
+  width: 210px;
   height: 70px;
 }
 
@@ -793,6 +798,7 @@ header .hospital-background-image {
 .achievement-card a {
   margin: 0 auto;
   line-height: 70px;
+  color: #00b04f;
 }
 
 .achievement-card img {
@@ -999,6 +1005,16 @@ footer .footer-banners img:last-child {
   background-position: bottom;
 }
 
+.modal-wrapper a {
+  color: white;
+}
+
+.active02 {
+  background-image: url("../img/sp_border_bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .modal-content {
   width: 100vw;
   padding-top: 180px;
@@ -1118,6 +1134,11 @@ footer .footer-banners img:last-child {
 
 .fade {
   display: none;
+}
+
+.banner-img.-results {
+  padding: 6em 0 0.8em 0;
+  width: 100px;
 }
 
 .banner-img.-message {

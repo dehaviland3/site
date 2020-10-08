@@ -637,7 +637,8 @@ header {
     .category {
         border-bottom: 1px solid $green01;
     }
-    .category.active {
+    .category {
+        width: 100%;
         background: $green01;
         color: white;
     }
@@ -728,13 +729,19 @@ header {
     }
 }
 
+.achievement-container {
+    .container {
+        text-align: center;
+    }
+}
+
 .achievement-card {
     display: inline-block;
     margin: 60px 0 0 0;
     border: solid 1px $green01;
     color: black;
     font-size: 20px;
-    width: 280px;
+    width: 210px;
     height: 70px;
     p {
         color: black;
@@ -744,6 +751,7 @@ header {
     a {
         margin: 0 auto;
         line-height: 70px;
+        color: $green01;
     }
     img {
         width: 28px;
@@ -937,6 +945,15 @@ footer {
         background-repeat: no-repeat;
         background-position: bottom;
     }
+    a {
+        color: white;
+    }
+}
+
+.active02 {
+    background-image: url("../img/sp_border_bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .modal-content {
@@ -1055,6 +1072,10 @@ footer {
 }
 
 .banner-img {
+    &.-results {
+        padding: 6em 0 0.8em 0;
+        width: 100px;
+    }
     &.-message {
         width: 110px;
     }

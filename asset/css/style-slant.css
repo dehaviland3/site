@@ -242,9 +242,9 @@
   position: absolute;
   top: -200%;
   right: 0%;
-  bottom: -400%;
+  bottom: -350%;
   left: 0;
-  background-color: white;
+  background-color: red;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -11;

@@ -136,7 +136,7 @@
 .slant-toggle06 {
   position: relative;
   z-index: 10;
-  height: 100px;
+  height: 10px;
   width: 100%;
   background: transparent;
   pointer-events: none;
@@ -151,9 +151,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: -100%;
+  top: 0%;
   right: 0%;
-  bottom: 0;
+  bottom: -1300%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);
@@ -180,7 +180,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 20%;
+  top: -30%;
   right: 0%;
   bottom: -50%;
   left: 0;
@@ -271,7 +271,7 @@
   position: absolute;
   top: -440%;
   right: 0%;
-  bottom: -80%;
+  bottom: -8 0%;
   left: 0;
   background-color: #001b69;
   -webkit-transform: skewY(-7deg);

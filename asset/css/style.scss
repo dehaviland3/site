@@ -204,20 +204,23 @@ table.company {
     td {
         padding: 10px;
     }
-    th {
-        background: $blue01;
-        vertical-align: middle;
-        text-align: center;
-        overflow: visible;
-        position: relative;
-        color: #fff;
-        font-weight: normal;
-    }
-    td {
-        background: #e3eff5;
-        width: 75%;
-        padding-left: 20px;
-    }
+}
+
+th {
+    background: $blue01;
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    width: 100px;
+}
+
+td {
+    background: #e3eff5;
+    padding-left: 20px;
+    width: 250px;
 }
 
 .online-lesson-container {
@@ -246,8 +249,8 @@ table.company {
 .pagetop {
     z-index: 1000000000;
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 10px;
+    right: 10px;
     width: 55px;
     height: 55px;
     background-color: $green01;
@@ -399,6 +402,10 @@ header {
         top: 230px;
         left: 260px;
         height: auto;
+        img {
+            width: 40vw;
+            height: auto;
+        }
         .title01 {
             font-size: 26px;
         }
@@ -470,7 +477,10 @@ header {
         background-image: url("../img/achievement_header_bg.jpg");
         @include header-background;
     }
-    .recruit-background-image {}
+    .recruit-background-image {
+        background-image: url("../img/recruit_header_background.jpg");
+        @include header-background;
+    }
     .about-background-image {
         background-image: url("../img/about_header_background.jpg");
         @include header-background;
@@ -507,6 +517,9 @@ header {
             margin: auto;
             width: 210px;
             height: auto;
+            &.-program {
+                left: -24%;
+            }
         }
         .header-banner.-topPage {
             top: 450px;
@@ -685,6 +698,78 @@ header {
     >.title-blue01 {
         color: $blue01;
         font-weight: bold;
+    }
+}
+
+.flex-container {
+    box-sizing: border-box;
+    width: 100%;
+    .left {
+        margin: 0 70px 0 145px;
+        width: 50%;
+    }
+    .-blue02 {
+        background-color: $blue02;
+    }
+    .right {
+        margin: 0 0 0 auto;
+        width: 400px;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .facilityContainer {
+        margin: 0 145px;
+    }
+    .facility {
+        width: 170px;
+        height: 130px;
+        p {
+            white-space: nowrap;
+            margin: 0 1.3em;
+        }
+        border: solid 1px $green01;
+        color: $green01;
+        text-align: center;
+        line-height: 130px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .facilityList li {
+        margin: 0 6em 0.6em 0;
+        list-style: square;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        .left {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .facilityContainer {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}
+
+.recruit-container {
+    .body-text .right {
+        width: auto;
+        img {
+            height: auto;
+            width: 100%;
+            object-fit: fit;
+        }
+    }
+    .online-img {
+        img {
+            background-color: $blue02;
+        }
     }
 }
 
@@ -957,7 +1042,7 @@ footer {
 }
 
 .modal-content {
-    width: 100vw;
+    width: 100%;
     padding-top: 180px;
     padding-bottom: 5em;
     font-size: 28px;
@@ -1072,11 +1157,27 @@ footer {
 }
 
 .banner-img {
+    margin: 0 auto;
+    &.-program {
+        padding-top: 5em;
+        width: 100px;
+    }
+    &.-simulation {
+        width: 110px;
+    }
+    &.-onlineLesson {
+        margin: 0;
+        width: 180px;
+    }
+    &.-education {
+        width: 130px;
+    }
     &.-results {
         padding: 6em 0 0.8em 0;
         width: 100px;
     }
     &.-message {
+        padding-top: 5em;
         width: 110px;
     }
     &.-hospitalization {

@@ -1981,4 +1981,12 @@ footer .footer-banners img:last-child {
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
+
+.fadeinBg {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
 /*# sourceMappingURL=style.css.map */

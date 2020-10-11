@@ -37,7 +37,7 @@
 <body>
 
     <header style="height:1200px; ">
-        <div class="top-background-image ">
+        <div class="top-background-image">
             <div class="container-fluid p-0 ">
                 <div class="row no-gutters ">
                     <div class="col-12 "></div>
@@ -251,18 +251,18 @@
 
         <div class="three-windows  justify-content-between  d-none d-md-flex bop-to-the-top">
             <div class="one slideContsR slideConts overflow-hidden">
-                <a href="# "><img src="./asset/img/treatment_03.png " alt=" "><br> 患者さんへ
+                <a href="./treatment/index.html"><img src="./asset/img/treatment_03.png " alt=" "><br> 患者さんへ
                 </a>
             </div>
             <div class="two slideContsR slideConts overflow-hidden">
-                <a href="# "><img src="./asset/img/recruit_02.png " alt=" "><br> 入局希望の方へ
+                <a href="./recruit/index.html "><img src="./asset/img/recruit_02.png " alt=" "><br> 入局希望の方へ
                 </a>
                 <div class="doctor-program mt-5 ">
                     <a href="">専門医研修プログラム</a>
                 </div>
             </div>
             <div class="three slideContsR slideConts overflow-hidden">
-                <a href="# "><img src="./asset/img/top_threeWindows.png " alt=" "><br> 学会・研究会
+                <a href="./report/index.html "><img src="./asset/img/top_threeWindows.png " alt=" "><br> 学会・研究会
                 </a>
             </div>
         </div>
@@ -603,6 +603,26 @@
                 }
             }
         });
+
+        $(function(){
+    load_effect();
+    $(window).scroll(function (){
+        scroll_effect();
+    });
+});
+
+        function load_effect(){
+    var tt = $(window).scrollTop();
+    var hh = $(window).height();
+    $('.top-background-image').each(function(){
+        var yy = $(this).offset().top;
+        if (tt > yy - hh){
+            $(this).addClass('fadeinBg');
+        }
+    });
+
+}
+
     </script>
 </body>
 

@@ -1,2 +1,2 @@
-各ページフッター部分、バナー3つ
-リンク貼る指示はありませんが、リンク未対応のままでいいですか。
+https://dehaviland3.github.io/site/treatment/
+https://dehaviland3.github.io/site/report/

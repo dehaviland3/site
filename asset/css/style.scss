@@ -36,6 +36,11 @@ img {
     height: auto;
 }
 
+@font-face {
+    font-family: 'myfont';
+    src: url('../font/schoolbook_italic.ttf') format('truetype');
+}
+
 .fontG {
     font-family: "Meiryo", "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
 }
@@ -115,8 +120,6 @@ body {
     margin-top: 0.8em;
 }
 
-.top-container {}
-
 .left-side-fixed .message-wrapper {
     z-index: 2;
     >.name01 {
@@ -139,9 +142,73 @@ body {
     background-color: white;
 }
 
-.swiper-wrapper {
-    background: $blue01;
-    color: white;
+.swiper-container {
+    margin-top: 6em;
+    height: 700px;
+    width: 100%;
+    background-color: $blue01;
+    .swiper-wrapper {
+        margin: 0 auto;
+        background: $blue01;
+        color: white;
+        width: 100%;
+        .swiper-slide {
+            color: white;
+            width: 100%;
+            .contents {
+                padding: 0 50px;
+                width: 100%;
+                max-width: 1100px;
+                margin: 0 auto;
+                .title {
+                    color: $green01;
+                    font-size: 24px;
+                    margin-top: 4em;
+                }
+            }
+        }
+        .right-side,
+        .left-side {
+            width: 45%;
+        }
+        .left-side {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .right-side {
+            margin: 1.2em 0;
+        }
+    }
+    .swiper-button-prev {
+        position: relative;
+        top: -650px;
+        left: -1%;
+        height: 700px;
+        width: 60px;
+        img {
+            height: 100%;
+        }
+    }
+    .swiper-button-next {
+        position: relative;
+        top: -1400px;
+        left: 96%;
+        height: 700px;
+        width: 60px;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
 }
 
 .button-square {
@@ -217,10 +284,12 @@ th {
     width: 100px;
 }
 
-td {
-    background: #e3eff5;
-    padding-left: 20px;
-    width: 250px;
+.company {
+    td {
+        background: #e3eff5;
+        padding-left: 20px;
+        width: 250px;
+    }
 }
 
 .online-lesson-container {
@@ -383,7 +452,7 @@ td {
 
 header {
     position: relative;
-    z-index: -100;
+    z-index: 0;
     width: 100%;
     height: 500px;
     .header-title {
@@ -439,11 +508,10 @@ header {
         height: auto;
     }
     .header-banner.-topPage {
-        top: 450px;
+        top: 350px;
         left: 230px;
         img {
-            width: 300px;
-            height: 100px;
+            width: 350px;
         }
     }
     .nav {
@@ -459,24 +527,32 @@ header {
             line-height: 60px;
             background: $blue01;
             color: white;
+            padding: 0 0 0 15px;
+            a {
+                color: white;
+            }
         }
     }
     .header-news {
-        margin-top: 170px;
+        margin-top: 190px;
         .title {
             width: 180px;
-            height: 60px;
-            line-height: 60px;
             background-color: $green01;
             p {
+                padding: 15px 45px 15px 15px;
                 font-size: 22px;
                 color: white;
             }
         }
         .text {
             height: 60px;
-            line-height: 60px;
             background-color: rgba(255, 255, 255, 0.707);
+        }
+        .date {
+            padding: 15px 30px 15px 15px;
+        }
+        .text02 {
+            padding: 15px 35px 15px 0;
         }
     }
     .top-background-image {
@@ -485,6 +561,10 @@ header {
         object-fit: contain;
         height: 1200px;
         object-position: 30% 0%;
+    }
+    .staff-background-image {
+        background-image: url("../img/staff_header_background.jpg");
+        @include header-background;
     }
     .achievement-background-image {
         background-image: url("../img/achievement_header_bg.jpg");
@@ -535,10 +615,10 @@ header {
             }
         }
         .header-banner.-topPage {
-            top: 450px;
-            left: 50%px;
+            top: 470px;
+            left: 5%;
             img {
-                width: 300px;
+                width: 330px;
                 height: 100px;
             }
         }
@@ -552,6 +632,13 @@ header {
     }
     a {
         display: inline-block;
+        margin: 30px 0 15px 0
+    }
+    ul li ul li a {
+        margin-top: 25px;
+    }
+    .program {
+        margin-top: 10px;
     }
     display: inline-block;
     position: relative;
@@ -570,9 +657,8 @@ header {
     position: relative;
     width: 13vw;
     /*親メニューの幅*/
-    height: 75px;
+    height: 80px;
     /*親メニューの高さ*/
-    line-height: 75px;
     background: $blue01;
     /*親メニューの背景色*/
     color: #ffffff;
@@ -598,7 +684,7 @@ header {
 .header-navigation ul li ul {
     position: absolute;
     color: white;
-    top: 75px;
+    top: 80px;
     /*親メニューの高さと同じにする*/
     width: 19%;
     z-index: 100;
@@ -623,7 +709,7 @@ header {
     visibility: visible;
     background: rgb(255, 255, 255);
     overflow: visible;
-    height: 75px;
+    height: 80px;
     border: solid 1px $blue01;
     /*サブメニューの高さ*/
     z-index: 10;
@@ -633,13 +719,17 @@ header {
 }
 
 .header-navigation ul li ul li:hover,
-.header-navigation ul li ul li a:hover {
+{
     background: white;
-    display: inline-block;
-    zoom: 1;
     color: $green01;
     border: solid 1px $green01;
     /*ホバー時のサブメニューの背景色*/
+}
+
+.header-navigation ul li ul li a:hover {
+    background: white;
+    color: $green01;
+    background-color: transparent;
 }
 
 .menu ul {
@@ -661,12 +751,16 @@ header {
         border: solid 1px $green01;
     }
     .category {
-        border-bottom: 1px solid $green01;
-    }
-    .category {
         width: 100%;
         background: $green01;
         color: white;
+    }
+    .categoryContent {
+        border-bottom: 1px solid $green01;
+        &.active {
+            background-color: $green01;
+            color: white;
+        }
     }
 }
 
@@ -687,8 +781,46 @@ header {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .report-archive {
+        width: 240px;
+        margin: 50px auto;
+    }
+}
+
+.doctor-program {
+    width: 230px;
+    height: 50px;
+    color: $green01;
+    font-size: 18px;
+    border: solid 1px $green01;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.three-windows-sp {
+    margin: 0 100px;
+    text-align: center;
+    >div {
+        margin-bottom: 2em;
+    }
+    a {
+        font-weight: bold;
+        padding: 1em 0;
+        color: $green01;
+        text-align: center;
+        margin: 1.5em auto;
+        span {
+            margin: 1em 0;
+        }
+    }
+}
+
 .three-windows {
+    margin-top: 4em;
     height: 380px;
+    font-weight: bold;
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -707,6 +839,22 @@ header {
     }
     a {
         color: $green01;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .three-windows {
+        >div {
+            margin: 2em;
+        }
+        img {
+            width: 62vw;
+            height: 52vw;
+        }
+        .one,
+        .three {
+            top: 0;
+        }
     }
 }
 
@@ -737,23 +885,135 @@ header {
     }
 }
 
+.top-container {
+    .header-news-sp {
+        text-align: center;
+        .title {
+            width: 100%;
+            background-color: $green01;
+            padding: .2em 0;
+            p {
+                font-size: 22px;
+                color: white;
+                padding: 0.3em 0;
+            }
+        }
+        >.date {
+            color: $blue01;
+            font-size: 26px;
+            padding: 15px 30px 0 15px;
+        }
+    }
+    .text02 {
+        padding: 5px 0 0 0;
+    }
+}
+
+.feature-sp {
+    padding: 3em 0;
+    background: $blue01;
+    p.title {
+        font-size: 34px;
+        color: $green01;
+        padding: 2em 0 0 0;
+        text-align: center;
+    }
+    .left-side {
+        margin: 0 30px;
+    }
+    .body-text {
+        margin: 30px;
+    }
+}
+
+.detail {
+    border: solid 1px $green01;
+    width: 180px;
+    p {
+        color: $green01;
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+}
+
+.psychiatry {
+    margin: 2em 160px 1em 160px;
+    >.body-text {
+        margin-left: 80px;
+    }
+}
+
+.top-news {
+    margin: 0 160px 3em 160px;
+    .title00 {
+        font-size: 24px;
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contents {
+        width: 100%;
+        border-bottom: solid 1px black;
+        &:last-child {
+            border: none;
+        }
+    }
+    .date {
+        margin: 20px 30px 20px 15px;
+        color: $blue01
+    }
+    .text {
+        margin: 20px 0;
+    }
+}
+
+.staff-introduction {
+    height: 760px;
+    width: 100%;
+    background: {
+        image: url("../img/staff_introduction02.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+    .banner-img {
+        position: relative;
+        z-index: 100;
+        top: 30%;
+    }
+    .link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .flex-container {
     box-sizing: border-box;
     width: 100%;
+    .thought-container {
+        background: $blue02;
+        .left {
+            padding: 7em 0 3em 0;
+        }
+    }
     .left {
-        margin: 0 70px 0 145px;
+        margin: 0 70px 0 160px;
         width: 50%;
     }
     .-blue02 {
         background-color: $blue02;
     }
     .right {
-        margin: 0 0 0 auto;
+        margin: 0 160 0 auto;
         width: 400px;
         height: auto;
         img {
             width: 100%;
             height: auto;
+        }
+        &.-img01 {
+            width: 510px;
         }
     }
     .facilityContainer {
@@ -778,17 +1038,154 @@ header {
         list-style: square;
         text-decoration: underline;
     }
+    .center-container {
+        margin: 0 160px;
+        .yoshimura {
+            .banner-img {
+                margin-top: 1em;
+            }
+            .span-group {
+                text-align: right;
+            }
+        }
+    }
+    .thought-container {
+        .blue02 {
+            background: $blue02;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .header-news-sp {
+        .title {
+            font-size: 32px;
+        }
+        .text02 {
+            font-size: 26px;
+        }
+    }
     .flex-container {
+        .sp-container {
+            margin: 0 30px;
+            .yoshimura {
+                .banner-img {
+                    margin: 1em 0 0 auto;
+                }
+                .span-name {
+                    text-align: right;
+                }
+            }
+        }
         .left {
-            width: 80%;
+            width: 90%;
+            margin: 0 30px;
+        }
+        .center-container {
+            margin: 0 30px;
+        }
+    }
+    .top-container {
+        .banner-img.-message {
+            width: 160px;
+        }
+        .top-news,
+        .psychiatry,
+        {
+            margin: 0 30px;
+        }
+        .psychiatry {
+            p.body-text {
+                margin: 0;
+            }
+        }
+        .left {
+            margin: 0 30px;
+            width: 90%;
+            .body-text {
+                padding: 0 30px;
+                span.name {
+                    font-size: 26px;
+                }
+            }
+            p {
+                font-size: 26px;
+            }
+            .detail {
+                width: 300px;
+                text-align: center;
+            }
+        }
+        .three-windows-sp {
+            a {
+                font-size: 26px;
+            }
+            .doctor-program {
+                width: 300px;
+            }
+        }
+        .body-text {
+            padding: 0;
+            font-size: 26px;
+        }
+        .right {
             margin: 0 auto;
+            &.-img01 {
+                width: 70%;
+            }
         }
         .facilityContainer {
-            margin: 0 auto;
-            width: 80%;
+            padding: 0 30px;
+            width: 100%;
+        }
+        .top-news {
+            .title00 {
+                font-size: 34px;
+            }
+            .date,
+            .text {
+                font-size: 26px
+            }
+        }
+    }
+    .top-container {
+        left {
+            margin: 0 30px;
+            .body-text {
+                padding: 0!important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .top-container {
+        .three-windows {
+            margin-bottom: 4em;
+        }
+    }
+}
+
+@media screen and (min-width: 1750px) {
+    .top-container {
+        .three-windows {
+            margin-bottom: 10em;
+        }
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .top-container {
+        .three-windows {
+            margin-bottom: 13em;
+        }
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .top-container {
+        .three-windows {
+            margin-bottom: 16em;
         }
     }
 }
@@ -810,7 +1207,20 @@ header {
 }
 
 .staff-container {
-    margin-bottom: 2em;
+    >div {
+        margin: 2em 0 0 0;
+    }
+    white-space: wrap;
+    margin: 0 160px 2em 160px;
+    .left {
+        min-width: 240px;
+        img {
+            max-width: 240px;
+        }
+        .green-title {
+            font-size: 24px;
+        }
+    }
     table {
         td:first-child {
             font-size: 14px;
@@ -818,9 +1228,15 @@ header {
             text-align: center;
         }
     }
+    .green-title.-italic {
+        font-family: 'myfont', sans-serif;
+        padding: 15px 0 0 0;
+    }
     .blue-background {
+        margin: 0 25px 15px 55px;
         text-align: center;
         width: 160px;
+        min-width: 160px;
         height: 30px;
         line-height: 30px;
         background-color: $blue01;
@@ -833,6 +1249,49 @@ header {
         font-style: italic;
         margin-top: -15px;
     }
+}
+
+@media screen and (max-width: 992px) {
+    .staff-container {
+        margin: 0 30px 2em 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .staff-container {
+        margin: 0 30px 2em 30px;
+        .right {
+            p {
+                margin: 0 0 15px 55px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .staff-container {
+        margin: 0 30px 2em 30px;
+        .left {
+            text-align: left;
+            margin: 0 0 1em auto;
+            img {
+                margin: 0 0 0 auto;
+            }
+        }
+        .right {
+            p {
+                margin: 15px 0;
+            }
+            .blue-background {
+                margin: 10px auto 0 0;
+            }
+        }
+    }
+}
+
+.hospital {
+    position: relative;
+    z-index: 100;
 }
 
 .treatment-container {
@@ -920,6 +1379,9 @@ header {
 }
 
 .research-container {
+    .span-class {
+        margin: 0.5em 0 0 0;
+    }
     .span-name {
         line-height: 30px;
         padding-left: 0.2em;
@@ -1065,6 +1527,7 @@ footer {
         background-image: url("../img/sp_border_bottom.png");
         background-repeat: no-repeat;
         background-position: bottom;
+        background-size: 120%;
     }
     a {
         color: white;
@@ -1194,12 +1657,37 @@ footer {
 
 .banner-img {
     margin: 0 auto;
+    &.-clinical_sp01 {
+        width: 150px;
+    }
+    &.-clinical_sp02 {
+        width: 80px;
+    }
+    &.-reiji_yoshimura {
+        margin: 0;
+        width: 260px;
+    }
+    &.-news {
+        width: 100px;
+        margin: 0;
+    }
+    &.-staff-introduction {
+        max-width: 360px;
+    }
+    &.-psychiatry {
+        width: 220px;
+        min-width: 220px;
+    }
+    &.-clinical {
+        width: 300px;
+        margin: 0;
+    }
     &.-program {
         padding-top: 5em;
         width: 100px;
     }
     &.-simulation {
-        width: 110px;
+        width: 180px;
     }
     &.-onlineLesson {
         margin: 0;
@@ -1207,6 +1695,10 @@ footer {
     }
     &.-education {
         width: 130px;
+    }
+    &.-education02 {
+        width: 270px;
+        margin: 0;
     }
     &.-results {
         padding: 6em 0 0.8em 0;
@@ -1234,6 +1726,10 @@ footer {
         width: 115px;
         margin: 0 auto;
     }
+    &.-research02 {
+        margin: 0;
+        width: 270px;
+    }
     &.-ward {
         padding: 5em 0 0.8em 0;
         width: 80px;
@@ -1251,4 +1747,80 @@ footer {
         margin: 0 auto;
         padding-top: 5em;
     }
+    &.-yoshimura {
+        margin: 0 0 0 auto;
+        width: 240px;
+    }
+}
+
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.slideConts {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    &.two {
+        -webkit-transition: .7s;
+        -o-transition: .7s;
+        transition: .7s;
+    }
+    &.one {
+        -webkit-transition: .9s;
+        -o-transition: .9s;
+        transition: .9s;
+    }
+}
+
+.slideContsL {
+    transform: translate(-800px, 0);
+}
+
+.slideContsR {
+    transform: translate(800px, 0);
+}
+
+.slideContsL.show {
+    transform: translate(0px, 0) !important;
+}
+
+.slideContsR.show {
+    transform: translate(0px, 0) !important;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }

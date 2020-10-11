@@ -37,6 +37,11 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: 'myfont';
+  src: url("../font/schoolbook_italic.ttf") format("truetype");
+}
+
 .fontG {
   font-family: "Meiryo", "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
 }
@@ -130,9 +135,82 @@ body {
   background-color: white;
 }
 
-.swiper-wrapper {
+.swiper-container {
+  margin-top: 6em;
+  height: 700px;
+  width: 100%;
+  background-color: #001b69;
+}
+
+.swiper-container .swiper-wrapper {
+  margin: 0 auto;
   background: #001b69;
   color: white;
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+  color: white;
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .contents {
+  padding: 0 50px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .contents .title {
+  color: #00b04f;
+  font-size: 24px;
+  margin-top: 4em;
+}
+
+.swiper-container .swiper-wrapper .right-side,
+.swiper-container .swiper-wrapper .left-side {
+  width: 45%;
+}
+
+.swiper-container .swiper-wrapper .left-side img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container .swiper-wrapper .right-side {
+  margin: 1.2em 0;
+}
+
+.swiper-container .swiper-button-prev {
+  position: relative;
+  top: -650px;
+  left: -1%;
+  height: 700px;
+  width: 60px;
+}
+
+.swiper-container .swiper-button-prev img {
+  height: 100%;
+}
+
+.swiper-container .swiper-button-next {
+  position: relative;
+  top: -1400px;
+  left: 96%;
+  height: 700px;
+  width: 60px;
+}
+
+.swiper-container .swiper-button-next img {
+  height: 100%;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
 
 .button-square {
@@ -211,7 +289,7 @@ th {
   width: 100px;
 }
 
-td {
+.company td {
   background: #e3eff5;
   padding-left: 20px;
   width: 250px;
@@ -377,7 +455,7 @@ td {
 /*https://ri-mode.com/rainbow/2014/06/11/simple_css_dropdown_menu/*/
 header {
   position: relative;
-  z-index: -100;
+  z-index: 0;
   width: 100%;
   height: 500px;
 }
@@ -445,13 +523,12 @@ header .header-banner {
 }
 
 header .header-banner.-topPage {
-  top: 450px;
+  top: 350px;
   left: 230px;
 }
 
 header .header-banner.-topPage img {
-  width: 300px;
-  height: 100px;
+  width: 350px;
 }
 
 header .nav {
@@ -469,28 +546,39 @@ header .nav td {
   line-height: 60px;
   background: #001b69;
   color: white;
+  padding: 0 0 0 15px;
+}
+
+header .nav td a {
+  color: white;
 }
 
 header .header-news {
-  margin-top: 170px;
+  margin-top: 190px;
 }
 
 header .header-news .title {
   width: 180px;
-  height: 60px;
-  line-height: 60px;
   background-color: #00b04f;
 }
 
 header .header-news .title p {
+  padding: 15px 45px 15px 15px;
   font-size: 22px;
   color: white;
 }
 
 header .header-news .text {
   height: 60px;
-  line-height: 60px;
   background-color: rgba(255, 255, 255, 0.707);
+}
+
+header .header-news .date {
+  padding: 15px 30px 15px 15px;
+}
+
+header .header-news .text02 {
+  padding: 15px 35px 15px 0;
 }
 
 header .top-background-image {
@@ -504,6 +592,14 @@ header .top-background-image {
   height: 1200px;
   -o-object-position: 30% 0%;
      object-position: 30% 0%;
+}
+
+header .staff-background-image {
+  background-image: url("../img/staff_header_background.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
 }
 
 header .achievement-background-image {
@@ -578,11 +674,11 @@ header .hospital-background-image {
     left: -24%;
   }
   header .header-banner.-topPage {
-    top: 450px;
-    left: 50%px;
+    top: 470px;
+    left: 5%;
   }
   header .header-banner.-topPage img {
-    width: 300px;
+    width: 330px;
     height: 100px;
   }
 }
@@ -604,6 +700,15 @@ header .hospital-background-image {
 
 .header-navigation a {
   display: inline-block;
+  margin: 30px 0 15px 0;
+}
+
+.header-navigation ul li ul li a {
+  margin-top: 25px;
+}
+
+.header-navigation .program {
+  margin-top: 10px;
 }
 
 .header-navigation ul li {
@@ -614,9 +719,8 @@ header .hospital-background-image {
   position: relative;
   width: 13vw;
   /*親メニューの幅*/
-  height: 75px;
+  height: 80px;
   /*親メニューの高さ*/
-  line-height: 75px;
   background: #001b69;
   /*親メニューの背景色*/
   color: #ffffff;
@@ -642,7 +746,7 @@ header .hospital-background-image {
 .header-navigation ul li ul {
   position: absolute;
   color: white;
-  top: 75px;
+  top: 80px;
   /*親メニューの高さと同じにする*/
   width: 19%;
   z-index: 100;
@@ -668,7 +772,7 @@ header .hospital-background-image {
   visibility: visible;
   background: white;
   overflow: visible;
-  height: 75px;
+  height: 80px;
   border: solid 1px #001b69;
   /*サブメニューの高さ*/
   z-index: 10;
@@ -679,14 +783,17 @@ header .hospital-background-image {
   color: #001b69;
 }
 
-.header-navigation ul li ul li:hover,
-.header-navigation ul li ul li a:hover {
+.header-navigation ul li ul li:hover {
   background: white;
-  display: inline-block;
-  zoom: 1;
   color: #00b04f;
   border: solid 1px #00b04f;
   /*ホバー時のサブメニューの背景色*/
+}
+
+.header-navigation ul li ul li a:hover {
+  background: white;
+  color: #00b04f;
+  background-color: transparent;
 }
 
 .menu ul {
@@ -712,12 +819,17 @@ header .hospital-background-image {
 }
 
 .report-category .category {
+  width: 100%;
+  background: #00b04f;
+  color: white;
+}
+
+.report-category .categoryContent {
   border-bottom: 1px solid #00b04f;
 }
 
-.report-category .category {
-  width: 100%;
-  background: #00b04f;
+.report-category .categoryContent.active {
+  background-color: #00b04f;
   color: white;
 }
 
@@ -742,8 +854,49 @@ header .hospital-background-image {
   padding: 0.6em 0 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .report-archive {
+    width: 240px;
+    margin: 50px auto;
+  }
+}
+
+.doctor-program {
+  width: 230px;
+  height: 50px;
+  color: #00b04f;
+  font-size: 18px;
+  border: solid 1px #00b04f;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.three-windows-sp {
+  margin: 0 100px;
+  text-align: center;
+}
+
+.three-windows-sp > div {
+  margin-bottom: 2em;
+}
+
+.three-windows-sp a {
+  font-weight: bold;
+  padding: 1em 0;
+  color: #00b04f;
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+.three-windows-sp a span {
+  margin: 1em 0;
+}
+
 .three-windows {
+  margin-top: 4em;
   height: 380px;
+  font-weight: bold;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -766,6 +919,20 @@ header .hospital-background-image {
 
 .three-windows a {
   color: #00b04f;
+}
+
+@media screen and (max-width: 768px) {
+  .three-windows > div {
+    margin: 2em;
+  }
+  .three-windows img {
+    width: 62vw;
+    height: 52vw;
+  }
+  .three-windows .one,
+  .three-windows .three {
+    top: 0;
+  }
 }
 
 .news-list > .list {
@@ -793,14 +960,137 @@ header .hospital-background-image {
   font-weight: bold;
 }
 
+.top-container .header-news-sp {
+  text-align: center;
+}
+
+.top-container .header-news-sp .title {
+  width: 100%;
+  background-color: #00b04f;
+  padding: .2em 0;
+}
+
+.top-container .header-news-sp .title p {
+  font-size: 22px;
+  color: white;
+  padding: 0.3em 0;
+}
+
+.top-container .header-news-sp > .date {
+  color: #001b69;
+  font-size: 26px;
+  padding: 15px 30px 0 15px;
+}
+
+.top-container .text02 {
+  padding: 5px 0 0 0;
+}
+
+.feature-sp {
+  padding: 3em 0;
+  background: #001b69;
+}
+
+.feature-sp p.title {
+  font-size: 34px;
+  color: #00b04f;
+  padding: 2em 0 0 0;
+  text-align: center;
+}
+
+.feature-sp .left-side {
+  margin: 0 30px;
+}
+
+.feature-sp .body-text {
+  margin: 30px;
+}
+
+.detail {
+  border: solid 1px #00b04f;
+  width: 180px;
+}
+
+.detail p {
+  color: #00b04f;
+  font-size: 18px;
+  padding: 15px 25px;
+}
+
+.psychiatry {
+  margin: 2em 160px 1em 160px;
+}
+
+.psychiatry > .body-text {
+  margin-left: 80px;
+}
+
+.top-news {
+  margin: 0 160px 3em 160px;
+}
+
+.top-news .title00 {
+  font-size: 24px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top-news .contents {
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+.top-news .contents:last-child {
+  border: none;
+}
+
+.top-news .date {
+  margin: 20px 30px 20px 15px;
+  color: #001b69;
+}
+
+.top-news .text {
+  margin: 20px 0;
+}
+
+.staff-introduction {
+  height: 760px;
+  width: 100%;
+  background-image: url("../img/staff_introduction02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.staff-introduction .banner-img {
+  position: relative;
+  z-index: 100;
+  top: 30%;
+}
+
+.staff-introduction .link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .flex-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
 }
 
+.flex-container .thought-container {
+  background: #e3eff5;
+}
+
+.flex-container .thought-container .left {
+  padding: 7em 0 3em 0;
+}
+
 .flex-container .left {
-  margin: 0 70px 0 145px;
+  margin: 0 70px 0 160px;
   width: 50%;
 }
 
@@ -809,7 +1099,7 @@ header .hospital-background-image {
 }
 
 .flex-container .right {
-  margin: 0 0 0 auto;
+  margin: 0 160 0 auto;
   width: 400px;
   height: auto;
 }
@@ -817,6 +1107,10 @@ header .hospital-background-image {
 .flex-container .right img {
   width: 100%;
   height: auto;
+}
+
+.flex-container .right.-img01 {
+  width: 510px;
 }
 
 .flex-container .facilityContainer {
@@ -845,14 +1139,128 @@ header .hospital-background-image {
   text-decoration: underline;
 }
 
+.flex-container .center-container {
+  margin: 0 160px;
+}
+
+.flex-container .center-container .yoshimura .banner-img {
+  margin-top: 1em;
+}
+
+.flex-container .center-container .yoshimura .span-group {
+  text-align: right;
+}
+
+.flex-container .thought-container .blue02 {
+  background: #e3eff5;
+}
+
 @media screen and (max-width: 768px) {
+  .header-news-sp .title {
+    font-size: 32px;
+  }
+  .header-news-sp .text02 {
+    font-size: 26px;
+  }
+  .flex-container .sp-container {
+    margin: 0 30px;
+  }
+  .flex-container .sp-container .yoshimura .banner-img {
+    margin: 1em 0 0 auto;
+  }
+  .flex-container .sp-container .yoshimura .span-name {
+    text-align: right;
+  }
   .flex-container .left {
-    width: 80%;
+    width: 90%;
+    margin: 0 30px;
+  }
+  .flex-container .center-container {
+    margin: 0 30px;
+  }
+  .top-container .banner-img.-message {
+    width: 160px;
+  }
+  .top-container .top-news,
+  .top-container .psychiatry {
+    margin: 0 30px;
+  }
+  .top-container .psychiatry p.body-text {
+    margin: 0;
+  }
+  .top-container .left {
+    margin: 0 30px;
+    width: 90%;
+  }
+  .top-container .left .body-text {
+    padding: 0 30px;
+  }
+  .top-container .left .body-text span.name {
+    font-size: 26px;
+  }
+  .top-container .left p {
+    font-size: 26px;
+  }
+  .top-container .left .detail {
+    width: 300px;
+    text-align: center;
+  }
+  .top-container .three-windows-sp a {
+    font-size: 26px;
+  }
+  .top-container .three-windows-sp .doctor-program {
+    width: 300px;
+  }
+  .top-container .body-text {
+    padding: 0;
+    font-size: 26px;
+  }
+  .top-container .right {
     margin: 0 auto;
   }
-  .flex-container .facilityContainer {
-    margin: 0 auto;
-    width: 80%;
+  .top-container .right.-img01 {
+    width: 70%;
+  }
+  .top-container .facilityContainer {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .top-container .top-news .title00 {
+    font-size: 34px;
+  }
+  .top-container .top-news .date,
+  .top-container .top-news .text {
+    font-size: 26px;
+  }
+  .top-container left {
+    margin: 0 30px;
+  }
+  .top-container left .body-text {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .top-container .three-windows {
+    margin-bottom: 4em;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .top-container .three-windows {
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .top-container .three-windows {
+    margin-bottom: 13em;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .top-container .three-windows {
+    margin-bottom: 16em;
   }
 }
 
@@ -872,7 +1280,24 @@ header .hospital-background-image {
 }
 
 .staff-container {
-  margin-bottom: 2em;
+  white-space: wrap;
+  margin: 0 160px 2em 160px;
+}
+
+.staff-container > div {
+  margin: 2em 0 0 0;
+}
+
+.staff-container .left {
+  min-width: 240px;
+}
+
+.staff-container .left img {
+  max-width: 240px;
+}
+
+.staff-container .left .green-title {
+  font-size: 24px;
 }
 
 .staff-container table td:first-child {
@@ -881,9 +1306,16 @@ header .hospital-background-image {
   text-align: center;
 }
 
+.staff-container .green-title.-italic {
+  font-family: 'myfont', sans-serif;
+  padding: 15px 0 0 0;
+}
+
 .staff-container .blue-background {
+  margin: 0 25px 15px 55px;
   text-align: center;
   width: 160px;
+  min-width: 160px;
   height: 30px;
   line-height: 30px;
   background-color: #001b69;
@@ -897,6 +1329,45 @@ header .hospital-background-image {
 .staff-container .green-title.-italic {
   font-style: italic;
   margin-top: -15px;
+}
+
+@media screen and (max-width: 992px) {
+  .staff-container {
+    margin: 0 30px 2em 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .staff-container {
+    margin: 0 30px 2em 30px;
+  }
+  .staff-container .right p {
+    margin: 0 0 15px 55px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .staff-container {
+    margin: 0 30px 2em 30px;
+  }
+  .staff-container .left {
+    text-align: left;
+    margin: 0 0 1em auto;
+  }
+  .staff-container .left img {
+    margin: 0 0 0 auto;
+  }
+  .staff-container .right p {
+    margin: 15px 0;
+  }
+  .staff-container .right .blue-background {
+    margin: 10px auto 0 0;
+  }
+}
+
+.hospital {
+  position: relative;
+  z-index: 100;
 }
 
 .treatment-container .header-blue.-mini {
@@ -987,6 +1458,10 @@ header .hospital-background-image {
 
 .about-thought {
   margin-top: 5em;
+}
+
+.research-container .span-class {
+  margin: 0.5em 0 0 0;
 }
 
 .research-container .span-name {
@@ -1141,6 +1616,7 @@ footer .footer-banners img:last-child {
   background-image: url("../img/sp_border_bottom.png");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 120%;
 }
 
 .modal-wrapper a {
@@ -1278,13 +1754,45 @@ footer .footer-banners img:last-child {
   margin: 0 auto;
 }
 
+.banner-img.-clinical_sp01 {
+  width: 150px;
+}
+
+.banner-img.-clinical_sp02 {
+  width: 80px;
+}
+
+.banner-img.-reiji_yoshimura {
+  margin: 0;
+  width: 260px;
+}
+
+.banner-img.-news {
+  width: 100px;
+  margin: 0;
+}
+
+.banner-img.-staff-introduction {
+  max-width: 360px;
+}
+
+.banner-img.-psychiatry {
+  width: 220px;
+  min-width: 220px;
+}
+
+.banner-img.-clinical {
+  width: 300px;
+  margin: 0;
+}
+
 .banner-img.-program {
   padding-top: 5em;
   width: 100px;
 }
 
 .banner-img.-simulation {
-  width: 110px;
+  width: 180px;
 }
 
 .banner-img.-onlineLesson {
@@ -1294,6 +1802,11 @@ footer .footer-banners img:last-child {
 
 .banner-img.-education {
   width: 130px;
+}
+
+.banner-img.-education02 {
+  width: 270px;
+  margin: 0;
 }
 
 .banner-img.-results {
@@ -1328,6 +1841,11 @@ footer .footer-banners img:last-child {
   margin: 0 auto;
 }
 
+.banner-img.-research02 {
+  margin: 0;
+  width: 270px;
+}
+
 .banner-img.-ward {
   padding: 5em 0 0.8em 0;
   width: 80px;
@@ -1346,5 +1864,121 @@ footer .footer-banners img:last-child {
   height: auto;
   margin: 0 auto;
   padding-top: 5em;
+}
+
+.banner-img.-yoshimura {
+  margin: 0 0 0 auto;
+  width: 240px;
+}
+
+#wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideConts {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.slideConts.two {
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.slideConts.one {
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.slideContsL {
+  -webkit-transform: translate(-800px, 0);
+          transform: translate(-800px, 0);
+}
+
+.slideContsR {
+  -webkit-transform: translate(800px, 0);
+          transform: translate(800px, 0);
+}
+
+.slideContsL.show {
+  -webkit-transform: translate(0px, 0) !important;
+          transform: translate(0px, 0) !important;
+}
+
+.slideContsR.show {
+  -webkit-transform: translate(0px, 0) !important;
+          transform: translate(0px, 0) !important;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  overflow: hidden;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 /*# sourceMappingURL=style.css.map */

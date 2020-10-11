@@ -1983,10 +1983,16 @@ footer .footer-banners img:last-child {
 }
 
 .fadeinBg {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.load-fade {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 /*# sourceMappingURL=style.css.map */

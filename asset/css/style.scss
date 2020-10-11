@@ -1826,7 +1826,13 @@ footer {
 }
 
 .fadeinBg {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: all 1s;
+}
+
+.load-fade {
+    opacity: 0;
+    transition: all 2s/*処理にかかる時間*/
+    ;
 }

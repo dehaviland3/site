@@ -36,6 +36,10 @@ img {
     height: auto;
 }
 
+a:hover {
+    opacity: 0.8;
+}
+
 @font-face {
     font-family: 'myfont';
     src: url('../font/schoolbook_italic.ttf') format('truetype');
@@ -476,7 +480,8 @@ header {
             height: auto;
         }
         .title01 {
-            font-size: 26px;
+            font-size: 24px;
+            margin-bottom: 3px;
         }
         .title02 {
             line-height: 24px;
@@ -484,10 +489,20 @@ header {
         }
         .title01,
         .title02 {
-            white-space: nowrap;
             font-weight: 600;
             letter-spacing: 0.15em;
             text-shadow: 2px 2px 5px white, -2px -1px 5px white;
+        }
+        .title03,
+        .title04 {
+            line-height: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-shadow: 2px 2px 5px white, -2px -1px 5px white;
+        }
+        .title03 {
+            margin-top: 0.3em;
         }
         &.-top {
             top: 320px;
@@ -497,6 +512,11 @@ header {
                 font-weight: 500;
                 margin-top: 0.5em;
                 text-shadow: 2px 2px 20px #001248, -2px -1px 20px #00144c;
+            }
+        }
+        &.-research {
+            .title02 {
+                width: 240px;
             }
         }
     }
@@ -514,13 +534,13 @@ header {
             width: 350px;
         }
     }
-    .nav {
+    .top-navigation {
         position: relative;
         z-index: 10;
         margin-top: 70px;
         border-collapse: separate;
         border-spacing: 0 10px;
-        td {
+        li {
             vertical-align: baseline;
             width: 180px;
             height: 60px;
@@ -528,6 +548,7 @@ header {
             background: $blue01;
             color: white;
             padding: 0 0 0 15px;
+            margin-top: 10px;
             a {
                 color: white;
             }
@@ -560,9 +581,9 @@ header {
     .top-background-image {
         background: url("../img/top_header.jpg");
         @include header-background;
-        object-fit: contain;
+        background-position: 65% center;
+        background-size: cover;
         height: 1200px;
-        object-position: 30% 0%;
     }
     .staff-background-image {
         background-image: url("../img/staff_header_background.jpg");
@@ -610,18 +631,40 @@ header {
             left: 0;
             right: 0;
             margin: auto;
-            width: 210px;
+            width: 230px;
             height: auto;
             &.-program {
                 left: -24%;
+            }
+            &.-withSP02 {
+                p {
+                    width: 280px;
+                }
+                left: -60px;
+            }
+            &.-withSP {
+                left: 85px;
+            }
+            &.-withSP03 {
+                left: 120px;
+                width: 350px
             }
         }
         .header-banner.-topPage {
             top: 470px;
             left: 5%;
             img {
-                width: 330px;
-                height: 100px;
+                width: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        .header-title {
+            .image {
+                width: 70vw!important
             }
         }
     }
@@ -633,22 +676,25 @@ header {
         text-align: center;
     }
     a {
-        display: inline-block;
-        margin: 30px 0 15px 0
+        display: block;
+        width: 100%;
+        height: 100%;
     }
-    ul li ul li a {
-        margin-top: 25px;
+    ul li a {
+        line-height: 80px;
     }
-    .program {
-        margin-top: 10px;
+    ul li ul :nth-last-child(3) {
+        line-height: 40px;
     }
-    display: inline-block;
     position: relative;
     z-index: 100000;
     width: 100%;
     white-space: wrap;
     padding: 0 3em;
     background-color: $blue01;
+    a.program {
+        line-height: 37px!important;
+    }
 }
 
 .header-navigation ul li {
@@ -670,8 +716,6 @@ header {
 
 .header-navigation ul li a {
     color: white;
-    display: inline-block;
-    width: 13vw;
     text-decoration: none;
 }
 
@@ -699,7 +743,7 @@ header {
     visibility: hidden;
     overflow: hidden;
     width: 13vw;
-    color: red;
+    color: $blue01;
     /*サブメニューの幅*/
     height: 0;
     background: #770909;
@@ -731,7 +775,7 @@ header {
 .header-navigation ul li ul li a:hover {
     background: white;
     color: $green01;
-    background-color: transparent;
+    background-color: white;
 }
 
 .menu ul {
@@ -791,8 +835,6 @@ header {
 }
 
 .doctor-program {
-    width: 230px;
-    height: 50px;
     color: $green01;
     font-size: 18px;
     border: solid 1px $green01;
@@ -802,7 +844,8 @@ header {
 }
 
 .three-windows-sp {
-    margin: 0 100px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     >div {
         margin-bottom: 2em;
@@ -820,7 +863,9 @@ header {
 }
 
 .three-windows {
-    margin-top: 4em;
+    position: relative;
+    z-index: 10000000;
+    margin: 4em 0 4em 0;
     height: 380px;
     font-weight: bold;
     width: 100%;
@@ -828,7 +873,7 @@ header {
     font-size: 20px;
     img {
         width: 31vw;
-        height: 26vw;
+        height: 24vw;
     }
     .one {
         position: relative;
@@ -841,6 +886,9 @@ header {
     }
     a {
         color: $green01;
+        p {
+            margin: 20px 0 0 0;
+        }
     }
 }
 
@@ -950,9 +998,11 @@ header {
     margin: 0 160px 3em 160px;
     .title00 {
         font-size: 24px;
-        width: 300px;
+        max-width: 300px;
         text-align: center;
         margin: 0 auto;
+        color: $blue01;
+        font-weight: bold;
     }
     .contents {
         width: 100%;
@@ -1037,7 +1087,7 @@ header {
         font-weight: 600;
     }
     .facilityList li {
-        margin: 0 6em 0.6em 0;
+        margin: 0 5em 0.6em 0;
         list-style: square;
         text-decoration: underline;
     }
@@ -1081,11 +1131,18 @@ header {
             }
         }
         .left {
+            margin: 0 auto;
             width: 90%;
-            margin: 0 30px;
+        }
+        .facilityContainer {
+            margin: 0 auto;
+            width: 90%;
         }
         .center-container {
             margin: 0 30px;
+        }
+        .thought-container {
+            padding: 0 15px;
         }
     }
     .top-container {
@@ -1093,8 +1150,7 @@ header {
             width: 160px;
         }
         .top-news,
-        .psychiatry,
-        {
+        .psychiatry {
             margin: 0 30px;
         }
         .psychiatry {
@@ -1103,7 +1159,7 @@ header {
             }
         }
         .left {
-            margin: 0 30px;
+            margin: 0 auto;
             width: 90%;
             .body-text {
                 padding: 0 30px;
@@ -1124,7 +1180,7 @@ header {
                 font-size: 26px;
             }
             .doctor-program {
-                width: 300px;
+                max-width: 300px;
             }
         }
         .body-text {
@@ -1161,10 +1217,55 @@ header {
     }
 }
 
+.doctor-program {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 576px) {
+    .flex-container {
+        .thought-container {
+            .right {
+                width: 80vw;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .right {
+            width: 90%;
+        }
+    }
+    .top-container {
+        .left {
+            .detail {
+                max-width: 300px!important;
+            }
+        }
+    }
+    .detail {
+        width: 90%!important;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .top-container {
+        .left {
+            .three-windows {
+                margin-bottom: 7em;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1500px) {
     .top-container {
         .three-windows {
-            margin-bottom: 4em;
+            margin-bottom: 10em;
+        }
+    }
+    .flex-container {
+        .thought-container {
+            padding: 0 0 5em 0;
         }
     }
 }
@@ -1172,7 +1273,12 @@ header {
 @media screen and (min-width: 1750px) {
     .top-container {
         .three-windows {
-            margin-bottom: 10em;
+            margin-bottom: 15em;
+        }
+    }
+    .flex-container {
+        .thought-container {
+            padding: 0 0 7em 0;
         }
     }
 }
@@ -1180,7 +1286,7 @@ header {
 @media screen and (min-width: 2100px) {
     .top-container {
         .three-windows {
-            margin-bottom: 13em;
+            margin-bottom: 19em;
         }
     }
 }
@@ -1188,7 +1294,7 @@ header {
 @media screen and (min-width: 2500px) {
     .top-container {
         .three-windows {
-            margin-bottom: 16em;
+            margin-bottom: 23em;
         }
     }
 }
@@ -1211,17 +1317,32 @@ header {
 
 .staff-container {
     >div {
-        margin: 3em 0 0 0;
+        ;
+        margin: 4em 0 0 0;
+    }
+    >div:first-child {
+        margin: 2em 0 0 0;
     }
     white-space: wrap;
     margin: 0 160px 2em 160px;
     .left {
+        display: inline-block;
+        vertical-align: top;
         min-width: 240px;
         img {
             max-width: 240px;
         }
         .green-title {
             font-size: 24px;
+        }
+    }
+    .right {
+        margin: 12px 0 0 0;
+        >div {
+            margin: 5px 0 0 0;
+            p {
+                line-height: 30px;
+            }
         }
     }
     table {
@@ -1233,7 +1354,7 @@ header {
     }
     .green-title.-italic {
         font-family: 'myfont', sans-serif;
-        padding: 15px 0 0 0;
+        padding: 0 0 0 0;
     }
     .blue-background {
         margin: 0 25px 15px 55px;
@@ -1336,7 +1457,7 @@ header {
         color: $green01;
     }
     img {
-        width: 28px;
+        width: 29px;
         height: 36px;
         margin: 17px 0 17px 20px;
     }
@@ -1471,6 +1592,16 @@ footer {
     .footer-banners {
         img:last-child {
             margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        .footer-banners {
+            img {
+                width: 80vw;
+            }
         }
     }
 }
@@ -1660,98 +1791,105 @@ footer {
 .banner-img {
     margin: 0 auto;
     &.-clinical_sp01 {
-        width: 150px;
+        max-width: 150px;
     }
     &.-clinical_sp02 {
-        width: 80px;
+        max-width: 80px;
     }
     &.-reiji_yoshimura {
         margin: 0;
-        width: 260px;
+        max-width: 260px!important;
     }
     &.-news {
-        width: 100px;
+        max-width: 120px;
         margin: 0;
     }
     &.-staff-introduction {
-        max-width: 360px;
+        max-width: 440px;
     }
     &.-psychiatry {
-        width: 220px;
-        min-width: 220px;
+        max-width: 240px;
     }
     &.-clinical {
-        width: 300px;
+        max-width: 300px;
         margin: 0;
     }
     &.-program {
         padding-top: 5em;
-        width: 100px;
+        max-width: 100px;
     }
     &.-simulation {
-        width: 180px;
+        max-width: 180px;
     }
     &.-onlineLesson {
         margin: 0;
-        width: 180px;
+        max-width: 180px;
     }
     &.-education {
-        width: 130px;
+        max-width: 130px;
     }
     &.-education02 {
-        width: 270px;
+        max-width: 270px;
         margin: 0;
     }
     &.-results {
         padding: 6em 0 0.8em 0;
-        width: 100px;
+        max-width: 100px;
     }
     &.-message {
         padding-top: 5em;
-        width: 110px;
+        max-width: 200px;
     }
     &.-hospitalization {
         margin: 5em 0 0.8em 0;
-        width: 210px;
+        max-width: 210px;
         height: auto;
     }
     &.-thought {
-        width: 120px;
+        max-width: 120px;
         height: auto;
     }
     &.-report {
-        width: 100px;
+        max-width: 100px;
         height: auto;
         margin: 0 auto;
     }
     &.-research {
-        width: 115px;
+        max-width: 115px;
         margin: 0 auto;
     }
     &.-research02 {
         margin: 0;
-        width: 270px;
+        max-width: 270px;
     }
     &.-ward {
         padding: 5em 0 0.8em 0;
-        width: 80px;
+        max-width: 80px;
         height: auto;
         margin: 0 auto;
     }
     &.-specialized {
-        width: 300px;
+        max-width: 300px;
         height: auto;
-        margin: 0 auto;
+        margin: 60px auto 0 auto;
     }
     &.-general_psychiatric_outpatient {
-        width: 400px;
+        max-width: 400px;
         height: auto;
         margin: 0 auto;
         padding-top: 5em;
     }
     &.-yoshimura {
         margin: 0 0 0 auto;
-        width: 240px;
+        max-width: 240px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .banner-img {
+        &.-reiji_yoshimura {
+            width: 90vw!important;
+        }
     }
 }
 

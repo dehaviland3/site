@@ -17,12 +17,36 @@
   position: absolute;
   top: -6000%;
   right: 0%;
-  bottom: 500%;
+  bottom: 960%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
   z-index: -10;
+}
+
+@media screen and (max-width: 1120px) {
+  .slant-toggle01::before {
+    bottom: 500%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .slant-toggle01::before {
+    bottom: 300%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slant-toggle01::before {
+    bottom: 500%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .slant-toggle01::before {
+    bottom: 300%;
+  }
 }
 
 .slant-toggle02 {
@@ -404,7 +428,7 @@
   z-index: 100;
   height: 10px;
   width: 100%;
-  background: transparent;
+  background: #e3eff5;
   pointer-events: none;
 }
 
@@ -426,6 +450,18 @@
           transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .slant-toggle16 {
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .slant-toggle16 {
+    height: 20px;
+  }
 }
 
 .slant-toggle17 {

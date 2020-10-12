@@ -1720,8 +1720,8 @@ footer .address-area .button {
   padding: 0.2em 1em;
 }
 
-footer .footer-banners img:last-child {
-  margin-right: 0;
+footer .footer-banners img {
+  padding: 10px;
 }
 
 @media screen and (max-width: 576px) {

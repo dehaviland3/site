@@ -1645,9 +1645,10 @@ footer {
         p {}
     }
     .footer-banners {
-        img:last-child {
-            margin-right: 0;
+        img {
+            padding: 10px;
         }
+        img:last-child {}
     }
 }
 

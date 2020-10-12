@@ -1285,7 +1285,7 @@ header .hospital-background-image {
 }
 
 .staff-container > div {
-  margin: 2em 0 0 0;
+  margin: 3em 0 0 0;
 }
 
 .staff-container .left {
@@ -1328,7 +1328,6 @@ header .hospital-background-image {
 
 .staff-container .green-title.-italic {
   font-style: italic;
-  margin-top: -15px;
 }
 
 @media screen and (max-width: 992px) {

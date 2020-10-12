@@ -527,6 +527,22 @@ header {
         width: 210px;
         height: auto;
     }
+    .header-banner.-recruit {
+        width: 254px;
+        top: 230px;
+        left: 180px;
+        img {
+            max-width: 400px;
+        }
+    }
+    .header-banner.-program {
+        width: 400px;
+        top: 230px;
+        left: 230px;
+        img {
+            max-width: 400px;
+        }
+    }
     .header-banner.-topPage {
         top: 350px;
         left: 230px;
@@ -581,7 +597,7 @@ header {
     .top-background-image {
         background: url("../img/top_header.jpg");
         @include header-background;
-        background-position: 65% center;
+        background-position: 70% center;
         background-size: cover;
         height: 1200px;
     }
@@ -625,6 +641,10 @@ header {
             .image {
                 width: 280px;
             }
+            .header-banner.-program {
+                left: 140px;
+                width: 400px;
+            }
         }
         .header-pageTitle {
             position: absolute;
@@ -633,29 +653,31 @@ header {
             margin: auto;
             width: 230px;
             height: auto;
-            &.-program {
-                left: -24%;
+            left: -24%;
+        }
+        &.-recruit {
+            width: 300px;
+        }
+        &.-withSP02 {
+            p {
+                width: 280px;
             }
-            &.-withSP02 {
-                p {
-                    width: 280px;
-                }
-                left: -60px;
-            }
-            &.-withSP {
-                left: 85px;
-            }
-            &.-withSP03 {
-                left: 120px;
-                width: 350px
-            }
+            left: 60px;
+        }
+        &.-withSP {
+            left: 85px;
+        }
+        &.-withSP03 {
+            left: 120px;
+            width: 90vw;
+        }
+        &.-withSP04 {
+            left: 180px;
+            width: 90vw;
         }
         .header-banner.-topPage {
             top: 470px;
-            left: 5%;
-            img {
-                width: 80vw;
-            }
+            left: 30px;
         }
     }
 }
@@ -665,6 +687,31 @@ header {
         .header-title {
             .image {
                 width: 70vw!important
+            }
+            .header-banner.-recruit {
+                left: 40px;
+                width: 60vw;
+            }
+            .header-banner.-program {
+                left: 10px;
+                width: 80vw;
+            }
+        }
+        .header-pageTitle {
+            &.-withSP02 {
+                left: 10px;
+            }
+        }
+        .header-pageTitle {
+            &.-withSP03,
+            &.-withSP04 {
+                left: 20px;
+                width: 80vw;
+            }
+        }
+        .header-banner.-topPage {
+            img {
+                width: 75vw;
             }
         }
     }
@@ -841,10 +888,13 @@ header {
     line-height: 50px;
     text-align: center;
     margin: 0 auto;
+    a {
+        padding: 0.8em 0;
+    }
 }
 
 .three-windows-sp {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     >div {
@@ -1119,6 +1169,13 @@ header {
         }
     }
     .flex-container {
+        .facility-wrapper {
+            width: 70%;
+            margin: 0 auto;
+            .facilityList {
+                margin-left: 1em;
+            }
+        }
         .sp-container {
             margin: 0 30px;
             .yoshimura {
@@ -1147,7 +1204,7 @@ header {
     }
     .top-container {
         .banner-img.-message {
-            width: 160px;
+            max-width: 160px;
         }
         .top-news,
         .psychiatry {
@@ -1249,10 +1306,8 @@ header {
 
 @media screen and (min-width: 1250px) {
     .top-container {
-        .left {
-            .three-windows {
-                margin-bottom: 7em;
-            }
+        .three-windows {
+            margin-bottom: 7em;
         }
     }
 }
@@ -1816,7 +1871,7 @@ footer {
     }
     &.-program {
         padding-top: 5em;
-        max-width: 100px;
+        max-width: 130px;
     }
     &.-simulation {
         max-width: 180px;
@@ -1972,7 +2027,8 @@ footer {
 
 .load-fade {
     opacity: 0;
-    transition: all 2s/*処理にかかる時間*/
+    transition: all 2s
+    /*処理にかかる時間*/
     ;
 }
 

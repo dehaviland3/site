@@ -543,6 +543,26 @@ header .header-banner {
   height: auto;
 }
 
+header .header-banner.-recruit {
+  width: 254px;
+  top: 230px;
+  left: 180px;
+}
+
+header .header-banner.-recruit img {
+  max-width: 400px;
+}
+
+header .header-banner.-program {
+  width: 400px;
+  top: 230px;
+  left: 230px;
+}
+
+header .header-banner.-program img {
+  max-width: 400px;
+}
+
 header .header-banner.-topPage {
   top: 350px;
   left: 230px;
@@ -611,7 +631,7 @@ header .top-background-image {
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
-  background-position: 65% center;
+  background-position: 70% center;
   background-size: cover;
   height: 1200px;
 }
@@ -684,6 +704,10 @@ header .hospital-background-image {
   header .header-title .image {
     width: 280px;
   }
+  header .header-title .header-banner.-program {
+    left: 140px;
+    width: 400px;
+  }
   header .header-pageTitle {
     position: absolute;
     left: 0;
@@ -691,35 +715,55 @@ header .hospital-background-image {
     margin: auto;
     width: 230px;
     height: auto;
-  }
-  header .header-pageTitle.-program {
     left: -24%;
   }
-  header .header-pageTitle.-withSP02 {
-    left: -60px;
+  header.-recruit {
+    width: 300px;
   }
-  header .header-pageTitle.-withSP02 p {
+  header.-withSP02 {
+    left: 60px;
+  }
+  header.-withSP02 p {
     width: 280px;
   }
-  header .header-pageTitle.-withSP {
+  header.-withSP {
     left: 85px;
   }
-  header .header-pageTitle.-withSP03 {
+  header.-withSP03 {
     left: 120px;
-    width: 350px;
+    width: 90vw;
+  }
+  header.-withSP04 {
+    left: 180px;
+    width: 90vw;
   }
   header .header-banner.-topPage {
     top: 470px;
-    left: 5%;
-  }
-  header .header-banner.-topPage img {
-    width: 80vw;
+    left: 30px;
   }
 }
 
 @media screen and (max-width: 576px) {
   header .header-title .image {
     width: 70vw !important;
+  }
+  header .header-title .header-banner.-recruit {
+    left: 40px;
+    width: 60vw;
+  }
+  header .header-title .header-banner.-program {
+    left: 10px;
+    width: 80vw;
+  }
+  header .header-pageTitle.-withSP02 {
+    left: 10px;
+  }
+  header .header-pageTitle.-withSP03, header .header-pageTitle.-withSP04 {
+    left: 20px;
+    width: 80vw;
+  }
+  header .header-banner.-topPage img {
+    width: 75vw;
   }
 }
 
@@ -912,8 +956,12 @@ header .hospital-background-image {
   margin: 0 auto;
 }
 
+.doctor-program a {
+  padding: 0.8em 0;
+}
+
 .three-windows-sp {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -1212,6 +1260,13 @@ header .hospital-background-image {
   .header-news-sp .text02 {
     font-size: 26px;
   }
+  .flex-container .facility-wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .flex-container .facility-wrapper .facilityList {
+    margin-left: 1em;
+  }
   .flex-container .sp-container {
     margin: 0 30px;
   }
@@ -1236,7 +1291,7 @@ header .hospital-background-image {
     padding: 0 15px;
   }
   .top-container .banner-img.-message {
-    width: 160px;
+    max-width: 160px;
   }
   .top-container .top-news,
   .top-container .psychiatry {
@@ -1320,7 +1375,7 @@ header .hospital-background-image {
 }
 
 @media screen and (min-width: 1250px) {
-  .top-container .left .three-windows {
+  .top-container .three-windows {
     margin-bottom: 7em;
   }
 }
@@ -1901,7 +1956,7 @@ footer .footer-banners img:last-child {
 
 .banner-img.-program {
   padding-top: 5em;
-  max-width: 100px;
+  max-width: 130px;
 }
 
 .banner-img.-simulation {

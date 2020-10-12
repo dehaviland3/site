@@ -563,12 +563,14 @@ header .header-news .title {
 }
 
 header .header-news .title p {
+  font-family: 'myfont', sans-serif;
   padding: 15px 45px 15px 15px;
   font-size: 22px;
   color: white;
 }
 
 header .header-news .text {
+  width: 500px;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.707);
 }
@@ -965,6 +967,7 @@ header .hospital-background-image {
 }
 
 .top-container .header-news-sp .title {
+  font-family: 'myfont', sans-serif;
   width: 100%;
   background-color: #00b04f;
   padding: .2em 0;
@@ -1943,7 +1946,6 @@ footer .footer-banners img:last-child {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  overflow: hidden;
 }
 
 @-webkit-keyframes slideInLeft {
@@ -1993,5 +1995,9 @@ footer .footer-banners img:last-child {
   opacity: 0;
   -webkit-transition: all 2s;
   transition: all 2s;
+}
+
+.hidden {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

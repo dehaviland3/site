@@ -1014,21 +1014,17 @@ header .hospital-background-image {
 
 .three-windows img {
   width: 32vw;
-  height: 24vw;
+  height: 26vw;
 }
 
 .three-windows .one {
   position: relative;
-  top: 25px;
+  top: 23px;
 }
 
 .three-windows .three {
   position: relative;
-  top: -25px;
-}
-
-.three-windows .three img {
-  width: 28vw;
+  top: -23px;
 }
 
 .three-windows a {

@@ -937,19 +937,16 @@ header {
     font-size: 20px;
     img {
         width: 32vw;
-        height: 24vw;
+        height: 26vw;
     }
     .one {
         position: relative;
-        top: 25px;
+        top: 23px;
     }
     .two {}
     .three {
         position: relative;
-        top: -25px;
-        img {
-            width: 28vw;
-        }
+        top: -23px;
     }
     a {
         color: $green01;

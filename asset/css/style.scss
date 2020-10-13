@@ -582,6 +582,7 @@ header {
         margin-top: 190px;
         .title {
             width: 180px;
+            white-space: nowrap;
             background-color: $green01;
             p {
                 font-family: 'myfont', sans-serif;
@@ -1132,6 +1133,14 @@ header {
         &.-img01 {
             width: 510px;
         }
+        .yoshimura01 {
+            width: 500px;
+            max-width: 500px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
     .facilityContainer {
         margin: 0 145px;
@@ -1676,14 +1685,6 @@ header {
     width: 100%;
     .yoshimura02 {
         margin: 0 auto;
-    }
-}
-
-.yoshimura01 {
-    max-width: 500px;
-    img {
-        max-width: 500px;
-        height: auto;
     }
 }
 

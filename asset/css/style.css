@@ -613,6 +613,7 @@ header .header-news {
 
 header .header-news .title {
   width: 180px;
+  white-space: nowrap;
   background-color: #00b04f;
 }
 
@@ -1230,6 +1231,16 @@ header .hospital-background-image {
   width: 510px;
 }
 
+.flex-container .right .yoshimura01 {
+  width: 500px;
+  max-width: 500px;
+}
+
+.flex-container .right .yoshimura01 img {
+  width: 100%;
+  height: auto;
+}
+
 .flex-container .facilityContainer {
   margin: 0 145px;
 }
@@ -1714,15 +1725,6 @@ header .hospital-background-image {
 
 .yoshimura00 .yoshimura02 {
   margin: 0 auto;
-}
-
-.yoshimura01 {
-  max-width: 500px;
-}
-
-.yoshimura01 img {
-  max-width: 500px;
-  height: auto;
 }
 
 .about-thought {

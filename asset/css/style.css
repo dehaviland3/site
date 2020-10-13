@@ -158,7 +158,7 @@ body {
 }
 
 .swiper-container .swiper-wrapper .swiper-slide .contents {
-  padding: 0 50px;
+  padding: 0 20px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -1008,18 +1008,18 @@ header .hospital-background-image {
 }
 
 .three-windows img {
-  width: 31vw;
-  height: 26vw;
+  width: 32vw;
+  height: 24vw;
 }
 
 .three-windows .one {
   position: relative;
-  top: 27px;
+  top: 25px;
 }
 
 .three-windows .three {
   position: relative;
-  top: -27px;
+  top: -25px;
 }
 
 .three-windows a {
@@ -1099,6 +1099,15 @@ header .hospital-background-image {
 .feature-sp {
   padding: 3em 0;
   background: #001b69;
+}
+
+.feature-sp .swiper-04 {
+  margin: 0 30px;
+}
+
+.feature-sp .swiper-04 img {
+  width: 100%;
+  height: auto;
 }
 
 .feature-sp p.title {
@@ -1229,16 +1238,6 @@ header .hospital-background-image {
 
 .flex-container .right.-img01 {
   width: 510px;
-}
-
-.flex-container .right .yoshimura01 {
-  width: 500px;
-  max-width: 500px;
-}
-
-.flex-container .right .yoshimura01 img {
-  width: 100%;
-  height: auto;
 }
 
 .flex-container .facilityContainer {

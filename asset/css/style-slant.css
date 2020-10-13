@@ -607,11 +607,11 @@
   content: "";
   display: block;
   position: absolute;
-  top: -360%;
+  top: -1060%;
   right: 0%;
   bottom: -500%;
   left: 0;
-  background-color: white;
+  background-color: #fdfdfd;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -200;
@@ -646,6 +646,23 @@
           transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .slant-toggle21::after {
+    top: -200%;
+    bottom: -1200%;
+  }
+  .slant-toggle22::after {
+    top: -1000%;
+    bottom: -300%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .slant-toggle21::after {
+    bottom: -900%;
+  }
 }
 
 .slant-toggle23 {

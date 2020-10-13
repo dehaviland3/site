@@ -486,6 +486,7 @@ header .header-title .image {
 
 header .header-pageTitle {
   color: #001b69;
+  white-space: nowrap;
   position: absolute;
   z-index: 1000000;
   top: 230px;
@@ -647,7 +648,7 @@ header .top-background-image {
   background: url("../img/top_header.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
   background-position: 70% center;
   background-size: cover;
@@ -658,7 +659,7 @@ header .staff-background-image {
   background-image: url("../img/staff_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -666,7 +667,7 @@ header .achievement-background-image {
   background-image: url("../img/achievement_header_bg.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -674,7 +675,7 @@ header .recruit-background-image {
   background-image: url("../img/recruit_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -682,7 +683,7 @@ header .about-background-image {
   background-image: url("../img/about_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -690,7 +691,7 @@ header .research-background-image {
   background-image: url("../img/research_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -698,7 +699,7 @@ header .report-background-image {
   background-image: url("../img/report_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -706,7 +707,7 @@ header .treatment-background-image {
   background-image: url("../img/treatment_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -714,13 +715,16 @@ header .hospital-background-image {
   background-image: url("../img/treatment_header_background.jpg");
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
+  header .treatment-background-image {
+    background-image: url("../img/treatment_header_background02.jpg");
+  }
   header .header-title .image {
-    width: 280px;
+    width: 420px;
   }
   header .header-title .header-banner.-program {
     left: 140px;
@@ -733,7 +737,6 @@ header .hospital-background-image {
     margin: auto;
     width: 230px;
     height: auto;
-    left: -24%;
   }
   header.-recruit {
     width: 300px;
@@ -990,7 +993,6 @@ header .hospital-background-image {
 }
 
 .three-windows-sp a {
-  font-weight: bold;
   padding: 1em 0;
   color: #00b04f;
   text-align: center;
@@ -998,7 +1000,14 @@ header .hospital-background-image {
 }
 
 .three-windows-sp a span {
+  font-weight: 500;
+  font-size: 32px;
   margin: 1em 0;
+}
+
+.three-windows-sp .doctor-program a {
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .three-windows {
@@ -1106,6 +1115,10 @@ header .hospital-background-image {
   background: #001b69;
 }
 
+.feature-sp .green-title {
+  font-size: 32px;
+}
+
 .feature-sp .swiper-04 {
   margin: 0 30px;
 }
@@ -1128,6 +1141,11 @@ header .hospital-background-image {
 
 .feature-sp .body-text {
   margin: 30px;
+}
+
+.feature-sp .body-text {
+  line-height: 44px;
+  margin-bottom: 2em;
 }
 
 .detail {
@@ -1288,6 +1306,12 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 768px) {
+  .staff-introduction {
+    height: 100vw;
+    background-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .header-news-sp .title {
     font-size: 32px;
   }
@@ -1330,6 +1354,9 @@ header .hospital-background-image {
   .top-container .top-news,
   .top-container .psychiatry {
     margin: 0 30px;
+  }
+  .top-container .top-news .text {
+    margin: 0 0 20px 0;
   }
   .top-container .psychiatry p.body-text {
     margin: 0;
@@ -1391,6 +1418,9 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 576px) {
+  .flex-container .staff-introduction .banner-img {
+    top: 25%;
+  }
   .flex-container .thought-container .right {
     width: 80vw;
   }
@@ -1668,13 +1698,9 @@ header .hospital-background-image {
   width: auto;
 }
 
-.achievement-container .container {
-  text-align: center;
-}
-
 .achievement-card {
   display: inline-block;
-  margin: 60px 0 0 0;
+  margin: 60px auto 0 auto;
   border: solid 1px #00b04f;
   color: black;
   font-size: 20px;
@@ -1708,6 +1734,32 @@ header .hospital-background-image {
 
 .achievement-card.-research a {
   color: #00b04f;
+}
+
+@media screen and (max-width: 1000px) {
+  .achievement-card {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievement-card {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .achievement-card {
+    position: relative;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .achievement-card {
+    position: relative;
+    left: 10%;
+  }
 }
 
 .about-thought {

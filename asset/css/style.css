@@ -596,15 +596,20 @@ header .top-navigation li {
   line-height: 60px;
   background: #001b69;
   color: white;
-  padding: 0 0 0 15px;
   margin-top: 10px;
 }
 
 header .top-navigation li a {
+  padding: 0 0 0 15px;
+  text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
   color: white;
+}
+
+header .top-navigation li a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 header .header-news {
@@ -1020,6 +1025,10 @@ header .hospital-background-image {
 .three-windows .three {
   position: relative;
   top: -25px;
+}
+
+.three-windows .three img {
+  width: 28vw;
 }
 
 .three-windows a {

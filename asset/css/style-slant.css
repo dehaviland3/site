@@ -524,7 +524,7 @@
 
 .slant-toggle19 {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   height: 10px;
   margin-top: -10px;
   width: 100%;
@@ -541,15 +541,21 @@
   content: "";
   display: block;
   position: absolute;
-  top: 560%;
+  top: -560%;
   right: 0%;
-  bottom: -1650%;
+  bottom: -600%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -200;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .slant-toggle19:after {
+    top: -230%;
+  }
 }
 
 .slant-toggle20 {

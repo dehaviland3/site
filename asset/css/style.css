@@ -140,7 +140,6 @@ body {
 }
 
 .swiper-container {
-  margin-top: 6em;
   height: 700px;
   width: 100%;
   background-color: #001b69;
@@ -171,9 +170,13 @@ body {
   margin-top: 4em;
 }
 
-.swiper-container .swiper-wrapper .right-side,
+.swiper-container .swiper-wrapper .right-side {
+  width: 50%;
+}
+
 .swiper-container .swiper-wrapper .left-side {
-  width: 45%;
+  max-width: 550px;
+  padding: 0 1em;
 }
 
 .swiper-container .swiper-wrapper .left-side img {
@@ -182,7 +185,9 @@ body {
 }
 
 .swiper-container .swiper-wrapper .right-side {
+  min-width: 350px;
   margin: 1.2em 0;
+  padding: 0 1em;
 }
 
 .swiper-container .swiper-button-prev {
@@ -468,6 +473,10 @@ header .header-title {
   margin: 2em;
 }
 
+header .header-title a:hover {
+  opacity: 1;
+}
+
 header .header-title .image {
   position: relative;
   z-index: 1;
@@ -592,6 +601,9 @@ header .top-navigation li {
 }
 
 header .top-navigation li a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: white;
 }
 
@@ -796,7 +808,8 @@ header .hospital-background-image {
 }
 
 .header-navigation a.program {
-  line-height: 37px !important;
+  line-height: 20px !important;
+  padding-top: 15px;
 }
 
 .header-navigation ul li {
@@ -984,7 +997,7 @@ header .hospital-background-image {
 
 .three-windows {
   position: relative;
-  z-index: 10000000;
+  z-index: 10000;
   margin: 4em 0 4em 0;
   height: 380px;
   font-weight: bold;
@@ -995,17 +1008,17 @@ header .hospital-background-image {
 
 .three-windows img {
   width: 31vw;
-  height: 24vw;
+  height: 26vw;
 }
 
 .three-windows .one {
   position: relative;
-  top: 20px;
+  top: 27px;
 }
 
 .three-windows .three {
   position: relative;
-  top: -20px;
+  top: -27px;
 }
 
 .three-windows a {
@@ -1117,8 +1130,14 @@ header .hospital-background-image {
   margin: 2em 160px 1em 160px;
 }
 
+.psychiatry .banner-img {
+  width: 240px;
+  min-width: 240px;
+}
+
 .psychiatry > .body-text {
   margin-left: 80px;
+  width: 100%;
 }
 
 .top-news {
@@ -1374,15 +1393,75 @@ header .hospital-background-image {
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 900px) {
   .top-container .three-windows {
-    margin-bottom: 7em;
+    margin-bottom: 3.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .top-container .three-windows {
+    margin-bottom: 4.5em;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .top-container .three-windows {
+    margin-bottom: 5.5em;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .top-container .three-windows {
+    margin-bottom: 6.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-container .three-windows {
+    margin-bottom: 7.5em;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .top-container .three-windows {
+    margin-bottom: 8em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .top-container .three-windows {
+    margin-bottom: 11em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .top-container .three-windows {
+    margin-bottom: 12em;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .top-container .three-windows {
-    margin-bottom: 10em;
+    margin-bottom: 13em;
+  }
+  .flex-container .thought-container {
+    padding: 0 0 5em 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .top-container .three-windows {
+    margin-bottom: 14em;
+  }
+  .flex-container .thought-container {
+    padding: 0 0 5em 0;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .top-container .three-windows {
+    margin-bottom: 15em;
   }
   .flex-container .thought-container {
     padding: 0 0 5em 0;
@@ -1391,22 +1470,49 @@ header .hospital-background-image {
 
 @media screen and (min-width: 1750px) {
   .top-container .three-windows {
-    margin-bottom: 15em;
+    margin-bottom: 16em;
   }
   .flex-container .thought-container {
     padding: 0 0 7em 0;
   }
 }
 
-@media screen and (min-width: 2100px) {
+@media screen and (min-width: 1650px) {
+  .top-container .three-windows {
+    margin-bottom: 17em;
+  }
+  .flex-container .thought-container {
+    padding: 0 0 5em 0;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .top-container .three-windows {
+    margin-bottom: 18em;
+  }
+  .flex-container .thought-container {
+    padding: 0 0 5em 0;
+  }
+}
+
+@media screen and (min-width: 1950px) {
   .top-container .three-windows {
     margin-bottom: 19em;
+  }
+  .flex-container .thought-container {
+    padding: 0 0 5em 0;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .top-container .three-windows {
+    margin-bottom: 21em;
   }
 }
 
 @media screen and (min-width: 2500px) {
   .top-container .three-windows {
-    margin-bottom: 23em;
+    margin-bottom: 30em;
   }
 }
 
@@ -1980,6 +2086,11 @@ footer .footer-banners img {
 .banner-img.-results {
   padding: 6em 0 0.8em 0;
   max-width: 100px;
+}
+
+.banner-img.-messageAbout {
+  padding-top: 5em;
+  max-width: 111px;
 }
 
 .banner-img.-message {

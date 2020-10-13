@@ -1419,7 +1419,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 576px) {
   .flex-container .staff-introduction .banner-img {
-    top: 25%;
+    top: 30%;
   }
   .flex-container .thought-container .right {
     width: 80vw;
@@ -1435,6 +1435,9 @@ header .hospital-background-image {
   }
   .detail {
     width: 90% !important;
+  }
+  .psychiatry .banner-img {
+    width: 60vw;
   }
 }
 

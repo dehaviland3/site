@@ -1335,7 +1335,7 @@ header {
     .flex-container {
         .staff-introduction {
             .banner-img {
-                top: 25%;
+                top: 30%;
             }
         }
         .thought-container {
@@ -1359,6 +1359,11 @@ header {
     }
     .detail {
         width: 90%!important;
+    }
+    .psychiatry {
+        .banner-img {
+            width: 60vw;
+        }
     }
 }
 

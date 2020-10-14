@@ -649,7 +649,7 @@ header {
     }
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 768px) {
     header {
         .treatment-background-image {
             background-image: url("../img/treatment_header_background02.jpg");
@@ -966,7 +966,7 @@ header {
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .three-windows {
         >div {
             margin: 2em;
@@ -1202,7 +1202,7 @@ header {
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .staff-introduction {
         height: 100vw;
         background-size: 100%;
@@ -2218,6 +2218,42 @@ footer {
 
 .slideInLeft {
     animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideInTop01 {
+    from {
+        opacity: 0;
+        transform: translateX(-450px);
+        transform: translateY(150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideInTop01 {
+    animation-name: slideInTop01;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideInTop02 {
+    from {
+        opacity: 0;
+        transform: translateX(450px);
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slideInTop02 {
+    animation-name: slideInTop02;
     animation-duration: 1s;
     animation-timing-function: ease;
 }

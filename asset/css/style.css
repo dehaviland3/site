@@ -719,7 +719,7 @@ header .hospital-background-image {
   background-size: cover;
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 768px) {
   header .treatment-background-image {
     background-image: url("../img/treatment_header_background02.jpg");
   }
@@ -1044,7 +1044,7 @@ header .hospital-background-image {
   margin: 20px 0 0 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .three-windows > div {
     margin: 2em;
   }
@@ -1305,7 +1305,7 @@ header .hospital-background-image {
   background: #e3eff5;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .staff-introduction {
     height: 100vw;
     background-size: 100%;
@@ -2321,6 +2321,84 @@ footer .footer-banners img {
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
           animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes slideInTop01 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop01 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInTop01 {
+  -webkit-animation-name: slideInTop01;
+          animation-name: slideInTop01;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes slideInTop02 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop02 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInTop02 {
+  -webkit-animation-name: slideInTop02;
+          animation-name: slideInTop02;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;

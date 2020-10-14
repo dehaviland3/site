@@ -719,7 +719,7 @@ header .hospital-background-image {
   background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   header .treatment-background-image {
     background-image: url("../img/treatment_header_background02.jpg");
   }
@@ -1044,7 +1044,7 @@ header .hospital-background-image {
   margin: 20px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .three-windows > div {
     margin: 2em;
   }
@@ -1305,7 +1305,7 @@ header .hospital-background-image {
   background: #e3eff5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .staff-introduction {
     height: 100vw;
     background-size: 100%;

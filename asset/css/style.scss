@@ -450,7 +450,7 @@ th {
 /*https://ri-mode.com/rainbow/2014/06/11/simple_css_dropdown_menu/*/
 
 @mixin header-background {
-    height: 500px;
+    height: 570px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -463,7 +463,7 @@ header {
     height: 500px;
     .header-title {
         position: relative;
-        top: -15px;
+        top: -7px;
         a:hover {
             opacity: 1;
         }
@@ -473,6 +473,9 @@ header {
             z-index: 1;
             width: 450px;
             height: auto;
+        }
+        &.-TopPage {
+            top: -27px;
         }
     }
     .header-pageTitle {
@@ -656,6 +659,15 @@ header {
         .treatment-background-image {
             background-image: url("../img/treatment_header_background02.jpg");
         }
+        .achievement-background-image {
+            background-image: url("../img/achievement_header_bg02.jpg")
+        }
+        .report-background-image {
+            background-image: url("../img/report_header_background02.jpg")
+        }
+        .recruit-background-image {
+            background-image: url("../img/recruit_header_background02.jpg")
+        }
         .header-title {
             .image {
                 width: 420px;
@@ -667,8 +679,8 @@ header {
         }
         .header-pageTitle {
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 80%;
+            transform: translateX(-70%);
             margin: auto;
             width: 230px;
             height: auto;
@@ -718,6 +730,10 @@ header {
         .header-pageTitle {
             &.-withSP02 {
                 left: 10px;
+            }
+            &.-report {
+                left: 35%;
+                transform: translateX(-35%);
             }
         }
         .header-pageTitle {
@@ -913,27 +929,23 @@ header {
 }
 
 .three-windows-sp {
-    width: 70%;
-    margin: 0 auto;
+    padding: 0 50px;
     text-align: center;
     >div {
         margin-bottom: 2em;
     }
+    img {
+        width: 90%;
+    }
     a {
+        font-weight: 600;
+        font-size: 20px;
         padding: 1em 0;
         color: $green01;
         text-align: center;
         margin: 1.5em auto;
-        span {
-            font-weight: 500;
-            font-size: 32px;
+        p {
             margin: 1em 0;
-        }
-    }
-    .doctor-program {
-        a {
-            font-size: 32px;
-            font-weight: 500;
         }
     }
 }
@@ -1040,7 +1052,7 @@ header {
     padding: 3em 0;
     background: $blue01;
     .green-title {
-        font-size: 32px;
+        font-size: 24px;
     }
     .swiper-04 {
         margin: 0 30px;
@@ -1050,7 +1062,7 @@ header {
         }
     }
     p.title {
-        font-size: 34px;
+        font-size: 24px;
         color: $green01;
         padding: 2em 0 0 0;
         text-align: center;
@@ -1062,7 +1074,6 @@ header {
         margin: 30px;
     }
     .body-text {
-        line-height: 44px;
         margin-bottom: 2em;
     }
 }
@@ -1071,6 +1082,7 @@ header {
     border: solid 1px $green01;
     width: 180px;
     p {
+        font-weight: bold;
         color: $green01;
         font-size: 18px;
         padding: 15px 25px;
@@ -1079,8 +1091,7 @@ header {
 
 .psychiatry {
     .banner-img {
-        width: 240px;
-        min-width: 240px;
+        width: 28vw;
     }
     margin: 2em 160px 1em 160px;
     >.body-text {
@@ -1101,16 +1112,18 @@ header {
     }
     .contents {
         width: 100%;
-        border-bottom: solid 1px black;
+        border-bottom: solid 1px $blue01;
         &:last-child {
             border: none;
         }
     }
     .date {
         margin: 20px 30px 20px 15px;
+        font-size: 16px;
         color: $blue01
     }
     .text {
+        font-size: 16px;
         margin: 20px 0;
     }
 }
@@ -1119,7 +1132,7 @@ header {
     height: 760px;
     width: 100%;
     background: {
-        image: url("../img/staff_introduction02.jpg");
+        image: url("../img/staff_introduction.jpg");
         repeat: no-repeat;
         size: cover;
         position: center center;
@@ -1185,6 +1198,7 @@ header {
         margin: 0 5em 0.6em 0;
         list-style: square;
         text-decoration: underline;
+        white-space: nowrap;
     }
     .center-container {
         margin: 0 160px;
@@ -1205,25 +1219,44 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    .recruit-container {
+        .col-12.col-sm-6 {
+            margin-top: -10px;
+        }
+        .subtitle-blue {
+            margin-top: 0.5em;
+            font-size: 24px;
+        }
+        .span-name {
+            font-size: 18px;
+        }
+        .simulation-wrapper {
+            padding: 0 50px;
+        }
+        .banner-img.-simulation {
+            margin-top: -50px;
+        }
+    }
     .staff-introduction {
         height: 100vw;
         background-size: 100%;
         object-fit: cover;
     }
-    .header-news-sp {
-        .title {
-            font-size: 32px;
-        }
-        .text02 {
-            font-size: 26px;
-        }
+    .body-text {
+        margin: 0;
+        padding: 0;
     }
     .flex-container {
         .facility-wrapper {
-            width: 70%;
             margin: 0 auto;
+            .facility {
+                margin: 0 0.5em 0 0;
+            }
             .facilityList {
                 margin-left: 1em;
+                li {
+                    margin-right: 1em;
+                }
             }
         }
         .sp-container {
@@ -1237,16 +1270,15 @@ header {
                 }
             }
         }
-        .left {
-            margin: 0 auto;
-            width: 90%;
+        .left,
+        .center-container {
+            width: 100%;
+            margin: 0;
+            padding: 0 50px;
         }
         .facilityContainer {
-            margin: 0 auto;
-            width: 90%;
-        }
-        .center-container {
-            margin: 0 30px;
+            margin: 0;
+            padding: 0 50px;
         }
         .thought-container {
             padding: 0 15px;
@@ -1264,6 +1296,9 @@ header {
             .text {
                 margin: 0 0 20px 0;
             }
+            .banner-img {
+                width: 85px!important;
+            }
         }
         .psychiatry {
             p.body-text {
@@ -1273,31 +1308,24 @@ header {
         .left {
             margin: 0 auto;
             width: 90%;
-            .body-text {
-                padding: 0 30px;
-                span.name {
-                    font-size: 26px;
-                }
-            }
-            p {
-                font-size: 26px;
-            }
             .detail {
                 width: 300px;
                 text-align: center;
             }
+            .subtitle-blue {
+                font-size: 24px;
+            }
+            .span-name {
+                font-size: 18px;
+            }
         }
         .three-windows-sp {
-            a {
-                font-size: 26px;
-            }
             .doctor-program {
                 max-width: 300px;
             }
         }
         .body-text {
             padding: 0;
-            font-size: 26px;
         }
         .right {
             margin: 0 auto;
@@ -1309,15 +1337,7 @@ header {
             padding: 0 30px;
             width: 100%;
         }
-        .top-news {
-            .title00 {
-                font-size: 34px;
-            }
-            .date,
-            .text {
-                font-size: 26px
-            }
-        }
+        .top-news {}
     }
     .top-container {
         left {
@@ -1337,7 +1357,18 @@ header {
     .flex-container {
         .staff-introduction {
             .banner-img {
-                top: 30%;
+                width: 80vw;
+            }
+        }
+        .facility-wrapper {
+            .facility {
+                width: 100%;
+                height: 60px;
+                p {
+                    height: 60px;
+                    line-height: 60px;
+                    margin: 0;
+                }
             }
         }
         .thought-container {
@@ -1358,13 +1389,18 @@ header {
                 max-width: 300px!important;
             }
         }
+        .top-news {
+            .banner-img {
+                width: 30vw
+            }
+        }
     }
     .detail {
         width: 90%!important;
     }
     .psychiatry {
         .banner-img {
-            width: 60vw;
+            width: 76vw;
         }
     }
 }
@@ -1554,6 +1590,41 @@ header {
             background-color: $blue02;
         }
     }
+    .simulation-wrapper {
+        padding: 0 160px;
+        .company {
+            padding: 0 40px 0 0;
+        }
+    }
+    .asterisk {
+        margin: 0 0 0 3em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .recruit-container {
+        .simulation-wrapper {
+            .company {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recruit-container {
+        .simulation-wrapper {
+            padding: 0 50px;
+        }
+    }
+}
+
+.green-title.-italic {
+    font-family: 'myfont', sans-serif;
+    font-weight: bold;
+    &.-treatment {
+        font-size: 30px;
+    }
 }
 
 .staff-container {
@@ -1567,11 +1638,9 @@ header {
     white-space: wrap;
     margin: 0 160px 2em 160px;
     .left {
-        display: inline-block;
-        vertical-align: top;
         min-width: 240px;
         img {
-            max-width: 240px;
+            width: 240px;
         }
         .green-title {
             font-size: 24px;
@@ -1617,7 +1686,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .staff-container {
-        margin: 0 30px 2em 30px;
+        margin: 0 50px 2em 50px;
     }
 }
 
@@ -1634,12 +1703,22 @@ header {
 
 @media screen and (max-width: 576px) {
     .staff-container {
-        margin: 0 30px 2em 30px;
         .left {
             text-align: left;
-            margin: 0 0 1em auto;
-            img {
-                margin: 0 0 0 auto;
+            margin: 0 auto 1em 0;
+            .green-title {
+                text-align: left;
+            }
+            .bop-to-the-top {
+                text-align: left;
+            }
+            .staffImg {
+                width: 88vw;
+                margin: 0 auto 0.5em auto;
+                img {
+                    display: block;
+                    margin: 0 auto!important;
+                }
             }
         }
         .right {
@@ -1673,7 +1752,12 @@ header {
     }
 }
 
-.achievement-container {}
+.achievement-container {
+    padding: 0 160px;
+    .col-6.col-md-3 {
+        height: 120px;
+    }
+}
 
 .achievement-card {
     display: inline-block;
@@ -1708,9 +1792,21 @@ header {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+    .achievement-card {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
     .achievement-card {
         width: 160px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .achievement-container {
+        padding: 0 50px;
     }
 }
 
@@ -1718,19 +1814,37 @@ header {
     .achievement-card {
         width: 210px;
     }
-}
-
-@media screen and (max-width: 576px) {
-    .achievement-card {
-        position: relative;
-        left: 20%;
+    .achievement-container {
+        .col-6.col-md-3 {
+            height: 85px;
+        }
+        .row {
+            margin-bottom: 3em;
+        }
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 576px) {
+    .achievement-container {
+        padding: 0;
+    }
     .achievement-card {
-        position: relative;
-        left: 10%;
+        img {
+            margin: 17px 0 17px 5px;
+        }
+        p {
+            margin: 0 5px
+        }
+        a {
+            margin: 0 5px
+        }
+        width: 150px;
+        &.-research {
+            margin: 0.5em auto;
+            left: 0;
+            padding-bottom: 0;
+            width: 260px;
+        }
     }
 }
 
@@ -1757,6 +1871,9 @@ header {
 }
 
 .research-container {
+    .col-12 {
+        padding: 0 50px;
+    }
     .span-class {
         margin: 0.5em 0 0 0;
     }
@@ -1853,6 +1970,17 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+    .research-container {
+        .subtitle-blue {
+            font-size: 24px;
+        }
+        .header-blue {
+            font-size: 18px;
+        }
+        .span-name {
+            font-size: 18px;
+        }
+    }
     footer {
         .footer-banners {
             img {
@@ -1917,9 +2045,26 @@ footer {
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 120%;
+        a {
+            color: $green01;
+        }
     }
     a {
+        line-height: 60px;
+        font-size: 34px;
         color: white;
+    }
+    .modal-close {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .sticky-area {
+        position: -webkit-sticky;
+        /* safari用 */
+        position: sticky;
+        top: 0;
     }
 }
 
@@ -1930,6 +2075,12 @@ footer {
 }
 
 .modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
     width: 100%;
     padding-top: 180px;
     padding-bottom: 5em;
@@ -1990,15 +2141,15 @@ footer {
 }
 
 .modal-wrapper .modal-window .modal-content {
-    background-color: #001a69c1;
+    background-color: #001a69dc;
     overflow-y: auto;
 }
 
 .modal-wrapper .modal-close {
     z-index: 100000;
     position: absolute;
-    top: 52px;
-    right: 38px;
+    top: 36px;
+    right: 31px;
     width: 40px;
     height: 35px;
     color: #95979c !important;
@@ -2011,11 +2162,7 @@ footer {
     text-indent: 0;
 }
 
-.modal-close {
-    .fa-times {
-        font-size: 40px;
-    }
-}
+.modal-close {}
 
 .modal-wrapper .modal-close:hover {
     color: #2b2e38 !important;
@@ -2028,12 +2175,16 @@ footer {
 }
 
 .sp-modal {
+    img {
+        width: 45px;
+        height: 30px;
+    }
     .fa-bars {
         font-size: 30px;
     }
     position: absolute;
-    top: 30px;
-    right: 45px;
+    top: 25px;
+    right: 30px;
     z-index: 100;
     i {
         color: black;
@@ -2047,45 +2198,45 @@ footer {
 .banner-img {
     margin: 0 auto;
     &.-clinical_sp01 {
-        max-width: 150px;
+        width: 150px;
     }
     &.-clinical_sp02 {
-        max-width: 80px;
+        width: 80px;
     }
     &.-reiji_yoshimura {
         margin: 0;
         max-width: 260px!important;
     }
     &.-news {
-        max-width: 120px;
+        width: 120px;
         margin: 0;
     }
     &.-staff-introduction {
-        max-width: 440px;
+        width: 400px;
     }
     &.-psychiatry {
-        max-width: 240px;
+        max-width: 30vw;
     }
     &.-clinical {
-        max-width: 300px;
+        width: 280px;
         margin: 0;
     }
     &.-program {
         padding-top: 5em;
-        max-width: 130px;
+        width: 130px;
     }
     &.-simulation {
-        max-width: 180px;
+        width: 180px;
     }
     &.-onlineLesson {
         margin: 0;
-        max-width: 180px;
+        width: 180px;
     }
     &.-education {
-        max-width: 130px;
+        width: 130px;
     }
     &.-education02 {
-        max-width: 270px;
+        width: 270px;
         margin: 0;
     }
     &.-results {
@@ -2210,7 +2361,7 @@ footer {
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-150px);
+        transform: translateX(-1500px);
     }
     to {
         opacity: 1;

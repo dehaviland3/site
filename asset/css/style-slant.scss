@@ -124,6 +124,33 @@ $green01: #00b04f;
     z-index: -9;
 }
 
+@media screen and (max-width: 1000px) {
+    .slant-toggle03::before {
+        top: -500%;
+    }
+    .slant-toggle04::after {
+        top: -500%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slant-toggle03::before {
+        top: -400%;
+    }
+    .slant-toggle04::after {
+        top: -400%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slant-toggle03::before {
+        top: -300%;
+    }
+    .slant-toggle04::after {
+        top: -300%;
+    }
+}
+
 .slant-toggle05 {
     position: relative;
     z-index: 10;
@@ -172,10 +199,16 @@ $green01: #00b04f;
     right: 0%;
     bottom: -1300%;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transform: skewY(-3deg);
     z-index: -11;
     pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .slant-toggle06::after {
+        bottom: -700%;
+    }
 }
 
 .slant-toggle07 {
@@ -197,9 +230,9 @@ $green01: #00b04f;
     position: absolute;
     top: -30%;
     right: 0%;
-    bottom: -50%;
+    bottom: -150%;
     left: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transform: skewY(-3deg);
     z-index: -11;
     pointer-events: none;
@@ -576,7 +609,7 @@ $green01: #00b04f;
     right: 0%;
     bottom: -500%;
     left: 0;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     transform: skewY(-3deg);
     z-index: -200;
     pointer-events: none;
@@ -624,7 +657,10 @@ $green01: #00b04f;
 
 @media screen and (max-width: 590px) {
     .slant-toggle21::after {
-        bottom: -900%;
+        bottom: -600%;
+    }
+    .slant-toggle22::after {
+        top: -750%
     }
 }
 

@@ -128,6 +128,33 @@
   z-index: -9;
 }
 
+@media screen and (max-width: 1000px) {
+  .slant-toggle03::before {
+    top: -500%;
+  }
+  .slant-toggle04::after {
+    top: -500%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slant-toggle03::before {
+    top: -400%;
+  }
+  .slant-toggle04::after {
+    top: -400%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slant-toggle03::before {
+    top: -300%;
+  }
+  .slant-toggle04::after {
+    top: -300%;
+  }
+}
+
 .slant-toggle05 {
   position: relative;
   z-index: 10;
@@ -186,6 +213,12 @@
   pointer-events: none;
 }
 
+@media screen and (max-width: 768px) {
+  .slant-toggle06::after {
+    bottom: -700%;
+  }
+}
+
 .slant-toggle07 {
   position: relative;
   z-index: 10;
@@ -206,7 +239,7 @@
   position: absolute;
   top: -30%;
   right: 0%;
-  bottom: -50%;
+  bottom: -150%;
   left: 0;
   background-color: white;
   -webkit-transform: skewY(-3deg);
@@ -611,7 +644,7 @@
   right: 0%;
   bottom: -500%;
   left: 0;
-  background-color: #fdfdfd;
+  background-color: white;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   z-index: -200;
@@ -661,7 +694,10 @@
 
 @media screen and (max-width: 590px) {
   .slant-toggle21::after {
-    bottom: -900%;
+    bottom: -600%;
+  }
+  .slant-toggle22::after {
+    top: -750%;
   }
 }
 

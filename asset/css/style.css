@@ -471,7 +471,7 @@ header {
 
 header .header-title {
   position: relative;
-  top: -15px;
+  top: -7px;
   margin: 2em;
 }
 
@@ -484,6 +484,10 @@ header .header-title .image {
   z-index: 1;
   width: 450px;
   height: auto;
+}
+
+header .header-title.-TopPage {
+  top: -27px;
 }
 
 header .header-pageTitle {
@@ -648,7 +652,7 @@ header .header-news .text02 {
 
 header .top-background-image {
   background: url("../img/top_header.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -659,7 +663,7 @@ header .top-background-image {
 
 header .staff-background-image {
   background-image: url("../img/staff_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -667,7 +671,7 @@ header .staff-background-image {
 
 header .achievement-background-image {
   background-image: url("../img/achievement_header_bg.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -675,7 +679,7 @@ header .achievement-background-image {
 
 header .recruit-background-image {
   background-image: url("../img/recruit_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -683,7 +687,7 @@ header .recruit-background-image {
 
 header .about-background-image {
   background-image: url("../img/about_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -691,7 +695,7 @@ header .about-background-image {
 
 header .research-background-image {
   background-image: url("../img/research_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -699,7 +703,7 @@ header .research-background-image {
 
 header .report-background-image {
   background-image: url("../img/report_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -707,7 +711,7 @@ header .report-background-image {
 
 header .treatment-background-image {
   background-image: url("../img/treatment_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -715,7 +719,7 @@ header .treatment-background-image {
 
 header .hospital-background-image {
   background-image: url("../img/treatment_header_background.jpg");
-  height: 500px;
+  height: 570px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -724,6 +728,15 @@ header .hospital-background-image {
 @media screen and (max-width: 768px) {
   header .treatment-background-image {
     background-image: url("../img/treatment_header_background02.jpg");
+  }
+  header .achievement-background-image {
+    background-image: url("../img/achievement_header_bg02.jpg");
+  }
+  header .report-background-image {
+    background-image: url("../img/report_header_background02.jpg");
+  }
+  header .recruit-background-image {
+    background-image: url("../img/recruit_header_background02.jpg");
   }
   header .header-title .image {
     width: 420px;
@@ -734,8 +747,9 @@ header .hospital-background-image {
   }
   header .header-pageTitle {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 80%;
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
     margin: auto;
     width: 230px;
     height: auto;
@@ -780,6 +794,11 @@ header .hospital-background-image {
   }
   header .header-pageTitle.-withSP02 {
     left: 10px;
+  }
+  header .header-pageTitle.-report {
+    left: 35%;
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
   }
   header .header-pageTitle.-withSP03, header .header-pageTitle.-withSP04 {
     left: 20px;
@@ -985,8 +1004,7 @@ header .hospital-background-image {
 }
 
 .three-windows-sp {
-  width: 70%;
-  margin: 0 auto;
+  padding: 0 50px;
   text-align: center;
 }
 
@@ -994,22 +1012,21 @@ header .hospital-background-image {
   margin-bottom: 2em;
 }
 
+.three-windows-sp img {
+  width: 90%;
+}
+
 .three-windows-sp a {
+  font-weight: 600;
+  font-size: 20px;
   padding: 1em 0;
   color: #00b04f;
   text-align: center;
   margin: 1.5em auto;
 }
 
-.three-windows-sp a span {
-  font-weight: 500;
-  font-size: 32px;
+.three-windows-sp a p {
   margin: 1em 0;
-}
-
-.three-windows-sp .doctor-program a {
-  font-size: 32px;
-  font-weight: 500;
 }
 
 .three-windows {
@@ -1118,7 +1135,7 @@ header .hospital-background-image {
 }
 
 .feature-sp .green-title {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .feature-sp .swiper-04 {
@@ -1131,7 +1148,7 @@ header .hospital-background-image {
 }
 
 .feature-sp p.title {
-  font-size: 34px;
+  font-size: 24px;
   color: #00b04f;
   padding: 2em 0 0 0;
   text-align: center;
@@ -1146,7 +1163,6 @@ header .hospital-background-image {
 }
 
 .feature-sp .body-text {
-  line-height: 44px;
   margin-bottom: 2em;
 }
 
@@ -1156,6 +1172,7 @@ header .hospital-background-image {
 }
 
 .detail p {
+  font-weight: bold;
   color: #00b04f;
   font-size: 18px;
   padding: 15px 25px;
@@ -1166,8 +1183,7 @@ header .hospital-background-image {
 }
 
 .psychiatry .banner-img {
-  width: 240px;
-  min-width: 240px;
+  width: 28vw;
 }
 
 .psychiatry > .body-text {
@@ -1190,7 +1206,7 @@ header .hospital-background-image {
 
 .top-news .contents {
   width: 100%;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #001b69;
 }
 
 .top-news .contents:last-child {
@@ -1199,17 +1215,19 @@ header .hospital-background-image {
 
 .top-news .date {
   margin: 20px 30px 20px 15px;
+  font-size: 16px;
   color: #001b69;
 }
 
 .top-news .text {
+  font-size: 16px;
   margin: 20px 0;
 }
 
 .staff-introduction {
   height: 760px;
   width: 100%;
-  background-image: url("../img/staff_introduction02.jpg");
+  background-image: url("../img/staff_introduction.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1289,6 +1307,7 @@ header .hospital-background-image {
   margin: 0 5em 0.6em 0;
   list-style: square;
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .flex-container .center-container {
@@ -1308,24 +1327,43 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 768px) {
+  .recruit-container .col-12.col-sm-6 {
+    margin-top: -10px;
+  }
+  .recruit-container .subtitle-blue {
+    margin-top: 0.5em;
+    font-size: 24px;
+  }
+  .recruit-container .span-name {
+    font-size: 18px;
+  }
+  .recruit-container .simulation-wrapper {
+    padding: 0 50px;
+  }
+  .recruit-container .banner-img.-simulation {
+    margin-top: -50px;
+  }
   .staff-introduction {
     height: 100vw;
     background-size: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .header-news-sp .title {
-    font-size: 32px;
-  }
-  .header-news-sp .text02 {
-    font-size: 26px;
+  .body-text {
+    margin: 0;
+    padding: 0;
   }
   .flex-container .facility-wrapper {
-    width: 70%;
     margin: 0 auto;
+  }
+  .flex-container .facility-wrapper .facility {
+    margin: 0 0.5em 0 0;
   }
   .flex-container .facility-wrapper .facilityList {
     margin-left: 1em;
+  }
+  .flex-container .facility-wrapper .facilityList li {
+    margin-right: 1em;
   }
   .flex-container .sp-container {
     margin: 0 30px;
@@ -1336,16 +1374,15 @@ header .hospital-background-image {
   .flex-container .sp-container .yoshimura .span-name {
     text-align: right;
   }
-  .flex-container .left {
-    margin: 0 auto;
-    width: 90%;
+  .flex-container .left,
+  .flex-container .center-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
   }
   .flex-container .facilityContainer {
-    margin: 0 auto;
-    width: 90%;
-  }
-  .flex-container .center-container {
-    margin: 0 30px;
+    margin: 0;
+    padding: 0 50px;
   }
   .flex-container .thought-container {
     padding: 0 15px;
@@ -1360,6 +1397,9 @@ header .hospital-background-image {
   .top-container .top-news .text {
     margin: 0 0 20px 0;
   }
+  .top-container .top-news .banner-img {
+    width: 85px !important;
+  }
   .top-container .psychiatry p.body-text {
     margin: 0;
   }
@@ -1367,28 +1407,21 @@ header .hospital-background-image {
     margin: 0 auto;
     width: 90%;
   }
-  .top-container .left .body-text {
-    padding: 0 30px;
-  }
-  .top-container .left .body-text span.name {
-    font-size: 26px;
-  }
-  .top-container .left p {
-    font-size: 26px;
-  }
   .top-container .left .detail {
     width: 300px;
     text-align: center;
   }
-  .top-container .three-windows-sp a {
-    font-size: 26px;
+  .top-container .left .subtitle-blue {
+    font-size: 24px;
+  }
+  .top-container .left .span-name {
+    font-size: 18px;
   }
   .top-container .three-windows-sp .doctor-program {
     max-width: 300px;
   }
   .top-container .body-text {
     padding: 0;
-    font-size: 26px;
   }
   .top-container .right {
     margin: 0 auto;
@@ -1399,13 +1432,6 @@ header .hospital-background-image {
   .top-container .facilityContainer {
     padding: 0 30px;
     width: 100%;
-  }
-  .top-container .top-news .title00 {
-    font-size: 34px;
-  }
-  .top-container .top-news .date,
-  .top-container .top-news .text {
-    font-size: 26px;
   }
   .top-container left {
     margin: 0 30px;
@@ -1421,7 +1447,16 @@ header .hospital-background-image {
 
 @media screen and (max-width: 576px) {
   .flex-container .staff-introduction .banner-img {
-    top: 30%;
+    width: 80vw;
+  }
+  .flex-container .facility-wrapper .facility {
+    width: 100%;
+    height: 60px;
+  }
+  .flex-container .facility-wrapper .facility p {
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
   }
   .flex-container .thought-container .right {
     width: 80vw;
@@ -1435,11 +1470,14 @@ header .hospital-background-image {
   .top-container .left .detail {
     max-width: 300px !important;
   }
+  .top-container .top-news .banner-img {
+    width: 30vw;
+  }
   .detail {
     width: 90% !important;
   }
   .psychiatry .banner-img {
-    width: 60vw;
+    width: 76vw;
   }
 }
 
@@ -1581,6 +1619,39 @@ header .hospital-background-image {
   background-color: #e3eff5;
 }
 
+.recruit-container .simulation-wrapper {
+  padding: 0 160px;
+}
+
+.recruit-container .simulation-wrapper .company {
+  padding: 0 40px 0 0;
+}
+
+.recruit-container .asterisk {
+  margin: 0 0 0 3em;
+}
+
+@media screen and (max-width: 1000px) {
+  .recruit-container .simulation-wrapper .company {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .recruit-container .simulation-wrapper {
+    padding: 0 50px;
+  }
+}
+
+.green-title.-italic {
+  font-family: 'myfont', sans-serif;
+  font-weight: bold;
+}
+
+.green-title.-italic.-treatment {
+  font-size: 30px;
+}
+
 .staff-container {
   white-space: wrap;
   margin: 0 160px 2em 160px;
@@ -1595,13 +1666,11 @@ header .hospital-background-image {
 }
 
 .staff-container .left {
-  display: inline-block;
-  vertical-align: top;
   min-width: 240px;
 }
 
 .staff-container .left img {
-  max-width: 240px;
+  width: 240px;
 }
 
 .staff-container .left .green-title {
@@ -1652,7 +1721,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 992px) {
   .staff-container {
-    margin: 0 30px 2em 30px;
+    margin: 0 50px 2em 50px;
   }
 }
 
@@ -1666,15 +1735,23 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 576px) {
-  .staff-container {
-    margin: 0 30px 2em 30px;
-  }
   .staff-container .left {
     text-align: left;
-    margin: 0 0 1em auto;
+    margin: 0 auto 1em 0;
   }
-  .staff-container .left img {
-    margin: 0 0 0 auto;
+  .staff-container .left .green-title {
+    text-align: left;
+  }
+  .staff-container .left .bop-to-the-top {
+    text-align: left;
+  }
+  .staff-container .left .staffImg {
+    width: 88vw;
+    margin: 0 auto 0.5em auto;
+  }
+  .staff-container .left .staffImg img {
+    display: block;
+    margin: 0 auto !important;
   }
   .staff-container .right p {
     margin: 15px 0;
@@ -1701,6 +1778,14 @@ header .hospital-background-image {
 .img-wrapper img {
   height: 100%;
   width: auto;
+}
+
+.achievement-container {
+  padding: 0 160px;
+}
+
+.achievement-container .col-6.col-md-3 {
+  height: 120px;
 }
 
 .achievement-card {
@@ -1741,9 +1826,21 @@ header .hospital-background-image {
   color: #00b04f;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  .achievement-card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .achievement-card {
     width: 160px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .achievement-container {
+    padding: 0 50px;
   }
 }
 
@@ -1751,19 +1848,35 @@ header .hospital-background-image {
   .achievement-card {
     width: 210px;
   }
-}
-
-@media screen and (max-width: 576px) {
-  .achievement-card {
-    position: relative;
-    left: 20%;
+  .achievement-container .col-6.col-md-3 {
+    height: 85px;
+  }
+  .achievement-container .row {
+    margin-bottom: 3em;
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 576px) {
+  .achievement-container {
+    padding: 0;
+  }
   .achievement-card {
-    position: relative;
-    left: 10%;
+    width: 150px;
+  }
+  .achievement-card img {
+    margin: 17px 0 17px 5px;
+  }
+  .achievement-card p {
+    margin: 0 5px;
+  }
+  .achievement-card a {
+    margin: 0 5px;
+  }
+  .achievement-card.-research {
+    margin: 0.5em auto;
+    left: 0;
+    padding-bottom: 0;
+    width: 260px;
   }
 }
 
@@ -1790,6 +1903,10 @@ header .hospital-background-image {
 
 .about-thought {
   margin-top: 5em;
+}
+
+.research-container .col-12 {
+  padding: 0 50px;
 }
 
 .research-container .span-class {
@@ -1894,6 +2011,15 @@ footer .footer-banners img {
 }
 
 @media screen and (max-width: 576px) {
+  .research-container .subtitle-blue {
+    font-size: 24px;
+  }
+  .research-container .header-blue {
+    font-size: 18px;
+  }
+  .research-container .span-name {
+    font-size: 18px;
+  }
   footer .footer-banners img {
     width: 80vw;
   }
@@ -1957,8 +2083,26 @@ footer .footer-banners img {
   background-size: 120%;
 }
 
+.modal-wrapper .active a {
+  color: #00b04f;
+}
+
 .modal-wrapper a {
+  line-height: 60px;
+  font-size: 34px;
   color: white;
+}
+
+.modal-wrapper .modal-close img {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-wrapper .sticky-area {
+  position: -webkit-sticky;
+  /* safari用 */
+  position: sticky;
+  top: 0;
 }
 
 .active02 {
@@ -1968,6 +2112,12 @@ footer .footer-banners img {
 }
 
 .modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
   width: 100%;
   padding-top: 180px;
   padding-bottom: 5em;
@@ -2034,15 +2184,15 @@ footer .footer-banners img {
 }
 
 .modal-wrapper .modal-window .modal-content {
-  background-color: #001a69c1;
+  background-color: #001a69dc;
   overflow-y: auto;
 }
 
 .modal-wrapper .modal-close {
   z-index: 100000;
   position: absolute;
-  top: 52px;
-  right: 38px;
+  top: 36px;
+  right: 31px;
   width: 40px;
   height: 35px;
   color: #95979c !important;
@@ -2053,10 +2203,6 @@ footer .footer-banners img {
   text-align: center;
   text-decoration: none;
   text-indent: 0;
-}
-
-.modal-close .fa-times {
-  font-size: 40px;
 }
 
 .modal-wrapper .modal-close:hover {
@@ -2071,9 +2217,14 @@ footer .footer-banners img {
 
 .sp-modal {
   position: absolute;
-  top: 30px;
-  right: 45px;
+  top: 25px;
+  right: 30px;
   z-index: 100;
+}
+
+.sp-modal img {
+  width: 45px;
+  height: 30px;
 }
 
 .sp-modal .fa-bars {
@@ -2093,11 +2244,11 @@ footer .footer-banners img {
 }
 
 .banner-img.-clinical_sp01 {
-  max-width: 150px;
+  width: 150px;
 }
 
 .banner-img.-clinical_sp02 {
-  max-width: 80px;
+  width: 80px;
 }
 
 .banner-img.-reiji_yoshimura {
@@ -2106,43 +2257,43 @@ footer .footer-banners img {
 }
 
 .banner-img.-news {
-  max-width: 120px;
+  width: 120px;
   margin: 0;
 }
 
 .banner-img.-staff-introduction {
-  max-width: 440px;
+  width: 400px;
 }
 
 .banner-img.-psychiatry {
-  max-width: 240px;
+  max-width: 30vw;
 }
 
 .banner-img.-clinical {
-  max-width: 300px;
+  width: 280px;
   margin: 0;
 }
 
 .banner-img.-program {
   padding-top: 5em;
-  max-width: 130px;
+  width: 130px;
 }
 
 .banner-img.-simulation {
-  max-width: 180px;
+  width: 180px;
 }
 
 .banner-img.-onlineLesson {
   margin: 0;
-  max-width: 180px;
+  width: 180px;
 }
 
 .banner-img.-education {
-  max-width: 130px;
+  width: 130px;
 }
 
 .banner-img.-education02 {
-  max-width: 270px;
+  width: 270px;
   margin: 0;
 }
 
@@ -2297,8 +2448,8 @@ footer .footer-banners img {
 @-webkit-keyframes slideInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
   }
   to {
     opacity: 1;
@@ -2310,8 +2461,8 @@ footer .footer-banners img {
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
   }
   to {
     opacity: 1;

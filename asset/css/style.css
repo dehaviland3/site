@@ -719,7 +719,7 @@ header .hospital-background-image {
   background-size: cover;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 776px) {
   header .treatment-background-image {
     background-image: url("../img/treatment_header_background02.jpg");
   }

@@ -470,6 +470,8 @@ header {
 }
 
 header .header-title {
+  position: relative;
+  top: -15px;
   margin: 2em;
 }
 
@@ -2330,8 +2332,8 @@ footer .footer-banners img {
 @-webkit-keyframes slideInTop01 {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-450px);
-            transform: translateX(-450px);
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
     -webkit-transform: translateY(150px);
             transform: translateY(150px);
   }
@@ -2339,14 +2341,16 @@ footer .footer-banners img {
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes slideInTop01 {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-450px);
-            transform: translateX(-450px);
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
     -webkit-transform: translateY(150px);
             transform: translateY(150px);
   }
@@ -2354,6 +2358,8 @@ footer .footer-banners img {
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

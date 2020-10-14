@@ -2220,15 +2220,15 @@ footer {
 
 .slideInLeft {
     animation-name: slideInLeft;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
 @keyframes slideInTop01 {
     from {
-        opacity: 0;
+        opacity: 1;
         transform: translateX(450px);
-        transform: translateY(150px);
+        transform: translateY(1150px);
     }
     to {
         opacity: 1;
@@ -2239,7 +2239,7 @@ footer {
 
 .slideInTop01 {
     animation-name: slideInTop01;
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-timing-function: ease;
 }
 
@@ -2257,7 +2257,7 @@ footer {
 
 .slideInTop02 {
     animation-name: slideInTop02;
-    animation-duration: 1s;
+    animation-duration: 1.8s;
     animation-timing-function: ease;
 }
 
@@ -2272,8 +2272,4 @@ footer {
     transition: all 2s
     /*処理にかかる時間*/
     ;
-}
-
-.hidden {
-    overflow: hidden;
 }

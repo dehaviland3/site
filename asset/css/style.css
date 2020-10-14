@@ -2323,19 +2323,19 @@ footer .footer-banners img {
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
           animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
 
 @-webkit-keyframes slideInTop01 {
   from {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateX(450px);
             transform: translateX(450px);
-    -webkit-transform: translateY(150px);
-            transform: translateY(150px);
+    -webkit-transform: translateY(1150px);
+            transform: translateY(1150px);
   }
   to {
     opacity: 1;
@@ -2348,11 +2348,11 @@ footer .footer-banners img {
 
 @keyframes slideInTop01 {
   from {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateX(450px);
             transform: translateX(450px);
-    -webkit-transform: translateY(150px);
-            transform: translateY(150px);
+    -webkit-transform: translateY(1150px);
+            transform: translateY(1150px);
   }
   to {
     opacity: 1;
@@ -2366,8 +2366,8 @@ footer .footer-banners img {
 .slideInTop01 {
   -webkit-animation-name: slideInTop01;
           animation-name: slideInTop01;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
@@ -2405,8 +2405,8 @@ footer .footer-banners img {
 .slideInTop02 {
   -webkit-animation-name: slideInTop02;
           animation-name: slideInTop02;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
 }
@@ -2423,9 +2423,5 @@ footer .footer-banners img {
   opacity: 0;
   -webkit-transition: all 2s;
   transition: all 2s;
-}
-
-.hidden {
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

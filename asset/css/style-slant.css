@@ -2,7 +2,6 @@
   position: relative;
   z-index: 0;
   height: 5px;
-  margin-top: -5px;
   width: 100%;
   background: transparent;
 }
@@ -16,7 +15,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: -6000%;
+  top: -60000%;
   right: 0%;
   bottom: 960%;
   left: 0;

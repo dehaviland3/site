@@ -1,0 +1,252 @@
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+$orange: #f69126;
+.newmake {
+    &-container01,
+    &-container02,
+    &-container03 {
+        padding: 0 170px
+    }
+    &-container01 {
+        background: white;
+        padding-bottom: 300px;
+    }
+    &-container02 {
+        background: #f2f2f0;
+        padding-bottom: 300px;
+    }
+    &-container03 {
+        background: #fbf1e0
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    &-top-img {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-container {
+        widows: 100%;
+    }
+    &-profile {
+        display: flex;
+        img {
+            width: 50%;
+        }
+        >div {
+            width: 50%
+        }
+    }
+    .newmake-item {
+        display: flex;
+        .newmake-item-img,
+        .newmake-item-text {
+            width: 50%
+        }
+        .newmake-item-img {
+            &.-first {
+                background-color: #f8c6a1
+            }
+            &.-second {
+                background-color: #bcd0c9
+            }
+            width: 300px;
+            height: 250px;
+            img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: -10px;
+                left: -10px;
+            }
+        }
+    }
+    //背景色の切れ目、上げた分container02等のpadding-bottomで戻してもらう
+    .newmake-img02,
+    .newmake-img04 {
+        position: relative;
+        top: -250px;
+    }
+    .newmake-img04 {}
+    &-text01 {
+        font-size: 20px;
+        color: $orange;
+        text-align: center;
+    }
+    &-text02 {
+        font-size: 32px;
+        color: $orange;
+        text-align: center;
+    }
+    &-slick {
+        .newmake-caption {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            .newmake-img {
+                width: 110px;
+                height: 110px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                    object-fit: fill;
+                }
+            }
+            .section {}
+            .newmake-text {
+                background: white;
+            }
+            .oneArea {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                max-width: 1024px;
+                margin: 50px auto;
+                padding: 0 10px;
+            }
+            .oneArea .onebox {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            .oneArea .onebox:nth-child(even) {
+                flex-direction: row-reverse;
+                margin-top: 20px;
+            }
+            .oneArea .onebox .imgArea {
+                width: 16%;
+                position: relative;
+            }
+            //本体色
+            .oneArea .onebox .fukidasi {
+                width: 100%;
+                position: relative;
+                padding: 25px;
+                background-color: #ffffff;
+                color: #231815;
+                border-radius: 12px;
+                box-sizing: border-box;
+            }
+            //吹き出しのツノ
+            .oneArea .onebox .fukidasi::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                transform: rotate(45deg);
+                top: -15px;
+                left: -35px;
+                border-right: 25px solid transparent;
+                border-bottom: 25px solid rgb(255, 255, 255);
+            }
+            //吹き出しのツノを隠すための背景
+            .oneArea .onebox .fukidasi::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                transform: rotate(45deg);
+                top: -25px;
+                border-right: 25px solid transparent;
+                border-bottom: 25px solid rgb(245, 245, 245);
+            }
+            .oneArea .onebox:nth-child(odd) .fukidasi::before {
+                left: -15px;
+                border-left: 25px solid transparent;
+                border-top: 25px solid transparent;
+            }
+            .oneArea .onebox:nth-child(odd) .fukidasi::after {
+                left: -25px;
+                border-left: 25px solid transparent;
+                border-top: 25px solid transparent;
+            }
+            .oneArea .onebox:nth-child(even) .fukidasi {
+                background-color: #fde5e5;
+            }
+            .oneArea .onebox:nth-child(even) .fukidasi::before {
+                left: auto;
+                right: -15px;
+                border-left: 25px solid transparent;
+                border-top: 25px solid #fde5e5;
+            }
+            .oneArea .onebox:nth-child(even) .fukidasi::after {
+                left: auto;
+                right: -25px;
+                border-left: 25px solid transparent;
+                border-top: 25px solid #ffffff;
+            }
+            @media screen and (max-width: 1024px) {
+                .oneArea .onebox:nth-child(odd) .imgArea img {
+                    max-width: 70%;
+                    top: 0;
+                }
+                .oneArea .onebox:nth-child(even) .imgArea img {
+                    max-width: 70%;
+                    top: 0;
+                }
+                .oneArea .onebox .fukidasi {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+                .oneArea .onebox .fukidasi::before {
+                    top: 8px;
+                }
+                .oneArea .onebox .fukidasi::after {
+                    top: 20px;
+                }
+            }
+            @media screen and (max-width: 420px) {
+                .oneArea {
+                    margin: 30px auto;
+                }
+                .oneArea .onebox:nth-child(even) {
+                    margin-top: 15px;
+                }
+                .oneArea .onebox .imgArea {
+                    width: 20%;
+                }
+                .oneArea .onebox .fukidasi {
+                    padding: 10px 15px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

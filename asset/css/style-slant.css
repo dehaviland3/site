@@ -591,6 +591,12 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .slant-toggle19:after {
+    top: -230%;
+  }
+}
+
 .slant-toggle20 {
   position: relative;
   z-index: 30;

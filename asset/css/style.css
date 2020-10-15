@@ -1185,7 +1185,7 @@ header .hospital-background-image {
 
 .three-windows {
   position: relative;
-  z-index: 10000;
+  z-index: 1000;
   margin: 4em 0 4em 0;
   height: 380px;
   font-weight: bold;
@@ -1653,7 +1653,7 @@ header .hospital-background-image {
 
 @media screen and (min-width: 1070px) {
   .top-container .three-windows {
-    margin-bottom: 5.5em;
+    padding-bottom: 8.5em;
   }
 }
 
@@ -2534,15 +2534,6 @@ footer .footer-banners img {
   .banner-img.-reiji_yoshimura {
     width: 90vw !important;
   }
-}
-
-#wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 @-webkit-keyframes slideInRight {

@@ -1219,6 +1219,9 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    .hospital-container {
+        padding: 0 50px;
+    }
     .recruit-container {
         .col-12.col-sm-6 {
             margin-top: -10px;
@@ -1281,7 +1284,7 @@ header {
             padding: 0 50px;
         }
         .thought-container {
-            padding: 0 15px;
+            padding: 0 50px;
         }
     }
     .top-container {
@@ -1887,6 +1890,11 @@ header {
     .margin {
         margin-top: 140px;
     }
+    .achievement-card.-research {
+        img {
+            margin-left: 15px;
+        }
+    }
 }
 
 .about-container {
@@ -2213,6 +2221,9 @@ footer {
     }
     &.-staff-introduction {
         width: 400px;
+    }
+    &.-staff-introduction02 {
+        width: 230px;
     }
     &.-psychiatry {
         max-width: 30vw;

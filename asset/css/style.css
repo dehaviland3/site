@@ -1327,6 +1327,9 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 768px) {
+  .hospital-container {
+    padding: 0 50px;
+  }
   .recruit-container .col-12.col-sm-6 {
     margin-top: -10px;
   }
@@ -1385,7 +1388,7 @@ header .hospital-background-image {
     padding: 0 50px;
   }
   .flex-container .thought-container {
-    padding: 0 15px;
+    padding: 0 50px;
   }
   .top-container .banner-img.-message {
     max-width: 160px;
@@ -1926,6 +1929,10 @@ header .hospital-background-image {
   margin-top: 140px;
 }
 
+.research-container .achievement-card.-research img {
+  margin-left: 15px;
+}
+
 .about-container .banner-img {
   padding-top: 5em;
 }
@@ -2263,6 +2270,10 @@ footer .footer-banners img {
 
 .banner-img.-staff-introduction {
   width: 400px;
+}
+
+.banner-img.-staff-introduction02 {
+  width: 230px;
 }
 
 .banner-img.-psychiatry {

@@ -220,13 +220,13 @@ body {
 
 .swiper-container.-sp .left-side {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0;
 }
 
 .swiper-container.-sp .right-side {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0;
 }
 
@@ -271,10 +271,6 @@ body {
   color: #00b04f;
   font-size: 24px;
   margin-top: 4em;
-}
-
-.swiper-container02 .swiper-wrapper .right-side {
-  width: 50%;
 }
 
 .swiper-container02 .swiper-wrapper .left-side {
@@ -323,13 +319,13 @@ body {
 
 .swiper-container02.-sp .left-side {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0;
 }
 
 .swiper-container02.-sp .right-side {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0;
 }
 
@@ -343,6 +339,10 @@ body {
 
 .swiper-container02.-sp .right-side .-italic {
   margin-top: 20px;
+}
+
+.swiper-container02.-sp .left-side {
+  margin: 0 auto;
 }
 
 .swiper-button-next::after {
@@ -1114,7 +1114,17 @@ header .hospital-background-image {
   padding: 0.6em 0 0 0;
 }
 
+.report-container .report-section {
+  padding: 0 10px 0 160px;
+}
+
 @media screen and (max-width: 768px) {
+  .report-container {
+    padding: 0 25px;
+  }
+  .report-container .report-section {
+    padding: 0;
+  }
   .report-archive {
     width: 240px;
     margin: 50px auto;
@@ -1135,7 +1145,7 @@ header .hospital-background-image {
 }
 
 .three-windows-sp {
-  padding: 0 50px;
+  padding: 0 25px;
   text-align: center;
 }
 
@@ -1351,6 +1361,7 @@ header .hospital-background-image {
 }
 
 .top-news .text {
+  text-align: left;
   font-size: 16px;
   margin: 20px 0;
 }
@@ -1459,7 +1470,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 768px) {
   .hospital-container {
-    padding: 0 50px;
+    padding: 0 25px;
   }
   .recruit-container .col-12.col-sm-6 {
     margin-top: -10px;
@@ -1472,7 +1483,7 @@ header .hospital-background-image {
     font-size: 18px;
   }
   .recruit-container .simulation-wrapper {
-    padding: 0 50px;
+    padding: 0 25px;
   }
   .recruit-container .banner-img.-simulation {
     margin-top: -50px;
@@ -1512,14 +1523,14 @@ header .hospital-background-image {
   .flex-container .center-container {
     width: 100%;
     margin: 0;
-    padding: 0 50px;
+    padding: 0 25px;
   }
   .flex-container .facilityContainer {
     margin: 0;
-    padding: 0 50px;
+    padding: 0 25px;
   }
   .flex-container .thought-container {
-    padding: 0 50px;
+    padding: 0 25px;
   }
   .top-container .banner-img.-message {
     max-width: 160px;
@@ -1773,7 +1784,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 768px) {
   .recruit-container .simulation-wrapper {
-    padding: 0 50px;
+    padding: 0 25px;
   }
 }
 
@@ -1974,7 +1985,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 1000px) {
   .achievement-container {
-    padding: 0 50px;
+    padding: 0 25px;
   }
 }
 
@@ -2040,7 +2051,7 @@ header .hospital-background-image {
 }
 
 .research-container .col-12 {
-  padding: 0 50px;
+  padding: 0 25px;
 }
 
 .research-container .span-class {

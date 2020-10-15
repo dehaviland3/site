@@ -211,12 +211,12 @@ body {
         height: auto;
         .left-side {
             width: 100%;
-            padding: 0 50px;
+            padding: 0 25px;
             margin: 0;
         }
         .right-side {
             width: 100%;
-            padding: 0 50px;
+            padding: 0 25px;
             margin: 0;
             .banner-img {
                 margin: 0 auto;
@@ -254,9 +254,6 @@ body {
                     margin-top: 4em;
                 }
             }
-        }
-        .right-side {
-            width: 50%;
         }
         .left-side {
             max-width: 550px;
@@ -296,12 +293,12 @@ body {
         height: auto;
         .left-side {
             width: 100%;
-            padding: 0 50px;
+            padding: 0 25px;
             margin: 0;
         }
         .right-side {
             width: 100%;
-            padding: 0 50px;
+            padding: 0 25px;
             margin: 0;
             .banner-img {
                 margin: 0 auto;
@@ -312,6 +309,9 @@ body {
             .-italic {
                 margin-top: 20px;
             }
+        }
+        .left-side {
+            margin: 0 auto;
         }
     }
 }
@@ -1016,7 +1016,19 @@ header {
     }
 }
 
+.report-container {
+    .report-section {
+        padding: 0 10px 0 160px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .report-container {
+        padding: 0 25px;
+        .report-section {
+            padding: 0;
+        }
+    }
     .report-archive {
         width: 240px;
         margin: 50px auto;
@@ -1036,7 +1048,7 @@ header {
 }
 
 .three-windows-sp {
-    padding: 0 50px;
+    padding: 0 25px;
     text-align: center;
     >div {
         margin-bottom: 2em;
@@ -1230,6 +1242,7 @@ header {
         color: $blue01
     }
     .text {
+        text-align: left;
         font-size: 16px;
         margin: 20px 0;
     }
@@ -1327,7 +1340,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .hospital-container {
-        padding: 0 50px;
+        padding: 0 25px;
     }
     .recruit-container {
         .col-12.col-sm-6 {
@@ -1341,7 +1354,7 @@ header {
             font-size: 18px;
         }
         .simulation-wrapper {
-            padding: 0 50px;
+            padding: 0 25px;
         }
         .banner-img.-simulation {
             margin-top: -50px;
@@ -1384,14 +1397,14 @@ header {
         .center-container {
             width: 100%;
             margin: 0;
-            padding: 0 50px;
+            padding: 0 25px;
         }
         .facilityContainer {
             margin: 0;
-            padding: 0 50px;
+            padding: 0 25px;
         }
         .thought-container {
-            padding: 0 50px;
+            padding: 0 25px;
         }
     }
     .top-container {
@@ -1724,7 +1737,7 @@ header {
 @media screen and (max-width: 768px) {
     .recruit-container {
         .simulation-wrapper {
-            padding: 0 50px;
+            padding: 0 25px;
         }
     }
 }
@@ -1916,7 +1929,7 @@ header {
 
 @media screen and (max-width: 1000px) {
     .achievement-container {
-        padding: 0 50px;
+        padding: 0 25px;
     }
 }
 
@@ -1982,7 +1995,7 @@ header {
 
 .research-container {
     .col-12 {
-        padding: 0 50px;
+        padding: 0 25px;
     }
     .span-class {
         margin: 0.5em 0 0 0;

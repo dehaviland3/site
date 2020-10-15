@@ -46,7 +46,7 @@ $green01: #00b04f;
 
 @media screen and (max-width: 468px) {
     .slant-toggle01::before {
-        bottom: 300%;
+        bottom: 800%;
     }
 }
 
@@ -690,7 +690,7 @@ $green01: #00b04f;
     position: absolute;
     top: -500%;
     right: 0%;
-    bottom: -600%;
+    bottom: -400%;
     left: 0;
     background-color: rgb(255, 255, 255);
     transform: skewY(-3deg);

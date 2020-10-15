@@ -234,6 +234,7 @@ body {
 .swiper-container02 {
     height: 700px;
     width: 100%;
+    overflow: hidden;
     background-color: $blue01;
     .swiper-wrapper {
         margin: 0 auto;
@@ -570,7 +571,8 @@ header {
     height: 500px;
     .header-title {
         position: relative;
-        top: -7px;
+        top: -17px;
+        left: -18px;
         a:hover {
             opacity: 1;
         }
@@ -583,6 +585,7 @@ header {
         }
         &.-TopPage {
             top: -27px;
+            left: -10px;
         }
     }
     .header-pageTitle {
@@ -783,6 +786,10 @@ header {
                 left: 140px;
                 width: 400px;
             }
+            &.-TopPage {
+                top: -37px;
+                left: -18px;
+            }
         }
         .header-pageTitle {
             position: absolute;
@@ -821,6 +828,10 @@ header {
 
 @media screen and (max-width: 576px) {
     header {
+        height: 1125px;
+        .top-background-image {
+            background-image: url("../img/top_header_sp.jpg");
+        }
         .header-title {
             .image {
                 width: 70vw!important
@@ -1158,7 +1169,7 @@ header {
         }
         >.date {
             color: $blue01;
-            font-size: 26px;
+            font-size: 18px;
             padding: 15px 30px 0 15px;
         }
     }
@@ -1420,7 +1431,7 @@ header {
                 margin: 0 0 20px 0;
             }
             .banner-img {
-                width: 85px!important;
+                width: 100px!important;
             }
         }
         .psychiatry {
@@ -1480,7 +1491,7 @@ header {
     .flex-container {
         .staff-introduction {
             .banner-img {
-                width: 80vw;
+                width: 62vw;
             }
         }
         .facility-wrapper {
@@ -2276,7 +2287,7 @@ footer {
 .modal-wrapper .modal-close {
     z-index: 100000;
     position: absolute;
-    top: 36px;
+    top: 30px;
     right: 31px;
     width: 40px;
     height: 35px;
@@ -2311,8 +2322,8 @@ footer {
         font-size: 30px;
     }
     position: absolute;
-    top: 25px;
-    right: 30px;
+    top: 11px;
+    right: 15px;
     z-index: 100;
     i {
         color: black;
@@ -2440,36 +2451,8 @@ footer {
     overflow: hidden;
 }
 
-.slideConts {
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    &.two {
-        -webkit-transition: .7s;
-        -o-transition: .7s;
-        transition: .7s;
-    }
-    &.one {
-        -webkit-transition: .9s;
-        -o-transition: .9s;
-        transition: .9s;
-    }
-}
-
-.slideContsL {
-    transform: translate(-800px, 0);
-}
-
-.slideContsR {
-    transform: translate(800px, 0);
-}
-
-.slideContsL.show {
-    transform: translate(0px, 0) !important;
-}
-
-.slideContsR.show {
-    transform: translate(0px, 0) !important;
+.hidden {
+    overflow: hidden;
 }
 
 @keyframes slideInRight {

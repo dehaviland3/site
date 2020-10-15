@@ -245,6 +245,7 @@ body {
 .swiper-container02 {
   height: 700px;
   width: 100%;
+  overflow: hidden;
   background-color: #001b69;
 }
 
@@ -602,7 +603,8 @@ header {
 
 header .header-title {
   position: relative;
-  top: -7px;
+  top: -17px;
+  left: -18px;
   margin: 2em;
 }
 
@@ -619,6 +621,7 @@ header .header-title .image {
 
 header .header-title.-TopPage {
   top: -27px;
+  left: -10px;
 }
 
 header .header-pageTitle {
@@ -876,6 +879,10 @@ header .hospital-background-image {
     left: 140px;
     width: 400px;
   }
+  header .header-title.-TopPage {
+    top: -37px;
+    left: -18px;
+  }
   header .header-pageTitle {
     position: absolute;
     left: 80%;
@@ -912,6 +919,12 @@ header .hospital-background-image {
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    height: 1125px;
+  }
+  header .top-background-image {
+    background-image: url("../img/top_header_sp.jpg");
+  }
   header .header-title .image {
     width: 70vw !important;
   }
@@ -1262,7 +1275,7 @@ header .hospital-background-image {
 
 .top-container .header-news-sp > .date {
   color: #001b69;
-  font-size: 26px;
+  font-size: 18px;
   padding: 15px 30px 0 15px;
 }
 
@@ -1543,7 +1556,7 @@ header .hospital-background-image {
     margin: 0 0 20px 0;
   }
   .top-container .top-news .banner-img {
-    width: 85px !important;
+    width: 100px !important;
   }
   .top-container .psychiatry p.body-text {
     margin: 0;
@@ -1592,7 +1605,7 @@ header .hospital-background-image {
 
 @media screen and (max-width: 576px) {
   .flex-container .staff-introduction .banner-img {
-    width: 80vw;
+    width: 62vw;
   }
   .flex-container .facility-wrapper .facility {
     width: 100%;
@@ -2340,7 +2353,7 @@ footer .footer-banners img {
 .modal-wrapper .modal-close {
   z-index: 100000;
   position: absolute;
-  top: 36px;
+  top: 30px;
   right: 31px;
   width: 40px;
   height: 35px;
@@ -2366,8 +2379,8 @@ footer .footer-banners img {
 
 .sp-modal {
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 11px;
+  right: 15px;
   z-index: 100;
 }
 
@@ -2528,39 +2541,8 @@ footer .footer-banners img {
   overflow: hidden;
 }
 
-.slideConts {
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.slideConts.two {
-  -webkit-transition: .7s;
-  transition: .7s;
-}
-
-.slideConts.one {
-  -webkit-transition: .9s;
-  transition: .9s;
-}
-
-.slideContsL {
-  -webkit-transform: translate(-800px, 0);
-          transform: translate(-800px, 0);
-}
-
-.slideContsR {
-  -webkit-transform: translate(800px, 0);
-          transform: translate(800px, 0);
-}
-
-.slideContsL.show {
-  -webkit-transform: translate(0px, 0) !important;
-          transform: translate(0px, 0) !important;
-}
-
-.slideContsR.show {
-  -webkit-transform: translate(0px, 0) !important;
-          transform: translate(0px, 0) !important;
+.hidden {
+  overflow: hidden;
 }
 
 @-webkit-keyframes slideInRight {

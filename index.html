@@ -230,7 +230,7 @@
 
                 </div>
             </div>
-            <div class="right mx-auto mr-md-0 yoshimura01 -img01 pt-md-5 pt-0">
+            <div class="right mx-auto mr-md-0 yoshimura01 -img01 pt-md-5 pt-0 slideContsR slideConts hidden">
                 <img src="./asset/img/about_img01.png" alt="">
             </div>
 
@@ -241,20 +241,20 @@
 
         <div class="hidden">
             <div class="three-windows  justify-content-between  d-none d-md-flex bop-to-the-top">
-                <div class="one slideContsR slideConts">
+                <div class="one slideContsR slideConts hidden">
                     <a href="./treatment/index.html"><img src="./asset/img/top_threeWindows01.png" alt=" ">
                         <p>患者さんへ</p>
                     </a>
                 </div>
-                <div class="two slideContsR slideConts">
+                <div class="two slideContsR slideConts hidden">
                     <a href="./recruit/index.html "><img src="./asset/img/top_threeWindows02.png" alt=" ">
                         <p>入局希望の方へ</p>
                     </a>
-                    <div class="doctor-program mt-5 ">
+                    <div class="doctor-program mt-5">
                         <a href="./recruit/program.html">専門医研修プログラム</a>
                     </div>
                 </div>
-                <div class="three slideContsR slideConts">
+                <div class="three slideContsR slideConts hidden">
                     <a href="./report/index.html "><img src="./asset/img/top_threeWindows03.png" alt=" ">
                         <p> 学会・研究会</p>
                     </a>
@@ -270,12 +270,12 @@
                     <p> 患者さんへ</p>
                 </a>
             </div>
-            <div class="two  pt-5">
+            <div class="two ">
                 <a class="" href="# "><img src="./asset/img/recruit_02.png" alt=" "><br>
                     <p>入局希望の方へ</p>
                 </a>
             </div>
-            <div class="three mt-4 pt-5">
+            <div class="three mt-4">
                 <a href="# "><img src="./asset/img/top_threeWindows.png" alt=" "><br>
                     <p>学会・研究会</p>
                 </a>
@@ -392,7 +392,7 @@
                 <!-- Slideさせたいコンテンツ a-->
                 <div class="swiper-slide ">
                     <div class="feature-sp d-block w-100">
-                        <p class="title">教室の特徴</p>
+
                         <div class=" mt-3">
                             <div class="left-side mt-4">
                                 <img src="./asset/img/top_swiper01.png" alt="">
@@ -416,7 +416,7 @@
                 </div>
                 <div class="swiper-slide ">
                     <div class="feature-sp d-block w-100">
-                        <p class="title">教室の特徴</p>
+
                         <div class="mt-3">
                             <div class="left-side mt-4">
                                 <img src="./asset/img/top_swiper02.png" alt="">
@@ -438,7 +438,7 @@
                 </div>
                 <div class="swiper-slide ">
                     <div class="feature-sp d-block w-100">
-                        <p class="title">教室の特徴</p>
+
                         <div class=" mt-3">
                             <div class="left-side mt-4">
                                 <img src="./asset/img/top_swiper03.png" alt="">
@@ -468,7 +468,7 @@
 
         <div class="feature-sp w-100 d-none">
 
-            <p class="title">教室の特徴</p>
+
             <div class="justify-content-around align-items-center mt-3">
                 <div class="swiper-04 mt-4">
                     <img src="./asset/img/top_swiper04.png" alt="">
@@ -647,27 +647,24 @@ $(".sp-modal ").on("click ", function() {
 
 
 
-        // ウィンドウがリサイズされたら、ウィンドウの高さを再取得
-        window.addEventListener('resize', function() {
-            windowH = window.innerHeight;
-        });
+        $(function(){
+    load_effect();
+    $(window).scroll(function (){
+        scroll_effect();
+    });
+});
 
-        // スクロールされたら
-        window.addEventListener('scroll', function() {
-            // スクロール位置を取得
-            windowY = window.pageYOffset;
+        function load_effect(){
+    var tt = $(window).scrollTop();
+    var hh = $(window).height();
+    $('.top-background-image').each(function(){
+        var yy = $(this).offset().top;
+        if (tt > yy - hh){
+            $(this).addClass('fadeinBg');
+        }
+    });
 
-            for (var i = 0; i < slideConts.length; i++) {
-                // 要素が画面の下端にかかったら
-                if (windowY > slideContsTop[i] - windowH + remainder) {
-                    // .showを付与
-                    slideConts[i].classList.add('show');
-                } else {
-                    // 逆に.showを削除
-                    slideConts[i].classList.remove('show');
-                }
-            }
-        });
+}
 
         var mySwiper = new Swiper('.swiper-container02', {
             // ここからオプション
@@ -700,24 +697,7 @@ $(".sp-modal ").on("click ", function() {
 
 
 
-        $(function(){
-    load_effect();
-    $(window).scroll(function (){
-        scroll_effect();
-    });
-});
 
-        function load_effect(){
-    var tt = $(window).scrollTop();
-    var hh = $(window).height();
-    $('.top-background-image').each(function(){
-        var yy = $(this).offset().top;
-        if (tt > yy - hh){
-            $(this).addClass('fadeinBg');
-        }
-    });
-
-}
 
 
 

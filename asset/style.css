@@ -417,6 +417,9 @@ footer {
   main .news-container {
     margin: 0 40px 0 45px;
   }
+  main .news-container > .news-item > .logo {
+    margin-right: 10px;
+  }
   main .news-container > .news-item > .contents {
     display: block;
   }
@@ -432,12 +435,12 @@ footer {
   footer .copy-right-sp {
     display: block;
   }
+  footer .pageTop {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 620px) {
-  .news-item {
-    display: block;
-  }
   .news-item > .logo {
     margin: 0 0 10px 0;
   }
@@ -453,15 +456,106 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    margin: 30px 0 0 0;
+  }
   header .header-title img {
-    width: 80px;
+    max-width: 40px;
+  }
+  header .cosmo-wrapper {
+    margin-top: -30px;
   }
   header .cosmo-wrapper > .cosmo-sp {
     line-height: 30px;
-    font-size: 6px;
+    font-size: 3px;
   }
   header .cosmo-wrapper.-sns img {
-    width: 20px;
+    width: 10px;
+  }
+  main .contents-title {
+    font-size: 12px;
+  }
+  main .contents-title.-aboutUs {
+    margin-top: 20px;
+  }
+  main .contents-title.-recruit {
+    margin-top: -40;
+  }
+  main .contents-title.-news {
+    margin-top: 160px;
+  }
+  main .under-bar {
+    width: 40px;
+    border-bottom: solid 1px black;
+    margin-top: 2px;
+  }
+  main .white-box {
+    margin-top: 30px;
+    height: 38px;
+    width: 132px;
+    line-height: 34px;
+  }
+  main .white-box a {
+    font-size: 11px;
+  }
+  main .white-box:last-child {
+    margin-top: 30px;
+  }
+  main .recruit-new {
+    font-size: 12px;
+  }
+  main .recruit-top {
+    margin: 0 5px;
+    height: 50px;
+    line-height: 50px;
+  }
+  main .recruit-top a {
+    font-size: 13px;
+  }
+  main .news-container {
+    margin: 0 10px 0 20px;
+  }
+  main .news-container > .news-item > .logo {
+    margin: 0 10px 0 0;
+    width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  main .news-container > .news-item > .logo img {
+    width: 40px !important;
+    height: auto;
+  }
+  main .news-container > .news-item > .contents > .text {
+    font-size: 6px;
+    line-height: 12px;
+  }
+  main .news-container > .news-item > .contents > .date {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+  main .news-container > .read-more {
+    font-size: 6px;
+  }
+  footer .footer-navigation > .nav-contents {
+    width: 70px;
+  }
+  footer .footer-navigation > .nav-contents.-firstChild {
+    margin-left: 20px;
+  }
+  footer .footer-navigation > .nav-contents > .title {
+    height: 25px;
+  }
+  footer .footer-navigation > .nav-contents > .title p {
+    font-size: 6px;
+  }
+  footer .footer-navigation > .nav-contents li {
+    height: 18px;
+  }
+  footer .footer-navigation > .nav-contents li a {
+    font-size: 6px !important;
+  }
+  footer .copy-right-sp {
+    font-size: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */

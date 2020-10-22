@@ -52,7 +52,7 @@ a {
 
 $blue: #00B2B3;
 header {
-    margin: 140px 120px 0 120px;
+    margin: 140px 60px 0 60px;
     .-header {
         align-items: flex-end;
         justify-content: space-between;
@@ -77,11 +77,12 @@ header {
         }
     }
     .header-navigation {
-        margin: 50px 0 0 0;
+        margin: 50px 0 20px 0;
         display: flex;
         justify-content: space-between;
         a {
             font-size: 14px;
+            font-weight: bold;
             line-height: 24.5px;
             letter-spacing: 0.06em;
         }
@@ -106,7 +107,7 @@ main {
     }
     .three-contents {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
@@ -114,6 +115,7 @@ main {
     font-size: 23px;
     text-align: center;
     &.-aboutUs {
+        font-weight: bold;
         margin: 50px 0 0 0;
     }
     &.-recruit {
@@ -130,10 +132,11 @@ main {
 
 .under-bar {
     width: 80px;
-    border-bottom: solid 1px black;
+    border-bottom: solid 3px black;
     margin: 10px auto 45px auto;
     &.-aboutUs01 {
         position: relative;
+        z-index: 10;
     }
     &.-aboutUs02 {
         position: relative;
@@ -153,10 +156,11 @@ main {
     border: solid 1px black;
     height: 75px;
     width: 265px;
-    line-height: 75px;
+    line-height: 72px;
     text-align: center;
     font-size: 20px;
     a {
+        font-weight: bold;
         position: absolute;
         top: 0;
         right: 0;
@@ -229,6 +233,7 @@ main {
             border-right: solid 0.25px silver;
         }
         >.date {
+            white-space: nowrap;
             letter-spacing: 0.04em;
             font-size: 14px;
         }
@@ -299,6 +304,16 @@ footer {
     display: none
 }
 
+@media screen and (max-width: 1000px) {
+    .news-item {
+        >.contents {
+            >.date {
+                white-space: normal;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         margin: 35px 40px 0 40px;
@@ -314,6 +329,7 @@ footer {
             }
             .cosmo-sp {
                 display: block;
+                white-space: nowrap;
             }
         }
         .header-navigation {
@@ -323,7 +339,7 @@ footer {
             width: 33.333%;
             &.-sns {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
             }
         }
     }
@@ -391,6 +407,15 @@ footer {
             margin: 0 0 10px 0;
         }
     }
+    header {
+        .header-sns {
+            .cosmo-wrapper {
+                a {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
     .footer-navigation {
         .nav-contents {
             .title {
@@ -399,6 +424,27 @@ footer {
         }
         .nav-contents:first-child {
             margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        .header-title {
+            img {
+                width: 80px;
+            }
+        }
+        .cosmo-wrapper {
+            >.cosmo-sp {
+                line-height: 30px;
+                font-size: 6px;
+            }
+            &.-sns {
+                img {
+                    width: 20px;
+                }
+            }
         }
     }
 }

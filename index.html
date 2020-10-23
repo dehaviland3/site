@@ -71,6 +71,58 @@
                 </li>
             </ul>
         </nav>
+
+        <a class="sp-modal d-md-none" href="#modal-01">
+            <img src="./asset/img/fa-bars.png" alt="">
+            </button>
+        </a>
+        <div class="modal-wrapper d-md-none" id="modal-01">
+            <div class="modal-window">
+                <div class="modal-content">
+                    <div class="sticky-area"></div>
+                    <ul>
+                        <li>
+                            <a href=" " target="_blank " rel="noopener noreferrer ">COSMO Holdings Co.,Ltd.</a
+                    >
+                  </li>
+                  <li>
+                            <a href="" target="_blank " rel="noopener noreferrer">TOP</a>
+                        </li>
+                        <li>
+                            <a href=" " target="_blank " rel="noopener noreferrer ">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank " rel="noopener noreferrer">BRAND</a>
+                        </li>
+                        <li ">
+                            <a href=" " target="_blank " rel="noopener noreferrer ">RECRUIT</a>
+                        </li>
+                        <li>
+                            <a href=" " target="_blank " rel="noopener noreferrer ">NEWS</a>
+                        </li>
+                        <li ">
+                            <a href=" " target="_blank " rel="noopener noreferrer ">CONTACT</a>
+                        </li>
+
+
+
+
+
+
+
+
+
+                    </ul>
+                    <div class="sticky-area"></div>
+
+                </div>
+
+                <a href="#!" class="modal-close">
+                    <img src="./asset/img/fa-times.png" alt="">
+                </a>
+            </div>
+        </div>
+
     </header>
     <main>
         <img class="main-img" src="./asset/img/top_main.png" alt="">
@@ -165,7 +217,7 @@
                 </div>
 
 
-                <div class="footer-navigation">
+                <div class="footer-navigation -sp">
 
                     <div class="nav-contents">
                         <div class="title">
@@ -198,7 +250,7 @@
 
                 </div>
 
-                <div class="footer-navigation">
+                <div class="footer-navigation -sp">
 
                     <div class="nav-contents">
                         <div class="title">
@@ -256,7 +308,7 @@
                 <p>© COSMO Holdings Co.,Ltd.</p>
             </div>
             <div class="pageTop">
-                <img src="./asset/img/page_top.png" alt="">
+                <a href="#"> <img src="./asset/img/page_top.png" alt=""></a>
             </div>
         </footer>
 
@@ -270,7 +322,14 @@
 
     </main>
 
-    <script></script>
+    <script>
+        $(".sp-modal ").on("click ", function() {
+            $(".sp-modal ").addClass("fade ");
+        });
+        $(".modal-close ").on("click ", function() {
+            $(".sp-modal ").removeClass("fade ");
+        });
+    </script>
 </body>
 
 </html>

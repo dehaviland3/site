@@ -52,7 +52,13 @@ a {
   color: black;
 }
 
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
 header {
+  position: relative;
   margin: 140px 60px 0 60px;
 }
 
@@ -138,7 +144,6 @@ main .three-contents {
 }
 
 .contents-title.-aboutUs {
-  font-weight: bold;
   margin: 50px 0 0 0;
 }
 
@@ -197,6 +202,12 @@ main .three-contents {
   left: 0;
 }
 
+.white-box a:hover {
+  background: #00B2B3;
+  color: white;
+  opacity: 1;
+}
+
 .recruit-new {
   text-align: center;
   font-size: 24px;
@@ -224,6 +235,13 @@ main .three-contents {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.recruit-top a:hover {
+  background: white;
+  color: #00B2B3;
+  opacity: 1;
+  border: solid 1px #00B2B3;
 }
 
 .news-container > .read-more {
@@ -310,7 +328,7 @@ footer {
 
 .pageTop {
   margin: 25px 80px 10px auto;
-  width: 77px;
+  width: 60px;
   height: auto;
 }
 
@@ -342,6 +360,152 @@ footer {
   display: none;
 }
 
+/*sp-modal*/
+.modal-wrapper {
+  z-index: 100;
+  position: fixed;
+  top: -30px;
+  right: -20px;
+  left: 0px;
+}
+
+.modal-wrapper a {
+  line-height: 60px;
+  font-size: 34px;
+  color: white;
+}
+
+.modal-wrapper .modal-close img {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-content {
+  overflow: hidden;
+  position: fixed;
+  top: -1px;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  width: 102%;
+  padding-top: 100px;
+  padding-bottom: 5em;
+  font-size: 28px;
+}
+
+.modal-content .parent {
+  display: inline-block;
+  border-bottom: solid 1px white;
+  width: 100%;
+  position: relative;
+  z-index: 100000;
+  margin: 0.5em 0em 0 0;
+  padding: 0 0 0.2em 0em;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-content .child {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0 0 0 -1em;
+  padding: 0.3em 0;
+}
+
+.modal-content ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  vertical-align: middle;
+  content: "";
+}
+
+.modal-wrapper .modal-window {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  background-color: #001a6900;
+}
+
+.modal-wrapper .modal-window .modal-content {
+  background-color: #001a69ea;
+  overflow-y: auto;
+}
+
+.modal-wrapper .modal-close {
+  z-index: 100000;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 35px;
+  color: #95979c !important;
+  font-size: 32px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important;
+}
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+}
+
+.sp-modal {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  z-index: 100;
+}
+
+.sp-modal img {
+  width: 45px;
+  height: 30px;
+}
+
+.sp-modal .fa-bars {
+  font-size: 30px;
+}
+
+.fade {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .news-item > .contents > .date {
     white-space: normal;
@@ -349,6 +513,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .pageTop {
+    margin: 25px 80px 10px auto;
+    width: 60px;
+    height: auto;
+  }
+  .pageTop img {
+    width: 100%;
+    height: auto;
+  }
   header {
     margin: 35px 40px 0 40px;
   }
@@ -426,8 +599,18 @@ footer {
   .read-more {
     margin-top: -40px;
   }
-  footer .nav-contents:first-child {
-    margin-left: 45px;
+  footer > div.flex {
+    display: block;
+  }
+  footer .footer-navigation .nav-contents:first-child {
+    margin: 0px auto;
+  }
+  footer .footer-navigation.-sp > .nav-contents {
+    border-top: solid 1px black;
+    margin: 10px auto 0 auto;
+  }
+  footer .footer-navigation .nav-contents {
+    width: 145px;
   }
   footer .copy-right {
     display: none;
@@ -436,7 +619,7 @@ footer {
     display: block;
   }
   footer .pageTop {
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
 
@@ -460,20 +643,20 @@ footer {
     margin: 30px 0 0 0;
   }
   header .header-title img {
-    max-width: 40px;
+    max-width: 80px;
   }
   header .cosmo-wrapper {
     margin-top: -30px;
   }
   header .cosmo-wrapper > .cosmo-sp {
     line-height: 30px;
-    font-size: 3px;
+    font-size: 6px;
   }
   header .cosmo-wrapper.-sns img {
     width: 10px;
   }
   main .contents-title {
-    font-size: 12px;
+    font-size: 18px;
   }
   main .contents-title.-aboutUs {
     margin-top: 20px;
@@ -482,7 +665,7 @@ footer {
     margin-top: -40;
   }
   main .contents-title.-news {
-    margin-top: 160px;
+    margin-top: 120px;
   }
   main .under-bar {
     width: 40px;
@@ -496,7 +679,7 @@ footer {
     line-height: 34px;
   }
   main .white-box a {
-    font-size: 11px;
+    font-size: 12px;
   }
   main .white-box:last-child {
     margin-top: 30px;
@@ -505,7 +688,7 @@ footer {
     font-size: 12px;
   }
   main .recruit-top {
-    margin: 0 5px;
+    margin: 10px 5px;
     height: 50px;
     line-height: 50px;
   }
@@ -526,36 +709,30 @@ footer {
     height: auto;
   }
   main .news-container > .news-item > .contents > .text {
-    font-size: 6px;
+    font-size: 12px;
     line-height: 12px;
   }
   main .news-container > .news-item > .contents > .date {
-    font-size: 6px;
+    font-size: 12px;
     margin-top: 5px;
   }
   main .news-container > .read-more {
-    font-size: 6px;
-  }
-  footer .footer-navigation > .nav-contents {
-    width: 70px;
-  }
-  footer .footer-navigation > .nav-contents.-firstChild {
-    margin-left: 20px;
+    font-size: 12px;
   }
   footer .footer-navigation > .nav-contents > .title {
     height: 25px;
   }
   footer .footer-navigation > .nav-contents > .title p {
-    font-size: 6px;
+    font-size: 12px;
   }
   footer .footer-navigation > .nav-contents li {
     height: 18px;
   }
   footer .footer-navigation > .nav-contents li a {
-    font-size: 6px !important;
+    font-size: 12px !important;
   }
   footer .copy-right-sp {
-    font-size: 6px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

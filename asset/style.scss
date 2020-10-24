@@ -460,6 +460,34 @@ footer {
     display: none;
 }
 
+.ichiran-title {
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.ichiran-container {
+    margin: 0 120px;
+    text-align: center;
+    >.text01 {
+        font-size: 23px;
+    }
+    >.text02 {
+        margin: 25px 0 0 0;
+        font-size: 20px;
+    }
+    >.text02:first-child {
+        margin: 0;
+    }
+    >.text03 {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+    }
+    .dotted-bar {
+        margin: 40px 0 0 0;
+        border: dotted 1px silver;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .news-item {
         >.contents {
@@ -471,6 +499,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .ichiran-container {
+        margin: 0 50px;
+    }
     .pageTop {
         margin: 25px 80px 10px auto;
         width: 60px;

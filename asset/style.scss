@@ -27,12 +27,17 @@ td {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 ol,
@@ -51,8 +56,6 @@ html {
 a {
     color: black;
 }
-
-body {}
 
 main {
     position: relative;
@@ -115,23 +118,45 @@ main {
     >.text02 {
         font-family: 'Noto Serif JP';
         margin: 41px 0 0 0;
-        >.date {
-            font-family: 'Noto Serif JP';
-            font-size: 78px;
+        >.date01 {
+            font-family: "ヒラギノ角ゴ ProN", sans-serif;
+            font-size: 80px;
             line-height: 112px;
             letter-spacing: 0.05em;
+            color: #484848;
+            -webkit-appearance: none;
+        }
+        >.date02 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 50px;
+            line-height: 112px;
+            letter-spacing: 0.05em;
+            color: #484848;
+            -webkit-appearance: none;
         }
         >.week {
-            font-family: 'Noto Serif JP';
-            font-size: 53px;
+            font-family: 'Noto Sans JP';
+            font-size: 50px;
             line-height: 112px;
             letter-spacing: 0.05em;
+            color: #484848;
+            -webkit-appearance: none;
         }
         >.schedule {
-            font-family: 'Noto Serif JP';
-            font-size: 78px;
+            font-family: 'Noto Serif JP', serif;
+            font-size: 80px;
             line-height: 112px;
             letter-spacing: 0.05em;
+            color: #484848;
+            -webkit-appearance: none;
+        }
+        >.date03 {
+            font-family: 'Noto Sans JP';
+            font-size: 50px;
+            line-height: 112px;
+            letter-spacing: 0.05em;
+            color: #484848;
+            -webkit-appearance: none;
         }
         >br {
             display: none;
@@ -217,9 +242,10 @@ main {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         >.title {
-            font-family: 'Noto Serif JP';
+            font-family: 'Noto Serif JP', serif;
             margin: 0 19px 0 31px;
             font-size: 57px;
+            letter-spacing: 0.05em;
             line-height: 94px;
             color: #F5EE37
         }
@@ -232,6 +258,9 @@ main {
                 font-size: 30px;
                 line-height: 47px;
             }
+            >.text01-sp {
+                display: none;
+            }
             >.text02 {
                 line-height: 18px;
                 font-size: 14px;
@@ -243,7 +272,7 @@ main {
         >.welcome {
             position: absolute;
             z-index: 1000;
-            top: -75px;
+            top: -110px;
             right: -50px;
             >p {
                 position: absolute;
@@ -295,7 +324,7 @@ main {
         background: white;
         max-width: 1100px;
         >.title {
-            font-family: 'Noto Serif JP';
+            font-family: 'Noto Serif JP', serif;
             font-size: 26px;
             line-height: 51px;
             letter-spacing: 0.05em;
@@ -323,7 +352,7 @@ main {
                 letter-spacing: 0.05em;
             }
             >.name {
-                font-family: 'Noto Serif JP';
+                font-family: 'Noto Serif JP', serif;
                 font-size: 28px;
             }
             >br {
@@ -684,6 +713,52 @@ table tbody tr:last-child td {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .map-container {
+        .header {
+            display: block;
+            >.title {
+                margin: 0;
+                text-align: center;
+                font-size: 35px;
+                letter-spacing: 0.05em;
+                ;
+            }
+            >.info {
+                text-align: center;
+                >.text01 {
+                    margin: -30px 0 0 0;
+                    font-size: 21px;
+                    letter-spacing: 0.05em;
+                }
+                >.text02 {
+                    display: none;
+                }
+                >.text02-sp {
+                    padding: 0 0 20px 0;
+                    display: block;
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                    line-height: 26px;
+                }
+            }
+            >.welcome {
+                width: 265px;
+                top: -60px;
+                right: 0;
+                left: 480px;
+                >p {
+                    top: 25%;
+                    font-size: 15px;
+                }
+                >img {
+                    width: 265px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .main-container {
         >.text02 {
@@ -706,8 +781,17 @@ table tbody tr:last-child td {
         }
     }
     .map-container {
-        margin-top: -235px;
-        padding-bottom: 0px;
+        margin-top: -610px;
+        padding-bottom: 50px;
+        .google-map {
+            margin-top: 230px;
+            .header {
+                .welcome {
+                    top: -70px;
+                    left: 65%;
+                }
+            }
+        }
     }
 }
 
@@ -776,16 +860,86 @@ table tbody tr:last-child td {
         }
         >.text02 {
             margin-top: 20px;
-            >span.date {
-                font-size: 37px;
+            >span.date01 {
+                font-size: 42px;
                 line-height: 52px;
+                letter-spacing: 0;
+            }
+            >span.date02 {
+                font-size: 24px;
+                line-height: 55px;
+                letter-spacing: -0.15em;
+            }
+            >span.date03 {
+                letter-spacing: 0;
+                font-size: 22px;
+                line-height: 55px;
             }
             >span.week {
-                font-size: 26px;
+                letter-spacing: 0;
+                font-size: 24px;
                 line-height: 52px;
             }
             >.schedule {
-                font-size: 37px;
+                font-size: 38px;
+                line-height: 52px;
+            }
+        }
+        >.iPhone .text02 {
+            margin-top: 20px;
+            >span.date01 {
+                font-family: "ヒラギノ角ゴ ProN", sans-serif;
+                font-size: 42px;
+                line-height: 52px;
+                letter-spacing: 0;
+            }
+            >span.date02 {
+                font-size: 24px;
+                line-height: 55px;
+                letter-spacing: -0.15em;
+            }
+            >span.date03 {
+                letter-spacing: 0;
+                font-size: 22px;
+                line-height: 55px;
+            }
+            >span.week {
+                letter-spacing: 0;
+                font-size: 24px;
+                line-height: 52px;
+            }
+            >.schedule {
+                font-size: 38px;
+                line-height: 52px;
+            }
+        }
+        >.Android .text02 {
+            margin-top: 20px;
+            >span.date01 {
+                font-size: 42px;
+                line-height: 52px;
+                letter-spacing: 0;
+            }
+            >span.date02 {
+                font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+                font-size: 24px;
+                line-height: 55px;
+                letter-spacing: -0.15em;
+            }
+            >span.date03 {
+                font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+                letter-spacing: 0;
+                font-size: 22px;
+                line-height: 55px;
+            }
+            >span.week {
+                letter-spacing: 0;
+                font-size: 24px;
+                line-height: 52px;
+            }
+            >.schedule {
+                font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+                font-size: 38px;
                 line-height: 52px;
             }
         }
@@ -819,6 +973,7 @@ table tbody tr:last-child td {
         margin-top: -50px;
         background-position: 0% 0%;
         >.google-map {
+            margin-top: 0;
             padding: 300px 25px 0 25px;
             padding-bottom: 189px;
             width: 100%;
@@ -866,7 +1021,7 @@ table tbody tr:last-child td {
             }
             >.map {
                 >.map-pc {
-                    display: none;
+                    display: none!important;
                 }
                 >.map-sp {
                     display: block;
@@ -920,8 +1075,8 @@ table tbody tr:last-child td {
                 >.icon-title {
                     padding: 42.9px 0 0 0;
                     img {
-                        width: 100%;
-                        height: 100%;
+                        width: 86.666666vw;
+                        height: 9.466vw;
                     }
                 }
                 >.address {
@@ -999,14 +1154,26 @@ table tbody tr:last-child td {
             margin-top: 300px!important;
             >.map {
                 iframe {
-                    height: 319px;
+                    height: 305px;
                 }
+            }
+            .text01 {
+                display: none!important;
+            }
+            .text01-sp {
+                display: block!important;
+                font-size: 21px;
+                letter-spacing: 0.05em;
+                ;
+                line-height: 36px
+            }
+            .text01-sp.-first {
+                margin-top: -18px;
             }
         }
         .map-shadow {
             top: 253px;
             left: 7px;
-            ;
         }
     }
 }
@@ -1024,6 +1191,9 @@ table tbody tr:last-child td {
                     left: 25%;
                 }
             }
+        }
+        .map-shadow {
+            height: 530px!important;
         }
     }
 }

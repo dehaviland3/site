@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
 div,
 dl,
 dt,
@@ -32,7 +34,11 @@ td {
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 ol,
@@ -129,25 +135,49 @@ main {
   margin: 41px 0 0 0;
 }
 
-.main-container > .text02 > .date {
-  font-family: 'Noto Serif JP';
-  font-size: 78px;
+.main-container > .text02 > .date01 {
+  font-family: "ヒラギノ角ゴ ProN", sans-serif;
+  font-size: 80px;
   line-height: 112px;
   letter-spacing: 0.05em;
+  color: #484848;
+  -webkit-appearance: none;
+}
+
+.main-container > .text02 > .date02 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 50px;
+  line-height: 112px;
+  letter-spacing: 0.05em;
+  color: #484848;
+  -webkit-appearance: none;
 }
 
 .main-container > .text02 > .week {
-  font-family: 'Noto Serif JP';
-  font-size: 53px;
+  font-family: 'Noto Sans JP';
+  font-size: 50px;
   line-height: 112px;
   letter-spacing: 0.05em;
+  color: #484848;
+  -webkit-appearance: none;
 }
 
 .main-container > .text02 > .schedule {
-  font-family: 'Noto Serif JP';
-  font-size: 78px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 80px;
   line-height: 112px;
   letter-spacing: 0.05em;
+  color: #484848;
+  -webkit-appearance: none;
+}
+
+.main-container > .text02 > .date03 {
+  font-family: 'Noto Sans JP';
+  font-size: 50px;
+  line-height: 112px;
+  letter-spacing: 0.05em;
+  color: #484848;
+  -webkit-appearance: none;
 }
 
 .main-container > .text02 > br {
@@ -252,9 +282,10 @@ main {
 }
 
 .google-map > .header > .title {
-  font-family: 'Noto Serif JP';
+  font-family: 'Noto Serif JP', serif;
   margin: 0 19px 0 31px;
   font-size: 57px;
+  letter-spacing: 0.05em;
   line-height: 94px;
   color: #F5EE37;
 }
@@ -271,6 +302,10 @@ main {
   line-height: 47px;
 }
 
+.google-map > .header > .info > .text01-sp {
+  display: none;
+}
+
 .google-map > .header > .info > .text02 {
   line-height: 18px;
   font-size: 14px;
@@ -283,7 +318,7 @@ main {
 .google-map > .header > .welcome {
   position: absolute;
   z-index: 1000;
-  top: -75px;
+  top: -110px;
   right: -50px;
 }
 
@@ -337,7 +372,7 @@ main {
 }
 
 .greeting-container .greeting-card > .title {
-  font-family: 'Noto Serif JP';
+  font-family: 'Noto Serif JP', serif;
   font-size: 26px;
   line-height: 51px;
   letter-spacing: 0.05em;
@@ -371,7 +406,7 @@ main {
 }
 
 .greeting-container .greeting-card > .text-name > .name {
-  font-family: 'Noto Serif JP';
+  font-family: 'Noto Serif JP', serif;
   font-size: 28px;
 }
 
@@ -744,6 +779,49 @@ table tbody tr:last-child td {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .map-container .header {
+    display: block;
+  }
+  .map-container .header > .title {
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0.05em;
+  }
+  .map-container .header > .info {
+    text-align: center;
+  }
+  .map-container .header > .info > .text01 {
+    margin: -30px 0 0 0;
+    font-size: 21px;
+    letter-spacing: 0.05em;
+  }
+  .map-container .header > .info > .text02 {
+    display: none;
+  }
+  .map-container .header > .info > .text02-sp {
+    padding: 0 0 20px 0;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 26px;
+  }
+  .map-container .header > .welcome {
+    width: 265px;
+    top: -60px;
+    right: 0;
+    left: 480px;
+  }
+  .map-container .header > .welcome > p {
+    top: 25%;
+    font-size: 15px;
+  }
+  .map-container .header > .welcome > img {
+    width: 265px;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .main-container > .text02 {
     display: block;
@@ -764,8 +842,15 @@ table tbody tr:last-child td {
     margin-top: 0;
   }
   .map-container {
-    margin-top: -235px;
-    padding-bottom: 0px;
+    margin-top: -610px;
+    padding-bottom: 50px;
+  }
+  .map-container .google-map {
+    margin-top: 230px;
+  }
+  .map-container .google-map .header .welcome {
+    top: -70px;
+    left: 65%;
   }
 }
 
@@ -824,16 +909,86 @@ table tbody tr:last-child td {
   .main-container > .text02 {
     margin-top: 20px;
   }
-  .main-container > .text02 > span.date {
-    font-size: 37px;
+  .main-container > .text02 > span.date01 {
+    font-size: 42px;
     line-height: 52px;
+    letter-spacing: 0;
+  }
+  .main-container > .text02 > span.date02 {
+    font-size: 24px;
+    line-height: 55px;
+    letter-spacing: -0.15em;
+  }
+  .main-container > .text02 > span.date03 {
+    letter-spacing: 0;
+    font-size: 22px;
+    line-height: 55px;
   }
   .main-container > .text02 > span.week {
-    font-size: 26px;
+    letter-spacing: 0;
+    font-size: 24px;
     line-height: 52px;
   }
   .main-container > .text02 > .schedule {
-    font-size: 37px;
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .main-container > .iPhone .text02 {
+    margin-top: 20px;
+  }
+  .main-container > .iPhone .text02 > span.date01 {
+    font-family: "ヒラギノ角ゴ ProN", sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: 0;
+  }
+  .main-container > .iPhone .text02 > span.date02 {
+    font-size: 24px;
+    line-height: 55px;
+    letter-spacing: -0.15em;
+  }
+  .main-container > .iPhone .text02 > span.date03 {
+    letter-spacing: 0;
+    font-size: 22px;
+    line-height: 55px;
+  }
+  .main-container > .iPhone .text02 > span.week {
+    letter-spacing: 0;
+    font-size: 24px;
+    line-height: 52px;
+  }
+  .main-container > .iPhone .text02 > .schedule {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .main-container > .Android .text02 {
+    margin-top: 20px;
+  }
+  .main-container > .Android .text02 > span.date01 {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: 0;
+  }
+  .main-container > .Android .text02 > span.date02 {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 24px;
+    line-height: 55px;
+    letter-spacing: -0.15em;
+  }
+  .main-container > .Android .text02 > span.date03 {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    letter-spacing: 0;
+    font-size: 22px;
+    line-height: 55px;
+  }
+  .main-container > .Android .text02 > span.week {
+    letter-spacing: 0;
+    font-size: 24px;
+    line-height: 52px;
+  }
+  .main-container > .Android .text02 > .schedule {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 38px;
     line-height: 52px;
   }
   .main-container > .two-flowers {
@@ -865,6 +1020,7 @@ table tbody tr:last-child td {
     background-position: 0% 0%;
   }
   .map-container > .google-map {
+    margin-top: 0;
     padding: 300px 25px 0 25px;
     padding-bottom: 189px;
     width: 100%;
@@ -911,7 +1067,7 @@ table tbody tr:last-child td {
     width: 265px;
   }
   .map-container > .google-map > .map > .map-pc {
-    display: none;
+    display: none !important;
   }
   .map-container > .google-map > .map > .map-sp {
     display: block;
@@ -962,8 +1118,8 @@ table tbody tr:last-child td {
     padding: 42.9px 0 0 0;
   }
   footer .footer-container > .left-side > .icon-title img {
-    width: 100%;
-    height: 100%;
+    width: 86.666666vw;
+    height: 9.466vw;
   }
   footer .footer-container > .left-side > .address {
     margin: 13.6px 0 0 0;
@@ -1031,7 +1187,19 @@ table tbody tr:last-child td {
     margin-top: 300px !important;
   }
   .map-container .google-map > .map iframe {
-    height: 319px;
+    height: 305px;
+  }
+  .map-container .google-map .text01 {
+    display: none !important;
+  }
+  .map-container .google-map .text01-sp {
+    display: block !important;
+    font-size: 21px;
+    letter-spacing: 0.05em;
+    line-height: 36px;
+  }
+  .map-container .google-map .text01-sp.-first {
+    margin-top: -18px;
   }
   .map-container .map-shadow {
     top: 253px;
@@ -1045,6 +1213,9 @@ table tbody tr:last-child td {
   }
   .map-container .google-map .header .welcome {
     left: 25%;
+  }
+  .map-container .map-shadow {
+    height: 530px !important;
   }
 }
 

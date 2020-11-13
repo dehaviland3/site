@@ -18,9 +18,9 @@
 
 <body>
     <div class="bingo-container -frametarget">
-        <h2 class="game-title">ビンゴカード作成代行１</h2>
-        <p>バグのせいでうまく5×5のビンゴが作れないよ！</p>
-        <p>しょうがないからこのまま使ってください</p>
+        <h2 class="game-title">ビンゴカード作成代行２</h2>
+        <p>5×5で作れたのに、なぜか10秒ごとにリロードしちゃうよ！
+        </p>
         <table>
             <thead>
                 <tr>
@@ -33,7 +33,6 @@
                 <tbody></tbody>
             </thead>
         </table>
-        <input type="button" value="作りなおす" onclick="window.location.reload();" />
     </div>
     <script>
         {
@@ -45,7 +44,7 @@
 
                 const column = [];
                 for (let i = 0; i < 5; i++) {
-                    column[i] = source.splice(Math.random() * source.length)[0];
+                    column[i] = source.splice(Math.floor(Math.random() * source.length), 1)[0];
                 }
 
                 return column;
@@ -75,6 +74,10 @@
             const columns = createColumns();
             renderBingo(columns);
         }
+        const timer = 10000 // ミリ秒で間隔の時間を指定
+        window.addEventListener('load', function() {
+            setInterval('location.reload()', timer);
+        });
     </script>
     <script src="js/main.js"></script>
 </body>

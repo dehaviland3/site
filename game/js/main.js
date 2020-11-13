@@ -1,4 +1,9 @@
-'use strict'; {
+'use strict';
+
+
+
+
+{
 
     const btn = document.getElementById('btn');
     const btn2 = document.getElementById('btn2');

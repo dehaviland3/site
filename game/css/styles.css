@@ -65,4 +65,27 @@ h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
+.bingo-container {
+  font-family: 'Courier New', monospace;
+  background: white;
+}
+
+.bingo-container table th,
+.bingo-container table td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: pink;
+}
+
+.bingo-container.-frametarget {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bingo-container.-frametarget table {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=styles.css.map */

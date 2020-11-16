@@ -1,13 +1,14 @@
 body {
   background: #efefef;
   width: 100%;
+  text-align: center;
 }
 
 .omikuji-container {
   text-align: center;
 }
 
-.omikuji-container .btn {
+.omikuji-container .btn00 {
   width: 150px;
   height: 150px;
   background: #ef454a;
@@ -87,5 +88,126 @@ h1 {
 
 .bingo-container.-frametarget table {
   margin: 0 auto;
+}
+
+.container.-typing {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container.-typing h2 {
+  margin: 50px 0 0 0;
+}
+
+.container.-typing #target {
+  padding: 50px 0 0 0;
+  font-size: 48px;
+  letter-spacing: .1em;
+}
+
+.container.-quiz {
+  position: relative;
+  text-align: left;
+  width: 350px;
+  margin: 8px auto;
+  padding: 0 10px 10px 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.container.-quiz .game-title {
+  margin: 50px 0 0 0;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.container.-quiz #question {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container.-quiz #choices {
+  list-style: none;
+  padding: 0;
+}
+
+.container.-quiz #choices > li {
+  border: solid 1px silver;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.container.-quiz #choices > li.disabled:after {
+  background: #ccc;
+  -webkit-box-shadow: 0 epx 0 #bbb;
+          box-shadow: 0 epx 0 #bbb;
+  opacity: 0.9;
+}
+
+.container.-quiz #choices > .correct {
+  background: skyblue;
+  border-color: skyblue;
+  font-weight: bold;
+}
+
+.container.-quiz #choices > .correct::after {
+  content: '...correct!';
+}
+
+.container.-quiz #choices > .wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  font-weight: bold;
+}
+
+.container.-quiz #choices > .wrong::after {
+  content: '...wrong!';
+}
+
+.container.-quiz #btn,
+.container.-quiz #result > a {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  background: #31c5ff;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container.-quiz #btn.disabled {
+  background: #ccc;
+  -webkit-box-shadow: 0 epx 0 #bbb;
+          box-shadow: 0 epx 0 #bbb;
+  opacity: 0.9;
+}
+
+.container.-quiz #result {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 300px;
+  background: white;
+  padding: 30px;
+  -webkit-box-shadow: 0 4px 8px silver;
+          box-shadow: 0 4px 8px silver;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container.-quiz #result.hidden {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+}
+
+.container.-quiz #result > a {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

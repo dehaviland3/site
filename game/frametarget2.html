@@ -18,8 +18,8 @@
 
 <body>
     <div class="bingo-container -frametarget">
-        <h2 class="game-title">ビンゴカード作成代行２</h2>
-        <p>5×5で作れたので、<br>ついでに10秒ごとにリロードする機能も実装しました</p>
+        <h2 class="game-title">フラッシュビンゴ</h2>
+        <p>10秒でリロードする機能もつけちゃいました</p>
         <table>
             <thead>
                 <tr>
@@ -73,7 +73,7 @@
             const columns = createColumns();
             renderBingo(columns);
         }
-        const timer = 10000 // ミリ秒で間隔の時間を指定
+        const timer = 100000 // ミリ秒で間隔の時間を指定
         window.addEventListener('load', function() {
             setInterval('location.reload()', timer);
         });

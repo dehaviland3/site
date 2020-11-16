@@ -16,40 +16,20 @@
 </head>
 
 <body>
-    <h1>ウスカワゲームセンター</h1>
-    <!-- クイズ -->
-    <div class="quiz-container">
+    <section class="container -quiz">
         <h2 class="game-title">クイズ</h2>
-        <section class="container">
-            <p id="question">what is A?</p>
-            <ul id="choices">
-                <li>A0</li>
-                <li>A1</li>
-                <li>A2</li>
-            </ul>
-
-            <div id="btn">Next</div>
+        <p id="question"></p>
+        <ul id="choices"></ul>
+        <div id="timer">00:00.000</div>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+        <div id="btn" class="disabled">Next</div>
+        <section id="result" class="hidden">
+            <p></p>
+            <a href="">replay?</a>
         </section>
-    </div>
-    <!-- ビンゴゲーム -->
-    <iframe id="frametarget2" src="frametarget2.html" width="100%" height="500">
-    </iframe>
-
-    <!-- おみくじ -->
-    <div class="omikuji-container">
-        <h2 class="game-title">ポジティブくじ</h2>
-        <p>5％の確率で大吉が出てしまいます</p>
-        <div>
-            <div class="btn00" id="btn1">push</div>
-        </div>
-        <h2 class="game-title">デュアルポジティブくじ</h2>
-        <p>スマートフォン対応！両手を使っておみくじだ</p>
-        <div class="dual-omikuji">
-            <div class="btn00" id="btn2">push</div>
-            <div class="btn00" id="btn3">push</div>
-        </div>
-    </div>
-
+    </section>
     <script src="js/main.js"></script>
 </body>
 

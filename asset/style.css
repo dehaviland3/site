@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-family: "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
 body,
@@ -42,6 +42,10 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* IE 11 */
+  /* Firefox 64 */
   width: 100%;
   height: 100vh;
 }
@@ -58,6 +62,8 @@ h3 {
 
 .main-visual .subtitle,
 .main-visual .text {
+  max-width: 656px;
+  word-break: break-all;
   margin: 0 auto;
   font-size: 24px;
   color: white;
@@ -73,7 +79,6 @@ h3 {
 .main-visual .text {
   margin-top: 157.9px;
   margin-bottom: 160px;
-  width: 656px;
   line-height: 42px;
 }
 
@@ -87,9 +92,9 @@ h3 {
 }
 
 .about-den .wrapper {
-  padding: 80px 0;
-  max-width: 925px;
   margin: 0 auto;
+  padding: 80px 0;
+  width: 925px;
 }
 
 .about-den .title {
@@ -133,20 +138,22 @@ h3 {
 }
 
 .about-den .three-cards .cards div {
-  height: 200px;
   margin-bottom: 35px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.about-den .three-cards .cards.-first {
-  width: 200px;
-}
-
-.about-den .three-cards .cards.-second {
-  width: 233px;
-}
-
-.about-den .three-cards .cards.-third {
+.about-den .three-cards .cards div img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 240px;
+  height: auto;
 }
 
 .about-den .three-cards .cards .description {
@@ -218,6 +225,13 @@ h3 {
 
 .about-us .chief-area .right .sns {
   text-align: left;
+}
+
+.about-us .chief-area .right .sns a:link,
+.about-us .chief-area .right .sns a:visited,
+.about-us .chief-area .right .sns a:hover,
+.about-us .chief-area .right .sns a:active {
+  color: #333333;
 }
 
 .about-us .chief-area:first-child {
@@ -318,5 +332,80 @@ footer img {
 
 footer .copy-right {
   margin-top: 17px;
+}
+
+.br-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-den .three-cards {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-visual .title {
+    margin-top: 100px;
+  }
+  .main-visual .title img {
+    width: 213.1px;
+  }
+  .main-visual .subtitle {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .main-visual .text {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .about-den .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .about-den .wrapper .text {
+    margin: 0 22px;
+  }
+  .chief-area {
+    display: block;
+  }
+  .about-us .text {
+    margin: 100px 22px 0 22px;
+  }
+  .about-us .chief-area {
+    display: block;
+  }
+  .about-us .chief-area .right {
+    margin: 0 22px;
+  }
+  .about-us .chief-area .right .name {
+    margin-top: 30px;
+  }
+  .contact-us {
+    display: block;
+  }
+  .contact-us .left {
+    width: 100%;
+    height: auto;
+  }
+  .contact-us .right .wrapper {
+    margin: 60px 22px 0 22px;
+    padding-bottom: 15px;
+  }
+  .contact-us .right .wrapper .title {
+    line-height: 38.4px;
+  }
+  .mail-magazine {
+    margin: 0 22px;
+  }
+  .br-sp {
+    display: inline;
+  }
+  footer img {
+    margin-top: 50px;
+  }
+  footer .copyright {
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -39,7 +39,7 @@ h3 {
 .main-visual {
     // background-image: url("./img/main_bg01.png");
     background-attachment: fixed;
-    background-position: center center;
+    background-position: 25% top;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: scroll;
@@ -291,7 +291,7 @@ footer {
         height: 67px;
         width: 120px
     }
-    .copy-right {
+    .copyright {
         margin-top: 17px;
     }
 }

@@ -41,7 +41,7 @@ h3 {
 
 .main-visual {
   background-attachment: fixed;
-  background-position: center center;
+  background-position: 25% top;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: scroll;
@@ -333,7 +333,7 @@ footer img {
   width: 120px;
 }
 
-footer .copy-right {
+footer .copyright {
   margin-top: 17px;
 }
 

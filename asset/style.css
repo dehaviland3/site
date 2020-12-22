@@ -171,9 +171,14 @@ h3 {
 }
 
 .about-us {
-  max-width: 656px;
+  background-color: #F7F7F5;
   text-align: center;
-  margin: 120px auto 160px auto;
+  padding: 120px 0 160px 0;
+}
+
+.about-us .wrapper {
+  margin: 0px auto;
+  max-width: 656px;
 }
 
 .about-us .title {
@@ -311,20 +316,30 @@ h3 {
 }
 
 .mail-magazine {
-  margin: 0 auto;
-  max-width: 1008px;
+  background-color: #F7F7F5;
   height: 209.13px;
   text-align: center;
   font-size: 18px;
   line-height: 32.4px;
-  border-bottom: solid 1px #707070;
+  padding-bottom: 350px;
+}
+
+.mail-magazine .wrapper {
+  max-width: 1008px;
+  margin: 0 auto;
+}
+
+.mail-magazine .wrapper .horizon {
+  margin-top: 120px;
+  border-bottom: solid 2px silver;
 }
 
 .mail-magazine p {
-  margin-top: 101px;
+  padding-top: 101px;
 }
 
 footer {
+  background-color: #F7F7F5;
   text-align: center;
   padding-bottom: 151px;
 }
@@ -347,17 +362,13 @@ footer .copyright {
 .js-fadein {
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
 }
 
 .js-fadein.is-show {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -417,7 +428,7 @@ footer .copyright {
   .contact-us .right .wrapper .title {
     line-height: 38.4px;
   }
-  .mail-magazine {
+  .mail-magazine .wrapper {
     margin: 0 22px;
   }
   .br-sp {

@@ -86,7 +86,7 @@ h3 {
 }
 
 .about-den {
-    background-color: ##F7F7F5;
+    background-color: #E6E3D8;
     text-align: center;
     .wrapper {
         margin: 0 auto;
@@ -149,9 +149,12 @@ h3 {
 
 .about-us {
     background-color: #F7F7F5;
-    max-width: 656px;
     text-align: center;
-    margin: 120px auto 160px auto;
+    padding: 120px 0 160px 0;
+    .wrapper {
+        margin: 0px auto;
+        max-width: 656px;
+    }
     .title {
         font-size: 40px;
         font-family: 'EB Garamond', serif;
@@ -274,19 +277,27 @@ h3 {
 }
 
 .mail-magazine {
-    margin: 0 auto;
-    max-width: 1008px;
+    background-color: #F7F7F5;
     height: 209.13px;
     text-align: center;
     font-size: 18px;
     line-height: 32.4px;
-    border-bottom: solid 1px #707070;
+    padding-bottom: 350px;
+    .wrapper {
+        max-width: 1008px;
+        margin: 0 auto;
+        .horizon {
+            margin-top: 120px;
+            border-bottom: solid 2px silver;
+        }
+    }
     p {
-        margin-top: 101px;
+        padding-top: 101px;
     }
 }
 
 footer {
+    background-color: #F7F7F5;
     text-align: center;
     padding-bottom: 151px;
     img {
@@ -307,14 +318,14 @@ footer {
 .js-fadein {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(40px);
-    transition: all 2s;
+    // transform: translateY(40px);
+    transition: all 3s;
 }
 
 .js-fadein.is-show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0px);
+    // transform: translateY(0px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -385,7 +396,9 @@ footer {
         }
     }
     .mail-magazine {
-        margin: 0 22px;
+        .wrapper {
+            margin: 0 22px;
+        }
     }
     .br-sp {
         display: inline;

@@ -53,6 +53,10 @@ h3 {
   height: 100vh;
 }
 
+.main-visual noscript {
+  text-align: center;
+}
+
 .main-visual .title {
   margin-top: 177px;
   text-align: center;
@@ -124,7 +128,7 @@ h3 {
 }
 
 .about-den .title02 {
-  margin-top: 75.5px;
+  margin-top: 90px;
   font-size: 24px;
   color: #75896A;
   font-weight: bold;
@@ -295,20 +299,19 @@ h3 {
 
 .green-btn.-request {
   margin-top: 37.6px;
+  margin-bottom: 67.4px;
 }
 
 .green-btn.-landload {
-  margin-top: 67.4px;
   margin-bottom: 71px;
 }
 
-.green-btn,
-.green-btn .-mailMagazine {
+.green-btn.-mailMagazine {
   margin: 32.9px auto 0 auto;
 }
 
 .mail-magazine {
-  margin: 0 136px;
+  margin: 0 auto;
   max-width: 1008px;
   height: 209.13px;
   text-align: center;
@@ -339,6 +342,22 @@ footer .copyright {
 
 .br-sp {
   display: none;
+}
+
+.js-fadein {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.js-fadein.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -392,7 +411,7 @@ footer .copyright {
     height: auto;
   }
   .contact-us .right .wrapper {
-    margin: 60px 22px 0 22px;
+    margin: 60px auto 0 auto;
     padding-bottom: 15px;
   }
   .contact-us .right .wrapper .title {
@@ -409,6 +428,12 @@ footer .copyright {
   }
   footer .copyright {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact-us .right .wrapper {
+    margin: 60px 22px 0 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */

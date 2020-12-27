@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -48,7 +49,7 @@ h3 {
     /* IE 11 */
     /* Firefox 64 */
     width: 100%;
-    height: 100vh;
+    height: auto;
     noscript {
         text-align: center;
     }
@@ -68,6 +69,14 @@ h3 {
         font-size: 24px;
         color: white;
         font-weight: bold;
+    }
+    .text02 {
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        line-height: 40px;
+        margin: 80px 0 160px 0;
+        text-align: center;
     }
     .subtitle {
         text-align: center;
@@ -94,6 +103,7 @@ h3 {
         width: 925px;
     }
     .title {
+        margin: 20px 0 100px 0;
         font-family: 'EB Garamond', serif;
         font-size: 40px;
         line-height: 70px;
@@ -150,7 +160,7 @@ h3 {
 .about-us {
     background-color: #F7F7F5;
     text-align: center;
-    padding: 120px 0 160px 0;
+    padding: 80px 0 160px 0;
     .wrapper {
         margin: 0px auto;
         max-width: 656px;
@@ -176,7 +186,7 @@ h3 {
     }
     .chief-area {
         display: flex;
-        margin-top: 105px;
+        margin-top: 80px;
         .left {
             width: 214px;
             height: 214px;
@@ -205,6 +215,12 @@ h3 {
                 a:active {
                     color: #333333;
                 }
+                a {
+                    text-decoration: underline;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -232,7 +248,7 @@ h3 {
     .right {
         .wrapper {
             max-width: 480px;
-            margin-top: 67.1px;
+            margin-top: 100px;
             margin-left: 48px;
             margin-right: 136px;
             .title {
@@ -257,6 +273,12 @@ h3 {
     height: 56px;
     border-radius: 5px;
     text-align: center;
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: white;
+    }
     font: {
         size: 20px;
         weight: bold;
@@ -354,11 +376,20 @@ footer {
         }
     }
     .about-den {
+        .title {
+            margin: 0;
+        }
         .wrapper {
             width: 100%;
             margin: 0;
             .text {
-                margin: 0 22px;
+                margin: 64px 22px 0 22px;
+            }
+        }
+        .three-cards {
+            .cards.-third,
+            .cards.-second {
+                margin-top: 80px;
             }
         }
     }
@@ -367,7 +398,7 @@ footer {
     }
     .about-us {
         .text {
-            margin: 100px 22px 0 22px;
+            margin: 64px 22px 0 22px;
         }
         .chief-area {
             display: block;

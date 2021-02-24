@@ -3,6 +3,7 @@
 @import "bem/btn.scss";
 @import "bem/main.scss";
 @import "bem/banner.scss";
+@import "bem/side-bar.scss";
 *,
 :after,
 :before {
@@ -276,4 +277,46 @@ $gray:#EBEBEB;
         padding: 12px;
         /* 吹き出し内の上下左右の余白を-6px */
     }
+}
+
+
+/*フェードインアニメ*/
+
+
+/*左から右にフェードイン*/
+
+.left-to-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 1s;
+}
+
+.left-to-right.scrollin {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.right-to-left {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 1s;
+}
+
+.right-to-left.scrollin {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+/*下から上にフェードイン*/
+
+.down-to-top {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.down-to-top.scrollin {
+    opacity: 1;
+    transform: translateY(0);
 }

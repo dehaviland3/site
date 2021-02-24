@@ -45,6 +45,7 @@
 
 .article__text-area {
   font-size: 18px;
+  margin-left: 15px;
 }
 
 .article__under-line {
@@ -69,5 +70,9 @@
   -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
           box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
   margin: 30px auto 30px auto;
+}
+
+.article__link-text {
+  text-decoration: none;
 }
 /*# sourceMappingURL=article.css.map */

@@ -1,17 +1,14 @@
 .banner {
     width: 100%;
-    &__full {
+    &__banner-full {
         width: 100%;
         height: auto;
+    }
+    &__banner-full:hover {
+        opacity: 0.5;
     }
     &__half {
         width: 45%;
         height: auto;
-    }
-}
-
-.banner:hover {
-    &__full {
-        opacity: 0.8;
     }
 }

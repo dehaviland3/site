@@ -2,17 +2,17 @@
   width: 100%;
 }
 
-.banner__full {
+.banner__banner-full {
   width: 100%;
   height: auto;
+}
+
+.banner__banner-full:hover {
+  opacity: 0.5;
 }
 
 .banner__half {
   width: 45%;
   height: auto;
-}
-
-.banner:hover__full {
-  opacity: 0.8;
 }
 /*# sourceMappingURL=banner.css.map */

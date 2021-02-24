@@ -5,10 +5,16 @@
         border: solid 5px white;
         width: 100%;
         height: auto;
+        transition: 0.3s;
     }
     &__banner-half {
         border: solid 5px white;
         width: 100%;
         height: auto;
+        transition: 0.3s;
+    }
+    .banner__banner-full:hover,
+    .banner__banner-half:hover {
+        opacity: 0.8;
     }
 }

@@ -1,0 +1,25 @@
+.button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: solid 1px skyblue;
+  margin: 30px 0;
+}
+
+.button__text {
+  color: skyblue;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 6px 0px 0px skyblue;
+          box-shadow: 0px 6px 0px 0px skyblue;
+  line-height: 40px;
+}
+
+.button:hover {
+  background-color: skyblue;
+}
+
+.button:hover .button__text:hover {
+  color: white;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=btn.css.map */

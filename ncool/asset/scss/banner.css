@@ -1,0 +1,18 @@
+.banner {
+  width: 100%;
+}
+
+.banner__full {
+  width: 100%;
+  height: auto;
+}
+
+.banner__half {
+  width: 45%;
+  height: auto;
+}
+
+.banner:hover__full {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,378 @@
+@charset "UTF-8";
+.article {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.article__date-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article__title-area {
+  background-color: #EBEBEB;
+  padding: 15px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__category {
+  text-decoration: underline;
+  color: #00CCFF;
+}
+
+.article__thumbnail {
+  width: 100%;
+  margin: 30px;
+}
+
+.article__thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.article__title-text {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article__text-area {
+  font-size: 18px;
+}
+
+.article__under-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, transparent), color-stop(65%, #fff799));
+  background: linear-gradient(transparent 65%, #fff799 65%);
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.article__text-bold {
+  font-weight: bold;
+}
+
+.article__letter-body {
+  line-height: 40px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.article__img {
+  width: 70%;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+          box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+  margin: 30px auto 30px auto;
+}
+
+.text-title {
+  position: relative;
+  border-bottom: solid 5px skyblue;
+  margin: 30px 0 30px 0;
+}
+
+.text-title__text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: solid 1px skyblue;
+  margin: 30px 0;
+}
+
+.button__text {
+  color: skyblue;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 6px 0px 0px skyblue;
+          box-shadow: 0px 6px 0px 0px skyblue;
+  line-height: 40px;
+}
+
+.button:hover {
+  background-color: skyblue;
+}
+
+.button:hover .button__text:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #caf0ff;
+  height: auto;
+}
+
+.main > .row {
+  background-color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner__banner-full {
+  border: solid 5px white;
+  width: 100%;
+  height: auto;
+}
+
+.banner__banner-half {
+  border: solid 5px white;
+  width: 100%;
+  height: auto;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: medium;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body img {
+  width: 100%;
+  height: auto;
+}
+
+.container-white {
+  background: white;
+}
+
+/* 全体 */
+.sb-box {
+  position: relative;
+  overflow: hidden;
+}
+
+/* アイコン画像 */
+.icon-img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  /* 画像の位置を上から0に */
+  width: auto;
+  /* 画像の幅 */
+  height: 60px;
+  /* 画像の高さ */
+}
+
+/* アイコン画像（左） */
+.icon-img-left {
+  left: 15px;
+  /* 画像の位置を左から0に */
+}
+
+/* アイコン画像（右） */
+.icon-img-right {
+  right: 30px;
+  /* 画像の位置を右から0に */
+}
+
+/* アイコン画像 */
+.icon-img img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+/* アイコンネーム */
+.icon-name {
+  position: absolute;
+  width: 80px;
+  /* ネームの最大幅を画像と同じに */
+  text-align: center;
+  /* ネームの位置をセンターに */
+  top: 83px;
+  /* ネームの位置を上から83に */
+  color: #777;
+  /* ネームのカラー */
+  font-size: 10px;
+  /* ネームのフォントサイズ */
+}
+
+/* アイコンネーム（左） */
+.icon-name-left {
+  left: 0;
+  /* ネームの位置を左から0に */
+}
+
+/* アイコンネーム（右） */
+.icon-name-right {
+  right: 0;
+  /* ネームの位置を右から0に */
+}
+
+/* 吹き出し */
+.sb-side {
+  position: relative;
+  float: left;
+  margin: 0 105px 40px 105px;
+  /* 吹き出しの上下左右の余白 */
+}
+
+.sb-side-right {
+  float: right;
+}
+
+/* 吹き出し内のテキスト */
+.sb-txt {
+  position: relative;
+  border: 2px solid #eee;
+  /* 吹き出しの縁取りの太さとカラー */
+  border-radius: 6px;
+  /* 吹き出しを角丸に */
+  background: #fff;
+  /* 吹き出しの背景色 */
+  color: #333;
+  /* 吹き出し内のテキストのカラー */
+  font-size: 15px;
+  /* 吹き出し内のフォントサイズ */
+  line-height: 1.7;
+  /* 吹き出し内のテキストが2行以上になった時の行間 */
+  padding: 18px;
+  /* 吹き出し内の上下左右の余白 */
+}
+
+.sb-txt > p:last-of-type {
+  padding-bottom: 0;
+  /* 吹き出し内のテキストを改行した場合、最後のpタグにpadding-bottomをつけない */
+  margin-bottom: 0;
+  /* 吹き出し内のテキストを改行した場合、最後のpタグにmargin-bottomをつけない */
+}
+
+/* 吹き出しの三角 */
+.sb-txt:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 16px;
+  /* 吹き出し内の三角の位置 */
+  z-index: 3;
+}
+
+.sb-txt:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 15px;
+  /* beforeより-1px */
+  z-index: 2;
+  /* beforeより-1 */
+}
+
+/* 吹き出しの三角（左） */
+.sb-txt-left:before {
+  left: -7px;
+  border-width: 7px 10px 7px 0;
+  border-color: transparent #fff transparent transparent;
+  /* 背景色と同じカラーに */
+}
+
+.sb-txt-left:after {
+  left: -10px;
+  /* beforeより-3px */
+  border-width: 8px 10px 8px 0;
+  /* beforeより上下+1px */
+  border-color: transparent #eee transparent transparent;
+  /* 縁取りと同じカラーに */
+}
+
+/* 吹き出しの三角（右） */
+.sb-txt-right:before {
+  right: -7px;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fff;
+  /* 背景色と同じカラーに */
+}
+
+.sb-txt-right:after {
+  right: -10px;
+  /* beforeより-3px */
+  border-width: 8px 0 8px 10px;
+  /* beforeより上下+1px */
+  border-color: transparent transparent transparent #eee;
+  /* 縁取りと同じカラーに */
+}
+
+/* 767px（iPad）以下 */
+@media (max-width: 767px) {
+  /* アイコン画像 */
+  .icon-img {
+    width: 60px;
+    /* 画像の幅を-20px */
+    height: 60px;
+    /* 画像の高さを-20px */
+  }
+  /* アイコンネーム */
+  .icon-name {
+    width: 60px;
+    /* 画像の幅に合わせて-20px */
+    top: 62px;
+    /* ネームの位置を上から62に */
+    font-size: 9px;
+    /* ネームのフォントサイズを-1px */
+  }
+  /* 吹き出し（左） */
+  .sb-side-left {
+    margin: 0 0 30px 78px;
+    /* 吹き出し（左）の上下左右の余白を狭く */
+  }
+  /* 吹き出し（右） */
+  .sb-side-right {
+    margin: 0 78px 30px 0;
+    /* 吹き出し（右）の上下左右の余白を狭く */
+  }
+  /* 吹き出し内のテキスト */
+  .sb-txt {
+    padding: 12px;
+    /* 吹き出し内の上下左右の余白を-6px */
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner__banner-full {
+  border: solid 5px white;
+  width: 100%;
+  height: auto;
+}
+
+.banner__banner-half {
+  border: solid 5px white;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=banner.css.map */

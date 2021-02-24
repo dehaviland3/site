@@ -1,0 +1,73 @@
+.article {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.article__date-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article__title-area {
+  background-color: #EBEBEB;
+  padding: 15px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__category {
+  text-decoration: underline;
+  color: #00CCFF;
+}
+
+.article__thumbnail {
+  width: 100%;
+  margin: 30px;
+}
+
+.article__thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.article__title-text {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article__text-area {
+  font-size: 18px;
+}
+
+.article__under-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, transparent), color-stop(65%, #fff799));
+  background: linear-gradient(transparent 65%, #fff799 65%);
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.article__text-bold {
+  font-weight: bold;
+}
+
+.article__letter-body {
+  line-height: 40px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.article__img {
+  width: 70%;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+          box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+  margin: 30px auto 30px auto;
+}
+/*# sourceMappingURL=article.css.map */

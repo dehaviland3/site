@@ -1,0 +1,14 @@
+.banner {
+    width: 100%;
+    height: auto;
+    &__banner-full {
+        border: solid 5px white;
+        width: 100%;
+        height: auto;
+    }
+    &__banner-half {
+        border: solid 5px white;
+        width: 100%;
+        height: auto;
+    }
+}

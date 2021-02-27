@@ -3,6 +3,7 @@
   width: 100%;
   height: auto;
   background-color: white;
+  padding-bottom: 200px;
 }
 
 .article__date-area {
@@ -14,7 +15,7 @@
 .article__title-area {
   background-color: #EBEBEB;
   padding: 15px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +76,39 @@
 
 .article__link-text {
   text-decoration: none;
+}
+
+.article__article-text {
+  font-size: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.article__article-thumbnail {
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
+}
+
+.article__article-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.article__recommended-title {
+  margin-top: 30px;
+  background-color: skyblue;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.article__recommended-area {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px skyblue;
 }
 
 .text-title {
@@ -159,6 +193,81 @@
   background-color: white;
   width: 100%;
   height: auto;
+}
+
+.side-bar__banner {
+  margin-top: 30px;
+}
+
+.side-bar__recommended-area {
+  border: solid 1px skyblue;
+}
+
+.side-bar__recommended-title {
+  margin-top: 30px;
+  background-color: skyblue;
+  text-align: center;
+  color: white;
+}
+
+.side-bar__recommended-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.footer__info-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  width: 260px;
+  height: 79px;
+  margin-right: 30px;
+}
+
+.footer__info-text {
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer__copyright {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.footer__info-list {
+  list-style: none;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer__info-list a {
+  color: black;
+}
+
+footer {
+  position: relative;
+}
+
+footer .footer__top-building {
+  position: relative;
+  top: -146px;
+  margin-bottom: -116px;
 }
 
 *,
@@ -446,4 +555,37 @@ body img {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+
+/***追従するトップへ戻るボタン***/
+#page-top {
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  height: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 90%;
+  line-height: 1.5rem;
+  color: #2b2b2b;
+  padding: 0 0 0 35px;
+  border-top: solid 1px;
+}
+
+#page-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 15px;
+  border-top: solid 1px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+/***トップへ戻るボタンここまで***/
 /*# sourceMappingURL=style.css.map */

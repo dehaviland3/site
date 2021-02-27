@@ -2,4 +2,20 @@
     background-color: white;
     width: 100%;
     height: auto;
+    &__banner {
+        margin-top: 30px;
+    }
+    &__recommended-area {
+        border: solid 1px skyblue;
+    }
+    &__recommended-title {
+        margin-top: 30px;
+        background-color: skyblue;
+        text-align: center;
+        color: white;
+    }
+    &__recommended-article {
+        display: flex;
+        padding: 5px;
+    }
 }

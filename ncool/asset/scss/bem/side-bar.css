@@ -3,4 +3,26 @@
   width: 100%;
   height: auto;
 }
+
+.side-bar__banner {
+  margin-top: 30px;
+}
+
+.side-bar__recommended-area {
+  border: solid 1px skyblue;
+}
+
+.side-bar__recommended-title {
+  margin-top: 30px;
+  background-color: skyblue;
+  text-align: center;
+  color: white;
+}
+
+.side-bar__recommended-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
 /*# sourceMappingURL=side-bar.css.map */

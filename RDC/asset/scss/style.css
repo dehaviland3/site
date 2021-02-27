@@ -1,0 +1,573 @@
+@charset "UTF-8";
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+  max-width: 960px;
+  margin: 0 auto;
+  /*チェックボックス等は非表示に*/
+  /*アイコンのスペース*/
+  /*ハンバーガーの形をCSSで表現*/
+  /*閉じる用の薄黒箇所*/
+  /*メニューの中身*/
+  /*チェックがついたら表示させる*/
+  /*ロゴやサイトタイトルをセンタリング*/
+}
+
+header #nav-drawer {
+  position: relative;
+}
+
+header .nav-unshown {
+  display: none;
+}
+
+header #nav-open {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+header #nav-open span:before {
+  bottom: -8px;
+}
+
+header #nav-open span:after {
+  bottom: -16px;
+}
+
+header #nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+header #nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 90%;
+  max-width: 330px;
+  /*最大幅（お好みで調整を）*/
+  height: 100%;
+  background: #fff;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);
+}
+
+header #nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+header #nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+header .header-logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+header .logo-area {
+  text-align: center;
+  margin: auto;
+}
+
+.header__logo {
+  width: 350px;
+  height: auto;
+}
+
+.header__btn-menu {
+  border: solid 1px gray;
+  padding: 15px;
+  width: 150px;
+  height: auto;
+  margin: 30px auto 0 auto;
+}
+
+.header__btn-menu--main {
+  border: none;
+}
+
+.header__nav-content {
+  padding: 15px;
+  list-style: none;
+  text-align: center;
+}
+
+.header__nav-content li {
+  margin: 15px auto;
+}
+
+.header__nav-content img {
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 765px) {
+  .header__logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  header {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.main__visual {
+  margin-top: 30px;
+  width: 100vw;
+  height: auto;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+          box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+}
+
+.main__container {
+  max-width: 960px;
+  margin: 30px auto 0 auto;
+}
+
+.main__entry {
+  width: 100vw;
+  margin-top: 30px;
+}
+
+.main__entry img {
+  width: 100%;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+          box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
+}
+
+.main__schedule {
+  padding: 15px;
+  max-width: 300px;
+  border: solid 1px gray;
+  margin: 60px auto 30px auto;
+}
+
+.main__schedule img {
+  width: 100%;
+}
+
+.main__schedule-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__schedule-icons img {
+  width: 90px;
+  height: auto;
+}
+
+.main__now-open--img {
+  margin: 60px auto 0 auto;
+  width: 300px;
+  height: auto;
+}
+
+.main__now-open--text {
+  margin: 0 0 30px auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main__now-open--text a {
+  text-decoration: none;
+  color: black;
+}
+
+.main__nav-content {
+  width: 300px;
+  border: solid 1px gray;
+  margin: 30px auto;
+  padding: 15px;
+  list-style: none;
+  text-align: center;
+}
+
+.main__nav-content img {
+  height: 50px;
+}
+
+.main__nav-content li {
+  margin: 15px auto;
+}
+
+.main__nav-content img {
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.main__copyright {
+  width: 100%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-weight: medium;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body img {
+  width: 100%;
+  height: auto;
+}
+
+.container-white {
+  background: white;
+}
+
+/* 全体 */
+.sb-box {
+  position: relative;
+  overflow: hidden;
+}
+
+/* アイコン画像 */
+.icon-img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  /* 画像の位置を上から0に */
+  width: auto;
+  /* 画像の幅 */
+  height: 60px;
+  /* 画像の高さ */
+}
+
+/* アイコン画像（左） */
+.icon-img-left {
+  left: 15px;
+  /* 画像の位置を左から0に */
+}
+
+/* アイコン画像（右） */
+.icon-img-right {
+  right: 30px;
+  /* 画像の位置を右から0に */
+}
+
+/* アイコン画像 */
+.icon-img img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+/* アイコンネーム */
+.icon-name {
+  position: absolute;
+  width: 80px;
+  /* ネームの最大幅を画像と同じに */
+  text-align: center;
+  /* ネームの位置をセンターに */
+  top: 83px;
+  /* ネームの位置を上から83に */
+  color: #777;
+  /* ネームのカラー */
+  font-size: 10px;
+  /* ネームのフォントサイズ */
+}
+
+/* アイコンネーム（左） */
+.icon-name-left {
+  left: 0;
+  /* ネームの位置を左から0に */
+}
+
+/* アイコンネーム（右） */
+.icon-name-right {
+  right: 0;
+  /* ネームの位置を右から0に */
+}
+
+/* 吹き出し */
+.sb-side {
+  position: relative;
+  float: left;
+  margin: 0 105px 40px 105px;
+  /* 吹き出しの上下左右の余白 */
+}
+
+.sb-side-right {
+  float: right;
+}
+
+/* 吹き出し内のテキスト */
+.sb-txt {
+  position: relative;
+  border: 2px solid #eee;
+  /* 吹き出しの縁取りの太さとカラー */
+  border-radius: 6px;
+  /* 吹き出しを角丸に */
+  background: #fff;
+  /* 吹き出しの背景色 */
+  color: #333;
+  /* 吹き出し内のテキストのカラー */
+  font-size: 15px;
+  /* 吹き出し内のフォントサイズ */
+  line-height: 1.7;
+  /* 吹き出し内のテキストが2行以上になった時の行間 */
+  padding: 18px;
+  /* 吹き出し内の上下左右の余白 */
+}
+
+.sb-txt > p:last-of-type {
+  padding-bottom: 0;
+  /* 吹き出し内のテキストを改行した場合、最後のpタグにpadding-bottomをつけない */
+  margin-bottom: 0;
+  /* 吹き出し内のテキストを改行した場合、最後のpタグにmargin-bottomをつけない */
+}
+
+/* 吹き出しの三角 */
+.sb-txt:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 16px;
+  /* 吹き出し内の三角の位置 */
+  z-index: 3;
+}
+
+.sb-txt:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 15px;
+  /* beforeより-1px */
+  z-index: 2;
+  /* beforeより-1 */
+}
+
+/* 吹き出しの三角（左） */
+.sb-txt-left:before {
+  left: -7px;
+  border-width: 7px 10px 7px 0;
+  border-color: transparent #fff transparent transparent;
+  /* 背景色と同じカラーに */
+}
+
+.sb-txt-left:after {
+  left: -10px;
+  /* beforeより-3px */
+  border-width: 8px 10px 8px 0;
+  /* beforeより上下+1px */
+  border-color: transparent #eee transparent transparent;
+  /* 縁取りと同じカラーに */
+}
+
+/* 吹き出しの三角（右） */
+.sb-txt-right:before {
+  right: -7px;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fff;
+  /* 背景色と同じカラーに */
+}
+
+.sb-txt-right:after {
+  right: -10px;
+  /* beforeより-3px */
+  border-width: 8px 0 8px 10px;
+  /* beforeより上下+1px */
+  border-color: transparent transparent transparent #eee;
+  /* 縁取りと同じカラーに */
+}
+
+/* 767px（iPad）以下 */
+@media (max-width: 767px) {
+  /* アイコン画像 */
+  .icon-img {
+    width: 60px;
+    /* 画像の幅を-20px */
+    height: 60px;
+    /* 画像の高さを-20px */
+  }
+  /* アイコンネーム */
+  .icon-name {
+    width: 60px;
+    /* 画像の幅に合わせて-20px */
+    top: 62px;
+    /* ネームの位置を上から62に */
+    font-size: 9px;
+    /* ネームのフォントサイズを-1px */
+  }
+  /* 吹き出し（左） */
+  .sb-side-left {
+    margin: 0 0 30px 78px;
+    /* 吹き出し（左）の上下左右の余白を狭く */
+  }
+  /* 吹き出し（右） */
+  .sb-side-right {
+    margin: 0 78px 30px 0;
+    /* 吹き出し（右）の上下左右の余白を狭く */
+  }
+  /* 吹き出し内のテキスト */
+  .sb-txt {
+    padding: 12px;
+    /* 吹き出し内の上下左右の余白を-6px */
+  }
+}
+
+/*フェードインアニメ*/
+/*左から右にフェードイン*/
+.left-to-right {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.left-to-right.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.right-to-left {
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.right-to-left.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+/*下から上にフェードイン*/
+.down-to-top {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.down-to-top.scrollin {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/***追従するトップへ戻るボタン***/
+#page-top {
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  height: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 90%;
+  line-height: 1.5rem;
+  color: #2b2b2b;
+  padding: 0 0 0 35px;
+  border-top: solid 1px;
+}
+
+#page-top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 15px;
+  border-top: solid 1px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+/***トップへ戻るボタンここまで***/
+/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,12 @@
   margin: 30px auto 0 auto;
 }
 
+.main__now-open--img {
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+
 .main__entry {
   width: 100vw;
   margin-top: 30px;
@@ -109,7 +115,17 @@
 
 .main__copyright {
   width: 100%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   text-align: center;
+}
+
+.main__copyright p {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .main__now-open--img:before, .main__now-open--img:after {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

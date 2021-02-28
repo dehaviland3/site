@@ -9,6 +9,28 @@
         max-width: 960px;
         margin: 30px auto 0 auto;
     }
+    &__now-open--img {
+        width: 100%;
+        padding-top: 30px;
+        position: relative;
+        // 横線は余計なので廃止
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     border: solid 5px black;
+        //     top: 55px;
+        //     left: -2035px;
+        //     width: 2000px;
+        // }
+        // &:after {
+        //     content: "";
+        //     position: absolute;
+        //     border: solid 5px black;
+        //     top: 55px;
+        //     right: -2030px;
+        //     width: 2000px;
+        // }
+    }
     &__entry {
         width: 100vw;
         margin-top: 30px;
@@ -82,7 +104,18 @@
     }
     &__copyright {
         width: 100%;
-        margin: 0 auto 30px auto;
+        margin: 0 auto;
+        p {
+            padding-bottom: 30px;
+        }
         text-align: center;
+    }
+    @media (max-width: 767px) {
+        &__now-open--img {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
     }
 }

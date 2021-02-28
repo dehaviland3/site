@@ -23,6 +23,7 @@
 .footer__copyright {
   width: 100%;
   margin: 30px 0;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -50,6 +51,13 @@
     padding: 0;
     margin-bottom: 30px;
   }
+  .footer__info-text {
+    width: 100%;
+    font-size: 22px;
+  }
+  .footer__info-text a {
+    line-height: 34px;
+  }
 }
 
 footer {
@@ -63,5 +71,9 @@ footer .footer__top-building {
 footer .footer__top-building img {
   position: relative;
   top: -146px;
+}
+
+footer .footer__top-building--article-page img {
+  top: -170px;
 }
 /*# sourceMappingURL=footer.css.map */

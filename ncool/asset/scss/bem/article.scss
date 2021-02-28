@@ -60,15 +60,14 @@ $gray:#EBEBEB;
     &__article-text {
         font-size: 12px;
         width: 100%;
-        height: auto;
     }
     &__article-thumbnail {
         width: 100%;
-        height: auto;
         margin-right: 5px;
         img {
             width: 100%;
             height: auto;
+            object-fit: contain;
         }
     }
     &__recommended-title {
@@ -79,8 +78,29 @@ $gray:#EBEBEB;
         text-align: center;
     }
     &__recommended-area {
+        width: 100%;
+        height: auto;
         margin-bottom: 30px;
         display: flex;
+        align-items: center;
         border: solid 1px skyblue;
+        div {
+            padding: 5px;
+        }
+        @media (max-width: 767px) {
+            & {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+        &__img {
+            width: 100%;
+        }
+        &__title-area {
+            padding: 0;
+            margin-left: 0;
+        }
     }
 }

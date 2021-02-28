@@ -1,9 +1,9 @@
 .main {
-  background-color: #caf0ff;
-  height: auto;
+  background-color: #BBF4FB;
 }
 
 .main > .row {
+  height: auto;
   background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

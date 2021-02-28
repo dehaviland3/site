@@ -64,17 +64,24 @@ $gray:#EBEBEB;
 .sb-box {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.sb-box__right {
+    flex-flow: row-reverse;
 }
 
 
 /* アイコン画像 */
 
 .icon-img {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
+    // position: absolute;
+    // overflow: hidden;
+    // top: 0;
     /* 画像の位置を上から0に */
-    width: auto;
+    width: 100%;
+    margin: 0 auto;
     /* 画像の幅 */
     height: 60px;
     /* 画像の高さ */
@@ -83,21 +90,21 @@ $gray:#EBEBEB;
 
 /* アイコン画像（左） */
 
-.icon-img-left {
-    left: 15px;
-    /* 画像の位置を左から0に */
-}
-
-
-/* アイコン画像（右） */
-
-.icon-img-right {
-    right: 30px;
-    /* 画像の位置を右から0に */
-}
-
+// .icon-img-left {
+//     left: 15px;
+//     /* 画像の位置を左から0に */
+// }
+// /* アイコン画像（右） */
+// .icon-img-right {
+//     right: 30px;
+//     /* 画像の位置を右から0に */
+// }
 
 /* アイコン画像 */
+
+.icon-img {
+    width: auto;
+}
 
 .icon-img img {
     width: auto;
@@ -146,10 +153,16 @@ $gray:#EBEBEB;
 /* 吹き出し */
 
 .sb-side {
+    width: 100vw;
     position: relative;
-    float: left;
-    margin: 0 105px 40px 105px;
+    margin: 0 50px 40px 50px;
     /* 吹き出しの上下左右の余白 */
+}
+
+@media (max-width: 767px) {
+    .sb-side {
+        margin: 0 10px 40px 10px;
+    }
 }
 
 .sb-side-right {
@@ -355,3 +368,15 @@ $gray:#EBEBEB;
 
 
 /***トップへ戻るボタンここまで***/
+
+@media (max-width: 767px) {
+    .sb-side-left {
+        margin: 0 0 30px 15px;
+        /* 吹き出し（左）の上下左右の余白を狭く */
+    }
+    /* 吹き出し（右） */
+    .sb-side-right {
+        margin: 0 15px 30px 0;
+        /* 吹き出し（右）の上下左右の余白を狭く */
+    }
+}

@@ -27,13 +27,31 @@
                     color: black;
                 }
             }
+            @media (max-width: 767px) {
+                &__info-area,
+                &__copyright {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                }
+                &__logo {
+                    margin: 0 0 30px 0;
+                }
+                &__info-list {
+                    padding: 0;
+                    margin-bottom: 30px;
+                }
+            }
         }
         
         footer {
             position: relative;
             .footer__top-building {
-                position: relative;
-                top: -146px;
-                margin-bottom: -116px;
+                img {
+                    position: relative;
+                    top: -146px;
+                }
+                margin-bottom: 50px;
             }
         }

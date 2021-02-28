@@ -2,6 +2,7 @@
   background-color: white;
   width: 100%;
   height: auto;
+  padding-bottom: 150px;
 }
 
 .side-bar__banner {
@@ -20,6 +21,7 @@
 }
 
 .side-bar__recommended-article {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

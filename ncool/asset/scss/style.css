@@ -81,18 +81,18 @@
 .article__article-text {
   font-size: 12px;
   width: 100%;
-  height: auto;
 }
 
 .article__article-thumbnail {
   width: 100%;
-  height: auto;
   margin-right: 5px;
 }
 
 .article__article-thumbnail img {
   width: 100%;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .article__recommended-title {
@@ -104,11 +104,39 @@
 }
 
 .article__recommended-area {
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: solid 1px skyblue;
+}
+
+.article__recommended-area div {
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .article__recommended-area {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .article {
+    padding-bottom: 0;
+  }
+  .article__img {
+    width: 100%;
+  }
+  .article__title-area {
+    padding: 0;
+    margin-left: 0;
+  }
 }
 
 .text-title {
@@ -155,11 +183,11 @@
 }
 
 .main {
-  background-color: #caf0ff;
-  height: auto;
+  background-color: #BBF4FB;
 }
 
 .main > .row {
+  height: auto;
   background-color: white;
 }
 
@@ -193,6 +221,7 @@
   background-color: white;
   width: 100%;
   height: auto;
+  padding-bottom: 150px;
 }
 
 .side-bar__banner {
@@ -211,10 +240,15 @@
 }
 
 .side-bar__recommended-article {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
+}
+
+header {
+  border: solid 3px white;
 }
 
 header img {
@@ -260,14 +294,33 @@ header img {
   color: black;
 }
 
+@media (max-width: 767px) {
+  .footer__info-area, .footer__copyright {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .footer__logo {
+    margin: 0 0 30px 0;
+  }
+  .footer__info-list {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
 footer {
   position: relative;
 }
 
 footer .footer__top-building {
+  margin-bottom: 50px;
+}
+
+footer .footer__top-building img {
   position: relative;
   top: -146px;
-  margin-bottom: -116px;
 }
 
 *,
@@ -324,33 +377,37 @@ body img {
 .sb-box {
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sb-box__right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 /* アイコン画像 */
 .icon-img {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
   /* 画像の位置を上から0に */
-  width: auto;
+  width: 100%;
+  margin: 0 auto;
   /* 画像の幅 */
   height: 60px;
   /* 画像の高さ */
 }
 
 /* アイコン画像（左） */
-.icon-img-left {
-  left: 15px;
-  /* 画像の位置を左から0に */
-}
-
-/* アイコン画像（右） */
-.icon-img-right {
-  right: 30px;
-  /* 画像の位置を右から0に */
-}
-
 /* アイコン画像 */
+.icon-img {
+  width: auto;
+}
+
 .icon-img img {
   width: auto;
   height: 100%;
@@ -386,10 +443,16 @@ body img {
 
 /* 吹き出し */
 .sb-side {
+  width: 100vw;
   position: relative;
-  float: left;
-  margin: 0 105px 40px 105px;
+  margin: 0 50px 40px 50px;
   /* 吹き出しの上下左右の余白 */
+}
+
+@media (max-width: 767px) {
+  .sb-side {
+    margin: 0 10px 40px 10px;
+  }
 }
 
 .sb-side-right {
@@ -588,4 +651,15 @@ body img {
 }
 
 /***トップへ戻るボタンここまで***/
+@media (max-width: 767px) {
+  .sb-side-left {
+    margin: 0 0 30px 15px;
+    /* 吹き出し（左）の上下左右の余白を狭く */
+  }
+  /* 吹き出し（右） */
+  .sb-side-right {
+    margin: 0 15px 30px 0;
+    /* 吹き出し（右）の上下左右の余白を狭く */
+  }
+}
 /*# sourceMappingURL=style.css.map */

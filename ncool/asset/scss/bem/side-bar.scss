@@ -2,6 +2,7 @@
     background-color: white;
     width: 100%;
     height: auto;
+    padding-bottom: 150px;
     &__banner {
         margin-top: 30px;
     }
@@ -15,6 +16,7 @@
         color: white;
     }
     &__recommended-article {
+        height: auto;
         display: flex;
         padding: 5px;
     }

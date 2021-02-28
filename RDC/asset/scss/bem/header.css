@@ -63,7 +63,7 @@ header #nav-content {
   top: 0;
   right: 0;
   z-index: 9999;
-  width: 90%;
+  width: 75%;
   max-width: 330px;
   /*最大幅（お好みで調整を）*/
   height: 100%;

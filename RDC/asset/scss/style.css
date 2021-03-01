@@ -303,6 +303,9 @@ header .logo-area {
     width: 100%;
     height: auto;
   }
+  .main__visual {
+    margin: 0;
+  }
 }
 
 *,

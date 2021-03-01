@@ -18,12 +18,18 @@
 }
 
 .main__entry {
-  width: 100vw;
+  width: 100%;
+  height: auto;
   margin-top: 30px;
+  margin: 30px auto 0 auto;
+  text-align: center;
 }
 
 .main__entry img {
-  width: 100%;
+  width: auto;
+  height: 100vh;
+  text-align: center;
+  margin: auto;
   -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
           box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
 }
@@ -126,6 +132,13 @@
 @media (max-width: 767px) {
   .main__now-open--img:before, .main__now-open--img:after {
     display: none;
+  }
+  .main__entry {
+    width: 100%;
+  }
+  .main__entry img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

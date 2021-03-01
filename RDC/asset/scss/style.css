@@ -141,13 +141,23 @@ header .logo-area {
 
 @media (max-width: 765px) {
   .header__logo {
-    margin: 0 auto;
+    width: 40vw;
+    margin: 0 auto 0 5px;
+    text-align: center;
+  }
+  .header__btn-menu {
+    width: 30vw;
+    margin: 0 5px 0 0;
+    padding: 5px 5px 0 5px;
     text-align: center;
   }
   header {
-    display: block;
-    margin: auto;
-    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -171,12 +181,18 @@ header .logo-area {
 }
 
 .main__entry {
-  width: 100vw;
+  width: 100%;
+  height: auto;
   margin-top: 30px;
+  margin: 30px auto 0 auto;
+  text-align: center;
 }
 
 .main__entry img {
-  width: 100%;
+  width: auto;
+  height: 100vh;
+  text-align: center;
+  margin: auto;
   -webkit-box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
           box-shadow: 0 10px 10px 0 rgba(122, 122, 122, 0.5);
 }
@@ -279,6 +295,13 @@ header .logo-area {
 @media (max-width: 767px) {
   .main__now-open--img:before, .main__now-open--img:after {
     display: none;
+  }
+  .main__entry {
+    width: 100%;
+  }
+  .main__entry img {
+    width: 100%;
+    height: auto;
   }
 }
 

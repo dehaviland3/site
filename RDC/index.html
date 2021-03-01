@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="header__logo" src="./asset/img/ロゴ.png" alt=""></a>
+        <img class="header__logo" src="./asset/img/ロゴ.png" alt="">
 
         <!-- ハンバーガーボタン -->
         <div>
@@ -37,7 +37,7 @@
                     <label id="nav-open" for="nav-input"><img src="./asset/img/MENU.png" alt=""></label>
                     <label class="nav-unshown" id="nav-close" for="nav-input"></label>
                     <div id="nav-content">
-                        <div class="header__btn-menu"><img src="./asset/img/MENU.png" alt=""></div>
+                        <div class="header__btn-menu d-none d-md-block"><img src="./asset/img/MENU.png" alt=""></div>
                         <ul class="header__nav-content">
                             <li>
                                 <a href="https://www.royaldance.jp/page/14" target="_blank" rel="noopener noreferrer"><img src="./asset/img/TOP.png" alt=""></a>
@@ -56,15 +56,24 @@
                 </div>
                 <div class="logo-area"></div>
             </div>
-
-
         </div>
     </header>
     <div class="main">
 
 
-        <!-- メインビジュアルの画像 -->
-        <img class="main__visual" src="./asset/img/Image2.jpg" alt="mainvisual">
+
+
+
+
+
+        <!-- メインビジュアルを差し替えるときは、以下のsrc=""を更新してください -->
+        <img class="main__visual" src="./asset/img/Image2.jpg" alt="メインビジュアル">
+
+
+
+
+
+
 
 
 
@@ -75,14 +84,28 @@
             <div class="main__now-open--text down-to-top"><a href="https://www.royaldance.jp/page/17" target="_blank" rel="noopener noreferrer">エントリー受付中 <img class="main__arrow-entry" src="./asset/img/Arrow.png" alt=""></a></div>
         </div>
         <a class="main__entry" href="https://www.royaldance.jp/page/17" target="_blank" rel="noopener noreferrer">
+            <div>
 
 
 
-            <!-- 「Youtube配信で結果発表」の画像を差し替えるときは、下の"./asset/img/Image (1).jpg"を更新してください -->
-            <img src="./asset/img/Image (1).jpg" alt="エントリー受付中"></a>
 
 
 
+
+
+                <!-- 「Youtube配信で結果発表」の画像を差し替えるときは、下のsrc=""を更新してください -->
+                <img src="./asset/img/Image (1).jpg" alt="エントリー受付中">
+
+
+
+
+
+
+
+
+
+            </div>
+        </a>
         <div class="main__schedule down-to-top">
             <a href="https://www.royaldance.jp/page/21" target="_blank" rel="noopener noreferrer"><img src="./asset/img/SCHEDULE.png" alt="schedule"></a>
         </div>
@@ -110,7 +133,7 @@
             </ul>
         </div>
         <div class="main__copyright">
-            <p>©2021 RDC</p>
+            <p>©2021 Royal Dance</p>
         </div>
     </div>
     <script>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,gBAAgB,EAAE,oCAAoC;EACtD,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,WAAW;EAChC,eAAe,EAAE,SAAS;EAC1B,cAAc,EAAE,IAAI;CAMvB;;AALI,AAAD,qBAAY,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "buisiness.scss"
+    ],
+    "names": [],
+    "file": "buisiness.css"
+}

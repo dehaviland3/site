@@ -1,0 +1,17 @@
+.card {
+    width: 250px;
+    margin-top: 30px;
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__textarea {
+        background-color: white;
+        width: 100%;
+        padding: 21px 17px 11px 17px;
+    }
+    &__title {
+        font-weight: bold;
+    }
+    &__text {}
+}

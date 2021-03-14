@@ -1,0 +1,48 @@
+.main {
+    &__mainvisual {}
+    &__recruit {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &>img {
+            width: 45vw;
+            align-self: flex-end;
+        }
+    }
+    &__recruit-text {
+        position: relative;
+        max-width: 610px;
+        text-align: center;
+        margin-right: 170px;
+        p {
+            text-align: left;
+            font-size: 18px
+        }
+    }
+    &__recruit-img01 {
+        max-width: 500px;
+    }
+    &__recruit-img02 {
+        max-width: 387px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        &__recruit {
+            padding-left: 15px;
+            padding-right: 15px;
+            flex-direction: column-reverse;
+            img {
+                align-self: center;
+            }
+        }
+        &__recruit-text {
+            margin: 0 auto;
+            img {
+                width: 75vw;
+            }
+        }
+    }
+}

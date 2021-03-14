@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+@import "./scss/header";
+@import "./scss/main";
+@import "./scss/title";
+@import "./scss/subtitle";
+@import "./scss/btn";
+@import "./scss/works";
+@import "./scss/news";
+@import "./scss/buisiness";
+@import "./scss/footer";
+@import "./scss/youtube";
+@import "./scss/card";
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    font-weight: medium;
+    font-feature-settings: "palt";
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%
+}
+
+body,
+p,
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*フェードインアニメ*/
+
+
+/*左から右にフェードイン*/
+
+.left-to-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 1s;
+}
+
+.left-to-right.scrollin {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.right-to-left {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 1s;
+}
+
+.right-to-left.scrollin {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+/*下から上にフェードイン*/
+
+.down-to-top {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+.down-to-top.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#page-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 119px;
+    width: 15px;
+}
+
+
+/***追従するトップへ戻るボタン***/
+
+// #page-top {
+//     position: fixed;
+//     right: 5px;
+//     bottom: 20px;
+//     height: 50px;
+//     text-decoration: none;
+//     font-weight: bold;
+//     transform: rotate(90deg);
+//     font-size: 90%;
+//     line-height: 1.5rem;
+//     color: #2b2b2b;
+//     padding: 0 0 0 35px;
+//     border-top: solid 1px;
+// }
+// #page-top::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: -1px;
+//     left: 0px;
+//     width: 15px;
+//     border-top: solid 1px;
+//     transform: rotate(35deg);
+//     transform-origin: left top;
+// }
+
+/***トップへ戻るボタンここまで***/

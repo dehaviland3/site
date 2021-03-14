@@ -1,0 +1,26 @@
+.btn__detail {
+  width: 300px;
+  height: 70px;
+  background-color: #8dc031;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  font-size: 16px;
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn__detail--works {
+  margin: 50px auto;
+}
+
+.btn__detail:hover {
+  background-color: white;
+  color: #8dc031;
+}
+
+.btn__link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=btn.css.map */

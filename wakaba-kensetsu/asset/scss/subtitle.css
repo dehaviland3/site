@@ -1,0 +1,20 @@
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subtitle--buisiness {
+  margin: 0 auto 55px auto;
+}
+
+.subtitle--works {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle--works {
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=subtitle.css.map */

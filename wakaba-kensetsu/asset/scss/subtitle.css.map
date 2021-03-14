@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;CAQpB;;AAPI,AAAD,oBAAY,CAAC;EACT,MAAM,EAAE,gBAAgB;CAC3B;;AACA,AAAD,gBAAQ,CAAC;EACL,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,MAAM;CACpB;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAE1B,AAAD,gBAAQ,CAAC;IACL,WAAW,EAAE,IAAI;GACpB",
+    "sources": [
+        "subtitle.scss"
+    ],
+    "names": [],
+    "file": "subtitle.css"
+}

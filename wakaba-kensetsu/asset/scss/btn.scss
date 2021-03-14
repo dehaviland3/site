@@ -1,0 +1,23 @@
+.btn {
+    &__detail {
+        width: 300px;
+        height: 70px;
+        background-color: #8dc031;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        font-size: 16px;
+        margin: 0 auto;
+        transition: 0.3s;
+        &--works {
+            margin: 50px auto;
+        }
+    }
+    &__detail:hover {
+        background-color: white;
+        color: #8dc031;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}

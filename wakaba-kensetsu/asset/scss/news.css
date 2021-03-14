@@ -59,5 +59,8 @@
   .news__date {
     margin: 0;
   }
+  .news__ichiran {
+    font-weight: bold;
+  }
 }
 /*# sourceMappingURL=news.css.map */

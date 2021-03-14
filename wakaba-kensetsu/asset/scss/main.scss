@@ -11,12 +11,14 @@
     }
     &__recruit-text {
         position: relative;
-        max-width: 610px;
+        max-width: 670px;
         text-align: center;
         margin-right: 170px;
         p {
             text-align: left;
-            font-size: 18px
+            font-size: 18px;
+            line-height: 33px;
+            letter-spacing: 0.05em;
         }
     }
     &__recruit-img01 {
@@ -24,7 +26,7 @@
     }
     &__recruit-img02 {
         max-width: 387px;
-        margin: 0 auto;
+        margin: 35px auto;
     }
 }
 

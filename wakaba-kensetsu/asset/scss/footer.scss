@@ -16,6 +16,7 @@
     }
     &__address {
         color: white;
+        margin-top: 15px;
     }
     &__nav {
         display: flex;
@@ -24,13 +25,22 @@
         max-width: 500px;
         list-style: none;
         & li {
-            padding: 0 15px;
-            border-right: solid 1px white;
+            position: relative;
+            padding: 0 17px;
         }
         & a {
             color: white;
             text-decoration: none;
             font-size: 15px;
+            line-height: 30px;
+        }
+        & li::after {
+            position: absolute;
+            content: "";
+            border-right: solid 1px white;
+            right: 0px;
+            top: 5px;
+            height: 18px;
         }
     }
     &__copyright {

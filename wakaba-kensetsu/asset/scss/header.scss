@@ -1,13 +1,14 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     &__logo {
         width: 320px;
         height: auto;
         margin-left: 150px;
+        align-self: center;
     }
     &__navi {
+        align-self: flex-start;
         margin-right: 40px;
         margin-left: auto;
         p {
@@ -20,9 +21,12 @@
         margin-right: 40px;
     }
     &__catchcopy {
+        margin: 10px 0 30px auto;
         font-size: 11px;
-        margin-left: auto;
         text-align: right;
+        &--sp {
+            display: none;
+        }
     }
     &__navi-list {
         margin: 0 0 0 auto;
@@ -273,6 +277,7 @@
 
 @media screen and (max-width:768px) {
     .header {
+        flex-direction: column;
         &__navi {
             display: none;
         }
@@ -284,6 +289,12 @@
         }
         &__logo {
             margin: 15px auto;
+        }
+        &__catchcopy {
+            &--sp {
+                display: block;
+                margin: 15px 30px;
+            }
         }
     }
 }

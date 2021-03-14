@@ -26,6 +26,7 @@
 
 .footer__address {
   color: white;
+  margin-top: 15px;
 }
 
 .footer__nav {
@@ -40,14 +41,24 @@
 }
 
 .footer__nav li {
-  padding: 0 15px;
-  border-right: solid 1px white;
+  position: relative;
+  padding: 0 17px;
 }
 
 .footer__nav a {
   color: white;
   text-decoration: none;
   font-size: 15px;
+  line-height: 30px;
+}
+
+.footer__nav li::after {
+  position: absolute;
+  content: "";
+  border-right: solid 1px white;
+  right: 0px;
+  top: 5px;
+  height: 18px;
 }
 
 .footer__copyright {

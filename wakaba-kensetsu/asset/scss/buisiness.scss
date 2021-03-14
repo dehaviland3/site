@@ -9,4 +9,29 @@
         margin: 0 auto;
         text-align: center;
     }
+    &__visual {
+        margin-bottom: 45px;
+    }
+    &__visual02 {
+        margin-top: -85px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: normal;
+        img {
+            width: 260px;
+            height: auto;
+            margin-bottom: 17px;
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .buisiness {
+        &__cards {
+            justify-content: space-around;
+        }
+    }
 }

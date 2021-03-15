@@ -1,5 +1,6 @@
 .btn {
     &__detail {
+        position: relative;
         width: 300px;
         height: 70px;
         background-color: #8dc031;
@@ -17,7 +18,29 @@
         background-color: white;
         color: #8dc031;
     }
+    &__detail:after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        top: 33px;
+        right: 35px;
+        border-top: solid 1px white;
+    }
+    &__detail:hover:after {
+        border-top: solid 1px #8dc031;
+    }
     &__link {
         text-decoration: none;
+    }
+    &__detail--ichiran {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .btn {
+        &__detail--ichiran {
+            display: block;
+        }
     }
 }

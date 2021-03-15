@@ -16,8 +16,16 @@
   margin-bottom: 45px;
 }
 
+.buisiness__visualsp {
+  display: none;
+}
+
 .buisiness__visual02 {
   margin-top: -85px;
+}
+
+.buisiness__visual02sp {
+  display: none;
 }
 
 .buisiness__cards {
@@ -42,6 +50,19 @@
   .buisiness__cards {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .buisiness__visual {
+    display: none;
+  }
+  .buisiness__visualsp {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .buisiness__visual02 {
+    display: none;
+  }
+  .buisiness__visual02sp {
+    display: block;
   }
 }
 /*# sourceMappingURL=buisiness.css.map */

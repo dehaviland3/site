@@ -41,6 +41,9 @@
             padding-right: 15px;
             color: black;
         }
+        & a:hover {
+            color: #8dc031;
+        }
     }
     &__logo-nav {
         display: flex;
@@ -77,6 +80,12 @@
             font-weight: bold;
         }
     }
+    &__contact:hover {
+        opacity: 0.8;
+    }
+    &__contact--sp {
+        display: none;
+    }
     &__nav-tel {
         display: flex;
         align-items: center;
@@ -87,6 +96,18 @@
             width: 18px;
             height: 18px;
         }
+    }
+    &__item--tel {
+        position: relative;
+    }
+    &__item--tel:before {
+        position: absolute;
+        content: "";
+        background-image: url("../asset/img/hd_icon_tel.png");
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        left: 80px;
     }
     &__hamburger {
         display: none;
@@ -247,6 +268,9 @@
                     width: 18px;
                     height: 18px;
                 }
+                li:last-child {
+                    margin-right: 30px;
+                }
             }
             /* header hamburger */
             #ham-menu,
@@ -283,6 +307,51 @@
         }
         &__contact {
             display: none;
+        }
+        &__contact--sp {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+                margin-right: 4px;
+                width: 18px;
+                height: 18px;
+            }
+            p {
+                font-size: 22px;
+            }
+        }
+        &__contact--sp2 {
+            top: 0;
+            right: 0;
+            width: 140px;
+            height: 90px;
+            margin-left: 15px;
+            background-color: #8dc031;
+            text-align: center;
+            position: relative;
+            &>div {
+                line-height: 80px;
+            }
+            img {
+                line-height: 80px;
+                width: 88px;
+                height: 53px;
+                display: block;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            p {
+                color: white;
+                margin-top: 15px;
+                font-size: 17px;
+                font-weight: bold;
+            }
         }
         &__hamburger {
             display: block;

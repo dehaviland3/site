@@ -26,6 +26,15 @@
       justify-content: space-around;
 }
 
+.works__card-area a:hover img {
+  opacity: 0.8;
+}
+
+.works__card-area a:hover .card {
+  -webkit-transition: unset;
+  transition: unset;
+}
+
 .works__three-links {
   margin: 0 auto;
   max-width: 1100px;
@@ -36,6 +45,10 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.works__three-links a:hover {
+  opacity: 0.8;
 }
 
 .works__three-img {
@@ -53,6 +66,7 @@
     background: url("../asset/img/works-area_sp.png");
     background-repeat: no-repeat;
     padding: 0;
+    background-size: contain;
   }
   .works__three-img {
     margin: 0 0 30px 0;

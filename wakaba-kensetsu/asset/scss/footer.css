@@ -47,9 +47,14 @@
 
 .footer__nav a {
   color: white;
-  text-decoration: none;
+  -webkit-text-decoration: white;
+          text-decoration: white;
   font-size: 15px;
   line-height: 30px;
+}
+
+.footer__nav a:hover {
+  text-decoration: underline;
 }
 
 .footer__nav li::after {

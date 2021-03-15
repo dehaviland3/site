@@ -30,9 +30,12 @@
         }
         & a {
             color: white;
-            text-decoration: none;
+            text-decoration: white;
             font-size: 15px;
             line-height: 30px;
+        }
+        & a:hover {
+            text-decoration: underline;
         }
         & li::after {
             position: absolute;

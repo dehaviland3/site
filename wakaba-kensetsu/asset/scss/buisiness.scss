@@ -12,8 +12,14 @@
     &__visual {
         margin-bottom: 45px;
     }
+    &__visualsp {
+        display: none;
+    }
     &__visual02 {
         margin-top: -85px;
+    }
+    &__visual02sp {
+        display: none;
     }
     &__cards {
         display: flex;
@@ -32,6 +38,19 @@
     .buisiness {
         &__cards {
             justify-content: space-around;
+        }
+        &__visual {
+            display: none;
+        }
+        &__visualsp {
+            display: block;
+            margin-bottom: 30px;
+        }
+        &__visual02 {
+            display: none;
+        }
+        &__visual02sp {
+            display: block;
         }
     }
 }

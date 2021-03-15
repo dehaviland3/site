@@ -16,6 +16,12 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            a:hover img {
+                opacity: 0.8;
+            }
+            a:hover .card {
+                transition: unset;
+            }
         }
         &__three-links {
             margin: 0 auto;
@@ -23,6 +29,9 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            & a:hover {
+                opacity: 0.8;
+            }
         }
         &__three-img {
             max-width: 320px;
@@ -40,6 +49,7 @@
                 background: url("../asset/img/works-area_sp.png");
                 background-repeat: no-repeat;
                 padding: 0;
+                background-size: contain;
             }
             &__three-img {
                 margin: 0 0 30px 0;

@@ -3,10 +3,6 @@ body {
   letter-spacing: 0 !important;
 }
 
-.second-h2 h2 {
-  letter-spacing: 0;
-}
-
 .company__work-area {
   padding: 100px 0 70px;
 }

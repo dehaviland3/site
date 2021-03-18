@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+is-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__img {
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__section {
+  width: 230px;
+}
+
+.main__logo {
+  width: 100%;
+  height: auto;
+}
+
+.main__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

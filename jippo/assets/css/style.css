@@ -3,17 +3,29 @@ body {
   color: white;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 is-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.body__wrapper {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  background-color: black;
+}
+
 .header__img {
   width: 107px;
   height: 128px;
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 20px;
 }
 
 .header__line {
@@ -25,7 +37,7 @@ is-flex {
   border-top: solid 4px white;
   color: white;
   max-width: 1000px;
-  margin: 75px auto 50px auto;
+  margin: 20px auto 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

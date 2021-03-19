@@ -20,7 +20,7 @@ is-flex {
 }
 
 .main {
-    border-top: solid 2px white;
+    border-top: solid 4px white;
     color: white;
     max-width: 1000px;
     margin: 75px auto 50px auto;
@@ -89,8 +89,8 @@ is-flex {
             height: 16px;
         }
         &--insta {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
         }
     }
     &__flex {
@@ -102,7 +102,7 @@ is-flex {
         }
     }
     &__text {
-        width: 140px;
+        width: 148px;
         margin-left: 5px;
     }
     &__short-line {

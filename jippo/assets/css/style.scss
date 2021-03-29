@@ -20,6 +20,12 @@ is-flex {
 }
 
 .header {
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: red;
+    }
     padding-top: 40px;
     display: flex;
     justify-content: center;
@@ -102,7 +108,38 @@ is-flex {
         margin-bottom: 20px;
     }
     &__right {
+        position: relative;
         width: 321px;
+    }
+    &_map {
+        &-link01 {
+            position: absolute;
+            color: red;
+            top: 77px;
+            left: 25px;
+            font-size: 2em;
+        }
+        &-link02 {
+            position: absolute;
+            color: red;
+            top: 25px;
+            left: 87px;
+            font-size: 2em;
+        }
+        &-link03 {
+            position: absolute;
+            color: red;
+            top: 48px;
+            left: 176px;
+            font-size: 2em;
+        }
+        &-link04 {
+            position: absolute;
+            color: red;
+            top: 66px;
+            left: 76px;
+            font-size: 2em;
+        }
     }
     &__map {
         width: 100%;
@@ -226,9 +263,39 @@ is-flex {
         &__right {
             width: 95vw;
         }
+        &_map {
+            &-link01 {
+                position: absolute;
+                color: red;
+                top: 24vw;
+                left: 9vw;
+                font-size: 4vw;
+            }
+            &-link02 {
+                position: absolute;
+                color: red;
+                top: 9vw;
+                left: 27vw;
+                font-size: 4vw;
+            }
+            &-link03 {
+                position: absolute;
+                color: red;
+                top: 16vw;
+                left: 53vw;
+                font-size: 4vw;
+            }
+            &-link04 {
+                position: absolute;
+                color: red;
+                top: 21vw;
+                left: 24vw;
+                font-size: 4vw;
+            }
+        }
     }
     .main {
-        width: 300px;
+        width: 95vw;
         flex-direction: column;
         &__section {
             margin: 0 auto 60px auto;

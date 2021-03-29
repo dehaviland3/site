@@ -39,7 +39,7 @@ is-flex {
 .header a:visited,
 .header a:hover,
 .header a:active {
-  color: red;
+  color: transparent;
 }
 
 .header__left {
@@ -311,7 +311,7 @@ is-flex {
     margin-bottom: 40px;
   }
   .header__right {
-    width: 95vw;
+    width: 300px;
   }
   .header_map-link01 {
     position: absolute;
@@ -319,13 +319,19 @@ is-flex {
     top: 24vw;
     left: 9vw;
     font-size: 4vw;
+    top: 66px;
+    left: 23px;
+    font-size: 30px;
   }
   .header_map-link02 {
     position: absolute;
     color: red;
     top: 9vw;
     left: 27vw;
+    top: 18px;
+    left: 81px;
     font-size: 4vw;
+    font-size: 30px;
   }
   .header_map-link03 {
     position: absolute;
@@ -333,6 +339,9 @@ is-flex {
     top: 16vw;
     left: 53vw;
     font-size: 4vw;
+    top: 40px;
+    left: 163px;
+    font-size: 30px;
   }
   .header_map-link04 {
     position: absolute;
@@ -340,9 +349,12 @@ is-flex {
     top: 21vw;
     left: 24vw;
     font-size: 4vw;
+    top: 48px;
+    left: 70px;
+    font-size: 30px;
   }
   .main {
-    width: 95vw;
+    width: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

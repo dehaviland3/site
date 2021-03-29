@@ -24,7 +24,7 @@ is-flex {
     a:visited,
     a:hover,
     a:active {
-        color: red;
+        color: transparent;
     }
     padding-top: 40px;
     display: flex;
@@ -261,7 +261,7 @@ is-flex {
             margin-bottom: 40px;
         }
         &__right {
-            width: 95vw;
+            width: 300px;
         }
         &_map {
             &-link01 {
@@ -270,13 +270,19 @@ is-flex {
                 top: 24vw;
                 left: 9vw;
                 font-size: 4vw;
+                top: 66px;
+                left: 23px;
+                font-size: 30px;
             }
             &-link02 {
                 position: absolute;
                 color: red;
                 top: 9vw;
                 left: 27vw;
+                top: 18px;
+                left: 81px;
                 font-size: 4vw;
+                font-size: 30px;
             }
             &-link03 {
                 position: absolute;
@@ -284,6 +290,9 @@ is-flex {
                 top: 16vw;
                 left: 53vw;
                 font-size: 4vw;
+                top: 40px;
+                left: 163px;
+                font-size: 30px;
             }
             &-link04 {
                 position: absolute;
@@ -291,11 +300,14 @@ is-flex {
                 top: 21vw;
                 left: 24vw;
                 font-size: 4vw;
+                top: 48px;
+                left: 70px;
+                font-size: 30px;
             }
         }
     }
     .main {
-        width: 95vw;
+        width: 300px;
         flex-direction: column;
         &__section {
             margin: 0 auto 60px auto;

@@ -20,14 +20,95 @@ is-flex {
 }
 
 .header {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    &__left {
+        margin-right: 50px;
+    }
+    &__logo-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 94.1px;
+        margin-top: -10px;
+    }
+    &__logo {
+        position: relative;
+        width: 80.25px;
+        height: 94.1px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 57px;
+            width: auto;
+            margin: auto;
+        }
+        &.logo01 {
+            img {
+                height: 33px;
+            }
+        }
+        &.logo01:before {
+            z-index: 10;
+            content: '1';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            color: white;
+        }
+        &.logo02:before {
+            z-index: 10;
+            content: '2';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            color: white;
+        }
+        &.logo03:before {
+            z-index: 10;
+            content: '3';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            color: white;
+        }
+        &.logo04:before {
+            z-index: 10;
+            content: '4';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            color: white;
+        }
+    }
     &__img {
         width: 107px;
         height: 128px;
         margin: 0 auto;
-        padding-top: 44px;
+        margin-bottom: 20px;
+    }
+    &__right {
+        width: 321px;
+    }
+    &__map {
+        width: 100%;
+        height: auto;
     }
     &__line {
-        display: none;
         margin: 30px auto 0 auto;
     }
 }
@@ -36,7 +117,7 @@ is-flex {
     border-top: solid 4px white;
     color: white;
     max-width: 1000px;
-    margin: 44px auto 50px auto;
+    margin: 34px auto 50px auto;
     display: flex;
     justify-content: space-around;
     &__section {
@@ -128,12 +209,23 @@ is-flex {
     &__copyright {
         text-align: center;
         padding-bottom: 5px;
+        padding-top: 25px;
     }
 }
 
 @media (max-width: 768px) {
     body {
         font-size: 9px;
+    }
+    .header {
+        flex-direction: column;
+        &__left {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__right {
+            width: 95vw;
+        }
     }
     .main {
         width: 300px;

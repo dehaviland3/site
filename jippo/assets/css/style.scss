@@ -261,6 +261,51 @@ is-flex {
             margin-bottom: 40px;
         }
         &__right {
+            width: 95vw;
+        }
+        &_map {
+            &-link01 {
+                position: absolute;
+                color: red;
+                top: 24vw;
+                left: 9vw;
+                font-size: 4vw;
+            }
+            &-link02 {
+                position: absolute;
+                color: red;
+                top: 9vw;
+                left: 27vw;
+                font-size: 4vw;
+            }
+            &-link03 {
+                position: absolute;
+                color: red;
+                top: 16vw;
+                left: 53vw;
+                font-size: 4vw;
+            }
+            &-link04 {
+                position: absolute;
+                color: red;
+                top: 21vw;
+                left: 24vw;
+                font-size: 4vw;
+            }
+        }
+    }
+    .main {
+        width: 300px;
+        flex-direction: column;
+        &__section {
+            margin: 0 auto 60px auto;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+        &__right {
             width: 300px;
         }
         &_map {
@@ -308,9 +353,5 @@ is-flex {
     }
     .main {
         width: 300px;
-        flex-direction: column;
-        &__section {
-            margin: 0 auto 60px auto;
-        }
     }
 }

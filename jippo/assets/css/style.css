@@ -353,7 +353,7 @@ is-flex {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 766px) {
   .header__right {
     width: 300px;
   }

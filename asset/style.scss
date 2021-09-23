@@ -91,10 +91,14 @@ main {
 }
 
 #clickablemap {
-    width: 1280px;
-    height: 720px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-size: initial;
     margin: 0 auto;
     background: url(./img/mainvisual_map.png) no-repeat top left;
+    background-size: contain;
+    object-fit: none;
     position: relative;
 }
 

@@ -60,7 +60,7 @@ a {
 main {
     position: relative;
     padding: 0 0 160px 0;
-    z-index: 1000000;
+    z-index: 100000000000000;
     background: {
         image: url("../asset/img/header.png");
         repeat: no-repeat;
@@ -70,6 +70,7 @@ main {
 }
 
 .circle {
+    text-align: center;
     width: 100px;
     height: 100px;
     margin: 50px auto;
@@ -118,7 +119,7 @@ main {
 
 #clickablemap li.btn2 {
     position: absolute;
-    top: 9vw;
+    top: 15vw;
     left: 47vw;
     display: block;
     width: 50px;
@@ -155,6 +156,11 @@ main {
 #clickablemap li a:hover img,
 #clickablemap li a:active img {
     visibility: hidden;
+}
+
+.img__list {
+    width: 500px;
+    height: auto;
 }
 
 @media screen and (max-width: 370px) {

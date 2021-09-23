@@ -1,454 +1,165 @@
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 *,
-:after,
-:before {
-    box-sizing: border-box
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
 }
 
 html {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-}
-
-body {
-    font-family: "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
-    font-weight: medium;
-    font-feature-settings: "palt";
-}
-
-body,
-html {
-    height: 100%;
-    width: 100%
-}
-
-body,
-p,
-h1,
-h2,
-h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-}
-
-.main-visual {
-    // background-image: url("./img/main_bg01.png");
-    background-attachment: fixed;
-    background-position: 25% top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* IE 11 */
-    /* Firefox 64 */
-    width: 100%;
-    height: auto;
-    noscript {
-        text-align: center;
-    }
-    .title {
-        margin-top: 177px;
-        text-align: center;
-        img {
-            width: 300px;
-            height: auto;
-        }
-    }
-    .subtitle,
-    .text {
-        max-width: 656px;
-        word-break: break-all;
-        margin: 0 auto;
-        font-size: 24px;
-        color: white;
-        font-weight: bold;
-    }
-    .text02 {
-        font-size: 30px;
-        color: white;
-        font-weight: bold;
-        line-height: 40px;
-        margin: 80px 0 160px 0;
-        text-align: center;
-    }
-    .subtitle {
-        text-align: center;
-        margin-top: 27.8px;
-        line-height: 40.8px;
-    }
-    .text {
-        margin-top: 157.9px;
-        margin-bottom: 160px;
-        line-height: 42px;
-    }
-}
-
-.main-visual::-webkit-scrollbar {
-    display: none;
-}
-
-.about-den {
-    background-color: #E6E3D8;
-    text-align: center;
-    .wrapper {
-        margin: 0 auto;
-        padding: 80px 0;
-        width: 925px;
-    }
-    .title {
-        margin: 20px 0 0px 0;
-        font-family: 'EB Garamond', serif;
-        font-size: 40px;
-        line-height: 70px;
-        letter-spacing: 0.045em;
-        color: #75896A
-    }
-    .subtitle {
-        // margin-top: 10px;
-        color: #75896A;
-        font-size: 20px;
-        line-height: 48px;
-        font-weight: bold;
-    }
-    .text {
-        margin: 82px auto 0 auto;
-        text-align: left;
-        max-width: 656px;
-        font-size: 18px;
-        line-height: 32.4px;
-    }
-    .title02 {
-        margin-top: 90px;
-        font-size: 24px;
-        color: #75896A;
-        font-weight: bold;
-        line-height: 48px;
-    }
-    .three-cards {
-        margin-top: 78.4px;
-        display: flex;
-        justify-content: space-around;
-        .cards {
-            div {
-                margin-bottom: 35px;
-                height: 240px;
-                display: flex;
-                justify-content: center;
-                img {
-                    align-self: center;
-                    width: 240px;
-                    height: auto;
-                }
-            }
-            .description {
-                font-size: 24px;
-                line-height: 38.4px;
-                font-weight: bold;
-                color: #75896A;
-            }
-        }
-    }
-}
-
-.about-us {
-    background-color: #F7F7F5;
-    text-align: center;
-    padding: 80px 0 160px 0;
-    .wrapper {
-        margin: 0px auto;
-        max-width: 656px;
-    }
-    .title {
-        font-size: 40px;
-        font-family: 'EB Garamond', serif;
-        line-height: 70px;
-        letter-spacing: 0.045em;
-        color: #75896A;
-    }
-    .subtitle {
-        margin-top: 10px;
-        color: #75896A;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .text {
-        margin-top: 80px;
-        text-align: left;
-        font-size: 15px;
-        line-height: 25.5px;
-    }
-    .chief-area {
-        display: flex;
-        margin-top: 80px;
-        .left {
-            width: 214px;
-            height: 214px;
-        }
-        .right {
-            margin-left: 48px;
-            .name {
-                text-align: left;
-                font-size: 20px;
-                line-height: 32px;
-                font-weight: bold;
-                color: #333333;
-            }
-            .text02 {
-                margin-top: 21.2px;
-                font-size: 15px;
-                color: #333333;
-                line-height: 25.5px;
-                text-align: left;
-            }
-            .sns {
-                text-align: left;
-                a:link,
-                a:visited,
-                a:hover,
-                a:active {
-                    color: #333333;
-                }
-                a {
-                    text-decoration: underline;
-                }
-                a:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    .chief-area:first-child {
-        margin-top: 75.1px;
-    }
-    .chief-area:last-child {
-        margin-top: 44px;
-    }
-}
-
-.contact-us {
+.flex {
     display: flex;
-    background-color: #E6E3D8;
-    // maxまで広げたときのサイズだけど、可変にしよう。縦は横の89%
-    // .left {
-    //     width: 617px;
-    //     height: 550px;
-    // }
-    .left {
-        width: 48vw;
-        height: 42.8vw;
-        align-self: center;
-    }
-    .right {
-        .wrapper {
-            max-width: 480px;
-            margin-top: 100px;
-            margin-left: 48px;
-            margin-right: 136px;
-            .title {
-                font-size: 23px;
-                font-weight: bold;
-                line-height: 46px;
-                color: #75896A;
-            }
-            .text {
-                margin-top: 37.8px;
-                color: #333333;
-                font-size: 18px;
-                line-height: 32.4px;
-            }
-        }
+}
+
+a {
+    color: black;
+}
+
+main {
+    position: relative;
+    padding: 0 0 160px 0;
+    z-index: 1000000;
+    background: {
+        image: url("../asset/img/header.png");
+        repeat: no-repeat;
+        size: 100vw 1018.47px;
+        position: center top;
     }
 }
 
-.green-btn {
-    background-color: #75896A;
-    max-width: 480px;
-    height: 56px;
-    border-radius: 5px;
-    text-align: center;
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-        color: white;
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: #95dade;
+    animation: fuwafuwa 2s infinite;
+}
+
+@keyframes fuwafuwa {
+    0% {
+        transform: translateY(0px);
     }
-    font: {
-        size: 20px;
-        weight: bold;
+    50% {
+        transform: translateY(-30px);
     }
-    color: white;
-    line-height: 56px;
-    &.-request {
-        margin-top: 37.6px;
-        margin-bottom: 67.4px;
-    }
-    &.-landload {
-        // margin-top: 67.4px;
-        margin-bottom: 71px;
-    }
-    &.-mailMagazine {
-        margin: 32.9px auto 0 auto;
+    100% {
+        transform: translateY(0px);
     }
 }
 
-.mail-magazine {
-    background-color: #F7F7F5;
-    height: 209.13px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 32.4px;
-    padding-bottom: 350px;
-    .wrapper {
-        max-width: 1008px;
-        margin: 0 auto;
-        .horizon {
-            margin-top: 120px;
-            border-bottom: solid 2px silver;
-        }
-    }
-    p {
-        padding-top: 101px;
-    }
+#clickablemap {
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    background: url(./img/mainvisual_map.png) no-repeat top left;
+    position: relative;
 }
 
-footer {
-    background-color: #F7F7F5;
-    text-align: center;
-    padding-bottom: 151px;
-    img {
-        margin-top: 24.2px;
-        text-align: center;
-        height: 67px;
-        width: 120px
-    }
-    .copyright {
-        margin-top: 17px;
-    }
+#clickablemap ul {
+    list-style: none;
 }
 
-.br-sp {
-    display: none;
+#clickablemap li.btn1 {
+    position: absolute;
+    top: 32vw;
+    left: 55vw;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(btn1_on.png) no-repeat top left;
 }
 
-.js-fadein {
-    opacity: 0;
+#clickablemap li.btn2 {
+    position: absolute;
+    top: 9vw;
+    left: 47vw;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(btn2_on.png) no-repeat top left;
+}
+
+#clickablemap li.btn3 {
+    position: absolute;
+    top: 32vw;
+    left: 22vw;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(btn3_on.png) no-repeat top left;
+}
+
+#clickablemap li.btn4 {
+    position: absolute;
+    top: 12vw;
+    left: 12vw;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(btn4_on.png) no-repeat top left;
+}
+
+#clickablemap li a,
+#clickablemap li a:link,
+#clickablemap li a:visited {
+    display: block;
+}
+
+#clickablemap li a:hover img,
+#clickablemap li a:active img {
     visibility: hidden;
-    // transform: translateY(40px);
-    transition: all 3s;
 }
 
-.js-fadein.is-show {
-    opacity: 1;
-    visibility: visible;
-    // transform: translateY(0px);
-}
-
-@media screen and (max-width: 1000px) {
-    .about-den {
-        .three-cards {
-            display: block;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-visual {
-        .title {
-            margin-top: 100px;
-            img {
-                width: 213.1px;
-            }
-        }
-        .subtitle {
-            margin-left: 22px;
-            margin-right: 22px;
-        }
-        .text {
-            margin-left: 22px;
-            margin-right: 22px;
-        }
-    }
-    .about-den {
-        .title {
-            margin: 0;
-        }
-        .wrapper {
-            width: 100%;
-            margin: 0;
-            .text {
-                margin: 64px 22px 0 22px;
-            }
-        }
-        .three-cards {
-            .cards.-third,
-            .cards.-second {
-                margin-top: 80px;
-            }
-        }
-    }
-    .chief-area {
-        display: block;
-    }
-    .about-us {
-        .text {
-            margin: 64px 22px 0 22px;
-        }
-        .chief-area {
-            display: block;
-            .right {
-                margin: 0 22px;
-                .name {
-                    margin-top: 30px;
+@media screen and (max-width: 370px) {
+    .map-container {
+        .google-map {
+            .header {
+                .welcome {
+                    left: 10%;
                 }
-            }
-        }
-    }
-    .contact-us {
-        display: block;
-        .left {
-            width: 100%;
-            height: auto;
-        }
-        .right {
-            .wrapper {
-                margin: 60px auto 0 auto;
-                padding-bottom: 15px;
-                .title {
-                    line-height: 38.4px;
-                }
-            }
-        }
-    }
-    .mail-magazine {
-        .wrapper {
-            margin: 0 22px;
-        }
-    }
-    .br-sp {
-        display: inline;
-    }
-    footer {
-        img {
-            margin-top: 50px;
-        }
-        .copyright {
-            margin-top: 15px;
-        }
-    }
-}
-
-@media screen and (max-width: 530px) {
-    .contact-us {
-        .right {
-            .wrapper {
-                margin: 60px 22px 0 22px;
             }
         }
     }

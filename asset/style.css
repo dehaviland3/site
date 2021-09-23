@@ -80,6 +80,119 @@ main {
           animation: fuwafuwa 2s infinite;
 }
 
+.circle3s {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  border-radius: 50px;
+  background: #95dade;
+  -webkit-animation: fuwafuwa 3s infinite;
+          animation: fuwafuwa 3s infinite;
+}
+
+.circle4s {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  border-radius: 50px;
+  background: #ed93b0;
+  -webkit-animation: mochimochi 1s infinite;
+          animation: mochimochi 1s infinite;
+}
+
+@-webkit-keyframes mochimochi {
+  0% {
+    -webkit-transform: scale(1, 0.8);
+            transform: scale(1, 0.8);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 1.1);
+            transform: scale(0.8, 1.1);
+  }
+  90% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1, 0.8);
+            transform: scale(1, 0.8);
+  }
+}
+
+@keyframes mochimochi {
+  0% {
+    -webkit-transform: scale(1, 0.8);
+            transform: scale(1, 0.8);
+  }
+  20% {
+    -webkit-transform: scale(0.8, 1.1);
+            transform: scale(0.8, 1.1);
+  }
+  90% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1, 0.8);
+            transform: scale(1, 0.8);
+  }
+}
+
+.keyframe3 {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  border-radius: 50px;
+  background: #95dade;
+  -webkit-animation-name: anim_s;
+          animation-name: anim_s;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes anim_s {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes anim_s {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @-webkit-keyframes fuwafuwa {
   0% {
     -webkit-transform: translateY(0px);

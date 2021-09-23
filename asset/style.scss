@@ -79,6 +79,68 @@ main {
     animation: fuwafuwa 2s infinite;
 }
 
+.circle3s {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: #95dade;
+    animation: fuwafuwa 3s infinite;
+}
+
+.circle4s {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: #ed93b0;
+    animation: mochimochi 1s infinite;
+}
+
+@keyframes mochimochi {
+    0% {
+        transform: scale(1, 0.8);
+    }
+    20% {
+        transform: scale(0.8, 1.1);
+    }
+    90% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 0.8);
+    }
+}
+
+.keyframe3 {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 50px;
+    background: #95dade;
+    animation-name: anim_s;
+    transform: rotate(30deg);
+    animation-duration: 5s;
+}
+
+@keyframes anim_s {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes fuwafuwa {
     0% {
         transform: translateY(0px);

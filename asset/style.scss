@@ -57,6 +57,401 @@ a {
     color: black;
 }
 
+.tooltip1 {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip3 {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip3 p {
+    margin: 0;
+    padding: 0;
+}
+
+.description3 {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: black;
+    border-radius: 5px;
+    background: #CFDDC4;
+    width: 150px;
+}
+
+.description3:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 60%;
+    border: 15px solid transparent;
+    border-top: 15px solid #CFDDC4;
+    margin-left: -15px;
+    transform: rotateZ(180deg);
+}
+
+.tooltip3:hover .description3 {
+    display: inline-block;
+    top: 130px;
+    left: 0px;
+}
+
+.box27 {
+    position: relative;
+    margin: 3em 0;
+    padding: 3em;
+    border: solid 3px #25781D;
+}
+
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #25781D;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.box27 p {
+    margin: 0;
+    padding: 0;
+}
+
+// flexの高さを合わせる
+.wrapper {
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: whitesmoke;
+}
+
+.archive-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.archive-item {
+    width: 33%;
+    padding: 10px;
+}
+
+.archive-item {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-img-wrap {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.archive-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.archive-item:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
+
+.archive-ttl {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.btn-more {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    line-height: 40px;
+    // border-radius: 20px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #25781D;
+    color: #fff;
+}
+
+// スライドショー
+.cp_cssslider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2em auto;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cp_slide_item {
+    width: 300px;
+    height: 200px;
+    float: left;
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+.cp_slidewrapper {
+    width: 400%;
+    /* slideの枚数×100% */
+    position: relative;
+    left: 0;
+    animation: slider 20s infinite ease;
+    /* スピード */
+}
+
+@-webkit-keyframes slider {
+    /* 100%を枚数で割った%に割り振る */
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    20% {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+    }
+    40% {
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+    60% {
+        -webkit-transform: translateX(-900px);
+        transform: translateX(-900px);
+    }
+    80% {
+        -webkit-transform: translateX(-1200px);
+        transform: translateX(-1200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slider {
+    /* 100%を枚数で割った%に割り振る */
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    20% {
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+    }
+    40% {
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+    60% {
+        -webkit-transform: translateX(-900px);
+        transform: translateX(-900px);
+    }
+    80% {
+        -webkit-transform: translateX(-1200px);
+        transform: translateX(-1200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.css-carousel-slider4 {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.css-carousel-slider4 img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+
+/* スライド設定 */
+
+.css-carousel-slider4 .slide-wrap {
+    width: 400%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: css-carousel-slider4 20s infinite;
+    animation-delay: 2s;
+}
+
+.css-carousel-slider4 .slide-wrap-main {
+    z-index: 1;
+    animation: css-carousel-slider-main4 20s infinite;
+    animation-delay: 2s;
+}
+
+.css-carousel-slider4 .slide {
+    width: 100%;
+}
+
+
+/* スライダーアニメーションの設定 */
+
+@keyframes css-carousel-slider4 {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(calc(1 / 4 * -100%));
+    }
+    25% {
+        transform: translateX(calc(1 / 4 * -100%));
+    }
+    45% {
+        transform: translateX(calc(2 / 4 * -100%));
+    }
+    50% {
+        transform: translateX(calc(2 / 4 * -100%));
+    }
+    70% {
+        transform: translateX(calc(3 / 4 * -100%));
+    }
+    75% {
+        transform: translateX(calc(3 / 4 * -100%));
+    }
+    95% {
+        transform: translateX(calc(4 / 4 * -100%));
+    }
+    100% {
+        transform: translateX(calc(4 / 4 * -100%));
+    }
+}
+
+@keyframes css-carousel-slider-main4 {
+    0% {
+        transform: translateX(100%);
+    }
+    75% {
+        transform: translateX(100%);
+    }
+    95% {
+        transform: translateX(0%);
+    }
+}
+
+// スライドショー
+//   flexの高さを合わせる
+.dodome {
+    &__flex-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px;
+        flex-direction: column;
+    }
+    &__flex-icon {
+        width: 150px;
+        padding: 15px;
+        img {
+            flex-grow: 1;
+            width: 100%;
+            height: auto;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    &__midashi01 {
+        color: #fff;
+        font-size: 24px;
+        position: relative;
+        padding: 8px 16px;
+        background: #25781D;
+        // border-radius: 8px;
+        margin-bottom: 20px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            border-top: 8px solid #25781D;
+        }
+    }
+    &__midashi02 {
+        margin: 15px 0;
+        color: #444;
+        font-size: 24px;
+        position: relative;
+        padding: 10px 0 2px 28px;
+        border-bottom: 3px solid #25781D;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            margin: auto;
+        }
+        &:before {
+            width: 12px;
+            height: 12px;
+            top: 0;
+            left: 14px;
+            background: #25781D;
+            transform: rotate(50deg);
+        }
+        &:after {
+            width: 8px;
+            height: 8px;
+            top: 18px;
+            left: 6px;
+            background: #CFDDC4;
+            transform: rotate(20deg);
+        }
+    }
+    &__midashi03 {
+        position: relative;
+        margin: 2em 0;
+        padding: 0.5em 1em;
+        border: solid 3px #25781D;
+        // border-radius: 8px;
+    }
+    &__midashi03 .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -13px;
+        left: 10px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 19px;
+        background: #FFF;
+        color: #25781D;
+        font-weight: bold;
+    }
+    &__midashi03 p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 main {
     position: relative;
     padding: 0 0 160px 0;
@@ -77,6 +472,11 @@ main {
     border-radius: 50px;
     background: #95dade;
     animation: fuwafuwa 2s infinite;
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
 }
 
 .circle3s {
@@ -85,8 +485,53 @@ main {
     height: 100px;
     margin: 50px auto;
     border-radius: 50px;
-    background: #95dade;
-    animation: fuwafuwa 3s infinite;
+    background: #25781D;
+    color: white;
+    // animation: fuwafuwa 5s infinite;
+}
+
+.shine {
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 光の疑似要素 */
+
+.shine::before {
+    content: "";
+    animation: shine 3s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+    background-color: #fff;
+    width: 140%;
+    height: 100%;
+    transform: skewX(-45deg);
+    top: 0;
+    left: -160%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+
+/* 光の動き */
+
+@keyframes shine {
+    0% {
+        left: -160%;
+        opacity: 0;
+    }
+    70% {
+        left: -160%;
+        opacity: 0.5;
+    }
+    71% {
+        left: -160%;
+        opacity: 1;
+    }
+    100% {
+        left: -20%;
+        opacity: 0;
+    }
 }
 
 .circle4s {
@@ -96,21 +541,25 @@ main {
     margin: 50px auto;
     border-radius: 50px;
     background: #ed93b0;
-    animation: mochimochi 1s infinite;
+    animation: shiny-btn1 3s ease-in-out infinite;
 }
 
-@keyframes mochimochi {
+keyframes shiny-btn1 {
     0% {
-        transform: scale(1, 0.8);
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
     }
-    20% {
-        transform: scale(0.8, 1.1);
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
     }
-    90% {
-        transform: scale(1, 1);
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
     }
     100% {
-        transform: scale(1, 0.8);
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
     }
 }
 
@@ -124,19 +573,20 @@ main {
     animation-name: anim_s;
     transform: rotate(30deg);
     animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes anim_s {
     0% {
         transform: rotate(0deg);
     }
-    50% {
+    33% {
         transform: rotate(-30deg);
     }
-    100% {
+    66% {
         transform: rotate(30deg);
     }
-    0% {
+    100% {
         transform: rotate(0deg);
     }
 }
@@ -177,6 +627,9 @@ main {
     width: 50px;
     height: 50px;
     background: url(btn1_on.png) no-repeat top left;
+    &__img {
+        top: 25vw;
+    }
 }
 
 #clickablemap li.btn2 {

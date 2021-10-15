@@ -103,8 +103,8 @@ a {
 
 .tooltip3:hover .description3 {
   display: inline-block;
-  top: 130px;
-  left: 0px;
+  top: 100px;
+  left: -25px;
 }
 
 .box27 {
@@ -580,12 +580,13 @@ main {
 
 .circle3s {
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   margin: 50px auto;
-  border-radius: 50px;
-  background: #25781D;
+  background-image: url("./img/f_f_traffic_45_s512_f_traffic_45_0nbg.png");
   color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .shine {
@@ -604,7 +605,7 @@ main {
   height: 100%;
   -webkit-transform: skewX(-45deg);
           transform: skewX(-45deg);
-  top: 0;
+  top: -10px;
   left: -160%;
   opacity: 0.5;
   position: absolute;
@@ -616,13 +617,16 @@ main {
     left: -160%;
     opacity: 0;
   }
-  70% {
-    left: -160%;
-    opacity: 0.5;
+  75% {
+    opacity: 0;
   }
-  71% {
+  85% {
     left: -160%;
-    opacity: 1;
+    opacity: 0.1;
+  }
+  86% {
+    left: -160%;
+    opacity: 0.2;
   }
   100% {
     left: -20%;
@@ -634,13 +638,16 @@ main {
     left: -160%;
     opacity: 0;
   }
-  70% {
-    left: -160%;
-    opacity: 0.5;
+  75% {
+    opacity: 0;
   }
-  71% {
+  85% {
     left: -160%;
-    opacity: 1;
+    opacity: 0.1;
+  }
+  86% {
+    left: -160%;
+    opacity: 0.2;
   }
   100% {
     left: -20%;
